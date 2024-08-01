@@ -9,7 +9,7 @@ draft: false
 date: 2024-06-16T16:00:00Z
 ---
 
-Assaig sobre l'origen pseudocientífic de l'osteopatia i com al llarg dels segles 20 i 21 s'ha anat apropant a la medicina per pura supervivència, fins a convertir-se en un popurri del que li convé. L'autor argumenta que li està menjant la torrada a la fisioteràpia sense aportar res de nou.
+Assaig sobre l'origen pseudocientífic de l'osteopatia i com al llarg dels segles 20 i 21 s'ha anat apropant a la medicina per pura supervivència, fins a convertir-se en un popurri de conceptes. L'autor argumenta que li està menjant la torrada a la fisioteràpia sense aportar res de nou.
 
 Pel meu gust es recrea massa en els origens de l'osteopatia com a forma de desacreditar-la i s'acaba fent repetitiu; en qualsevol cas interessant lectura, sempre s'aprèn alguna cosa i em va servir d'excusa pel dibuix.
 
