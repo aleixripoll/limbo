@@ -3,7 +3,7 @@ title: "Alice: Madness Returns"
 description: "Alicia en el país de las maravillas, versión videojuego, por Spicy Horse."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
-categories: ["videojuegos"]
+categories: ["jocs"]
 tags: ["lang-en"]
 draft: false
 date: 2011-11-12T13:22:00.001+01:00

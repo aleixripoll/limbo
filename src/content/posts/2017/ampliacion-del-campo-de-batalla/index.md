@@ -8,7 +8,7 @@ image_attribution:
     site: Unsplash
     url: https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8
 categories: ["literatura"]
-tags: ["novela", "sociedad"]
+tags: ["novela", "societat"]
 draft: false
 date: 2017-10-20T16:48:00Z
 ---

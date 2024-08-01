@@ -7,7 +7,7 @@ image_attribution:
     author: Shane Aldendorff
     url: https://www.pexels.com/ca-es/foto/gent-carrer-signe-multitud-4561540/
 categories: ["literatura"]
-tags: ["ensayo", "historia", "filosofía"]
+tags: ["assaig", "historia", "filosofia"]
 draft: false
 date: 2020-11-08T14:00:00Z
 ---

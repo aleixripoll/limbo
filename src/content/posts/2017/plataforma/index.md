@@ -8,7 +8,7 @@ image_attribution:
     site: Unsplash
     url: https://unsplash.com/photos/grayscale-photo-of-woman-zhG_w269I7I
 categories: ["literatura"]
-tags: ["novela", "sociedad"]
+tags: ["novela", "societat"]
 draft: false
 date: 2017-11-29T18:13:00Z
 ---

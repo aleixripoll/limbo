@@ -8,8 +8,8 @@ image_attribution:
     author: Jan Jakubowski
     site: Pixabay
     url: https://pixabay.com/es/illustrations/ai-generado-cocinero-cocina-8733794/
-categories: ["apuntes"]
-tags: ["biología", "química", "nutrición"]
+categories: ["apunts"]
+tags: ["biología", "química", "nutrició"]
 draft: false
 date: 2024-03-16T19:00:00Z
 ---

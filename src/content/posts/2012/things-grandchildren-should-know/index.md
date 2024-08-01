@@ -4,7 +4,7 @@ description: "Autobiografía de Mark Oliver Everett, cantante y guitarrista de l
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura"]
-tags: ["ensayo", "lang-en"]
+tags: ["assaig", "lang-en"]
 draft: false
 date: 2012-10-12T15:57:00.000+02:00
 ---

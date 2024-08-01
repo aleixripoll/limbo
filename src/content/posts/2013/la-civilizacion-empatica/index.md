@@ -8,7 +8,7 @@ image_attribution:
   site: Pixabay
   url: https://pixabay.com/es/photos/ascensores-berlina-1598431/
 categories: ["literatura"]
-tags: ["ensayo", "sociedad", "biología"]
+tags: ["assaig", "societat", "biología"]
 draft: false
 date: 2013-07-14T14:53:00.000+02:00
 ---

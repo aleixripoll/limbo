@@ -4,7 +4,7 @@ description: "Anime filosófico escrito por Dai Satō y dirigido por Shukō Mura
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]
-tags: ["serie TV", "anime", "filosofía", "lang-en"]
+tags: ["serie TV", "anime", "filosofia", "lang-en"]
 draft: false
 date: 2009-04-01T23:05:00.006+02:00
 ---

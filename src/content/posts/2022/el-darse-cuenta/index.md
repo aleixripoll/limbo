@@ -4,7 +4,7 @@ description: "Libro de autoayuda con psicología Gestalt, por John O. Stevens."
 authors: ["Dra. Valina"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["ensayo", "psicología"]
+tags: ["assaig", "psicologia"]
 draft: false
 date: 2022-09-06T19:25:00Z
 ---

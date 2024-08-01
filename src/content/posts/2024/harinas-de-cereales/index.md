@@ -7,8 +7,8 @@ image: ./pexels-pixabay-162769.jpg
 image_attribution:
     author: Pixabay
     url: https://www.pexels.com/ca-es/foto/pa-camp-estiu-sec-162769/
-categories: ["apuntes"]
-tags: ["nutrición", "pan", "gluten"]
+categories: ["apunts"]
+tags: ["nutrició", "pa", "gluten"]
 draft: false
 date: 2024-02-27T07:00:00Z
 ---

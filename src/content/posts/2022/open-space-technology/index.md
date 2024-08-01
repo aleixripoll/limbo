@@ -8,7 +8,7 @@ image_attribution:
     site: Unsplash
     url: https://unsplash.com/photos/photo-of-dining-table-and-chairs-inside-room-eHD8Y1Znfpk
 categories: ["literatura"]
-tags: ["ensayo", "empresa", "lang-en"]
+tags: ["assaig", "empresa", "lang-en"]
 draft: false
 date: 2022-09-02T07:20:00Z
 ---

@@ -8,8 +8,8 @@ image_attribution:
     author: Vicki Hamilton
     site: Pixabay
     url: https://pixabay.com/es/illustrations/lechuga-verduras-comida-naturaleza-8743189/
-categories: ["apuntes"]
-tags: ["vitaminas", "nutrición"]
+categories: ["apunts"]
+tags: ["vitamines", "nutrició"]
 draft: false
 date: 2024-02-25T07:00:00Z
 ---

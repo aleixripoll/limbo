@@ -4,7 +4,7 @@ description: "Todo será olvidado, por Milan Kundera."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura"]
-tags: ["novela", "filosofía", "sociedad"]
+tags: ["novela", "filosofia", "societat"]
 draft: false
 date: 2012-12-20T22:01:00.000+01:00
 ---

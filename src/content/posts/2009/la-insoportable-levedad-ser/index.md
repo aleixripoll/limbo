@@ -7,7 +7,7 @@ image_attribution:
     author: Pixabay
     url: https://www.pexels.com/ca-es/foto/carretera-naturalesa-natura-cel-56832/
 categories: ["literatura"]
-tags: ["novela", "sociedad", "filosofía"]
+tags: ["novela", "societat", "filosofia"]
 draft: false
 date: 2009-06-14T12:02:00Z
 ---

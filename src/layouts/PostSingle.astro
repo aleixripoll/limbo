@@ -30,8 +30,8 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
     <article class="row justify-center -mx-4">
       <div class="text-center md:col-10">
         <h1 set:html={markdownify(title)} class="h2" />
-        <p class="py-2 lg:text-lg font-light">{description}</p>
-        <ul class="mt-2 flex flex-wrap items-center justify-center">
+        <p class="py-4 lg:text-xl font-light">{description}</p>
+        <ul class="mt-2 flex flex-wrap items-center justify-center uppercase text-sm font-light">
           {/*<li class="mx-3">
             {
               allAuthors
@@ -146,7 +146,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
   similarPosts.length > 0 && (
     <section class="section pt-0">
       <div class="container">
-        <h1 class="h3 mb-8 text-center">Artículos similares</h1>
+        <h1 class="h3 mb-8 text-center uppercase font-light">Articles similars</h1>
         <SimilarPosts posts={similarPosts.slice(0, 3)} />
       </div>
     </section>

@@ -4,7 +4,7 @@ description: "Libro académico de psicología, por Richard A. Griggs y Sherri L.
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["ensayo", "neurociencia", "psicología", "lang-en"]
+tags: ["assaig", "neurociència", "psicologia", "lang-en"]
 draft: false
 date: 2022-08-10T13:16:00Z
 ---

@@ -8,8 +8,8 @@ image_attribution:
     author: MeditativeKaleidoscope
     site: Pixabay
     url: https://pixabay.com/es/illustrations/ai-generado-cristales-geoda-8741232/
-categories: ["apuntes"]
-tags: ["nutrición"]
+categories: ["apunts"]
+tags: ["nutrició"]
 draft: false
 date: 2024-02-09T07:00:00Z
 ---

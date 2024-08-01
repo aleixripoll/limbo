@@ -8,8 +8,8 @@ image_attribution:
     author: satheeshsankaran
     site: Pixabay
     url: https://pixabay.com/es/illustrations/ai-generado-bombilla-bulbo-energ%C3%ADa-8710045/
-categories: ["apuntes"]
-tags: ["vitaminas", "nutrición"]
+categories: ["apunts"]
+tags: ["vitamines", "nutrició"]
 draft: false
 date: 2024-03-03T07:00:00Z
 ---

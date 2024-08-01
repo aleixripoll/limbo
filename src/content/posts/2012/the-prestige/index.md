@@ -4,7 +4,7 @@ description: "Are you watching closely? Película de Christopher Nolan."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]
-tags: ["película", "lang-en"]
+tags: ["peli", "lang-en"]
 draft: false
 date: 2012-01-05T15:13:00.001+01:00
 ---

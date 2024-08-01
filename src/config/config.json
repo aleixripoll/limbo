@@ -18,12 +18,12 @@
   "metadata": {
     "meta_author": "Aleix Ripoll",
     "meta_image": "/limbo/images/logo.png",
-    "meta_description": "Blog personal de literatura, cine, ciencia, psicología, nutrición y todo lo que caiga."
+    "meta_description": "Blog personal de coses que llegeixo, veig i faig."
   },
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Tema basado en [Bookworm Light](https://github.com/themefisher/bookworm-light-astro) de [Themefisher](https://themefisher.com)"
+    "copyright": "Tema basat en [Bookworm Light](https://github.com/themefisher/bookworm-light-astro) de [Themefisher](https://themefisher.com)"
   },
 
   "contactinfo": {

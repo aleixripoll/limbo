@@ -47,7 +47,7 @@ const { className, posts, fluid } = Astro.props;
             />
           </a>
         )}
-        <ul class="mb-1 mt-3 flex flex-wrap items-center justify-center">
+        <ul class="mb-1 mt-3 flex flex-wrap items-center justify-center uppercase text-sm font-light">
           {/*<li class="mr-5">
             {authors
               .filter((author: any) =>
@@ -88,7 +88,7 @@ const { className, posts, fluid } = Astro.props;
                       href={`${import.meta.env.BASE_URL}categories/${slugify(
                         category
                       )}`}
-                      class="mr-1 font-light hover:text-primary"
+                      class="mr-1 hover:text-primary"
                     >
                       {humanize(category)}{i !== post.data.categories.length - 1 && ","}
                     </a>

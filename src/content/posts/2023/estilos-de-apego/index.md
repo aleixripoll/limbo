@@ -6,7 +6,7 @@ date: 2023-11-12T11:08:00.000+02:00
 categories: [ "Dibuixos" ]
 image: ./cover.webp
 draft: false
-tags: ["apego", "psicología"]
+tags: ["apego", "psicologia"]
 ---
 
 La idea general de la **teoría del apego** (John Bowlby, Mary Ainsworth) es que de pequeños nos vinculamos a figuras protectoras de las que recibimos (o no) una base segura para explorar el mundo. Si esas figuras transmiten seguridad, los niños crecen psicológicamente "sanos". Si no, delinquen o hacen dibujos.

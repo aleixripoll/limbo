@@ -50,7 +50,7 @@ const currentPosts = sortPostsByDate.filter((post) => {
     currentPosts.length > 0 && (
       <section class="section pt-8 mb-8">
         <div class="container text-center">
-          <h2 class="h3 mb-12 text-center">Artículos recientes</h2>
+          <h2 class="h3 mb-12 text-center uppercase font-light">Artículos recientes</h2>
           <div
             class={`row gy-4 ${
               currentPosts.length < 3 ? "justify-center" : ""
@@ -72,11 +72,11 @@ const currentPosts = sortPostsByDate.filter((post) => {
                     />
                   </a>
                 )}
-                <ul class="mt-4 flex flex-wrap items-center justify-center text-sm text-text dark:text-light">
-                  <li class="mb-2 mr-4 flex flex-wrap items-center font-medium">
+                <ul class="mt-4 flex flex-wrap items-center justify-center text-sm uppercase font-light">
+                  <!-- <li class="mb-2 mr-4 flex flex-wrap items-center font-medium">
                     <BiCalendarEdit className="mr-1 h-[16px] w-[16px]" />
                     <>{dateFormat(post.data.date)}</>
-                  </li>
+                  </li>-->
                   <li class="mb-2 mr-4 flex flex-wrap items-center">
                     <BiCategoryAlt className="mr-1 h-[16px] w-[16px]" />
                     <>
@@ -86,7 +86,7 @@ const currentPosts = sortPostsByDate.filter((post) => {
                             <li class="inline-block">
                               <a
                                 href={`${import.meta.env.BASE_URL}categories/${slugify(category)}`}
-                                class="mr-1 font-medium hover:text-primary"
+                                class="mr-1 hover:text-primary"
                               >
                                 {humanize(category)}{i !== post.data.categories.length - 1 && ","}
                               </a>

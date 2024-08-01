@@ -7,7 +7,7 @@ image_attribution:
     author: ThisIsEngineering
     url: https://www.pexels.com/ca-es/foto/mans-ma-tecnologia-ciencia-3913025/
 categories: ["literatura"]
-tags: ["ensayo", "historia", "filosofía", "lang-en"]
+tags: ["assaig", "historia", "filosofia", "lang-en"]
 draft: false
 date: 2021-06-07T19:14:00Z
 ---

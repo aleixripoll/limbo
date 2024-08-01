@@ -4,7 +4,7 @@ description: "Ensayo sobre sesgos cognitivos, por Daniel Kahneman."
 authors: ["Dr. Fenilalanino"]
 image: ./pensa.webp
 categories: ["literatura", "dibuixos"]
-tags: ["ensayo", "psicología", "neurociencia", "sesgos"]
+tags: ["assaig", "psicologia", "neurociència", "sesgos"]
 draft: false
 date: 2024-04-14T15:00:00Z
 ---

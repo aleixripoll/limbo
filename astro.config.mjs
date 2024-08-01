@@ -12,6 +12,10 @@ export default defineConfig({
   site: config.site.base_url,
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: "ignore",
+  i18n: {
+    defaultLocale: "ca",
+    locales: ["ca", "es", "en"],
+  },
   integrations: [
     react(),
     sitemap(),

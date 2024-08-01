@@ -4,7 +4,7 @@ description: Libro de Manuel Hernández Pacheco
 authors: ["Dra. Valina"]
 image: ./cover.webp
 categories: ["literatura", "dibuixos"]
-tags: ["ensayo", "psicología"]
+tags: ["assaig", "psicologia"]
 draft: false
 date: 2022-10-04T07:00:00Z
 ---

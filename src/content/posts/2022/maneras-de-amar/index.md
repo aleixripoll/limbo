@@ -7,7 +7,7 @@ image_attribution:
     author: KawaiiArt1980
     url: https://www.pexels.com/ca-es/foto/banc-amor-gent-relaxacio-1767434/
 categories: ["literatura"]
-tags: ["ensayo", "psicología", "neurociencia", "apego"]
+tags: ["assaig", "psicologia", "neurociència", "apego"]
 draft: false
 date: 2022-05-17T17:54:00Z
 ---

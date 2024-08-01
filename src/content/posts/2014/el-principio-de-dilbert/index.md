@@ -4,7 +4,7 @@ description: "Libro con tiras cómicas de Dilbert, de Scott Adams."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura"]
-tags: ["cómic", "humor"]
+tags: ["còmic", "humor"]
 draft: false
 date: 2014-11-14T14:20:00.000+01:00
 ---

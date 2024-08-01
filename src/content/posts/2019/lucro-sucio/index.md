@@ -4,7 +4,7 @@ description: "Economía para los que odian el capitalismo, por Joseph Heath."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["ensayo", "economía"]
+tags: ["assaig", "economia"]
 draft: false
 date: 2019-06-26T14:16:00Z
 ---

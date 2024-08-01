@@ -7,7 +7,7 @@ image_attribution:
     author: Jakson Martins
     url: https://www.pexels.com/ca-es/foto/foto-vertical-anonim-esfereidor-horripilant-3880049/
 categories: ["literatura"]
-tags: ["ensayo", "filosofía"]
+tags: ["assaig", "filosofia"]
 draft: false
 date: 2019-03-02T11:16:00Z
 ---

@@ -7,7 +7,7 @@ image_attribution:
     author: Nitin Arya
     url: https://www.pexels.com/ca-es/foto/fosc-llibre-llum-del-sol-pagines-1029141/
 categories: ["literatura"]
-tags: ["citas"]
+tags: ["quotes"]
 draft: false
 date: 2009-03-15T22:22:00.006+01:00
 ---

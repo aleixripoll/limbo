@@ -7,7 +7,7 @@ image_attribution:
   author: Austin Zhang
   url: https://www.pexels.com/ca-es/foto/vol-volant-edificis-gratacels-2441844/
 categories: ["literatura"]
-tags: ["novela", "sociedad"]
+tags: ["novela", "societat"]
 draft: false
 date: 2011-06-23T17:41:00.000+02:00
 ---

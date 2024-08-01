@@ -7,7 +7,7 @@ image_attribution:
     author: Min An
     url: https://www.pexels.com/ca-es/foto/aigua-barca-llac-riu-715567/
 categories: ["literatura"]
-tags: ["ensayo", "psicología"]
+tags: ["assaig", "psicologia"]
 draft: false
 date: 2022-06-12T17:37:00Z
 ---

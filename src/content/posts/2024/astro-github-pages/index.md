@@ -7,8 +7,8 @@ image: "./pexels-khizar-hayat-1114703.jpg"
 image_attribution:
     author: Khizar Hayat
     url: https://www.pexels.com/photo/gray-keypad-1114703/
-categories: ["apuntes"]
-tags: ["programación", "astro", "github"]
+categories: ["apunts"]
+tags: ["programació", "astro", "github"]
 draft: false
 date: 2024-02-20T07:00:00Z
 ---

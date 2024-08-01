@@ -7,7 +7,7 @@ image_attribution:
     author: Pixabay
     url: https://www.pexels.com/ca-es/foto/534216/
 categories: ["literatura"]
-tags: ["ensayo", "economía"]
+tags: ["assaig", "economia"]
 draft: false
 date: 2015-08-30T15:19:00.003+02:00
 ---

@@ -4,7 +4,7 @@ description: "La vida después del consumismo, por Glòria de Castro."
 authors: ["Dra. Valina"]
 image: ./cover.webp
 categories: ["literatura", "dibuixos"]
-tags: ["novela", "humor", "sociedad"]
+tags: ["novela", "humor", "societat"]
 draft: false
 date: 2022-10-30T07:03:00Z
 ---

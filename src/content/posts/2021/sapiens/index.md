@@ -4,7 +4,7 @@ description: "Historia de la humanidad con un toque de filosofía, por Yuval Noa
 authors: ["Dra. Valina"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["ensayo", "historia", "filosofía", "lang-en"]
+tags: ["assaig", "historia", "filosofia", "lang-en"]
 draft: false
 date: 2021-02-25T09:14:00Z
 ---

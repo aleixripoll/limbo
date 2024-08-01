@@ -7,7 +7,7 @@ image_attribution:
   author: Pavel Danilyuk
   url: https://www.pexels.com/ca-es/foto/tecnologia-vi-sostenint-recerca-8439176/
 categories: ["literatura"]
-tags: ["novela", "humor", "ciencia ficción"]
+tags: ["novela", "humor", "ciència ficció"]
 draft: false
 date: 2008-06-05T11:54:00.022+02:00
 ---

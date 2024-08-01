@@ -8,7 +8,7 @@ image_attribution:
   site: Unsplash
   url: https://unsplash.com/photos/bird-on-tree-uG7SdA0VXhM
 categories: ["literatura"]
-tags: ["ensayo", "psicología"]
+tags: ["assaig", "psicologia"]
 draft: false
 date: 2008-05-31T11:55:00.007+02:00
 ---

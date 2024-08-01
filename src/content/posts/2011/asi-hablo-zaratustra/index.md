@@ -7,7 +7,7 @@ image_attribution:
   author: Mayu
   url: https://www.pexels.com/ca-es/foto/alba-cel-ennuvolat-silueta-6348820/
 categories: ["literatura"]
-tags: ["ensayo", "filosofía"]
+tags: ["assaig", "filosofia"]
 draft: false
 date: 2011-05-14T11:39:00.006+02:00
 ---

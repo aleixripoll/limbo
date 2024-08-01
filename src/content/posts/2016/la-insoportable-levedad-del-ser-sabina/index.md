@@ -7,7 +7,7 @@ image_attribution:
     author: Alexander Krivitskiy
     url: https://www.pexels.com/ca-es/foto/blanc-i-negre-persona-dona-nena-1399073/
 categories: ["literatura"]
-tags: ["novela", "sociedad", "filosofía"]
+tags: ["novela", "societat", "filosofia"]
 draft: false
 date: 2016-03-16T12:39:00Z
 ---

@@ -7,7 +7,7 @@ image_attribution:
     author: Janko Ferlic
     url: https://www.pexels.com/ca-es/foto/llums-llibres-desenfocament-bombeta-590493/
 categories: ["literatura"]
-tags: ["citas"]
+tags: ["quotes"]
 draft: false
 date: 2009-03-17T22:28:00.003+01:00
 ---

@@ -8,7 +8,7 @@ image_attribution:
   site: Pixabay
   url: https://pixabay.com/es/illustrations/m%C3%B3vil-smartphone-app-redes-1087845/
 categories: ["literatura"]
-tags: ["novela", "sociedad", "marketing"]
+tags: ["novela", "societat", "marketing"]
 draft: false
 date: 2011-05-16T11:09:00.001+02:00
 ---

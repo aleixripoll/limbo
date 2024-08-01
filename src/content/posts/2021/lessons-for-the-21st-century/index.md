@@ -7,7 +7,7 @@ image_attribution:
     author: Suzy Hazelwood
     url: https://www.pexels.com/ca-es/foto/1098515/
 categories: ["literatura"]
-tags: ["ensayo", "historia", "filosofía", "lang-en"]
+tags: ["assaig", "historia", "filosofia", "lang-en"]
 draft: false
 date: 2021-10-07T20:23:00Z
 ---
