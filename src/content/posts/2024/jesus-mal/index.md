@@ -25,4 +25,4 @@ Jesús no mira las estrellas. No seas como Jesús.
 
 Jesús sale de casa sin rebequita. No seas como Jesús.
 
-![Jesús 103: Si sales coge una rebequita](jesus_pluja.webp "Jesús 102: Si sales coge una rebequita")
+![Jesús 103: Si sales coge una rebequita](jesus_pluja.webp "Jesús 103: Si sales coge una rebequita")
