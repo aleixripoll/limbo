@@ -8,7 +8,7 @@ image_attribution:
   site: Pixabay
   url: https://pixabay.com/es/photos/ascensores-berlina-1598431/
 categories: ["literatura"]
-tags: ["assaig", "societat", "biología"]
+tags: ["assaig", "societat", "biologia"]
 draft: false
 date: 2013-07-14T14:53:00.000+02:00
 ---
@@ -18,7 +18,7 @@ La primera ley de la termodinámica establece que la energía del universo es co
 
 Las sociedades se organizan y se mantienen convirtiendo la energía disponible del medio en energía para sustentar la vida humana. (...) Pero si la energía se transforma continuamente pasando de un estado disponible a un estado no disponible, del orden al desorden, de concentración a la dispersión, ¿cómo se explica el hecho de que la vida y los sistemas sociales parezcan mantener un nivel elevado de orden y de energía en aparente contradicción con los dictados de la termodinámica?
 
-Hasta que el eminente científico Harold Blum encontró la manera de hacer encajar la biología en el marco general de las leyes de la termodinámica, los biólogos no habían sabido explicar lo que parecía ser una anomalía en los casos de la vida y las estructuras sociales. (...)
+Hasta que el eminente científico Harold Blum encontró la manera de hacer encajar la biologia en el marco general de las leyes de la termodinámica, los biólogos no habían sabido explicar lo que parecía ser una anomalía en los casos de la vida y las estructuras sociales. (...)
 
 Según Blum, todos los seres vivos están muy lejos del equilibrio: se alimentan sin cesar de la energía disponible en el medio, pero a costa de aumentar la entropía global de ese medio. Este proceso funciona como se explica a continuación. El sol es la fuente de energía libre. Las plantas toman energía del sol por medio de la fotosíntesis y ofrecen una forma de energía concentrada, directamente a los animales que se alimentan de plantas, e indirectamente a los animales que se alimentan de otros animales. Nos mantenemos vivos procesando energía en nuesto cuerpo sin cesar. Si el flujo de energía se detuviera acabaríamos muertos, es decir, en un estado de equilibrio. Por lo tanto, la vida es un ejemplo de sistema termodinámico que no se halla en equilibrio.
 

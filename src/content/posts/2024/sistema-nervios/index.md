@@ -1,17 +1,13 @@
 ---
-title: "Sistema nervioso"
-slug: sistema-nervioso
-description: "Resumen de subdivisiones."
+title: "Sistema nerviós"
+slug: sistema-nervios
+description: "Resum de subdivisions."
 authors: ["Dr. Fenilalanino"]
-image: ./brain-8743254_1280.jpg
-image_attribution:
-    author: Gerd Altmann
-    site: Pixabay
-    url: https://pixabay.com/es/illustrations/cerebro-explosi%C3%B3n-big-bang-8743254/
-categories: ["apunts"]
-tags: ["biología", "neurociència"]
+image: ./cover.webp
+categories: ["apunts", "dibuixos"]
+tags: ["biologia", "neurociència"]
 draft: false
-date: 2024-04-17T20:00:00Z
+date: 2024-08-07T20:00:00Z
 ---
 
 El sistema nervioso se clasifica por ubicación y por función.
@@ -37,3 +33,6 @@ Acciones involuntarias, se subdivide en:
   - **Simpático:** Cuerpo en modo "activo" (contracción músculo liso, secreción glándulas, acelera respiración y ritmo cardíaco).
   - **Parasimpático:** Cuerpo en modo "reposo" (digestión, ralentiza respiración y ritmo cardíaco).
   - **Entérico:** Motilidad intestinal.
+
+
+![Sistema nerviós diagrama](sistema_nervios.webp "Sistema nerviós diagrama")
