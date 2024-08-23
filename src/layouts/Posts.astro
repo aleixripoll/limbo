@@ -42,8 +42,8 @@ const { className, posts, fluid } = Astro.props;
               } object-cover`}
               src={post.data.image}
               alt={post.data.title}
-              width={i < 2 ? 650 : 325}  // 2n/3 * 1.3
-              height={i < 2 ? 500 : 250}
+              width="600"
+              height="280"
             />
           </a>
         )}
