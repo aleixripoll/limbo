@@ -40,7 +40,7 @@ Por regla general, cuanto más complejos sean los carbohidratos, mejor (granos e
 ### Proteínas
 Macronutriente formado por cadenas de más de 50 **aminoácidos**.
 
-> Los aminoácidos son moléculas formadas por átomos de carbono, nitrógeno, hidrógeno y oxígeno, y en algunos casos azufre. Un dipéptido está formado por 2 aminoácidos, un tripéptido por 3, un polipéptido contiene entre 10 y 50 y una proteína más de 50.
+> Los aminoácidos son moléculas de carbono, nitrógeno, hidrógeno y oxígeno (y en algunos casos azufre). Un dipéptido está formado por 2 aminoácidos, un tripéptido por 3, un polipéptido contiene entre 10 y 50 y una proteína más de 50.
 
 Existen 21 aminoácidos divididos en 2 grupos:
 
@@ -53,12 +53,12 @@ Una **proteína completa** es aquella que contiene los 9 aminoácidos esenciales
 
 
 ### Grasas
-Son cadenas de ácidos grasos con una cantidad variable de grupos `-CH-` (cadenas hidrocarbonadas). Estos grupos `-CH-` están unidos entre ellos por enlaces simples o dobles. Cuantos más grupos `-CH-` y menos dobles enlaces haya en la cadena, mayor es su saturación y menor su solubilidad.
+Son cadenas de ácidos grasos con una cantidad variable de grupos `-CH-` (cadenas hidrocarbonadas). Los grupos `-CH-` están unidos entre ellos por enlaces simples o dobles. Los enlaces dobles són más fuertes pero al mismo tiempo no permiten que la molécula se compacte tanto como con los simples, así que paradójicamente la actividad enzimática es más efectiva en los ácidos grasos con enlaces dobles.
 
-Todos las alimentos tienen varios tipos de grasa en diferente proporción.
+El resultado es que a mayor longitud de cadena y menor cantidad de dobles enlaces, mayor saturación del ácido graso.
 
 #### Insaturadas
-Existe al menos un doble enlace. Son **líquidas** a temperatura ambiente. Se encuentran en **aceites vegetales, frutos secos y semillas**. Beneficios:
+Existe al menos un doble enlace, por lo tanto menor compactación y son **líquidas** a temperatura ambiente. Se encuentran en **aceites vegetales, frutos secos y semillas**. Beneficios:
 
 - Mejoran los niveles de colesterol en sangre (ratio LDL/HDL).
 - Reducen inflamación.
@@ -70,7 +70,7 @@ Se subdividen en:
 - **Poliinsaturadas:** 2 o más dobles enlaces. En este grupo encontramos los ácidos grasos esenciales **omega 3, 6 y 9**, que no pueden ser sintetizados por el cuerpo. **Fuentes:** girasol, soja, maíz, nueces, pescado.
 
 #### Saturadas
-Carecen de dobles enlaces entre los átomos de carbono. Son **sólidas** a temperatura ambiente.
+Carecen de dobles enlaces entre los átomos de carbono, por lo tanto mayor compactación y son **sólidas** a temperatura ambiente.
 
 **Fuentes:** carne (ternera, bacon, hamburguesas, salchichas), lácteos, galletas, helados, mantequilla, queso, aceite de palma y coco.
 
