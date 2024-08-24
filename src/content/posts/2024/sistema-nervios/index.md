@@ -3,7 +3,7 @@ title: "Sistema nerviós"
 slug: sistema-nervios
 description: "Resum de subdivisions."
 authors: ["Dr. Fenilalanino"]
-image: ./cover.webp
+image: ./cover.jpeg
 categories: ["apunts", "dibuixos"]
 tags: ["biologia", "neurociència"]
 draft: false
@@ -35,4 +35,4 @@ Acciones involuntarias, se subdivide en:
   - **Entérico:** Motilidad intestinal.
 
 
-![Sistema nerviós diagrama](sistema_nervios.webp "Sistema nerviós diagrama")
+![Sistema nerviós diagrama](sistema_nervios.jpeg "Sistema nerviós diagrama")
