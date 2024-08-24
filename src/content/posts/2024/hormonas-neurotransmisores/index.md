@@ -42,12 +42,12 @@ Los ovarios segregan **estrógeno** (ciclo menstrual, diferenciación sexual), *
 ## Neurotransmisores
 Son sustancias químicas utilizadas para enviar información entre neuronas.
 
-La neurona que libera el neurotransmisor es la célula **presináptica**, la que tiene los receptores para el neurotransmisor se llama célula **postsináptica** y el espacio entre ambas es el **espacio sináptico**.
+La neurona que libera el neurotransmisor es la célula **presináptica**, la que tiene los receptores para el neurotransmisor es la célula **postsináptica** y el espacio entre ambas es el **espacio sináptico**.
 
 Algunos neurotransmisores actúan también como hormonas, como ocurre con las **catecolaminas** (adrenalina, noradrenalina y dopamina), que son vertidas al torrente sanguíneo ejerciendo un efecto hormonal y, al mismo tiempo, son liberadas en las terminaciones nerviosas, actuando como neurotransmisores. Reciben el nombre de **neurohormonas**.
 
 ## Diferencias
-- La hormona actúa a larga distancia, el neutotransmisor solo afecta a la neurona contigua.
+- La hormona actúa a larga distancia, el neurotransmisor solo afecta a la neurona contigua.
 - El efecto de las hormonas tiene una duración superior.
 - El neurotransmisor solo actúa sobre el sistema nervioso, la hormona puede alterar cualquier función del cuerpo.
 
