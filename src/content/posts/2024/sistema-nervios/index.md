@@ -1,7 +1,7 @@
 ---
-title: "Sistema nerviós"
-slug: sistema-nervios
-description: "Resum de subdivisions."
+title: "Sistema nervioso"
+slug: sistema-nervioso
+description: "Resumen de subdivisiones."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpeg
 categories: ["apunts", "dibuixos"]
@@ -10,29 +10,24 @@ draft: false
 date: 2024-08-07T20:00:00Z
 ---
 
-El sistema nervioso se clasifica por ubicación y por función.
+## Central
+Protegido por hueso, se divide en [encéfalo](https://es.wikipedia.org/wiki/Enc%C3%A9falo) y [médula espinal](https://es.wikipedia.org/wiki/M%C3%A9dula_espinal).
 
-### División anatómica
+## Periférico
+Nervios que salen de la médula. Se subdivide en autónomo y somático.
 
-- **Central**: Protegido por hueso, se divide en **médula espinal** y **encéfalo** (cerebro, cerebelo, tallo encefálico).
-
-- **Periférico**: Nervios que salen de la médula.
-
-
-### División funcional
-
-#### Somático
-Acciones voluntarias, se subdivide en:
-
-  - **Sensitivo o aferente:** Información sensorial (tacto, dolor), los impulsos eléctricos viajan hacia el cerebro.
-  - **Motor o eferente:** Movimiento del músculo esquelético, los impulsos eléctricos viajan desde el cerebro.
-
-#### Autónomo
-Acciones involuntarias, se subdivide en:
+### Autónomo
+Acciones **involuntarias**, se subdivide en:
 
   - **Simpático:** Cuerpo en modo "activo" (contracción músculo liso, secreción glándulas, acelera respiración y ritmo cardíaco).
   - **Parasimpático:** Cuerpo en modo "reposo" (digestión, ralentiza respiración y ritmo cardíaco).
   - **Entérico:** Motilidad intestinal.
+
+### Somático
+Acciones **voluntarias**, se subdivide en:
+
+- **Sensitivo** o aferente: Información sensorial (tacto, dolor), los impulsos eléctricos viajan **hacia** el cerebro.
+- **Motor** o eferente: Movimiento del músculo esquelético, los impulsos eléctricos viajan **desde** el cerebro.
 
 
 ![Sistema nerviós diagrama](sistema_nervios.jpeg "Sistema nerviós diagrama")
