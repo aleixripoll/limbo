@@ -11,7 +11,7 @@ date: 2024-01-04T07:00:00Z
 ---
 
 ### Información general
-- Es una vitamina **[liposoluble](../vitaminas-general)**.
+- Es una vitamina **[liposoluble](../vitaminas-101)**.
 - No podemos producirla, debemos obtenerla de alimentos de origen animal (**retinoides**) o de origen vegetal (**carotenoides**).
 
 ### Retinoides

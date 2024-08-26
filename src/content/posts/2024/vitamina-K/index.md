@@ -15,7 +15,7 @@ date: 2024-02-25T07:00:00Z
 ---
 
 ### Información general
-- Es una vitamina [liposoluble](../vitaminas-general).
+- Es una vitamina [liposoluble](../vitaminas-101).
 - Se encuentra en dos formas: **filoquinona**, de origen vegetal, y **menaquinona**, de origen animal, que también puede ser producida por bacterias de nuestro cuerpo. 
 
 ### Funciones

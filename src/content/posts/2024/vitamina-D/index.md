@@ -14,7 +14,7 @@ date: 2024-02-18T07:00:00Z
 ---
 
 ### Información general
-- Es una vitamina [liposoluble](../vitaminas-general).
+- Es una vitamina [liposoluble](../vitaminas-101).
 - Se comporta como una hormona (actua como mensajero químico).
 - Se encuentra en dos formas: D2, **ergocalciferol**, de origen vegetal, y D3, **colecalciferol**, de origen animal.
 

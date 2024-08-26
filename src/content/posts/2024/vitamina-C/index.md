@@ -15,7 +15,7 @@ date: 2024-03-01T07:00:00Z
 ---
 
 ### Información general
-- Es una vitamina **[hidrosoluble](../vitaminas-general)**.
+- Es una vitamina **[hidrosoluble](../vitaminas-101)**.
 - Se obtiene de alimentos de **origen vegetal**.
 
 ### Funciones
