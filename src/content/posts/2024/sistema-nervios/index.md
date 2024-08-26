@@ -30,4 +30,4 @@ Acciones **voluntarias**, se subdivide en:
 - **Motor** o eferente: Movimiento del músculo esquelético, los impulsos eléctricos viajan **desde** el cerebro.
 
 
-![Sistema nerviós diagrama](sistema_nervios.jpeg "Sistema nerviós diagrama")
+![Sistema nerviós diagrama](sistema_nervios.webp "Sistema nerviós diagrama")
