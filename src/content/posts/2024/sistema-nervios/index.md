@@ -3,7 +3,7 @@ title: "Sistema nervioso"
 slug: sistema-nervioso
 description: "Resumen de subdivisiones."
 authors: ["Dr. Fenilalanino"]
-image: ./cover.jpeg
+image: ./cover.webp
 categories: ["apunts", "dibuixos"]
 tags: ["biologia", "neurociència"]
 draft: false
