@@ -1,5 +1,5 @@
 ---
-title: "El mesías de Dune"
+title: "Dune"
 description: "Silence."
 authors: ["Dr. Fenilalanino"]
 image: ./dune_silence.webp
