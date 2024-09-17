@@ -1,7 +1,7 @@
 ---
 title: "Vitamina K"
 slug: vitamina-k
-description: "K de koagulation (coagulación) en alemán."
+description: "La que (k)oagula."
 authors: ["Dra. Valina"]
 image: "./lettuce-8743189_1280.jpg"
 image_attribution:

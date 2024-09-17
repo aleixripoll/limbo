@@ -1,7 +1,7 @@
 ---
 title: "Vitamina A"
 slug: vitamina-a
-description: "Algunos datos para romper el hielo en las fiestas."
+description: "La de la vista."
 authors: ["Dr. Fenilalanino"]
 image: "./vitamina_A.webp"
 categories: ["apunts", "dibuixos"]

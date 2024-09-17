@@ -1,6 +1,6 @@
 ---
-title: "Vitaminas 101"
-slug: vitaminas-101
+title: "Vitaminas"
+slug: vitaminas-general
 description: "Visión general."
 authors: ["Dra. Valina"]
 image: "./vitaminas.webp"
