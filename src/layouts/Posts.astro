@@ -19,94 +19,29 @@ const { className, posts, fluid } = Astro.props;
 ---
 
 <div
-  class={`text-center row gy-5 gx-4 ${className} ${
-    posts.length == 1 ? "justify-center" : ""
-  } `}
+  class="columns-1 sm:columns-2 lg:columns-3 mb-8 text-center"
 >
   {
     posts.map((post: any, i: number) => (
-      <div
-        class={`col-12 px-0 sm:px-3 md:mt-8 sm:col-6 ${
-          i < 2 && fluid != false ? "" : "md:col-4"
-        }
-        `}
-      >
+      <div class="inline-block py-2">
         {post.data.image && (
           <a
             href={`${import.meta.env.BASE_URL}${post.slug}`}
-            class="group block overflow-hidden hover:text-primary sm:rounded-md"
+            class="group sm:rounded-md"
           >
+            <div class="overflow-hidden rounded-lg">
             <Image
-              class={`max-h-48 w-full grayscale-[10%] transition duration-300 group-hover:scale-[1.05] ${
-                i < 2 && fluid != false ? "sm:max-h-56" : "sm:max-h-36"
-              } object-cover`}
+              class="h-auto max-w-full transition duration-300 group-hover:scale-[1.05] object-cover"
               src={post.data.image}
               alt={post.data.title}
-              width="600"
-              height="280"
+              width="400"
             />
-          </a>
-        )}
-        <ul class="mb-1 mt-3 flex flex-wrap items-center justify-center uppercase text-sm font-light">
-          {/*<li class="mr-5">
-            {authors
-              .filter((author: any) =>
-                post.data.authors
-                  .map((author: string) => slugify(author))
-                  .includes(slugify(author.data.title))
-              )
-              .map((author: any) => (
-                <a
-                  href={`${import.meta.env.BASE_URL}authors/${slugify(author.data.title)}`}
-                  class="flex items-center font-medium hover:text-primary"
-                >
-                  {authorImages[author.data.image] && (
-                    <Image
-                      src={authorImages[author.data.image]()}
-                      alt={author.data.title}
-                      height={50}
-                      width={50}
-                      class="mr-2 h-6 w-6 rounded-full"
-                    />
-                  )}
-                  <BiUser className="mr-1 h-[18px] w-[18px]" />
-                  <span>{author.data.title}</span>
-                </a>
-              ))}
-          </li>*/}
-          {/* <li class="mr-5 flex flex-wrap items-center font-medium">
-            <BiCalendarEdit className="mr-1 h-5 w-5" />
-            <>{dateFormat(post.data.date)}</>
-          </li>*/}
-          <li class="flex flex-wrap items-center">
-            <BiCategoryAlt className="h-[18px] w-[18px] pr-1" />
-            <>
-              <ul>
-                {post.data.categories.map((category: string, i: number) => (
-                  <li class="inline-block">
-                    <a
-                      href={`${import.meta.env.BASE_URL}categories/${slugify(
-                        category
-                      )}`}
-                      class="mr-1 hover:text-primary"
-                    >
-                      {humanize(category)}{i !== post.data.categories.length - 1 && ","}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </>
-          </li>
-        </ul>
-        <h3 class={`mt-2 text-2xl ${i < 2 || fluid === false ? "md:text-2xl" : "md:text-xl"}`}>
-          <a
-            href={`${import.meta.env.BASE_URL}${post.slug}`}
-            class="block px-2 hover:text-primary"
-          >
+            </div>
+            <h3 class={`text-center mt-2 text-xl group-hover:text-primary`}>
+
             {post.data.title}
-          </a>
         </h3>
-        <p class={`px-2 my-1 ${i < 2 && fluid != false ? "md:text-xl md:mb-6" : ""}`}>
+        <p class="text-center px-2 mb-6 sm:mb-2">
           {post.data.description
             ? post.data.description
             : post.body?.slice(
@@ -114,6 +49,8 @@ const { className, posts, fluid } = Astro.props;
                 Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
               ) + "..."}
         </p>
+          </a>
+        )}
       </div>
     ))
   }
