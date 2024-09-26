@@ -1,7 +1,7 @@
 ---
 title: "Cereales para pan"
 slug: cereales-pan
-description: "Comparativa de trigo contra todos."
+description: "Trigo contra todos."
 authors: ["Dra. Valina"]
 image: ./pexels-pixabay-162769.jpg
 image_attribution:

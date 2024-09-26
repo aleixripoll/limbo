@@ -23,7 +23,7 @@ const { className, posts, fluid } = Astro.props;
 >
   {
     posts.map((post: any, i: number) => (
-      <div class="inline-block py-2">
+      <div class="inline-block py-2 px-1">
         {post.data.image && (
           <a href={`${import.meta.env.BASE_URL}${post.slug}`} class="group">
             <div class="overflow-hidden rounded-lg">

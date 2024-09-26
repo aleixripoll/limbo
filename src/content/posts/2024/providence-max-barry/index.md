@@ -1,7 +1,7 @@
 ---
 title: "Providence"
 slug: providence-max-barry
-description: "Novela espacial de Max Barry."
+description: "Novela de Max Barry."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["literatura"]
