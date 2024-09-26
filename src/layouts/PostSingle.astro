@@ -95,10 +95,10 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
           image && (
             <Image
               src={image}
-              widths={[240, 540, 720, 1080]}
-              sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, 1080px`}
+              widths={[720, 1080]}
+              sizes={`(max-width: 720px), 1080px`}
               alt={title}
-              class="sm:rounded-lg max-h-[150lvh] w-auto"
+              class="sm:rounded-lg max-h-[110vh] w-full"
             />
           )
         }
