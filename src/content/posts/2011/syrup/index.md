@@ -1,10 +1,10 @@
 ---
 title: "Syrup"
-description: "Primera novela de Max Barry."
+description: "Primera novel·la de Max Barry."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["novela", "marketing", "humor", "lang-en"]
+tags: ["marketing", "humor", "lang-en"]
 draft: false
 date: 2011-11-17T23:49:00.001+01:00
 ---

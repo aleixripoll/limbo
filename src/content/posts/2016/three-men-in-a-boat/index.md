@@ -7,7 +7,7 @@ image_attribution:
     author: Vietnamese Private Tours
     url: https://www.pexels.com/ca-es/foto/1162639/
 categories: ["literatura"]
-tags: ["novela", "humor", "lang-en"]
+tags: ["humor", "lang-en"]
 draft: false
 date: 2016-05-21T19:18:00.002+02:00
 ---

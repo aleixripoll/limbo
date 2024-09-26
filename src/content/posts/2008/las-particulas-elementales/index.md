@@ -8,7 +8,7 @@ image_attribution:
     site: Pixabay
     url: https://pixabay.com/es/illustrations/ai-generado-cerebro-explosi%C3%B3n-8408141/
 categories: ["literatura"]
-tags: ["novela", "societat"]
+tags: ["societat"]
 draft: false
 date: 2008-05-31T16:21:00.019+02:00
 ---

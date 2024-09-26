@@ -1,10 +1,10 @@
 ---
 title: "Cosmos (Pale blue dot)"
-description: "Serie escrita, producida y presentada por Carl Sagan."
+description: "Sèrie de Carl Sagan."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["cine"]
-tags: ["serie TV", "ciència", "lang-en"]
+tags: ["sèrie TV", "ciència", "lang-en"]
 draft: false
 date: 2015-11-29T13:05:00.001+01:00
 ---

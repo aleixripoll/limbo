@@ -7,7 +7,7 @@ image_attribution:
     author: Gotta Be Worth It
     url: https://www.pexels.com/ca-es/foto/919179/
 categories: ["literatura"]
-tags: ["novela", "filosofia", "societat", "lang-en"]
+tags: ["filosofia", "societat", "lang-en"]
 draft: false
 date: 2020-04-26T15:45:00Z
 ---

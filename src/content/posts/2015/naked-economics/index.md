@@ -1,6 +1,6 @@
 ---
 title: "Naked economics"
-description: "Cómo funciona la economía, por Charles Wheelan."
+description: "Com funciona l'economia, per Charles Wheelan."
 authors: ["Dr. Fenilalanino"]
 image: ./pexels-pixabay-534216.jpg
 image_attribution:

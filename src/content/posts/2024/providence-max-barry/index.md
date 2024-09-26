@@ -1,14 +1,14 @@
 ---
 title: "Providence"
 slug: providence-max-barry
-description: "Michael Crichton con plus de existencialismo, por Max Barry."
+description: "Novela espacial de Max Barry."
 authors: ["Dr. Fenilalanino"]
 image: ./pexels-edvin-richardson-796206.jpg
 image_attribution:
     author: Edvin Richardson
     url: https://www.pexels.com/photo/space-shuttle-launch-during-nighttime-796206/
 categories: ["literatura"]
-tags: ["novela", "psicologia", "existencialisme", "ciència ficció", "lang-en"]
+tags: ["psicologia", "existencialisme", "ciència ficció", "lang-en"]
 draft: false
 date: 2024-02-28T07:00:00Z
 ---

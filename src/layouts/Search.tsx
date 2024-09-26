@@ -106,7 +106,7 @@ export default function SearchBar({ searchList }: Props) {
               </a>
             )}
 
-            <ul className="mt-4 mb-2 flex flex-wrap items-center justify-center">
+            <ul className="mt-2 flex flex-wrap items-center justify-center">
               {/*<li className="mr-5 flex items-center flex-wrap">
                 <BiUser className="mr-1 h-[18px] w-[18px]" />
                 <>
@@ -128,7 +128,7 @@ export default function SearchBar({ searchList }: Props) {
                 <BiCalendarEdit className="mr-1 h-5 w-5" />
                 <>{dateFormat(item.data.date)}</>
               </li>*/}
-              <li className="flex items-center flex-wrap">
+              <li className="flex items-center flex-wrap font-thin">
                 <BiCategoryAlt className="pr-1 h-[18px] w-[18px]" />
                 <>
                   <ul>
@@ -136,7 +136,7 @@ export default function SearchBar({ searchList }: Props) {
                       <li className="inline-block">
                         <a
                           href={`${import.meta.env.BASE_URL}categories/${slugify(category)}`}
-                          className="mr-2 hover:text-primary font-medium"
+                          className="mr-2 hover:text-primary"
                         >
                           {humanize(category)}{i !== item.data.categories.length - 1 && ","}
                         </a>
@@ -147,7 +147,7 @@ export default function SearchBar({ searchList }: Props) {
               </li>
             </ul>
 
-            <h3 className="mb-2 text-2xl">
+            <h3 className="mb-1 text-2xl">
               <a href={`${import.meta.env.BASE_URL}${item.slug}`} className="block hover:text-primary transition duration-300">
                 {item.data.title}
               </a>

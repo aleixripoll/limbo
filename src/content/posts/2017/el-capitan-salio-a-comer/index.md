@@ -7,7 +7,7 @@ image_attribution:
     author: Pixabay
     url: https://www.pexels.com/ca-es/foto/fusta-barca-navegant-vaixell-275637/
 categories: ["literatura"]
-tags: ["novela", "societat"]
+tags: ["societat"]
 draft: false
 date: 2017-08-12T12:24:00Z
 ---

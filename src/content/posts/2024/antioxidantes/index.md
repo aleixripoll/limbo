@@ -1,7 +1,7 @@
 ---
 title: "Antioxidantes"
 slug: antioxidantes
-description: "Hablar de ellos está bien, saber qué son está mejor."
+description: "Radicales libres y estrés oxidativo."
 authors: ["Dr. Fenilalanino"]
 image: ./fruit-8750860_1280.jpg
 image_attribution:

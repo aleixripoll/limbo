@@ -1,7 +1,7 @@
 ---
 title: "Vitamina A"
 slug: vitamina-a
-description: "La de la vista."
+description: "Retinol 101."
 authors: ["Dr. Fenilalanino"]
 image: "./vitamina_A.webp"
 categories: ["apunts", "dibuixos"]

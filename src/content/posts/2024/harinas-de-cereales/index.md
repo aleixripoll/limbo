@@ -1,7 +1,7 @@
 ---
-title: "Cereales panificables"
-slug: cereales-panificables
-description: "Trigo contra todos."
+title: "Cereales para pan"
+slug: cereales-pan
+description: "Comparativa de trigo contra todos."
 authors: ["Dra. Valina"]
 image: ./pexels-pixabay-162769.jpg
 image_attribution:

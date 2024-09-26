@@ -8,7 +8,7 @@ image_attribution:
     site: Pixabay
     url: https://pixabay.com/es/illustrations/ai-generado-libros-biblioteca-vela-8776335/
 categories: ["literatura"]
-tags: ["quotes"]
+tags: ["frases"]
 draft: false
 date: 2009-04-04T23:09:00.005+02:00
 ---

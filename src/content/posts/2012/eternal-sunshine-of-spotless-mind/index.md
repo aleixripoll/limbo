@@ -1,6 +1,6 @@
 ---
 title: "Eternal sunshine of the spotless mind"
-description: "Sobrevalorada pero bien."
+description: "Pel·lícula de Michel Gondry, guió de Charlie Kaufman."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["cine"]

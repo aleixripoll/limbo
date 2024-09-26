@@ -1,6 +1,6 @@
 ---
 title: "Things the grandchildren should know"
-description: "Autobiografía de Mark Oliver Everett, cantante y guitarrista de los Eels."
+description: "Autobiografia de Mark Oliver Everett, cantant dels Eels."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura"]

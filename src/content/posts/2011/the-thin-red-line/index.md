@@ -1,6 +1,6 @@
 ---
 title: "The Thin Red Line"
-description: "Película de Terrence Malick, basada en la novela de James Jones."
+description: "Pel·lícula de Terrence Malick basada en la novel·la de James Jones."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]

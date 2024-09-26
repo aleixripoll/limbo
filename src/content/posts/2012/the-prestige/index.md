@@ -1,6 +1,6 @@
 ---
 title: "The Prestige"
-description: "Are you watching closely? Película de Christopher Nolan."
+description: "Are you watching closely? Pel·lícula de Christopher Nolan."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]

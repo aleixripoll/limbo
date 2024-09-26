@@ -8,7 +8,7 @@ image_attribution:
     site: Unsplash
     url: https://unsplash.com/photos/flat-ray-photography-of-book-pencil-camera-and-with-lens-3OiYMgDKJ6k
 categories: ["literatura"]
-tags: ["novela", "lang-cat"]
+tags: ["lang-cat"]
 draft: false
 date: 2019-04-04T18:13:00Z
 ---

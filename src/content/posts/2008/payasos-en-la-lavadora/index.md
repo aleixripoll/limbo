@@ -8,7 +8,7 @@ image_attribution:
     site: Unsplash
     url: https://unsplash.com/photos/Hs951eXWbow
 categories: ["literatura"]
-tags: ["novela", "societat"]
+tags: ["societat"]
 draft: false
 date: 2008-05-31T11:44:00.008+02:00
 ---

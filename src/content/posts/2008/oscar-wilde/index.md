@@ -4,7 +4,7 @@ description: "1854 - 1900"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura"]
-tags: ["quotes"]
+tags: ["frases"]
 draft: false
 date: 2008-06-05T10:47:00.000+02:00
 ---

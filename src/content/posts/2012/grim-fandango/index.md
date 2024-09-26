@@ -1,6 +1,6 @@
 ---
 title: "Grim Fandango"
-description: "Point and click nostalgia, por Lucasarts."
+description: "Point and click nostalgia, per Lucasarts."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["jocs"]

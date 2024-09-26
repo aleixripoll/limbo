@@ -4,7 +4,7 @@ description: "Anime de Ichirō Ōkouchi."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]
-tags: ["serie TV", "anime", "lang-en"]
+tags: ["sèrie TV", "anime", "lang-en"]
 draft: false
 date: 2011-06-06T21:25:00.007+02:00
 ---

@@ -4,7 +4,7 @@ description: "Novela de Antoine de Saint-Exupéry."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura"]
-tags: ["novela", "filosofia"]
+tags: ["filosofia"]
 draft: false
 date: 2008-05-31T12:11:00.015+02:00
 ---

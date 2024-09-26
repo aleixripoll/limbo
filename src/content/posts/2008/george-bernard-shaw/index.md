@@ -4,7 +4,7 @@ description: "1856 - 1950"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["quotes", "filosofia"]
+tags: ["frases", "filosofia"]
 draft: false
 date: 2008-06-06T09:35:00.000+02:00
 ---

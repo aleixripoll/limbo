@@ -7,7 +7,7 @@ image_attribution:
     author: eberhard grossgasteiger
     url: https://www.pexels.com/ca-es/foto/1612461/
 categories: ["literatura"]
-tags: ["novela", "humor", "lang-cat"]
+tags: ["humor", "lang-cat"]
 draft: false
 date: 2023-03-04T18:15:00Z
 ---

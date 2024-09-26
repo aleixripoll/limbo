@@ -8,7 +8,7 @@ image_attribution:
     site: Unsplash
     url: https://unsplash.com/photos/view-of-floating-open-book-from-stacked-books-in-library-HH4WBGNyltc
 categories: ["literatura"]
-tags: ["quotes", "filosofia"]
+tags: ["frases", "filosofia"]
 draft: false
 date: 2009-04-10T17:23:00.008+02:00
 ---

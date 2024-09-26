@@ -4,7 +4,7 @@ description: "Novela de Chuck Palahniuk, película de David Fincher."
 authors: ["Dr. Fenilalanino"]
 image: ./fight_club_edward_norton.avif
 categories: ["literatura", "cine"]
-tags: ["novela", "societat"]
+tags: []
 draft: false
 date: 2008-06-02T16:20:00.016+02:00
 ---

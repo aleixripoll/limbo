@@ -1,10 +1,10 @@
 ---
 title: "Ergo Proxy"
-description: "Anime filosófico escrito por Dai Satō y dirigido por Shukō Murase."
+description: "Anime filosòfic."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]
-tags: ["serie TV", "anime", "filosofia", "lang-en"]
+tags: ["sèrie TV", "anime", "filosofia", "lang-en"]
 draft: false
 date: 2009-04-01T23:05:00.006+02:00
 ---

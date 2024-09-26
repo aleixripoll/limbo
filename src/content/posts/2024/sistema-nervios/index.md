@@ -1,7 +1,7 @@
 ---
 title: "Sistema nerviós"
 slug: sistema-nervios
-description: "Resum de subdivisions."
+description: "Pòster-resum de subdivisions."
 authors: ["Dr. Fenilalanino"]
 image: ./sistema_nervios.webp
 categories: ["apunts", "dibuixos"]

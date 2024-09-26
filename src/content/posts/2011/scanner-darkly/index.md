@@ -1,6 +1,6 @@
 ---
 title: "A scanner darkly"
-description: "Película de Richard Linklater basada en la novela-paranoia de Philip K. Dick."
+description: "Película de Richard Linklater basada en la novela de Philip K. Dick."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["cine"]

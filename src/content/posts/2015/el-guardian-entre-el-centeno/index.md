@@ -7,7 +7,7 @@ image_attribution:
     author: Nikolett Emmert
     url: https://www.pexels.com/ca-es/foto/menjar-paisatge-naturalesa-cel-18727478/
 categories: ["literatura"]
-tags: ["novela"]
+tags: []
 draft: false
 date: 2015-12-20T11:43:00.002+01:00
 ---

@@ -1,10 +1,10 @@
 ---
 title: "Momo"
-description: "Novela juvenil de Michael Ende."
+description: "Novela de Michael Ende."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["novela"]
+tags: []
 draft: false
 date: 2015-11-29T12:04:00.001+01:00
 ---

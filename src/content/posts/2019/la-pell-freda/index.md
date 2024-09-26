@@ -4,7 +4,7 @@ description: "Novel·la d'Albert Sánchez Piñol."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura"]
-tags: ["novela", "lang-cat"]
+tags: ["lang-cat"]
 draft: false
 date: 2019-01-26T21:14:00Z
 ---

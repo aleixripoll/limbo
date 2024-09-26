@@ -7,7 +7,7 @@ image_attribution:
     author: George Becker
     url: https://www.pexels.com/ca-es/foto/136351/
 categories: ["literatura"]
-tags: ["novela", "psicologia"]
+tags: ["psicologia"]
 draft: false
 date: 2022-08-15T21:20:00Z
 ---

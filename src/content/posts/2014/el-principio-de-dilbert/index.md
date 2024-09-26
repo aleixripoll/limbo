@@ -1,6 +1,6 @@
 ---
 title: "El principio de Dilbert"
-description: "Libro con tiras cómicas de Dilbert, de Scott Adams."
+description: "Libro con tiras cómicas de Dilbert, por Scott Adams."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura"]

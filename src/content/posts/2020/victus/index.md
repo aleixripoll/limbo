@@ -4,7 +4,7 @@ description: "Guerra de successió i setge de Barcelona, per Albert Sánchez Pi�
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["novela", "historia", "lang-cat"]
+tags: ["historia", "lang-cat"]
 draft: false
 date: 2020-02-22T08:01:00Z
 ---

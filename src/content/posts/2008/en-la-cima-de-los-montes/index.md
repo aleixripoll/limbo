@@ -1,6 +1,6 @@
 ---
 title: "Más allá del bien y del mal"
-description: "Ensayo filosófico, por Friedrich Nietzsche."
+description: "Ensayo filosófico de Friedrich Nietzsche."
 authors: ["Dr. Fenilalanino"]
 image: ./david-marcu-78A265wPiO4-unsplash.jpg
 image_attribution:

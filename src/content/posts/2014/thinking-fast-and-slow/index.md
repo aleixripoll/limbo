@@ -1,6 +1,6 @@
 ---
 title: "Thinking, fast and slow"
-description: "Cómo funciona nuestro cerebro, por Daniel Kahneman."
+description: "Com funciona el nostre cervell, per Daniel Kahneman."
 authors: ["Dr. Fenilalanino"]
 image: ./hal-gatewood-OgvqXGL7XO4-unsplash.jpg
 image_attribution:
