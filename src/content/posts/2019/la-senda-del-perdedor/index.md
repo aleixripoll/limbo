@@ -7,7 +7,7 @@ image_attribution:
     author: Ksusha Semakina
     url: https://www.pexels.com/ca-es/foto/cel-camp-cami-agricultura-64102/
 categories: ["literatura"]
-tags: ["novela"]
+tags: []
 draft: false
 date: 2019-09-06T09:01:00Z
 ---
