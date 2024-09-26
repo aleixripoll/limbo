@@ -90,15 +90,15 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
         </ul>
       </div>
 
-      <div class="col-12 mb-4 mt-8 px-0 sm:px-2">
+      <div class="col-12 mb-4 mt-8 px-0 sm:px-2 w-auto">
         {
           image && (
             <Image
               src={image}
-              height={500}
-              width={1000}
+              widths={[240, 540, 720, 1080]}
+              sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, 1080px`}
               alt={title}
-              class="sm:rounded-lg"
+              class="sm:rounded-lg max-h-[150lvh] w-auto"
             />
           )
         }
