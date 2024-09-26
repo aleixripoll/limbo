@@ -2,9 +2,9 @@
 import { Image } from "astro:assets";
 import config from "@config/config.json";
 import { getSinglePage } from "@lib/contentParser.astro";
-//import dateFormat from "@lib/utils/dateFormat";
+import dateFormat from "@lib/utils/dateFormat";
 import { humanize, slugify } from "@lib/utils/textConverter";
-import { BiCategoryAlt } from "react-icons/bi/index.js";
+import { BiCategoryAlt, BiCalendarEdit } from "react-icons/bi/index.js";
 
 const authors = await getSinglePage("authors");
 const { summary_length } = config.settings;
@@ -25,31 +25,43 @@ const { className, posts, fluid } = Astro.props;
     posts.map((post: any, i: number) => (
       <div class="inline-block py-2">
         {post.data.image && (
-          <a
-            href={`${import.meta.env.BASE_URL}${post.slug}`}
-            class="group sm:rounded-md"
-          >
+          <a href={`${import.meta.env.BASE_URL}${post.slug}`} class="group">
             <div class="overflow-hidden rounded-lg">
-            <Image
-              class="h-auto max-w-full transition duration-300 group-hover:scale-[1.05] object-cover"
-              src={post.data.image}
-              alt={post.data.title}
-              width="400"
-            />
+              <Image
+                class="h-auto max-w-full transition duration-300 group-hover:scale-[1.05] object-cover"
+                src={post.data.image}
+                alt={post.data.title}
+                width="400"
+              />
             </div>
+            {/*<ul class="mt-3 flex flex-wrap items-center justify-center uppercase text-xs font-light">
+              <li class="mr-4 flex flex-wrap items-center">
+                <BiCalendarEdit className="mr-1 h-5 w-5" />
+                <>{dateFormat(post.data.date)}</>
+              </li>
+               <li class="flex flex-wrap items-center">
+                <BiCategoryAlt className="h-[18px] w-[18px] pr-1" />
+                  <ul>
+                    {post.data.categories.map((category: string, i: number) => (
+                      <li class="inline-block mr-1">
+                          {humanize(category)}{i !== post.data.categories.length - 1 && ","}
+                      </li>
+                    ))}
+                  </ul>
+              </li>
+            </ul>*/}
             <h3 class={`text-center mt-2 text-xl group-hover:text-primary`}>
-
-            {post.data.title}
-        </h3>
-        <p class="text-center px-2 mb-6 sm:mb-2">
-          {post.data.description
-            ? post.data.description
-            : post.body?.slice(
-                0,
-                Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
-              ) + "..."}
-        </p>
-          </a>
+              {post.data.title}
+            </h3>
+            <p class="text-center font-thin px-2 mb-6 sm:mb-2">
+              {post.data.description
+                ? post.data.description
+                : post.body?.slice(
+                    0,
+                    Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
+                  ) + "..."}
+            </p>
+          </a>  // end of post anchor
         )}
       </div>
     ))
