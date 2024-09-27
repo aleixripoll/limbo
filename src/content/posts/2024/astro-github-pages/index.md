@@ -9,7 +9,7 @@ image_attribution:
     url: https://www.pexels.com/photo/gray-keypad-1114703/
 categories: ["apunts"]
 tags: ["programació", "astro", "github"]
-draft: false
+draft: true
 date: 2024-02-20T07:00:00Z
 ---
 

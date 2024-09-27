@@ -10,7 +10,7 @@ image_attribution:
     url: https://pixabay.com/es/illustrations/lechuga-verduras-comida-naturaleza-8743189/
 categories: ["apunts"]
 tags: ["vitamines", "nutrició"]
-draft: false
+draft: true
 date: 2024-02-25T07:00:00Z
 ---
 

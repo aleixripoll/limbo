@@ -9,11 +9,11 @@ image_attribution:
     url: https://www.pexels.com/ca-es/foto/pa-camp-estiu-sec-162769/
 categories: ["apunts"]
 tags: ["nutrició", "pa", "gluten"]
-draft: false
+draft: true
 date: 2024-02-27T07:00:00Z
 ---
 
-_**NOTA:** En realidad todos los cereales de la lista, a excepción del trigo sarraceno, son distintas variades de trigo, llamamos "trigo" a la variedad más extendida o "estándar"._
+**NOTA:** Casi todos los cereales panificables (a excepción del trigo sarraceno) son distintas variades de trigo. Llamamos "trigo" a la variedad más extendida o "estándar".
 
 ### Trigo
 *[en: wheat, cat: blat]*

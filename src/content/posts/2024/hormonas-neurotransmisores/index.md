@@ -10,7 +10,7 @@ image_attribution:
     url: https://pixabay.com/es/illustrations/ai-generado-cerebro-neuronas-8154752/
 categories: ["apunts"]
 tags: ["neurociència"]
-draft: false
+draft: true
 date: 2024-03-19T16:00:00Z
 ---
 

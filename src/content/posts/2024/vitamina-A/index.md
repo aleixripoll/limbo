@@ -6,7 +6,7 @@ authors: ["Dr. Fenilalanino"]
 image: "./vitamina_A.webp"
 categories: ["apunts", "dibuixos"]
 tags: ["vitamines", "nutrició"]
-draft: false
+draft: true
 date: 2024-01-04T07:00:00Z
 ---
 

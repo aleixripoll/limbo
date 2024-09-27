@@ -10,7 +10,7 @@ image_attribution:
     url: https://pixabay.com/es/illustrations/ai-generado-almendras-nueces-comida-8443781/
 categories: ["apunts"]
 tags: ["vitamines", "nutrició"]
-draft: false
+draft: true
 date: 2024-02-19T07:00:00Z
 ---
 
