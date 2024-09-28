@@ -5,6 +5,6 @@ authors: ["Dra. Valina", "Natilla"]
 date: 2023-11-12T11:08:00.000+02:00
 categories: [ "Dibuixos" ]
 image: ./apego.webp
-draft: false
+draft: true
 tags: ["psicologia"]
 ---
