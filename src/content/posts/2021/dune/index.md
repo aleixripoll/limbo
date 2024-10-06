@@ -1,6 +1,6 @@
 ---
 title: "Dune"
-description: "Novela de Frank Herbert, película de Denis Villeneuve."
+description: "Novela de Frank Herbert."
 authors: ["Dra. Valina"]
 image: ./pexels-emiliano-arano-1352196.jpg
 image_attribution:
@@ -12,4 +12,10 @@ draft: false
 date: 2021-12-16T15:21:00Z
 ---
 
-El miedo mata la mente. El miedo es la pequeña muerte que conduce a la destrucción total. Afrontaré mi miedo. Permitiré que pase sobre mí y a través de mí. Y cuando haya pasado, giraré mi ojo interior para escrutar su camino. Allá donde haya pasado el miedo ya no habrá nada. Sólo estaré yo.
+—¿Has oído hablar de los animales que se devoran una pata para escapar de una trampa? —dijo la vieja mujer—. Esa es la astucia a la que recurriría un animal. Un humano permanecerá en la trampa, soportará el dolor y fingirá estar muerto para coger por sorpresa al cazador y matarlo, y eliminar así un peligro para su especie.
+
+La comezón aumentó en intensidad, hasta llegar a quemar.
+
+—¿Por qué me hacéis esto? —preguntó.
+
+—Para determinar si eres humano. Ahora, silencio.
