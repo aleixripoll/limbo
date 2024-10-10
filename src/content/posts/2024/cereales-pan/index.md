@@ -19,7 +19,7 @@ date: 2024-02-27T07:00:00Z
 *[en: wheat, cat: blat]*
 - Hidratos, proteínas, fibra, fitoquímicos (antioxidantes).
 - Vitaminas (principalmente B1-2-3-6-9).
-- Minerales (calcio, hierro, cobre, magnesio, zinc, selenio).
+- Minerales (calcio, hierro, cobre, magnesio, fósforo, zinc, selenio).
 
 ### Centeno
 *[en: rye, cat: sègol]*
