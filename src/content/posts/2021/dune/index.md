@@ -12,9 +12,9 @@ draft: false
 date: 2021-12-16T15:21:00Z
 ---
 
-—¿Has oído hablar de los animales que se devoran una pata para escapar de una trampa? —dijo la vieja mujer—. Esa es la astucia a la que recurriría un animal. Un humano permanecerá en la trampa, soportará el dolor y fingirá estar muerto para coger por sorpresa al cazador y matarlo, y eliminar así un peligro para su especie.
+—¿Has oído hablar de los animales que se devoran una pata para escapar de una trampa? —dijo la anciana—. Es la astucia a la que recurriría un animal. Un humano se quedaría atrapado, soportaría el dolor y fingiría estar muerto para coger por sorpresa al cazador, intentar matarlo y eliminar así un peligro para su especie.
 
-La comezón aumentó en intensidad, hasta llegar a quemar.
+La comezón se convirtió en un ligero ardor.
 
 —¿Por qué me hacéis esto? —preguntó.
 
