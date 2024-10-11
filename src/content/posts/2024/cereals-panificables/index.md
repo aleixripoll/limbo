@@ -45,7 +45,7 @@ Aporta principalment:
 
 ### Kamut
 - Menys gluten.
-- Conté menys aigua, per tant és menys esponjós i té major densitat nutricional (proteînes, àcids grassos, vitamines i minerals).
+- Conté menys aigua, per tant és menys esponjós i té major densitat nutricional (proteïnes, àcids grassos, vitamines i minerals).
 - Conté **8 dels 9 aminoàcids essencials**, per tant és una proteïna quasi completa.
 - S'importa d'Amèrica, per tant més car i menys sostenible.
 
