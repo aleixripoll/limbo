@@ -22,13 +22,14 @@ date: 2024-02-07T07:00:00Z
 
 ## Hidrosolubles
 
+### Vitamines B
+
+
 ### Vitamina C
 - S'obté d'aliments d'**origen vegetal**: cítrics (taronja, mandarina, kiwi, llimona, aranja), pebrot, maduixa, tomàquet, patata, verdures crucíferes (bròquil, col de cabdell, col de Brussel·les, coliflor).
 - **Funcions**: Antioxidant, control d'infeccions (però no evita refredats), cicatrització, síntesi de col·lagen, hormones i neurotransmissors.
 - **Deficiència**: Rara, pot passar en dietes pobres en fruites i hortalisses, en fumadors (actius i passius) i en persones amb alts consums d'alcohol o drogues. Provoca fatiga, anèmia i escorbut (pèrdua de col·lagen que comporta el trencament de vasos sanguinis, sagnat de genives, pèrdua de cabell i curació de ferides lenta).
 - **Toxicitat**: Rara, quan augmenta la dosi es redueix l'absorció.
-
-### Vitamines B
 
 
 ## Liposolubles
