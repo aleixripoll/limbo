@@ -1,6 +1,6 @@
 ---
 title: "Vitamines, visió general"
-description: "Resum de definició i funcions per a gent ocupada."
+description: "Definició i resum de funcions per a gent ocupada."
 authors: ["Dra. Valina"]
 image: "./vitamines.webp"
 categories: ["apunts", "dibuixos"]
