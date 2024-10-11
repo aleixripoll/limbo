@@ -5,7 +5,7 @@ authors: ["Dra. Valina"]
 image: "./vitamines.webp"
 categories: ["apunts", "dibuixos"]
 tags: ["vitamines", "nutrició"]
-draft: true
+draft: false
 date: 2024-02-07T07:00:00Z
 ---
 
@@ -28,7 +28,7 @@ date: 2024-02-07T07:00:00Z
 - **Deficiència**: Rara, pot passar en dietes pobres en fruites i hortalisses, en fumadors (actius i passius) i en persones amb alts consums d'alcohol o drogues. Provoca fatiga, anèmia i escorbut (pèrdua de col·lagen que comporta el trencament de vasos sanguinis, sagnat de genives, pèrdua de cabell i curació de ferides lenta).
 - **Toxicitat**: Rara, quan augmenta la dosi es redueix l'absorció.
 
-### Vitamines grup B
+### Vitamines B
 
 
 ## Liposolubles
