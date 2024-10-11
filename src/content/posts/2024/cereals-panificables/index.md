@@ -5,50 +5,63 @@ authors: ["Dra. Valina"]
 image: ./pa_suspects.webp
 categories: ["apunts", "dibuixos"]
 tags: ["nutrició", "pa", "gluten", "lang-cat"]
-draft: true
+draft: false
 date: 2024-02-27T07:00:00Z
 ---
 
+
 > **NOTA:** Tots els cereals panificables (a excepció del fajol) son diferents varietats del blat. Anomenen "blat" a la varietat més extesa o popular.
+
+## Comparativa
 
 ### Blat
 *[en: wheat, es: trigo]*
-- Hidratos, proteínas, fibra, fitoquímicos (antioxidantes).
-- Vitaminas (principalmente B1-2-3-6-9).
-- Minerales (calcio, hierro, cobre, magnesio, fósforo, zinc, selenio).
+
+Aporta principalment:
+- Hidrats de carboni.
+- Proteïnes.
+- Fibra.
+- Fitoquímics (antioxidants).
+- Vitamines B1, B2, B3, B6 i B9.
+- Minerals: calci, ferro, fòsfor, magnesi, zinc i seleni.
 
 ### Sègol
 *[en: rye, es: centeno]*
-- Menos gluten (= menos esponjoso) que el trigo.
-- Más amargo.
-- Misma fibra, menos proteínas, más vitaminas (B1-2-3-6, E) y más minerales (hierro, fósforo, magnesio).
+
+- Menys gluten que el blat, té un color més fosc, és més compacte, menys esponjós i es conserva més temps.
+- Gust més fort i amarg.
+- Hidrats i proteïnes similars.
+- Més fibra, vitamines i minerals.
+- Conté àcid linoleic (omega 6, millora la circulació).
 
 ### Espelta
 *[en: spelt, es: espelta]*
-- Su cáscara es dura y le protege de pesticidas (más **"eco"**).
-- Mismo valor nutricional que el trigo.
+
+- Té una closca dura que la protegeix de pesticides i herbicides, per tant és més **"eco"**.
+- Quasi sempre és integral.
+- Més digestiu que el blat.
+- Més fibra, vitamines i minerals.
+- Conté **8 dels 9 aminoàcids essencials**, per tant és una proteïna quasi completa.
 
 ### Kamut
-- Menos gluten.
-- Contiene menos agua que otros cereales (= menos esponjoso y mayor densidad nutricional).
-- Más proteínas y ácidos grasos (omega 6).
-- Contiene **8 de los 9 aminoácidos esenciales**, lo que lo convierte en una proteína casi completa.
-- Más vitaminas (B1-2-3, E) y minerales (magnesio, selenio, zinc, fósforo, hierro, calcio, potasio) que el trigo.
-- Importado de América (= más caro y menos sostenible).
+- Menys gluten.
+- Conté menys aigua, per tant és menys esponjós i té major densitat nutricional (proteînes, àcids grassos, vitamines i minerals).
+- Conté **8 dels 9 aminoàcids essencials**, per tant és una proteïna quasi completa.
+- S'importa d'Amèrica, per tant més car i menys sostenible.
 
 ### Fajol
 *[en: buckwheat, es: trigo sarraceno]*
-- Es un **pseudocereal**, como la quinoa.
-- No contiene gluten (menos esponjoso, más digestivo).
-- Más proteínas y ácidos grasos (omega 3 y 6)
-- Algo superior en vitaminas y minerales.
-- Más caro.
+- És un **pseudocereal** com la quinoa.
+- No conté gluten (menys esponjós, més digestiu).
+- Més proteïnes i àcids grassos (omega 3 i 6).
+- Lleugerament superior en vitamines i minerals.
+- Més car.
 
 
-### CONCLUSIÓ
-- Consumir cereales **integrales** es más importante que el cereal elegido.
-- Si no sufrimos alergia o intolerancia al gluten, no hay ninguna necesidad ni beneficio en suprimirlos de la dieta.
-- La variedad (de cereales y en la dieta en general) es más importante que las modas.
+## Recomanacions generals
+- Consumir cereals **integrals** es més important que el cereal escollit.
+- Si no patim al·lèrgies ni intoleràncies no hi ha cap necessitat ni benefici en suprimir el pa de la dieta.
+- La varietat (de cereals i a la dieta en general) es més important que les modes.
 
 
 #### Referències
@@ -62,3 +75,5 @@ date: 2024-02-27T07:00:00Z
 - https://tahonajardines.com/que-es-pan-de-espelta-y-beneficios/
 
 - https://www.naturarla.es/el-pan-negro-o-pan-de-centeno/
+
+- https://solnatural.bio/recipe/diferencias-entre-la-espelta-y-el-trigo
