@@ -9,6 +9,8 @@ draft: true
 date: 2024-02-07T07:00:00Z
 ---
 
+### Taula de continguts
+
 ## General
 - Son substàncies **orgàniques**, és a dir, contenen carboni.
 - Son necessàries per a diversos processos metabòlics.
@@ -29,20 +31,20 @@ date: 2024-02-07T07:00:00Z
 
 ### Vitamina A
 ![Vitamina A](vitamina_A.webp "Vitamina A")
-- No podemos producirla, debemos obtenerla de alimentos de origen animal (**retinoides**) o de origen vegetal (**carotenoides**).
-- Los retinoides se absorben casi al 100%. **Fuentes:** hígado y grasas (carne, leche, yema de huevo, aceite de pescado).
-- El principal carotenoide es el **beta-caroteno**, presente en **frutas y hortalizas de color amarillo, naranja y rojo** (*zanahoria, tomate, mango, melocotón, melón, naranja, mandarina*) y **verduras de hoja verde oscura** (*espinacas, brócoli*). Tiene propiedades **antioxidantes**. 
-- La absorción de vitamina A en carotenoides es mucho menor. Consumirlos con grasa aumenta su absorción, consumirlos con fibra la disminuye. Las deficiencias de zinc y hierro también disminuyen su absorción.
-- **Funciones**: Visión, formación de tejidos (mucosas, piel), especialización y apoptosis celular, síntesis de células T reguladoras que evitan una respuesta excesiva del sistema inmune.
-- **Deficiencia**: Nictalopia (ceguera nocturna), sequedad, descamación y picor de la piel, aumento de las infecciones, anemia.
-- **Toxicidad**: Prácticamente imposible por carotenoides, muy rara por retinoides.
+- No la podem produir, l'hem d'obtenir d'aliments d'origen animal (**retinoides**) o d'origen vegetal (**carotenoides**).
+- Els retinoides s'absorbeixen gairebé al 100%. **Fonts:** fetge i greixos (carn, llet, rovell d'ou, oli de peix).
+- El principal carotenoide és el **beta-carotè**, present en **fruites i hortalisses de color groc, taronja i vermell** (*pastanaga, tomàquet, mango, préssec, meló, taronja, mandarina*) i **verdures de fulla verda fosca** (*espinacs, bròquil*). Té propietats **antioxidants**. 
+- L'absorció de vitamina A en carotenoides és molt menor. Consumir-los junt amb greixos augmenta la seva absorció, consumir-los amb fibra la disminueix. Les deficiències de zinc i ferro també en disminueixen l'absorció.
+- **Funcions**: Visió, formació de teixits (mucoses, pell), especialització i apoptosi cel·lular, síntesi de cèl·lules T reguladores que eviten una resposta excessiva del sistema immune.
+- **Deficiència**: Nictalopia (ceguesa nocturna), sequedat, descamació i picor de la pell, augment de les infeccions, anèmia.
+- **Toxicitat**: Pràcticament impossible per carotenoides, molt rara per retinoides.
 
 ### Vitamina D
 ### Vitamina E
 ### Vitamina K
 
 
-#### Referències
+## Referències
 
 - [Harvard](https://www.hsph.harvard.edu/nutritionsource/vitamins/)
 
