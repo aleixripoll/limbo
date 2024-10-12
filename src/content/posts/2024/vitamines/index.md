@@ -4,7 +4,7 @@ description: "Definició i resum de funcions per a gent ocupada."
 authors: ["Dra. Valina"]
 image: "./vitamines.webp"
 categories: ["apunts", "dibuixos"]
-tags: ["vitamines", "nutrició"]
+tags: ["vitamines", "nutrició", "lang-cat"]
 draft: false
 date: 2024-02-07T07:00:00Z
 ---
