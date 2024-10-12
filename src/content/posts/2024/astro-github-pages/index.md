@@ -9,11 +9,11 @@ image_attribution:
     url: https://www.pexels.com/photo/gray-keypad-1114703/
 categories: ["apunts"]
 tags: ["programació", "astro", "github"]
-draft: true
+draft: false
 date: 2024-02-20T07:00:00Z
 ---
 
-Entrada un poco meta, vamos a hablar de algunos problemillas que encontré desplegando este sitio en Github Pages.
+Entrada un poco meta para documentar algunos problemillas que encontré desplegando este sitio en Github Pages.
 
 Este blog ha sido generado con [Astro](https://astro.build/). Existe una guía oficial para desplegar en [Github Pages](https://docs.astro.build/en/guides/deploy/github/) pero, al contrario que en otros SSG como **Jekyll** o **Hugo**, no es trivial mover el sitio entre el repo *root* (`usuario.github.io`) y uno *non-root* (`usuario.github.io/repo`). En mi caso, el *non-root* me generaba muchos enlaces rotos, así que inicialmente lo dejé en el *root* y más tarde seguí estos pasos para moverlo a uno *non-root*:
 

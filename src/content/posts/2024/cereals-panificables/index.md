@@ -9,10 +9,11 @@ draft: false
 date: 2024-02-27T07:00:00Z
 ---
 
-
-> **NOTA:** Tots els cereals panificables (a excepció del fajol) son diferents varietats del blat. Anomenen "blat" a la varietat més extesa o popular.
+## Taula de continguts
 
 ## Comparativa
+
+> **NOTA:** Tots els cereals panificables (excepte el fajol) son diferents varietats del blat. Anomenen "blat" a la varietat més extesa o popular.
 
 ### Blat
 *[en: wheat, es: trigo]*
@@ -61,10 +62,10 @@ Aporta principalment:
 ## Recomanacions generals
 - Consumir cereals **integrals** es més important que el cereal escollit.
 - Si no patim al·lèrgies ni intoleràncies no hi ha cap necessitat ni benefici en suprimir el pa de la dieta.
-- La varietat (de cereals i a la dieta en general) es més important que les modes.
+- La varietat de cereals (i de la dieta en general) es més important que les modes.
 
 
-#### Referències
+## Referències
 
 - [El Mundo - La trola de los cereales 'cuquis'](https://www.elmundo.es/papel/boticaria-garcia/2020/03/07/5e611b72fc6c83de468b45b6.html)
 
