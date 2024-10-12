@@ -45,7 +45,21 @@ date: 2024-02-07T07:00:00Z
 - **Toxicitat**: Pràcticament impossible per carotenoides, molt rara per retinoides.
 
 ### Vitamina D
+- Es comporta com una hormona (missatger químic).
+- Es troba en dues formes: D2, **ergocalciferol**, d'origen vegetal, i D3, **colecalciferol**, d'origen animal.
+- **Fonts**: No està present en pràcticament cap aliment, la principal font són els **peixos grassos** (truita, salmó, tonyina, verat) i en menor quantitat ous i lactis Alguns aliments (llet, iogurts, cereals) estan enriquits amb vitamina D. En molts casos són necessaris suplements.
+- El cos sintetitza colecalciferol a la pell a través de la radiació solar.
+- Una exposició solar de 5-15 minuts al dia a la cara i braços durant primavera, estiu i tardor és suficient per mantenir els nivells adequats.
+- La capacitat de sintetitzar vitamina D a la pell disminueix amb l'edat i la quantitat de melanina (pells fosques).
+- La crema solar en bloqueja gairebé totalment la síntesi.
+- L'exposició solar a l'hivern o a primera i última hora del dia és molt menys efectiva, la vitamina D s'absorbeix millor quan el risc per a la pell és més gran, per la qual cosa es recomanen exposicions curtes i aplicar immediatament després una crema de protecció solar per reduir al mínim els efectes adversos.
+- **Deficiència habitual** en població que no rep radiació solar.
+- Independentment de si és sintetitzada a la pell o s'obté dels aliments, per exercir la seva acció metabòlica (forma activa) necessita ser **hidroxilada**, aquest procés es realitza als ronyons. Una deficiència en la funció renal pot derivar en deficiència de vitamina D encara que s'estigui sintetitzant i/o consumint en les quantitats adequades.
+- La deficiència deriva en osteomalàcia (major risc de fractures) i raquitisme en nens (ossos febles i tous).
+- **Toxicitat**: Molt rara.
+
 ### Vitamina E
+
 ### Vitamina K
 
 
