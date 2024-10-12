@@ -14,8 +14,7 @@ date: 2024-02-07T07:00:00Z
 ## General
 - Son substàncies **orgàniques**, és a dir, contenen carboni.
 - Son necessàries per a diversos processos metabòlics.
-- Poden ser **hidrosolubles** (es dissolen en aigua, B i C) o **liposolubles** (es dissolen en oli, ADEK). Donat que som bàsicament aigua, no podem emmagatzemar les hidrosolubles i les hem de consumir tots els dies, la seva deficiència es manifesta en pocs dies o setmanes, les liposolubles poden tardar mesos.
-- La vitamina **B12** és l'excepció a la regla: és hidrosoluble pèro es pot emmagatzemar durant anys al fetge.
+- Poden ser **hidrosolubles** (es dissolen en aigua, B i C) o **liposolubles** (es dissolen en oli, ADEK). Donat que som bàsicament aigua, no podem emmagatzemar les hidrosolubles i les hem de consumir tots els dies, la seva deficiència es manifesta en pocs dies o setmanes, les liposolubles poden tardar mesos o anys.
 
 > **Apunt de solubilitat:** Se sol dir que oli i aigua no es barregen per la diferència de densitats però en realitat és per diferència de polaritats: l'aigua (H<sub>2</sub>O) és una mol·lècula **polar**: l'àtom d'oxigen atrau els dos hidrògens i genera dos pols amb càrrega elèctrica, convertint-la en un imant. L'oli és una molècula no polar: no hi ha grans forces internes i no té càrrega elèctrica, per tant no reacciona en contacte amb l'aigua.
 
@@ -23,7 +22,50 @@ date: 2024-02-07T07:00:00Z
 ## Hidrosolubles
 
 ### Vitamines B
+- Estan relacionades amb el metabolisme energètic i l'estat d'ànim.
+- La seva deficiència és rara, exceptuant la B12.
+- La toxicitat és molt rara, la seva absorció disminueix en augmentar la dosi.
 
+#### B1 - Tiamina
+- Metabolisme dels hidrats de carboni.
+- **Fonts**: Cereals integrals, mongetes, llenties, pèsols.
+- **Deficiència**: Degeneració cognitiva (pèrdua de memòria), fallada cardíaca, pèrdua de pes, debilitat muscular, neuropatia perifèrica (mans, peus), immunitat reduïda.
+
+#### B2 - Riboflavina
+- Metabolisme energètic, conversió de B6 i B9 a les formes actives.
+- **Fonts**: Carn, lactis.
+- **Deficiència**: Degeneració del sistema nerviós i endocrí, anèmia, trastorns de la pell.
+
+#### B3 - Niacina
+- Metabolisme energètic.
+- L'aminoàcid **triptòfan** és un precursor de B3.
+- Es troba a molts aliments, especialment d'origen animal.
+- La seva deficiència provoca **pelagra**, la malaltia de les 4 D's (depressió, diarrea, deliris, demència).
+
+#### B5 - Àcid pantotènic
+- Metabolisme de greixos.
+- Es troba a pràcticament tots els aliments.
+- **Deficiència**: Migranya, irritabilitat, rampes musculars, fatiga, formigueig o cremor a mans i peus, nàusees, trastorns del son.
+
+#### B6 - Piridoxina
+- Metabolisme energètic.
+- **Deficiència**: Sol anar lligada a la deficiència de B9 i B12. Símptomes: anèmia, trastorns de la pell, depressió, immunitat reduïda. El risc de deficiència augmenta en situació de: disfunció renal, malaltia autoimmune intestinal, artritis reumatoide o alcoholisme.
+- **Toxicitat**: Neuropatia perifèrica, atàxia, nàusees.
+
+#### B7 - Biotina
+- Metabolisme energètic.
+- **Fonts**: Salmó, alvocat, ous, porc, fruits secs, llavors.
+- **Deficiència**: Pèrdua de cabell, erupcions cutànies, ungles trencadisses.
+
+#### B9 - Àcid fòlic
+- Metabolisme de proteïnes, síntesi d'ADN i ARN.
+- **Fonts**: Es troba en una gran varietat d'aliments en forma de **folats** i en suplements com **àcid fòlic** amb una absorció de gairebé el doble.
+
+#### B12 - Cobalamina
+- Desenvolupament del cervell i cèl·lules nervioses.
+- **Fonts**: Aliments d'origen animal, aliments enriquits amb B12 (begudes vegetals, cereals, etc.).
+- **Deficiència**: El millor marcador sanguini de deficiència de B12 no és la B12 en si, sinó l'augment d'àcid metilmalònic i d'homocisteïna. Se sol produir en dietes veganes, deficiència de factor intrínsec [^1] i hipoclorhidia estomacal. Símptomes: anèmia, debilitat, neuropaties, formigueig a mans i peus, pèrdua de memòria, depressió, convulsions.
+- A diferència de les altres vitamines hidrosolubles, **s'emmagatzema en grans quantitats al fetge** i la seva deficiència no apareix fins passats 3-5 anys.
 
 ### Vitamina C
 - S'obté d'aliments d'**origen vegetal**: cítrics (taronja, mandarina, kiwi, llimona, aranja), pebrot, maduixa, tomàquet, patata, verdures crucíferes (bròquil, col de cabdell, col de Brussel·les, coliflor).
@@ -101,3 +143,31 @@ date: 2024-02-07T07:00:00Z
 - [Harvard - Vitamin E](https://www.hsph.harvard.edu/nutritionsource/vitamin-e/)
 
 - [Harvard - Vitamin K](https://www.hsph.harvard.edu/nutritionsource/vitamin-k/)
+
+- [Harvard - Vitamin B1](https://www.hsph.harvard.edu/nutritionsource/vitamin-b1/)
+
+- [Science Direct - Thiamine](https://www.sciencedirect.com/topics/medicine-and-dentistry/thiamine)
+
+- [Harvard - Vitamin B2](https://www.hsph.harvard.edu/nutritionsource/riboflavin-vitamin-b2/)
+
+- [Science Direct - Riboflavin](https://www.sciencedirect.com/topics/medicine-and-dentistry/riboflavin)
+
+- [Harvard - Vitamin B3](https://www.hsph.harvard.edu/nutritionsource/niacin-vitamin-b3/)
+
+- [Harvard - Vitamin B5](https://www.hsph.harvard.edu/nutritionsource/pantothenic-acid-vitamin-b5/)
+
+- [Harvard - Vitamin B6](https://www.hsph.harvard.edu/nutritionsource/vitamin-b6/)
+
+- [Science Direct - Pyridoxine](https://www.sciencedirect.com/topics/neuroscience/pyridoxine)
+
+- [Harvard - Vitamin B7](https://www.hsph.harvard.edu/nutritionsource/biotin-vitamin-b7/)
+
+- [Science Direct - Biotin](https://www.sciencedirect.com/topics/neuroscience/biotin)
+
+- [Harvard - Folic acid](https://www.hsph.harvard.edu/nutritionsource/folic-acid/)
+
+- [Harvard - Vitamin B12](https://www.hsph.harvard.edu/nutritionsource/vitamin-b12/)
+
+- [Manual MSD - Carencia de vitamina B12](https://www.msdmanuals.com/es-es/hogar/trastornos-nutricionales/vitaminas/carencia-de-vitamina-b12)
+
+- [Elsevier - Vitamina B12 y dieta vegetariana](https://www.elsevier.es/es-revista-medicina-familia-semergen-40-articulo-vitamina-b-12-dieta-vegetariana-S1138359309726796)
