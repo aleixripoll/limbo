@@ -40,7 +40,7 @@ date: 2024-02-07T07:00:00Z
 - Els retinoides s'absorbeixen gairebé al 100%. **Fonts:** fetge i greixos (carn, llet, rovell d'ou, oli de peix).
 - El principal carotenoide és el **beta-carotè**, present en **fruites i hortalisses de color groc, taronja i vermell** (*pastanaga, tomàquet, mango, préssec, meló, taronja, mandarina*) i **verdures de fulla verda fosca** (*espinacs, bròquil*). Té propietats **antioxidants**. 
 - L'absorció de vitamina A en carotenoides és molt menor. Consumir-los junt amb greixos augmenta la seva absorció, consumir-los amb fibra la disminueix. Les deficiències de zinc i ferro també en disminueixen l'absorció.
-- **Funcions**: Visió, formació de teixits (mucoses, pell), especialització i apoptosi cel·lular, síntesi de cèl·lules T reguladores que eviten una resposta excessiva del sistema immune.
+- **Funcions**: Visió (síntesi de rodopsina pels bastons de la retina), formació de teixits (mucoses, pell), especialització i apoptosi cel·lular, síntesi de cèl·lules T reguladores que eviten una resposta immune excessiva.
 - **Deficiència**: Nictalopia (ceguesa nocturna), sequedat, descamació i picor de la pell, augment de les infeccions, anèmia.
 - **Toxicitat**: Pràcticament impossible per carotenoides, molt rara per retinoides.
 

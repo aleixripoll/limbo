@@ -62,7 +62,7 @@ Aporta principalment:
 ## Recomanacions generals
 - Consumir cereals **integrals** es més important que el cereal escollit.
 - Si no patim al·lèrgies ni intoleràncies no hi ha cap necessitat ni benefici en suprimir el pa de la dieta.
-- La varietat (de cereals i a la dieta en general) es més important que les modes.
+- La varietat de cereals (i de la dieta en general) es més important que les modes.
 
 
 ## Referències
