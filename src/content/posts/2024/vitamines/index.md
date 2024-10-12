@@ -65,16 +65,26 @@ date: 2024-02-07T07:00:00Z
 
 ## Referències
 
-- [Harvard](https://www.hsph.harvard.edu/nutritionsource/vitamins/)
+- [Harvard - Vitamins](https://www.hsph.harvard.edu/nutritionsource/vitamins/)
 
 - [Medline Plus](https://medlineplus.gov/spanish/ency/article/002399.htm)
 
 - [USA National Library of Medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8157347/)
 
-- [Science Direct](https://www.sciencedirect.com/science/article/pii/S0002916523030289)
+- [Science Direct - The challenge to reach nutritional adequacy for vitamin A](https://www.sciencedirect.com/science/article/pii/S0002916523030289)
 
 - [Medline Plus](https://medlineplus.gov/spanish/ency/article/002400.htm)
 
-- [Oregon State University](https://lpi.oregonstate.edu/mic/vitamins/vitamin-A)
+- [Oregon State University- Vitamin A](https://lpi.oregonstate.edu/mic/vitamins/vitamin-A)
 
-- [Wikipedia](https://en.wikipedia.org/wiki/Retinol)
+- [Wikipedia - Retinol](https://en.wikipedia.org/wiki/Retinol)
+
+- [Harvard - Vitamin D](https://www.hsph.harvard.edu/nutritionsource/vitamin-d/)
+
+- [Elsevier - Metabolismo, fuentes endógenas y exógenas de vitamina D](https://www.elsevier.es/es-revista-reemo-70-articulo-metabolismo-fuentes-endogenas-exogenas-vitamina-13108019)
+
+- [Elsevier - Vitamina D para la práctica diaria](https://www.elsevier.es/es-revista-medicina-familia-semergen-40-articulo-vitamina-d-practica-diaria-S1138359320300654)
+
+- [Elsevier - Metabolismo, funciones, toxicidad y estados deficitarios de la vitamina D](https://www.elsevier.com/es-es/connect/metabolismo-funciones-toxicidad-y-estados-deficitarios-de-la-vitamina-d)
+
+- [Science Direct - Vitamin D](ttps://www.sciencedirect.com/science/article/abs/pii/S1245178910701682)
