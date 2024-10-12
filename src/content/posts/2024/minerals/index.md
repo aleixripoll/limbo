@@ -25,7 +25,7 @@ date: 2024-02-09T07:00:00Z
 
 ### Calci
 - Formació d'**ossos i dents**, coagulació de la sang, contracció muscular, regulació del ritme cardíac, neurotransmissor.
-- **Fonts:** Lactis (baixa biodisponibilitat, ~30%), sardines en conserva (alta BD), ametlles (baixa BD, ~20%), col, espinacs, bledes (baixa BD les tres i en especial molt baixa als espinacs per la presència de **oxalats i fitats** que s'adhereixen al calci i no permeten la seva absorció).
+- **Fonts:** Lactis (baixa biodisponibilitat, ~30%), sardines en conserva (alta BD), ametlles (baixa BD, ~20%), col, espinacs, bledes (baixa BD les tres i en especial molt baixa als espinacs per la presència d'**oxalats i fitats** que s'adhereixen al calci i no permeten la seva absorció).
 - **Deficiència:** Rampes musculars, formigueig o manca de sensibilitat als dits.
 - **Toxicitat:** Anomenada **hipercalcèmia**: dolor al pit, sensació de falta d'aire, restrenyiment. A llarg termini poden produir pedres als ronyons o càncer de pròstata. Bloqueig de l'absorció de ferro (anèmia) i zinc.
 
