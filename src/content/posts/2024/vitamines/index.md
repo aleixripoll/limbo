@@ -59,9 +59,18 @@ date: 2024-02-07T07:00:00Z
 - **Toxicitat**: Molt rara.
 
 ### Vitamina E
+- Existeix en diverses formes però l'única utilitzable en el cos humà és l'**alfa-tocoferol**.
+- **Funcions**: Antioxidant, component del sistema immune, prevenció de coàguls a les artèries.
+- **Fonts**: Olis vegetals (girasol, blat de moro, soja), fruits secs (ametlla, avellana).
+- **Deficiència**: Rara, es pot produir per problemes digestius que impedeixin absorbir greixos. Provoca retinopatia, neuropatia en mans i peus, atàxia (pèrdua de control muscular), afectació al sistema immune.
+- **Toxicitat**: Sense evidències.
 
 ### Vitamina K
-
+- Es troba en dues formes: **filoquinona**, d'origen vegetal, i **menaquinona**, d'origen animal, que també pot ser produïda per bacteris del nostre cos. 
+- **Funcions**: Cicatrització, formació ossos.
+- **Fonts**: Verdures (col, espinac, enciam, bròquil, kale, col de cabdell).
+- **Deficiència**: Molt rara, pot passar si es prenen medicaments que bloquegen la seva absorció. Provoca dificultat per tancar ferides, osteoporosi.
+- **Toxicitat**: Rara, s'absorbeix i s'elimina a gran velocitat.
 
 ## Referències
 
@@ -88,3 +97,7 @@ date: 2024-02-07T07:00:00Z
 - [Elsevier - Metabolismo, funciones, toxicidad y estados deficitarios de la vitamina D](https://www.elsevier.com/es-es/connect/metabolismo-funciones-toxicidad-y-estados-deficitarios-de-la-vitamina-d)
 
 - [Science Direct - Vitamin D](ttps://www.sciencedirect.com/science/article/abs/pii/S1245178910701682)
+
+- [Harvard - Vitamin E](https://www.hsph.harvard.edu/nutritionsource/vitamin-e/)
+
+- [Harvard - Vitamin K](https://www.hsph.harvard.edu/nutritionsource/vitamin-k/)
