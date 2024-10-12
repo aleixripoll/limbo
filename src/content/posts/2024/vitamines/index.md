@@ -73,6 +73,7 @@ date: 2024-02-07T07:00:00Z
 - **Deficiència**: Rara, pot passar en dietes pobres en fruites i hortalisses, en fumadors (actius i passius) i en persones amb alts consums d'alcohol o drogues. Provoca fatiga, anèmia i escorbut (pèrdua de col·lagen que comporta el trencament de vasos sanguinis, sagnat de genives, pèrdua de cabell i curació de ferides lenta).
 - **Toxicitat**: Rara, quan augmenta la dosi es redueix l'absorció.
 
+---
 
 ## Liposolubles
 
@@ -113,6 +114,8 @@ date: 2024-02-07T07:00:00Z
 - **Fonts**: Verdures (col, espinac, enciam, bròquil, kale, col de cabdell).
 - **Deficiència**: Molt rara, pot passar si es prenen medicaments que bloquegen la seva absorció. Provoca dificultat per tancar ferides, osteoporosi.
 - **Toxicitat**: Rara, s'absorbeix i s'elimina a gran velocitat.
+
+---
 
 ## Referències
 
@@ -171,3 +174,8 @@ date: 2024-02-07T07:00:00Z
 - [Manual MSD - Carencia de vitamina B12](https://www.msdmanuals.com/es-es/hogar/trastornos-nutricionales/vitaminas/carencia-de-vitamina-b12)
 
 - [Elsevier - Vitamina B12 y dieta vegetariana](https://www.elsevier.es/es-revista-medicina-familia-semergen-40-articulo-vitamina-b-12-dieta-vegetariana-S1138359309726796)
+
+
+---
+
+[^1]: Factor intrínsec és una proteïna que ajuda l'intestí a absorbir la vitamina B12. El produeixen cèl·lules del revestiment de l'estómac.
