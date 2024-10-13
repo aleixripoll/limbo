@@ -1,5 +1,5 @@
 ---
-title: "Hormones vs. neurotransmissors"
+title: "Hormones i neurotransmissors"
 description: "S'assemblen però no."
 authors: ["Dra. Valina"]
 image: ./ai-generated-8154752_1280.jpg
