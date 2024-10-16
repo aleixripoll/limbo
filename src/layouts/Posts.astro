@@ -23,12 +23,12 @@ const { className, posts, fluid } = Astro.props;
 >
   {
     posts.map((post: any, i: number) => (
-      <div class="inline-block py-2">
+      <div class="inline-block py-1.5">
         {post.data.image && (
           <a href={`${import.meta.env.BASE_URL}${post.slug}`} class="group">
             <div class="overflow-hidden rounded-md">
               <Image
-                class="h-auto max-w-full max-h-72 transition duration-300 group-hover:scale-[1.05] object-cover"
+                class="h-auto max-w-full max-h-60 transition duration-300 group-hover:scale-[1.05] object-cover"
                 src={post.data.image}
                 alt={post.data.title}
                 width="400"

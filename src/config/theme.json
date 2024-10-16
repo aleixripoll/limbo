@@ -19,11 +19,11 @@
     "font_family": {
       "primary": "Nunito+Sans:wght@300;400;700",
       "primary_type": "sans-serif",
-      "secondary": "",
+      "secondary": "Afacad+Flux",
       "secondary_type": "sans-serif"
     },
     "font_size": {
-      "base": "16",
+      "base": "17",
       "scale": "1.250"
     }
   }
