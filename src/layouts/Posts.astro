@@ -26,7 +26,7 @@ const { className, posts, fluid } = Astro.props;
       <div class="inline-block py-1.5">
         {post.data.image && (
           <a href={`${import.meta.env.BASE_URL}${post.slug}`} class="group">
-            <div class="overflow-hidden rounded-md">
+            <div class="overflow-hidden rounded-md border-solid border border-slate-500">
               <Image
                 class="h-auto max-w-full max-h-60 transition duration-300 group-hover:scale-[1.05] object-cover"
                 src={post.data.image}
@@ -50,7 +50,7 @@ const { className, posts, fluid } = Astro.props;
                   </ul>
               </li>
             </ul>*/}
-            <h3 class={`text-center mt-2 text-xl group-hover:text-primary tracking-tight duration-300`}>
+            <h3 class={`text-center mt-2 mb-1.5 h4 group-hover:text-primary tracking-tight duration-300 font-secondary`}>
               {post.data.title}
             </h3>
             <p class="text-center px mb-6 sm:mb-4">
