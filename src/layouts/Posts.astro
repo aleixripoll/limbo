@@ -28,7 +28,7 @@ const { className, posts, fluid } = Astro.props;
           <a href={`${import.meta.env.BASE_URL}${post.slug}`} class="group">
             <div class="overflow-hidden rounded-md border-dotted border border-slate-500">
               <Image
-                class="p-1.5 h-auto max-w-full max-h-60 transition duration-300 group-hover:scale-[1.07] object-cover rounded-lg"
+                class="p-2 h-auto max-w-full max-h-60 transition duration-300 md:group-hover:scale-[1.07] object-cover rounded-lg"
                 src={post.data.image}
                 alt={post.data.title}
                 width="400"
