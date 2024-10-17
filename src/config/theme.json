@@ -17,13 +17,13 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Nunito+Sans:wght@300;400;700",
+      "primary": "Noto+Sans+Display",
       "primary_type": "sans-serif",
-      "secondary": "Afacad+Flux",
+      "secondary": "",
       "secondary_type": "sans-serif"
     },
     "font_size": {
-      "base": "17",
+      "base": "16",
       "scale": "1.250"
     }
   }
