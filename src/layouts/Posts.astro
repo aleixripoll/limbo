@@ -26,9 +26,9 @@ const { className, posts, fluid } = Astro.props;
       <div class="inline-block py-1.5">
         {post.data.image && (
           <a href={`${import.meta.env.BASE_URL}${post.slug}`} class="group">
-            <div class="overflow-hidden rounded-md border-dotted border border-slate-500">
+            <div class="overflow-hidden rounded-md">
               <Image
-                class="p-2 h-auto max-w-full max-h-60 transition duration-300 md:group-hover:scale-[1.07] object-cover rounded-lg"
+                class="h-auto max-w-full max-h-72 transition duration-300 md:group-hover:scale-[1.05] object-cover"
                 src={post.data.image}
                 alt={post.data.title}
                 width="400"
@@ -53,7 +53,7 @@ const { className, posts, fluid } = Astro.props;
             <h3 class={`text-center mt-2 mb-1.5 text-xl group-hover:text-primary tracking-tight duration-300`}>
               {post.data.title}
             </h3>
-            <p class="text-center px mb-6 sm:mb-4">
+            <p class="text-center px mb-6 sm:mb-5">
               {post.data.description
                 ? post.data.description
                 : post.body?.slice(
