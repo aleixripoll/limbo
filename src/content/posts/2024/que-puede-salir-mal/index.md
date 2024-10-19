@@ -1,6 +1,6 @@
 ---
 title: "¿Qué puede salir mal?"
-description: "Divulgación científica, por Sandra Ortonobes Lara."
+description: "Divulgació científica per Sandra Ortonobes, La Hiperactina."
 authors: ["Dra. Valina"]
 image: ./cover.jpg
 categories: ["literatura"]
