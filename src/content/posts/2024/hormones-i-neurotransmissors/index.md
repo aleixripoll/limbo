@@ -2,12 +2,8 @@
 title: "Hormones i neurotransmissors"
 description: "S'assemblen però no."
 authors: ["Dra. Valina"]
-image: ./ai-generated-8154752_1280.jpg
-image_attribution:
-    author: Pete Linforth
-    site: Pixabay
-    url: https://pixabay.com/es/illustrations/ai-generado-cerebro-neuronas-8154752/
-categories: ["apunts"]
+image: ./hormo_vs_neuro.webp
+categories: ["apunts", "dibuixos"]
 tags: ["neurociència", "lang-cat"]
 draft: false
 date: 2024-03-19T16:00:00Z
