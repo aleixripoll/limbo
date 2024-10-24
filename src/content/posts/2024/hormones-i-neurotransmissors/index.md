@@ -12,7 +12,7 @@ date: 2024-03-19T16:00:00Z
 ## Taula de continguts
 
 ## Hormones
-Són missatgers químics alliberats al torrent sanguini per les diferents **glàndules endocrines** per provocar un efecte a distància en altres glàndules o òrgans.
+Són missatgers químics alliberats a la sang per les **glàndules endocrines** per provocar un efecte a distància en altres glàndules o òrgans.
 
 ### Glàndules endocrines
 
@@ -20,7 +20,7 @@ Són missatgers químics alliberats al torrent sanguini per les diferents **glà
 
 #### Hipotàlem
 - Zona a la base del cervell que controla la glàndula pituitària a través d'hormones i senyals elèctrics.
-- Produeix **oxitocina** i **hormona antidiürètica**, que s'emmagatzemen a la glàndula pituitària fins que el mateix hipotàlem ordena alliberar-les al torrent sanguini.
+- Produeix **oxitocina** i **hormona antidiürètica**, s'emmagatzema a la glàndula pituitària fins que el propi hipotàlem ordena alliberar-les al torrent sanguini.
 - També produeix altres hormones com la **dopamina** que es fan servir exclusivament per actuar sobre la glàndula pituitària (no s'envien al torrent sanguini).
 - Controla pràcticament tots els aspectes del cos: temperatura, freqüència cardíaca, gana, set, libido, son, estat d'ànim.
 #### Glàndula pituitària
@@ -36,7 +36,7 @@ Són missatgers químics alliberats al torrent sanguini per les diferents **glà
 - Produeix **tiroxina** (T4) i **triyodotironina** (T3), que incideixen sobre el metabolisme de greixos i carbohidrats i controlen la temperatura corporal.
 #### Glàndules paratiroides
 - Són 4 petits cossos al coll, habitualment adherits a la tiroide.
-- Produeixen la **hormona paratiroïdal** encarregada de mantenir l'equilibri calci-fòsfor.
+- Produeixen l'**hormona paratiroïdal** encarregada de mantenir l'equilibri calci-fòsfor.
 #### Glàndules adrenals
 - També conegudes com a glàndules **suprarenals**.
 - Es troben a sobre de cada ronyó.

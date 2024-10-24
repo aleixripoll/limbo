@@ -1,6 +1,6 @@
 ---
 title: "¿Qué puede salir mal?"
-description: "Divulgació científica per Sandra Ortonobes, La Hiperactina."
+description: "Érase una vez el cuerpo humano, per La Hiperactina."
 authors: ["Dra. Valina"]
 image: ./cover.jpg
 categories: ["literatura"]
