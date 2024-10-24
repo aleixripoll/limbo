@@ -1,6 +1,5 @@
 ---
 title: "Macronutrientes"
-slug: macronutrientes
 description: "Orden en la cocina."
 authors: ["Dr. Fenilalanino"]
 image: "./ai-generated-8733794_1280.webp"
@@ -30,11 +29,11 @@ Se encuentra en algunos polisacáridos, se clasifica según su absorción:
 - **Fibra insoluble (celulosa):** No absorbe agua, ni se fermenta, ni alimenta a la microbiota, pero acelera la digestión y hace "efecto barrido". **Fuentes:** granos enteros, frutas con piel, verduras, frutos secos, semillas.
 
 #### Índice glucémico y carga glucémica
-El índice nos indica cuán rápido un carbohidrato es convertido en azúcar simple y absorbido en la sangre. Una analogía sería vertir arena en una cañería de agua, la circulación será más lenta y requerirá mayor fuerza de bombeo. Para evitar el colapso de la bomba (corazón), el páncreas secreta insulina para indicar a las células que deben tragarse ese superávit de azúcar, que acaba almacenado en forma de grasa.
+El **índice glucémico** nos indica la **velocidad** a la que un carbohidrato eleva la glucosa en sangre. Una analogía sería el vertido de arena en una cañería de agua, la circulación será más lenta y requerirá mayor fuerza de bombeo. Para evitar el colapso de la bomba (corazón), el páncreas secreta insulina para indicar a las células que deben tragarse ese superávit de azúcar, que acaba almacenado en forma de grasa.
 
-Algunos alimentos tienen un alto índice glucémico pero baja carga glucémica, es decir, aportan pocos carbohidratos (ejemplo: zanahoria), con lo cual la carga glucémica suele ser más importante que el índice glucémico.
+La **carga glucémica** nos indica la **cantidad** de azúcar que contiene un alimento. Algunos alimentos tienen un alto índice glucémico pero baja carga glucémica (ejemplo: zanahoria).
 
-Por regla general, cuanto más complejos sean los carbohidratos, mejor (granos enteros mejor que refinados). Dicho esto, el cocinado aumenta la biodisponibilidad, lo cual es un arma de doble filo ya que también aumenta la carga glucémica.
+Por regla general, los carbohidratos complejos son mejores que los simples (granos enteros mejor que refinados). Dicho esto, el cocinado aumenta la biodisponibilidad, lo cual es un arma de doble filo ya que también aumenta la carga glucémica.
 
 
 ### Proteínas
