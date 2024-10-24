@@ -41,10 +41,10 @@ Macronutriente formado por cadenas de más de 50 **aminoácidos**.
 
 > Los aminoácidos son moléculas de carbono, nitrógeno, hidrógeno y oxígeno (y en algunos casos azufre). Un dipéptido está formado por 2 aminoácidos, un tripéptido por 3, un polipéptido contiene entre 10 y 50 y una proteína más de 50.
 
-Existen 21 aminoácidos divididos en 2 grupos:
+Se han identificado aproximadamente 500 aminoácidos en la naturaleza, pero solo 22 forman las proteínas del cuerpo humano. Esos 22 se dividen en:
 
 - **Esenciales:** No pueden ser producidos por el cuerpo, deben consumirse todos los días. Son 9: valina, leucina, isoleucina, treonina, metionina, fenilalanina, histidina, triptófano y lisina.
-- **No esenciales:** Pueden ser producidos por el cuerpo: alanina, arginina, asparagina, ácido aspártico, cisteína, ácido glutámico, glutamina, glicina, prolina, serina, taurina y tirosina.
+- **No esenciales:** Pueden ser producidos por el cuerpo: alanina, arginina, asparagina, aspartato, cisteína, glutamato, glutamina, glicina, prolina, serina, tirosina, pirrolisina y selenocisteína.
 
 **Fuentes:** legumbres, frutos secos, semillas, granos enteros, carne, pescado, huevos, lácteos.
 
