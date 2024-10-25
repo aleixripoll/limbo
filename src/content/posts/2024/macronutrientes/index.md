@@ -55,7 +55,7 @@ Una **proteïna completa** o d'”alta qualitat” és aquella que conté els 9 
 Són cadenes d'àcids grassos amb una quantitat variable de grups `-CH-` (cadenes hidrocarbonades). Els grups `-CH-` estan units entre ells per enllaços simples o dobles. Els enllaços dobles són més forts que els simples, però no permeten que la molècula es compacte tant, així que paradoxalment l'activitat enzimàtica és més efectiva en els àcids grassos amb enllaços dobles. El resultat és que un àcid gras està més saturat quant **més llarga és la cadena** i **menys dobles enllaços** conté.
 
 #### Insaturats
-Hi ha almenys un doble enllaç, per tant menor compactació. Són **líquides** a temperatura ambient, es troben en **olis vegetals, fruits secs i llavors**. Beneficis:
+Hi ha almenys un doble enllaç, per tant menor compactació. Són **líquids** a temperatura ambient, es troben en **olis vegetals, fruits secs i llavors**. Beneficis:
 
 - Milloren els nivells de colesterol a la sang (ràtio LDL/HDL).
 - Redueixen inflamació.
@@ -67,7 +67,7 @@ Se subdivideixen en:
 - **Poliinsaturats:** 2 o més dobles enllaços. En aquest grup trobem els àcids grassos essencials **omega 3, 6 i 9**, que no poden ser sintetitzats pel cos. **Fonts:** gira-sol, soja, blat de moro, nous, peix.
 
 #### Saturats
-Manquen de dobles enllaços, per tant major compactació. Són **sòlides** a temperatura ambient.
+No tenen dobles enllaços, per tant més compactació. Són **sòlids** a temperatura ambient.
 
 **Fonts:** carn (vedella, bacó, hamburgueses, salsitxes), lactis, galetes, gelats, mantega, formatge, oli de palma i coco.
 
