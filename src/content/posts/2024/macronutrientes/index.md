@@ -1,93 +1,94 @@
 ---
-title: "Macronutrientes"
-description: "Orden en la cocina."
+title: "Macronutrients"
+description: "Ordre a la cuina."
 authors: ["Dr. Fenilalanino"]
-image: "./ai-generated-8829659_1280.jpg"
+image: "./pexels-trista-chen-198334-723198.jpg"
 image_attribution:
-    author: GrumpyBeere
-    site: Pixabay
-    url: https://pixabay.com/es/illustrations/ai-generado-adn-gen%C3%A9tico-estructura-8829659/
+    author: Trista Chen
+    site: Pexels
+    url: https://www.pexels.com/ca-es/foto/menjar-plat-verdures-sopar-723198/
 categories: ["apunts"]
-tags: ["biologia", "química", "nutrició"]
-draft: true
+tags: ["biologia", "química", "nutrició", "lang-cat"]
+draft: false
 date: 2024-03-16T19:00:00Z
 ---
 
-### Tabla de contenidos
+### Taula de continguts
 
 
-### Hidratos de carbono
-Los hidratos de carbono, carbohidratos o azúcares son compuestos de carbono y agua. Según la posición del carbono hablamos de **aldosas** (extremo) o **cetosas** (centro) y según la cantidad de moléculas se clasifican en:
+### Hidrats de carboni
+Els hidrats de carboni, carbohidrats o sucres són compostos de carboni i aigua. Segons la posició del carboni parlem d'**aldoses** (extrem) o **cetoses** (centre) i segons la quantitat de molècules es classifiquen en:
 
-- **Monosacáridos (azúcares simples):** glucosa, galactosa, fructosa.
-- **Disacáridos:** lactosa (glucosa + galactosa), sacarosa (glucosa + fructosa), maltosa (dos glucosas).
-- **Polisacáridos:** glucógeno (almacén glucosa animal), almidón (almacén glucosa vegetal), celulosa, pectina.
+- **Monosacàrids (sucres simples):** glucosa, galactosa, fructosa.
+- **Disacàrids:** lactosa (glucosa + galactosa), sacarosa (glucosa + fructosa), maltosa (dues glucoses).
+- **Polisacàrids:** glucogen (magatzem glucosa animal), midó (magatzem glucosa vegetal), cel·lulosa, pectina.
 
 #### Fibra
-Se encuentra en algunos polisacáridos, se clasifica según su absorción:
-- **Fibra soluble (almidón resistente, pectinas):** Absorbe agua, ralentiza la digestión, fermenta en el colón, por lo tanto tiene efecto prebiótico y nutre a nuestra macrobiota, lo cual bien impide que la microbiota nos coma a nosotros, bien impide que muera y perdamos sus beneficios (actividad enzimática, protección contra patógenos, síntesis vitaminas B y K, estimulación sistema inmune). **Fuentes:** manzana, pera, plátano, avena, cebada, legumbres, arroz, zanahoria, patata, pasta (los 3 últimos pueden llegar a triplicar su contenido en almidón resistente tras cocinarlos y dejarlos enfríar).
-- **Fibra insoluble (celulosa):** No absorbe agua, ni se fermenta, ni alimenta a la microbiota, pero acelera la digestión y hace "efecto barrido". **Fuentes:** granos enteros, frutas con piel, verduras, frutos secos, semillas.
+Es troba en alguns polisacàrids, es classifica segons la seva absorció:
+- **Fibra soluble (midó resistent, pectines):** Absorbeix aigua, alenteix la digestió i fermenta al colom, per tant té efecte prebiòtic, és a dir, alimenta la nostra macrobiota i per tant impedeix que **A.** s'hagi d'alimentar de les cèl·lules del nostre intestí o **B.** mori i perdem els seus beneficis: activitat enzimàtica, protecció contra patògens, síntesi de vitamines B i K, estimulació del sistema immune. **Fonts:** poma, pera, plàtan, civada, ordi, llegums, arròs, pastanaga, patata, pasta (els 3 últims poden arribar a triplicar el seu contingut en midó resistent després de cuinar-los i deixar-los refredar).
+- **Fibra insoluble (cel·lulosa):** No absorbeix aigua ni es fermenta ni alimenta la microbiota, però accelera la digestió i fa "efecte escombra". **Fonts:** grans sencers, fruites amb pell, verdures, fruits secs, llavors.
 
-#### Índice glucémico y carga glucémica
-El **índice glucémico** nos indica la **velocidad** a la que un carbohidrato eleva la glucosa en sangre. Una analogía sería el vertido de arena en una cañería de agua, la circulación será más lenta y requerirá mayor fuerza de bombeo. Para evitar el colapso de la bomba (corazón), el páncreas secreta insulina para indicar a las células que deben tragarse ese superávit de azúcar, que acaba almacenado en forma de grasa.
+#### Índex glucèmic i càrrega glucèmica
+L'**índex glucèmic** ens indica la **velocitat** a què un carbohidrat eleva la glucosa en sang. Una analogia seria l'abocament de sorra en una canonada d'aigua, la circulació serà més lenta i requerirà més força de bombament. Per evitar el col·lapse de la bomba (cor), el pàncrees secreta insulina per indicar a les cèl·lules que s'han d'empassar aquest superàvit de sucre, que acaba emmagatzemat en forma de greix.
 
-La **carga glucémica** nos indica la **cantidad** de azúcar que contiene un alimento. Algunos alimentos tienen un alto índice glucémico pero baja carga glucémica (ejemplo: zanahoria).
+La **càrrega glucèmica** ens indica la **quantitat** de sucre que conté un aliment. Alguns aliments tenen un alt índex glucèmic però baixa càrrega glucèmica (exemple: pastanaga).
 
-Por regla general, los carbohidratos complejos son mejores que los simples (granos enteros mejor que refinados). Dicho esto, el cocinado aumenta la biodisponibilidad, lo cual es un arma de doble filo ya que también aumenta la carga glucémica.
-
-
-### Proteínas
-Macronutriente formado por cadenas de más de 50 **aminoácidos**.
-
-> Los aminoácidos son moléculas de carbono, nitrógeno, hidrógeno y oxígeno (y en algunos casos azufre). Un dipéptido está formado por 2 aminoácidos, un tripéptido por 3, un polipéptido contiene entre 10 y 50 y una proteína más de 50.
-
-Se han identificado aproximadamente 500 aminoácidos en la naturaleza, pero solo 22 forman las proteínas del cuerpo humano. Esos 22 se dividen en:
-
-- **Esenciales:** No pueden ser producidos por el cuerpo, deben consumirse todos los días. Son 9: valina, leucina, isoleucina, treonina, metionina, fenilalanina, histidina, triptófano y lisina.
-- **No esenciales:** Pueden ser producidos por el cuerpo: alanina, arginina, asparagina, aspartato, cisteína, glutamato, glutamina, glicina, prolina, serina, tirosina, pirrolisina y selenocisteína.
-
-**Fuentes:** legumbres, frutos secos, semillas, granos enteros, carne, pescado, huevos, lácteos.
-
-Una **proteína completa** o de "alta calidad" es aquella que contiene los 9 aminoácidos esenciales. La proteína de origen animal es por regla general de mayor calidad y biodisponibilidad que la vegetal.
+Per regla general, els carbohidrats complexos són millors que els simples (grans sencers millor que refinats). Dit això, el cuinat augmenta la biodisponibilitat, el que és una arma de doble tall ja que també augmenta la càrrega glucèmica.
 
 
-### Grasas
-Son cadenas de ácidos grasos con una cantidad variable de grupos `-CH-` (cadenas hidrocarbonadas). Los grupos `-CH-` están unidos entre ellos por enlaces simples o dobles. Los enlaces dobles són más fuertes que los simples pero no permiten que la molécula se compacte tanto, así que paradójicamente la actividad enzimática es más efectiva en los ácidos grasos con enlaces dobles. El resultado es que un ácido graso está más saturado cuanto **más larga es la cadena** y **menos dobles enlaces** contiene.
+### Proteïnes
+Macronutrient format per cadenes de més de 50 aminoàcids.
 
-#### Insaturadas
-Existe al menos un doble enlace, por lo tanto menor compactación. Son **líquidas** a temperatura ambiente, se encuentran en **aceites vegetales, frutos secos y semillas**. Beneficios:
+> Els aminoàcids són molècules de carboni, nitrogen, hidrogen i oxigen (i en alguns casos sofre). Un dipèptid està format per 2 aminoàcids, un tripèptid per 3, un polipèptid conté entre 10 i 50 i una proteïna més de 50.
 
-- Mejoran los niveles de colesterol en sangre (ratio LDL/HDL).
-- Reducen inflamación.
-- Estabilizan el ritmo cardíaco.
+S'han identificat aproximadament 500 aminoàcids a la natura, però només 22 formen les proteïnes del cos humà. Aquests 22 es divideixen en:
 
-Se subdividen en:
+- **Essencials:** No poden ser produïts pel cos, s'han de consumir cada dia. Són 9: valina, leucina, isoleucina, treonina, metionina, fenilalanina, histidina, triptòfan i lisina.
+- **No essencials:** Poden ser produïts pel cos: alanina, arginina, asparagina, aspartat, cisteïna, glutamat, glutamina, glicina, prolina, serina, tirosina, pirrolisina i selenocisteïna.
 
-- **Monoinsaturadas:** 1 doble enlace. **Fuentes:** aceite de oliva, avellanas, almendras, nueces pecanas, aguacates, semillas de calabaza y sésamo.
-- **Poliinsaturadas:** 2 o más dobles enlaces. En este grupo encontramos los ácidos grasos esenciales **omega 3, 6 y 9**, que no pueden ser sintetizados por el cuerpo. **Fuentes:** girasol, soja, maíz, nueces, pescado.
+**Fonts:** llegums, fruits secs, llavors, grans sencers, carn, peix, ous, lactis.
 
-#### Saturadas
-Carecen de dobles enlaces, por lo tanto mayor compactación. Son **sólidas** a temperatura ambiente.
-
-**Fuentes:** carne (ternera, bacon, hamburguesas, salchichas), lácteos, galletas, helados, mantequilla, queso, aceite de palma y coco.
-
-#### Grasas trans
-Son grasas **insaturadas** que han sido hidrogenadas para mantenerlas en estado sólido a temperatura ambiente. Permiten conservar los alimentos y su sabor durante más tiempo (las grasas insaturadas se oxidan), por tal motivo se usan en alimentos ultraprocesados como bollería industrial. También se encuentran en muy pequeñas cantidades en alimentos como carne o lácteos.
-
-Interfieren en la absorción de ácidos grasos esenciales, necesarios para ciertas funciones como la formación de las paredes de las arterias.
-
-**Efectos:** problemas coronarios, aumento del colesterol LDL ("malo") y reducción del HDL ("bueno"), reducción de la sensibilidad a la insulina.
+Una **proteïna completa** o d'”alta qualitat” és aquella que conté els 9 aminoàcids essencials. La proteïna d'origen animal és per regla general de més qualitat i biodisponibilitat que la vegetal.
 
 
-### Agua
-Se considera un macronutriente a pesar de no aportar energía. Clasificación:
+### Greixos
+Són cadenes d'àcids grassos amb una quantitat variable de grups `-CH-` (cadenes hidrocarbonades). Els grups `-CH-` estan units entre ells per enllaços simples o dobles. Els enllaços dobles són més forts que els simples, però no permeten que la molècula es compacte tant, així que paradoxalment l'activitat enzimàtica és més efectiva en els àcids grassos amb enllaços dobles. El resultat és que un àcid gras està més saturat quant **més llarga és la cadena** i **menys dobles enllaços** conté.
 
-- **Del grifo:** En general es de buena calidad y es la que se recomienda consumir, tanto por precio como por evitar el envasado comercial. Su sabor y calidad puede variar según su dureza (cantidad de cal y magnesio), los métodos usados para potabilizarla y el estado de las instalaciones que atraviesa antes de llegar al hogar.
-- **Mineral natural:** Agua recogida de depósitos subterráneos con contenido mineral estable, no reciben ningún tratamiento. Se analizan periódicamente para asegurar que la composición no ha cambiado.
-- **De manantial:** Agua recogida de depósitos subterráneos con contenido mineral variable, no reciben ningún tratamiento, se analizan antes de su comercialización.
+#### Insaturades
+Hi ha almenys un doble enllaç, per tant menor compactació. Són **líquides** a temperatura ambient, es troben en **olis vegetals, fruits secs i llavors**. Beneficis:
+
+- Milloren els nivells de colesterol a la sang (ràtio LDL/HDL).
+- Redueixen inflamació.
+- Estabilitzen el ritme cardíac.
+
+Se subdivideixen en:
+
+- **Monoinsaturades:** 1 doble enllaç. **Fonts:** oli d'oliva, avellanes, ametlles, nous pecanes, alvocats, llavors de carbassa i sèsam.
+- **Poliinsaturades:** 2 o més dobles enllaços. En aquest grup trobem els àcids grassos essencials **omega 3, 6 i 9**, que no poden ser sintetitzats pel cos. **Fonts:** gira-sol, soja, blat de moro, nous, peix.
+
+#### Saturades
+Manquen de dobles enllaços, per tant major compactació. Són **sòlides** a temperatura ambient.
+
+**Fonts:** carn (vedella, bacó, hamburgueses, salsitxes), lactis, galetes, gelats, mantega, formatge, oli de palma i coco.
 
 
-### Referencias
+#### Greixos trans
+Són greixos **insaturats** que han estat hidrogenats per mantenir-los en estat sòlid a temperatura ambient. Permeten conservar els aliments i el seu sabor durant més temps (els greixos insaturats s'oxiden), per aquest motiu s'usen en aliments ultraprocessats com a brioixeria industrial. També es troben en molt petites quantitats en aliments com a carn o lactis.
+
+Interfereixen en l'absorció d'àcids grassos essencials, necessaris per a certes funcions com ara la formació de les parets de les artèries.
+
+**Efectes:** problemes coronaris, augment del colesterol LDL ("dolent") i reducció del HDL ("bo"), reducció de la sensibilitat a la insulina.
+
+
+### Aigua
+Es considera un macronutrient tot i no aportar energia. Classificació:
+
+- **D'aixeta:** En general és de bona qualitat i és la que es recomana consumir, tant per preu com per evitar l'envasament comercial. El sabor i la qualitat pot variar segons la duresa (quantitat de calç i magnesi), els mètodes usats per potabilitzar-la i l'estat de les instal·lacions que travessa abans d'arribar a la llar.
+- **Mineral natural:** Aigua recollida de dipòsits subterranis amb contingut mineral estable, no reben cap tractament. S'analitzen periòdicament per assegurar que la composició no ha canviat.
+- **De font:** Aigua recollida de dipòsits subterranis amb contingut mineral variable, no reben cap tractament, s'analitzen abans de la seva comercialització.
+
+
+### Referències
 
 - [USA National Agricultural Library - Macronutrients](https://www.nal.usda.gov/human-nutrition-and-food-safety/food-composition/macronutrients)
 
@@ -107,5 +108,4 @@ Se considera un macronutriente a pesar de no aportar energía. Clasificación:
 
 - [Harvard - Carbs](https://www.hsph.harvard.edu/nutritionsource/carbohydrates/carbohydrates-and-blood-sugar/)
 
-- [OCU - Aguas ninerales](https://www.ocu.org/alimentacion/agua/informe/aguas-minerales)
-
+- [OCU - Aguas minerales](https://www.ocu.org/alimentacion/agua/informe/aguas-minerales)
