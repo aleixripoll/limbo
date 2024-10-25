@@ -17,7 +17,7 @@ date: 2024-02-09T07:00:00Z
 
 
 ## Informació general
-- Són substàncies **inorgàniques** presents al terra i l'aigua que el cos necessita en petites quantitats.
+- Són substàncies **inorgàniques** presents al terra i a l'aigua que el cos necessita en petites quantitats.
 - Es divideixen en **macroelements** (7, > 50mg/dia) i oligoelements o **elements traça** (~11, < 50mg/dia).
 
 
