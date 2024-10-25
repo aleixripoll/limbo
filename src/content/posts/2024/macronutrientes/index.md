@@ -2,11 +2,11 @@
 title: "Macronutrientes"
 description: "Orden en la cocina."
 authors: ["Dr. Fenilalanino"]
-image: "./ai-generated-8733794_1280.webp"
+image: "./ai-generated-8829659_1280.jpg"
 image_attribution:
-    author: Jan Jakubowski
+    author: GrumpyBeere
     site: Pixabay
-    url: https://pixabay.com/es/illustrations/ai-generado-cocinero-cocina-8733794/
+    url: https://pixabay.com/es/illustrations/ai-generado-adn-gen%C3%A9tico-estructura-8829659/
 categories: ["apunts"]
 tags: ["biologia", "química", "nutrició"]
 draft: true
@@ -48,16 +48,14 @@ Se han identificado aproximadamente 500 aminoácidos en la naturaleza, pero solo
 
 **Fuentes:** legumbres, frutos secos, semillas, granos enteros, carne, pescado, huevos, lácteos.
 
-Una **proteína completa** es aquella que contiene los 9 aminoácidos esenciales, se consideran proteínas de **alta calidad**. La proteína de origen animal es por regla general de mayor calidad y biodisponibilidad que la vegetal.
+Una **proteína completa** o de "alta calidad" es aquella que contiene los 9 aminoácidos esenciales. La proteína de origen animal es por regla general de mayor calidad y biodisponibilidad que la vegetal.
 
 
 ### Grasas
-Son cadenas de ácidos grasos con una cantidad variable de grupos `-CH-` (cadenas hidrocarbonadas). Los grupos `-CH-` están unidos entre ellos por enlaces simples o dobles. Los enlaces dobles són más fuertes pero al mismo tiempo no permiten que la molécula se compacte tanto como con los simples, así que paradójicamente la actividad enzimática es más efectiva en los ácidos grasos con enlaces dobles.
-
-El resultado es que a mayor longitud de cadena y menor cantidad de dobles enlaces, mayor saturación del ácido graso.
+Son cadenas de ácidos grasos con una cantidad variable de grupos `-CH-` (cadenas hidrocarbonadas). Los grupos `-CH-` están unidos entre ellos por enlaces simples o dobles. Los enlaces dobles són más fuertes que los simples pero no permiten que la molécula se compacte tanto, así que paradójicamente la actividad enzimática es más efectiva en los ácidos grasos con enlaces dobles. El resultado es que un ácido graso está más saturado cuanto **más larga es la cadena** y **menos dobles enlaces** contiene.
 
 #### Insaturadas
-Existe al menos un doble enlace, por lo tanto menor compactación y son **líquidas** a temperatura ambiente. Se encuentran en **aceites vegetales, frutos secos y semillas**. Beneficios:
+Existe al menos un doble enlace, por lo tanto menor compactación. Son **líquidas** a temperatura ambiente, se encuentran en **aceites vegetales, frutos secos y semillas**. Beneficios:
 
 - Mejoran los niveles de colesterol en sangre (ratio LDL/HDL).
 - Reducen inflamación.
@@ -69,12 +67,12 @@ Se subdividen en:
 - **Poliinsaturadas:** 2 o más dobles enlaces. En este grupo encontramos los ácidos grasos esenciales **omega 3, 6 y 9**, que no pueden ser sintetizados por el cuerpo. **Fuentes:** girasol, soja, maíz, nueces, pescado.
 
 #### Saturadas
-Carecen de dobles enlaces entre los átomos de carbono, por lo tanto mayor compactación y son **sólidas** a temperatura ambiente.
+Carecen de dobles enlaces, por lo tanto mayor compactación. Son **sólidas** a temperatura ambiente.
 
 **Fuentes:** carne (ternera, bacon, hamburguesas, salchichas), lácteos, galletas, helados, mantequilla, queso, aceite de palma y coco.
 
 #### Grasas trans
-Son grasas insaturadas que han sido hidrogenadas para mantenerlas en estado sólido a temperatura ambiente. Permiten conservar los alimentos y su sabor durante más tiempo (las grasas insaturadas se oxidan), por tal motivo se usan en alimentos ultraprocesados como bollería industrial. También se encuentran en muy pequeñas cantidades en alimentos como carne o lácteos.
+Son grasas **insaturadas** que han sido hidrogenadas para mantenerlas en estado sólido a temperatura ambiente. Permiten conservar los alimentos y su sabor durante más tiempo (las grasas insaturadas se oxidan), por tal motivo se usan en alimentos ultraprocesados como bollería industrial. También se encuentran en muy pequeñas cantidades en alimentos como carne o lácteos.
 
 Interfieren en la absorción de ácidos grasos esenciales, necesarios para ciertas funciones como la formación de las paredes de las arterias.
 
@@ -84,7 +82,7 @@ Interfieren en la absorción de ácidos grasos esenciales, necesarios para ciert
 ### Agua
 Se considera un macronutriente a pesar de no aportar energía. Clasificación:
 
-- **Del grifo:** En general es de buena calidad y es la que se recomiendo consumir, tanto por precio como por evitar el envasado comercial. Su sabor y calidad puede variar según su dureza (cantidad de cal y magnesio), los métodos usados para potabilizarla y el estado de las instalaciones que atraviesa antes de llegar al hogar.
+- **Del grifo:** En general es de buena calidad y es la que se recomienda consumir, tanto por precio como por evitar el envasado comercial. Su sabor y calidad puede variar según su dureza (cantidad de cal y magnesio), los métodos usados para potabilizarla y el estado de las instalaciones que atraviesa antes de llegar al hogar.
 - **Mineral natural:** Agua recogida de depósitos subterráneos con contenido mineral estable, no reciben ningún tratamiento. Se analizan periódicamente para asegurar que la composición no ha cambiado.
 - **De manantial:** Agua recogida de depósitos subterráneos con contenido mineral variable, no reciben ningún tratamiento, se analizan antes de su comercialización.
 
