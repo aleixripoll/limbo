@@ -72,7 +72,7 @@ No tenen dobles enllaços, per tant més compactació. Són **sòlids** a temper
 **Fonts:** carn (vedella, bacó, hamburgueses, salsitxes), lactis, galetes, gelats, mantega, formatge, oli de palma i coco.
 
 
-#### Greixos trans
+#### Trans
 Són greixos **insaturats** que han estat hidrogenats per mantenir-los en estat sòlid a temperatura ambient. Permeten conservar els aliments i el seu sabor durant més temps (els greixos insaturats s'oxiden), per aquest motiu s'usen en aliments ultraprocessats com a brioixeria industrial. També es troben en molt petites quantitats en aliments com a carn o lactis.
 
 Interfereixen en l'absorció d'àcids grassos essencials, necessaris per a certes funcions com ara la formació de les parets de les artèries.
