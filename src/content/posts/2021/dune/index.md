@@ -19,3 +19,9 @@ La comezón se convirtió en un ligero ardor.
 —¿Por qué me hacéis esto? —preguntó.
 
 —Para determinar si eres humano. Ahora, silencio.
+
+---
+
+Jessica volvió a perder la calma. Sintió el castañeo de sus dientes y los apretó con fuerza. Luego oyó cómo Paul recitaba la letanía con voz baja y calmada:
+
+—El miedo mata la mente. El miedo es la pequeña muerte que conduce a la destrucción total. Afrontaré mi miedo. Permitiré que pase sobre mi y a través de mí. Y cuando haya pasado, giraré mi ojo interior para escrutar su camino. Allá donde haya pasado el miedo ya no habrá nada. Solo estaré yo.
