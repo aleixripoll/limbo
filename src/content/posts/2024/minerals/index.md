@@ -54,11 +54,11 @@ date: 2024-02-09T07:00:00Z
 - Funció muscular, manteniment de la pressió sanguínia. 
 - **Fonts:** Fruites, hortalisses, fruits secs.
 - **Deficiència:** Rara, es pot produir per deshidratació o deficiència de magnesi. Símptomes: restrenyiment, rampes o paràlisi muscular.
-- **Toxicitat:** Anomenada **hiperkalemia**, produïda principalment per fallada renal, símptomes: dificultat per respirar, dolor al pit.
+- **Toxicitat:** Anomenada **hipercalèmia**, produïda principalment per fallada renal, símptomes: dificultat per respirar, dolor al pit.
 
 ### Sodi
 - Transmissió nerviosa, contracció/relaxació muscular.
-- Electròlit com a sodi i potassi, igual que ells actua com a regulador de fluids, pH i nutrients.
+- Electròlit com sodi i potassi, igual que ells actua com a regulador de fluids, pH i nutrients.
 - **Fonts:** Sal de cuina i bàsicament qualsevol aliment.
 - **Deficiència:** Molt rara.
 - **Toxicitat**: Es pot produir per problemes renals o deshidratació severa. **Sodi i potassi són complementaris**, el primer puja la pressió sanguínia i el segon la baixa, necessitem molt més del segon però acostumem a consumir molt més del primer, cosa que augmenta el risc d'hipertensió i infart.
@@ -79,7 +79,7 @@ date: 2024-02-09T07:00:00Z
 
 ### Coure
 - Funció enzimàtica, necessari per a l'absorció del ferro i la síntesi de col·lagen.
-- **Fonts:** S'emmagatzema en ossos i teixits, ho obtenim de la proteïna.
+- **Fonts:** S'emmagatzema en ossos i teixits, l'obtenim de la proteïna.
 
 ### Crom
 - Augmenta l'acció de la insulina.
