@@ -51,7 +51,7 @@ date: 2024-02-09T07:00:00Z
 
 ### Potasi
 - És un electròlit junt amb clor i sodi, actua com a regulador de fluids, pH i nutrients a nivell **intracel·lular**, co-actuant amb el sodi (regulador extracel·lular).
-– Funció muscular, manteniment de la pressió sanguínia. 
+- Funció muscular, manteniment de la pressió sanguínia. 
 - **Fonts:** Fruites, hortalisses, fruits secs.
 - **Deficiència:** Rara, es pot produir per deshidratació o deficiència de magnesi. Símptomes: restrenyiment, rampes o paràlisi muscular.
 - **Toxicitat:** Anomenada **hiperkalemia**, produïda principalment per fallada renal, símptomes: dificultat per respirar, dolor al pit.
