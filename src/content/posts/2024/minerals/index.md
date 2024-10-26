@@ -37,7 +37,7 @@ date: 2024-02-09T07:00:00Z
 - **Toxicitat:** Hipertensió.
 
 ### Fòsfor
-- Juntament amb el calci, la formació d'ossos i dents. 
+- Juntament amb el calci, formació d'ossos i dents. 
 - Cofactor enzimàtic, regulació pH sanguini, funció muscular, síntesi de neurotransmissors, ADN, ARN i ATP.
 - **Fonts:** Productes d'**origen animal** (làctics, carn, peix, marisc, ous), llegums, nous. Absorció més gran en fonts d'origen animal que vegetal. Les llavors, llegums i cereals integrals el contenen en forma de **fitats (àcid fític)** per als que no tenim l'enzim necessari (fitasa) i hem de remullar-los/cuinar-los per augmentar-ne la biodisponibilitat. En cas contrari, no només no absorbim el fòsfor, sinó que al seu pas pel tracte digestiu s'adhereix al fòsfor, ferro i zinc que es troba pel camí, disminuint-ne l'absorció.
 - **Deficiència:** Rara, se sol produir per disfunció renal o excés d'**hormona paratiroidea**. Símptomes: mal d'ossos, anèmia, augment de les infeccions.
@@ -50,7 +50,7 @@ date: 2024-02-09T07:00:00Z
 - **Toxicitat:** Rara ja que l'excés s'elimina a través de l'orina. Produïda principalment per deficiència en la funció renal.
 
 ### Potasi
-- És un electròlit junt amb clor i sodi, actua com a regulador de fluids, pH i nutrients a nivell **intracel·lular**, co-actuant amb el sodi (regulador extracel·lular).
+- És un electròlit junt amb clor i sodi, actua com a regulador de fluids, pH i nutrients a nivell intracel·lular, co-actuant amb el sodi (regulador extracel·lular).
 - Funció muscular, manteniment de la pressió sanguínia. 
 - **Fonts:** Fruites, hortalisses, fruits secs.
 - **Deficiència:** Rara, es pot produir per deshidratació o deficiència de magnesi. Símptomes: restrenyiment, rampes o paràlisi muscular.
