@@ -7,7 +7,7 @@ image_attribution:
     author: Emiliano Arano
     url: https://www.pexels.com/ca-es/foto/paisatge-naturalesa-cel-sorra-1352196/
 categories: ["literatura", "cine"]
-tags: ["filosofia"]
+tags: ["filosofia", "ciència ficció"]
 draft: false
 date: 2021-12-16T15:21:00Z
 ---
