@@ -1,12 +1,12 @@
 ---
 title: "Psychology: A concise introduction"
-description: "Libro académico de psicología, por Richard A. Griggs y Sherri L. Jackson."
+description: "Llibre acadèmic de psicologia, per Richard A. Griggs i Sherri L. Jackson."
 authors: ["Dr. Fenilalanino"]
-image: "./ai-generated-8829659_1280.jpg"
+image: "./ai-generated-8864559_1280.jpg"
 image_attribution:
-    author: GrumpyBeere
+    author: geralt
     site: Pixabay
-    url: https://pixabay.com/es/illustrations/ai-generado-adn-gen%C3%A9tico-estructura-8829659/
+    url: https://pixabay.com/es/illustrations/ai-generado-pensamientos-pensando-8864559/
 categories: ["literatura"]
 tags: ["assaig", "neurociència", "psicologia", "lang-en"]
 draft: false
