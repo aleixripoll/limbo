@@ -2,7 +2,11 @@
 title: "Psychology: A concise introduction"
 description: "Libro académico de psicología, por Richard A. Griggs y Sherri L. Jackson."
 authors: ["Dr. Fenilalanino"]
-image: ./cover.jpg
+image: "./ai-generated-8829659_1280.jpg"
+image_attribution:
+    author: GrumpyBeere
+    site: Pixabay
+    url: https://pixabay.com/es/illustrations/ai-generado-adn-gen%C3%A9tico-estructura-8829659/
 categories: ["literatura"]
 tags: ["assaig", "neurociència", "psicologia", "lang-en"]
 draft: false
