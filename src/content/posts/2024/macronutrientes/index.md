@@ -2,11 +2,11 @@
 title: "Macronutrients"
 description: "Ordre a la cuina."
 authors: ["Dr. Fenilalanino"]
-image: "./pexels-trista-chen-198334-723198.jpg"
+image: "./pexels-vanessa-loring-5966152.jpg"
 image_attribution:
-    author: Trista Chen
+    author: Vanessa Loring
     site: Pexels
-    url: https://www.pexels.com/ca-es/foto/menjar-plat-verdures-sopar-723198/
+    url: https://www.pexels.com/ca-es/foto/menjar-verdures-grans-mongetes-5966152/
 categories: ["apunts"]
 tags: ["biologia", "química", "nutrició", "lang-cat"]
 draft: false
