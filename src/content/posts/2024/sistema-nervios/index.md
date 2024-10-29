@@ -3,7 +3,7 @@ title: "Sistema nerviós"
 slug: sistema-nervios
 description: "Back to school amb super saiyans."
 authors: ["Dr. Fenilalanino"]
-image: ./sistema_nervios.jpg
+image: ./sistema_nervios.webp
 categories: ["dibuixos"]
 tags: ["biologia", "neurociència"]
 draft: false
