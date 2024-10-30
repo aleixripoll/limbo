@@ -19,7 +19,7 @@ const { className, posts, fluid } = Astro.props;
 ---
 
 <div
-  class="columns-1 sm:columns-2 lg:columns-3 mb-8 text-center"
+  class="columns-1 sm:columns-2 lg:columns-3 mb-8 text-center gap-6"
 >
   {
     posts.map((post: any, i: number) => (
@@ -28,7 +28,7 @@ const { className, posts, fluid } = Astro.props;
           <a href={`${import.meta.env.BASE_URL}${post.slug}`} class="group">
             <div class="overflow-hidden rounded-md">
               <Image
-                class="p-1 h-auto max-w-full max-h-56 transition duration-300 md:group-hover:scale-[1.05] object-cover dark:opacity-90 rounded-lg"
+                class="h-auto max-w-full max-h-56 transition duration-300 md:group-hover:scale-[1.05] object-cover dark:opacity-90"
                 src={post.data.image}
                 alt={post.data.title}
                 width="400"
