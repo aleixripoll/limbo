@@ -58,7 +58,7 @@ Si la mentira es lo bastante importante, se puede llegar a olvidar la verdad que
 Para hacer una tarta de manzana, primero tienes que crear un universo.\
 **Carl Sagan**
 
-Si no eres tú, ¿quién va a ser tú.\
+Si no eres tú, ¿quién va a ser tú?\
 **Sury Douek**
 
 Cuando el sabio señala la luna, el tonto se fija en el dedo.\
