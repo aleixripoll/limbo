@@ -1,6 +1,6 @@
 ---
 title: "¿Qué puede salir mal?"
-description: "Com funciona el cos humà, per Sandra Ortonobes, La Hiperactina."
+description: "Érase una vez el cuerpo humano, per Sandra Ortonobes."
 authors: ["Dra. Valina"]
 image: ./cover.jpeg
 categories: ["literatura"]

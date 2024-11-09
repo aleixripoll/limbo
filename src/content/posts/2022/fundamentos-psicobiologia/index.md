@@ -1,5 +1,5 @@
 ---
-title: "Fundamentos de Psicobiologia"
+title: "Fundamentos de Psicobiología"
 description: "Sí, a veces leo libros de la UNED."
 authors: ["Dra. Valina"]
 image: ./pexels-tetyana-kovyrina-2422777.jpg
