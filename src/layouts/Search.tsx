@@ -125,7 +125,7 @@ export default function SearchBar({ searchList }: Props) {
                 </>
               </li>*/}
               {/*<li className="mr-5 flex items-center flex-wrap font-medium">
-                <BiCalendarEdit className="mr-1 h-5 w-5" />
+                <BiCalendar className="mr-1 h-5 w-5" />
                 <>{dateFormat(item.data.date)}</>
               </li>*/}
               <li className="flex items-center flex-wrap font-thin">

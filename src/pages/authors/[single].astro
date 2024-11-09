@@ -8,7 +8,7 @@ import dateFormat from "@lib/utils/dateFormat";
 
 import { sortByDate } from "@lib/utils/sortFunctions";
 import { humanize, slugify } from "@lib/utils/textConverter";
-import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi/index.js";
+import { BiCalendar, BiCategoryAlt } from "react-icons/bi/index.js";
 
 export async function getStaticPaths() {
   const authors = await getSinglePage("authors");
@@ -74,7 +74,7 @@ const currentPosts = sortPostsByDate.filter((post) => {
                 )}
                 <ul class="mt-4 flex flex-wrap items-center justify-center text-sm uppercase font-light">
                   <!-- <li class="mb-2 mr-4 flex flex-wrap items-center font-medium">
-                    <BiCalendarEdit className="mr-1 h-[16px] w-[16px]" />
+                    <BiCalendar className="mr-1 h-[16px] w-[16px]" />
                     <>{dateFormat(post.data.date)}</>
                   </li>-->
                   <li class="mb-2 mr-4 flex flex-wrap items-center">

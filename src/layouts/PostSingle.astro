@@ -6,7 +6,7 @@ import { getSinglePage } from "@lib/contentParser.astro";
 import dateFormat from "@lib/utils/dateFormat";
 import similarItems from "@lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@lib/utils/textConverter";
-import { BiCalendarEdit, BiCategoryAlt, BiSolidChevronUpCircle } from "react-icons/bi/index.js";
+import { BiCalendar, BiCategoryAlt, BiSolidChevronUpCircle } from "react-icons/bi/index.js";
 import Disqus from "@components/Disqus";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
@@ -61,7 +61,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
             }
           </li>*/}
           <li class="pb-2 mx-2 flex flex-wrap items-center">
-            <BiCalendarEdit className="mr-1 h-5 w-5" />
+            <BiCalendar className="mr-1 h-5 w-5" />
             <>
               {
                 date ? dateFormat(date) : dateFormat(lastModified)

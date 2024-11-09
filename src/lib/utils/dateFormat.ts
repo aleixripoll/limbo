@@ -3,7 +3,7 @@ const dateFormat = (datetime: string | Date) => {
 
   const date = dateTime.toLocaleDateString("ca", {
     year: "numeric",
-    month: "long",
+    month: "numeric",
     day: "numeric",
   });
 

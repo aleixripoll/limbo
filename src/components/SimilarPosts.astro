@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 //import dateFormat from "@lib/utils/dateFormat";
 //import { humanize, slugify } from "@lib/utils/textConverter";
-//import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi/index.js";
+//import { BiCalendar, BiCategoryAlt } from "react-icons/bi/index.js";
 const { posts } = Astro.props;
 ---
 
@@ -27,7 +27,7 @@ const { posts } = Astro.props;
         {/*<ul class="mt-4 flex flex-wrap items-center justify-center text-sm text-text">
           {post.data.date && (
           <li class="mb-2 mr-4 flex flex-wrap items-center font-medium">
-            <BiCalendarEdit className="mr-1 h-[16px] w-[16px]" />
+            <BiCalendar className="mr-1 h-[16px] w-[16px]" />
             <>{dateFormat(post.data.date)}</>
           </li>)}
           <li class="mb-2 mr-4 flex flex-wrap items-center">

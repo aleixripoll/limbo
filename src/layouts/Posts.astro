@@ -4,7 +4,7 @@ import config from "@config/config.json";
 import { getSinglePage } from "@lib/contentParser.astro";
 import dateFormat from "@lib/utils/dateFormat";
 import { humanize, slugify } from "@lib/utils/textConverter";
-import { BiCategoryAlt, BiCalendarEdit } from "react-icons/bi/index.js";
+import { BiCategoryAlt, BiCalendar } from "react-icons/bi/index.js";
 
 const authors = await getSinglePage("authors");
 const { summary_length } = config.settings;
@@ -34,12 +34,12 @@ const { className, posts, fluid } = Astro.props;
                 width="400"
               />
             </div>
-            {/*<ul class="mt-3 flex flex-wrap items-center justify-center uppercase text-xs font-light">
+            <ul class="mt-3 flex flex-wrap items-center justify-center text-xs font-light">
               <li class="mr-4 flex flex-wrap items-center">
-                <BiCalendarEdit className="mr-1 h-5 w-5" />
+                <BiCalendar className="pr-1 h-[18px] w-[18px]" />
                 <>{dateFormat(post.data.date)}</>
               </li>
-               <li class="flex flex-wrap items-center">
+              <li class="flex flex-wrap items-center">
                 <BiCategoryAlt className="h-[18px] w-[18px] pr-1" />
                   <ul>
                     {post.data.categories.map((category: string, i: number) => (
@@ -49,8 +49,8 @@ const { className, posts, fluid } = Astro.props;
                     ))}
                   </ul>
               </li>
-            </ul>*/}
-            <h3 class={`text-center mt-3.5 mb-1.5 text-xl group-hover:text-primary duration-300`}>
+            </ul>
+            <h3 class={`text-center my-1.5 text-xl group-hover:text-primary duration-300`}>
               {post.data.title}
             </h3>
             <p class="text-center px mb-8 sm:mb-5 text-sm">
