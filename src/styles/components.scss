@@ -92,7 +92,7 @@
 }
 
 .sticky {
-  @apply fixed top-0 w-full z-10 bg-inherit;
+  @apply fixed top-0 w-full z-10 bg-white dark:bg-theme-dark;
 }
 
 a > svg {
