@@ -2,7 +2,7 @@
 title: "Hormones i neurotransmissors"
 description: "S'assemblen però no."
 authors: ["Dra. Valina"]
-image: ./hormo_vs_neuro.jpg
+image: ./hormo_vs_neuro.webp
 categories: ["apunts", "dibuixos"]
 tags: ["neurociència", "lang-cat"]
 draft: false
