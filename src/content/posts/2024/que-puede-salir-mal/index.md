@@ -2,7 +2,7 @@
 title: "¿Qué puede salir mal?"
 description: "Érase una vez el cuerpo humano, per Sandra Ortonobes."
 authors: ["Dra. Valina"]
-image: ./cover.jpeg
+image: ./cover2.jpg
 categories: ["literatura"]
 tags: ["biologia", "neurociència"]
 draft: false
