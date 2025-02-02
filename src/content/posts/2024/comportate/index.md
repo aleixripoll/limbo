@@ -2,7 +2,7 @@
 title: "Compórtate"
 description: "La biología que hay detrás de nuestros mejores y peores comportamientos."
 authors: ["Dr. Fenilalanino"]
-image: ./cover.jpg
+image: ./cover.jpeg
 categories: ["literatura"]
 tags: ["neurociència", "lang-es"]
 draft: false
