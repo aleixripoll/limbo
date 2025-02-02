@@ -1,6 +1,6 @@
 ---
 title: "Compórtate"
-description: "La biología que hay detrás de nuestros mejores y peores comportamientos."
+description: "Robert Sapolsky"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpeg
 categories: ["literatura"]

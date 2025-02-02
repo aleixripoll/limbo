@@ -1,8 +1,8 @@
 ---
 title: "¿Qué puede salir mal?"
-description: "Érase una vez el cuerpo humano, per Sandra Ortonobes, La Hiperactina."
+description: "Sandra Ortonobes, La Hiperactina"
 authors: ["Dra. Valina"]
-image: ./cover_bg.jpg
+image: ./cover.jpg
 #image_attribution:
 #    author: GrumpyBeere
 #    site: Pixabay
