@@ -2,7 +2,7 @@
 title: "Futurama y la filosofía"
 description: "Courtland Lewis"
 authors: ["Dra. Valina"]
-image: ./cover.webp
+image: ./cover.jpeg
 categories: ["literatura"]
 tags: ["lang-es"]
 draft: false
