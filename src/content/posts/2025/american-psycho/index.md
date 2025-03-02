@@ -2,7 +2,7 @@
 title: "American Psycho"
 description: "Bret Easton Ellis"
 authors: ["Dr. Fenilalanino"]
-image: ./cover.webp
+image: ./cover.jpg
 categories: ["literatura"]
 tags: ["lang-es"]
 draft: false
