@@ -2,10 +2,11 @@
 title: "21 lessons for the 21st century"
 description: "Tercera parte de Sapiens, de Yuval Noah Harari."
 authors: ["Dra. Valina"]
-image: ./pexels-suzy-hazelwood-1098515.jpg
+image: ./ai-generated-8965985.jpeg
 image_attribution:
-    author: Suzy Hazelwood
-    url: https://www.pexels.com/ca-es/foto/1098515/
+    author: RibhavAgrawal
+    site: Pixabay
+    url: https://pixabay.com/es/illustrations/ai-generado-ojo-humano-ojo-humano-8965985/
 categories: ["literatura"]
 tags: ["assaig", "historia", "filosofia", "lang-en"]
 draft: false
