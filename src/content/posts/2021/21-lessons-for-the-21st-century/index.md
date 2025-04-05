@@ -1,6 +1,6 @@
 ---
 title: "21 lessons for the 21st century"
-description: "Tercera parte de Sapiens, de Yuval Noah Harari."
+description: "Yuval Noah Harari"
 authors: ["Dra. Valina"]
 image: ./ai-generated-8965985.jpeg
 image_attribution:
