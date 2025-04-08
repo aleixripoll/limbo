@@ -15,9 +15,7 @@ date: 2025-04-05T16:00:00Z
 
 La gente sabía desde hacía mucho tiempo que había algo raro en la tierra debajo de Manson, Iowa. En 1912, un hombre que estaba perforando para hacer un pozo para el suministro de agua a la población informó que había encontrado mucha roca extrañamente deformada.
 
-En algún momento del pasado muy remoto, cuando Manson se hallaba en el borde de un mar poco profundo, una roca de unos 2,4 kilómetros de anchura, que pesaba 10.000 millones de toneladas y se desplazaba a tal vez unas doscientas veces la velocidad del sonido, atravesó la atmósfera y se clavó en la Tierra con una violencia y una brusquedad casi inimaginables. La zona en la que se alza hoy Manson se convirtió en un instante en un agujero de 4,8 kilómetros de profundidad y más de 32 kilómetros de anchura. La piedra caliza que en otras partes da a Iowa su agua dura y mineralizada, quedó destruida y la sustituyeron las rocas del basamento impactado que tanto desconcertaron al perforador que buscaba agua en 1912.
-
-(...)
+En algún momento del pasado muy remoto, cuando Manson se hallaba en el borde de un mar poco profundo, una roca de unos 2,4 kilómetros de anchura, que pesaba 10.000 millones de toneladas y se desplazaba a tal vez unas doscientas veces la velocidad del sonido, atravesó la atmósfera y se clavó en la Tierra con una violencia y una brusquedad casi inimaginables. La zona en la que se alza hoy Manson se convirtió en un instante en un agujero de 4,8 kilómetros de profundidad y más de 32 kilómetros de anchura. La piedra caliza que en otras partes da a Iowa su agua dura y mineralizada, quedó destruida y la sustituyeron las rocas del basamento impactado que tanto desconcertaron al perforador que buscaba agua en 1912. (...)
 
 Les pregunté qué aviso tendríamos si una mole de roca similar se dirigiera hoy hacia nosotros.
 
