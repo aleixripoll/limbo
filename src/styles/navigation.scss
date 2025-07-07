@@ -11,6 +11,32 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply block md:flex;
 }
 
+// Improved burger menu animations
+#show-button,
+#hide-button {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+#show-button:hover,
+#hide-button:hover {
+  @apply scale-110;
+}
+
+#nav-menu {
+  @apply transition-all duration-500 ease-in-out transform;
+}
+
+// Mobile menu slide animation
+@media (max-width: 768px) {
+  #nav-menu {
+    @apply transform translate-y-[-10px] opacity-0;
+  }
+  
+  input#nav-toggle:checked ~ #nav-menu {
+    @apply transform translate-y-0 opacity-100;
+  }
+}
+
 // navbar items
 .navbar {
   @apply relative flex max-w-[1260px] flex-wrap items-center justify-between;
