@@ -167,11 +167,11 @@ img[alt$="<"] {
 }
 
 .masonry-content {
-  @apply p-6 text-center;
+  @apply p-6;
 }
 
 .masonry-meta {
-  @apply flex flex-wrap items-center justify-center gap-4 mb-4 text-xs text-gray-600 dark:text-gray-400;
+  @apply flex flex-wrap items-center gap-4 mb-4 text-xs text-gray-600 dark:text-gray-400;
 }
 
 .masonry-date,
