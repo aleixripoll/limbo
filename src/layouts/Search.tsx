@@ -91,74 +91,50 @@ export default function SearchBar({ searchList }: Props) {
         </div>
       )}
 
-      <div className="row">
+      <div className="search-results-grid">
         {searchResults?.map(({ item }) => (
-          <div key={item.slug} className={"col-12 mb-8 sm:col-6 text-center"}>
+          <article key={item.slug} className="search-result-item">
             {item.data.image && (
-              <a href={`${import.meta.env.BASE_URL}${item.slug}`} className="rounded-lg block hover:text-primary overflow-hidden group">
-                <img
-                  className="group-hover:scale-[1.03] transition duration-300 w-full max-h-52 object-cover"
-                  src={item.data.image.src}
-                  alt={item.data.title}
-                  width={445}
-                  height={230}
-                />
+              <a href={`${import.meta.env.BASE_URL}${item.slug}`} className="search-result-card group">
+                <div className="search-result-image-container">
+                  <img
+                    className="search-result-image"
+                    src={item.data.image.src}
+                    alt={item.data.title}
+                    width={445}
+                    height={230}
+                  />
+                  <div className="search-result-overlay">
+                    <span className="search-result-read-more">Llegir més</span>
+                  </div>
+                </div>
+                
+                <div className="search-result-content">
+                  <div className="search-result-meta">
+                    <div className="search-result-categories">
+                      <BiCategoryAlt className="search-result-icon" />
+                      <div className="search-result-category-list">
+                        {item.data.categories.map((category: string, i: number) => (
+                          <span className="search-result-category">
+                            {humanize(category)}{i !== item.data.categories.length - 1 && ","}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <h3 className="search-result-title">
+                    {item.data.title}
+                  </h3>
+                  
+                  <p className="search-result-excerpt">
+                    {item.data.description ? item.data.description :
+                    item.content?.slice(0, Number(summary_length)) + "..."}
+                  </p>
+                </div>
               </a>
             )}
-
-            <ul className="mt-2 flex flex-wrap items-center justify-center">
-              {/*<li className="mr-5 flex items-center flex-wrap">
-                <BiUser className="mr-1 h-[18px] w-[18px]" />
-                <>
-                  <ul>
-                    {item.data.authors.map((author: string, i: number) => (
-                      <li className="inline-block">
-                        <a
-                          href={`${import.meta.env.BASE_URL}authors/${slugify(author)}`}
-                          className="mr-2 hover:text-primary font-medium"
-                        >
-                          {humanize(author)}{i !== item.data.authors.length - 1 && ","}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              </li>*/}
-              {/*<li className="mr-5 flex items-center flex-wrap font-medium">
-                <BiCalendar className="mr-1 h-5 w-5" />
-                <>{dateFormat(item.data.date)}</>
-              </li>*/}
-              <li className="flex items-center flex-wrap font-thin">
-                <BiCategoryAlt className="pr-1 h-[18px] w-[18px]" />
-                <>
-                  <ul>
-                    {item.data.categories.map((category: string, i: number) => (
-                      <li className="inline-block">
-                        <a
-                          href={`${import.meta.env.BASE_URL}categories/${slugify(category)}`}
-                          className="mr-2 hover:text-primary"
-                        >
-                          {humanize(category)}{i !== item.data.categories.length - 1 && ","}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              </li>
-            </ul>
-
-            <h3 className="mb-1 text-2xl">
-              <a href={`${import.meta.env.BASE_URL}${item.slug}`} className="block hover:text-primary transition duration-300">
-                {item.data.title}
-              </a>
-            </h3>
-            <p className="mb-4">
-            {
-              item.data.description ? item.data.description :
-              item.content?.slice(0, Number(summary_length)) + "..."
-            }
-            </p>
-          </div>
+          </article>
         ))}
       </div>
     </div>
