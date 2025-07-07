@@ -20,4 +20,4 @@ what_i_do:
 
 Un porrón de años pensando demasiado me han llevado a escribir un blog sobre temas que no tienen nada que ver con nada de lo que se supone que sé.
 
-¿No tiene ningún sentido verdad? Dejadme en paz.
+No té massa sentit veritat? Deixeu-me en pau.
