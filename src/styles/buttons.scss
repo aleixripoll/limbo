@@ -7,5 +7,11 @@
 }
 
 .btn-outline-primary {
-  @apply border-primary bg-transparent hover:bg-primary hover:text-white;
+  @apply border-primary bg-transparent;
+}
+
+@media (hover: hover) {
+  .btn-outline-primary:hover {
+    @apply bg-primary text-white;
+  }
 }

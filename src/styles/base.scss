@@ -48,3 +48,42 @@ h6,
 .h6 {
   @apply text-sm md:text-h6;
 }
+
+// Disable hover effects on touch devices
+@media (hover: none) {
+  .group-hover\:text-primary {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+  
+  .group-hover\:text-white {
+    @apply text-primary;
+  }
+  
+  .group-hover\:scale-\[1\.03\] {
+    @apply scale-100;
+  }
+  
+  .group-hover\:scale-105 {
+    @apply scale-100;
+  }
+  
+  .group-hover\:brightness-110 {
+    @apply brightness-100;
+  }
+  
+  .group-hover\:block {
+    @apply hidden;
+  }
+  
+  .group-hover\:visible {
+    @apply invisible;
+  }
+  
+  .group-hover\:opacity-100 {
+    @apply opacity-0;
+  }
+  
+  .group-hover\:inline-block {
+    @apply hidden;
+  }
+}

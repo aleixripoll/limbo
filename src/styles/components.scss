@@ -46,7 +46,7 @@
   li {
     @apply inline-block;
     a {
-      @apply block h-11 w-11 rounded-lg /*border*/ border-light bg-transparent text-center text-white transition hover:border-primary hover:bg-primary;
+      @apply block h-11 w-11 rounded-lg /*border*/ border-light bg-transparent text-center text-white transition;
       svg {
         @apply m-auto h-11 text-base;
       }
@@ -59,7 +59,7 @@
   li {
     @apply inline-block;
     a {
-      @apply block p-3 text-dark transition hover:text-primary;
+      @apply block p-3 text-dark transition;
       svg {
         @apply text-lg;
       }
@@ -72,8 +72,27 @@
   li {
     @apply inline-block;
     a {
-      @apply block p-3 transition duration-300 hover:text-primary;
+      @apply block p-3 transition duration-300;
     }
+  }
+}
+
+// Hover effects for non-touch devices
+@media (hover: hover) {
+  .social-icons li a:hover {
+    @apply border-primary bg-primary;
+  }
+  
+  .social-icons-simple li a:hover {
+    @apply text-primary;
+  }
+  
+  .social-share li a:hover {
+    @apply text-primary;
+  }
+  
+  footer p a:hover {
+    @apply text-primary;
   }
 }
 
@@ -101,7 +120,7 @@ a > svg {
 
 // footer
 footer p a {
-  @apply transition-all duration-200 hover:text-primary;
+  @apply transition-all duration-200;
 }
 
 footer.section {
@@ -134,7 +153,13 @@ img[alt$="<"] {
 }
 
 .masonry-card {
-  @apply block bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 hover:-translate-y-2;
+  @apply block bg-white dark:bg-gray-800 rounded-xl shadow-sm transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700;
+}
+
+@media (hover: hover) {
+  .masonry-card {
+    @apply hover:shadow-lg hover:-translate-y-2;
+  }
 }
 
 .masonry-image-container {
@@ -146,28 +171,34 @@ img[alt$="<"] {
   @apply w-full h-full object-cover transition-transform duration-700 ease-out;
 }
 
-.masonry-card:hover .masonry-image {
-  @apply scale-110;
+@media (hover: hover) {
+  .masonry-card:hover .masonry-image {
+    @apply scale-110;
+  }
 }
 
 .masonry-overlay {
   @apply absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center transition-all duration-300;
 }
 
-.masonry-card:hover .masonry-overlay {
-  @apply bg-opacity-30;
+@media (hover: hover) {
+  .masonry-card:hover .masonry-overlay {
+    @apply bg-opacity-30;
+  }
 }
 
 .masonry-read-more {
   @apply text-white font-medium px-4 py-2 rounded-lg bg-primary bg-opacity-90 transform translate-y-4 opacity-0 transition-all duration-300;
 }
 
-.masonry-card:hover .masonry-read-more {
-  @apply translate-y-0 opacity-100;
+@media (hover: hover) {
+  .masonry-card:hover .masonry-read-more {
+    @apply translate-y-0 opacity-100;
+  }
 }
 
 .masonry-content {
-  @apply p-6 pb-8;
+  @apply p-6 pb-5;
 }
 
 .masonry-meta {
@@ -188,7 +219,13 @@ img[alt$="<"] {
 }
 
 .masonry-category {
-  @apply hover:text-primary transition-colors duration-200;
+  @apply transition-colors duration-200;
+}
+
+@media (hover: hover) {
+  .masonry-category:hover {
+    @apply text-primary;
+  }
 }
 
 .masonry-title {
@@ -214,7 +251,7 @@ img[alt$="<"] {
   }
   
   .masonry-content {
-    @apply p-4 pb-8;
+    @apply p-4 pb-5;
   }
   
   .masonry-title {
@@ -250,7 +287,13 @@ img[alt$="<"] {
 }
 
 .similar-post-card {
-  @apply block bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 hover:-translate-y-2;
+  @apply block bg-white dark:bg-gray-800 rounded-xl shadow-sm transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700;
+}
+
+@media (hover: hover) {
+  .similar-post-card {
+    @apply hover:shadow-lg hover:-translate-y-2;
+  }
 }
 
 .similar-post-image-container {
@@ -262,28 +305,34 @@ img[alt$="<"] {
   @apply w-full h-full object-cover transition-transform duration-700 ease-out;
 }
 
-.similar-post-card:hover .similar-post-image {
-  @apply scale-110;
+@media (hover: hover) {
+  .similar-post-card:hover .similar-post-image {
+    @apply scale-110;
+  }
 }
 
 .similar-post-overlay {
   @apply absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center transition-all duration-300;
 }
 
-.similar-post-card:hover .similar-post-overlay {
-  @apply bg-opacity-30;
+@media (hover: hover) {
+  .similar-post-card:hover .similar-post-overlay {
+    @apply bg-opacity-30;
+  }
 }
 
 .similar-post-read-more {
   @apply text-white font-medium px-4 py-2 rounded-lg bg-primary bg-opacity-90 transform translate-y-4 opacity-0 transition-all duration-300;
 }
 
-.similar-post-card:hover .similar-post-read-more {
-  @apply translate-y-0 opacity-100;
+@media (hover: hover) {
+  .similar-post-card:hover .similar-post-read-more {
+    @apply translate-y-0 opacity-100;
+  }
 }
 
 .similar-post-content {
-  @apply p-4 pb-6;
+  @apply p-4 pb-4;
 }
 
 .similar-post-meta {
@@ -303,7 +352,13 @@ img[alt$="<"] {
 }
 
 .similar-post-category {
-  @apply hover:text-primary transition-colors duration-200;
+  @apply transition-colors duration-200;
+}
+
+@media (hover: hover) {
+  .similar-post-category:hover {
+    @apply text-primary;
+  }
 }
 
 .similar-post-title {
@@ -334,7 +389,13 @@ img[alt$="<"] {
 }
 
 .search-result-card {
-  @apply block bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 hover:-translate-y-2;
+  @apply block bg-white dark:bg-gray-800 rounded-xl shadow-sm transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700;
+}
+
+@media (hover: hover) {
+  .search-result-card {
+    @apply hover:shadow-lg hover:-translate-y-2;
+  }
 }
 
 .search-result-image-container {
@@ -346,28 +407,34 @@ img[alt$="<"] {
   @apply w-full h-full object-cover transition-transform duration-700 ease-out;
 }
 
-.search-result-card:hover .search-result-image {
-  @apply scale-110;
+@media (hover: hover) {
+  .search-result-card:hover .search-result-image {
+    @apply scale-110;
+  }
 }
 
 .search-result-overlay {
   @apply absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center transition-all duration-300;
 }
 
-.search-result-card:hover .search-result-overlay {
-  @apply bg-opacity-30;
+@media (hover: hover) {
+  .search-result-card:hover .search-result-overlay {
+    @apply bg-opacity-30;
+  }
 }
 
 .search-result-read-more {
   @apply text-white font-medium px-4 py-2 rounded-lg bg-primary bg-opacity-90 transform translate-y-4 opacity-0 transition-all duration-300;
 }
 
-.search-result-card:hover .search-result-read-more {
-  @apply translate-y-0 opacity-100;
+@media (hover: hover) {
+  .search-result-card:hover .search-result-read-more {
+    @apply translate-y-0 opacity-100;
+  }
 }
 
 .search-result-content {
-  @apply p-6 pb-8;
+  @apply p-6 pb-5;
 }
 
 .search-result-meta {
@@ -387,7 +454,13 @@ img[alt$="<"] {
 }
 
 .search-result-category {
-  @apply hover:text-primary transition-colors duration-200;
+  @apply transition-colors duration-200;
+}
+
+@media (hover: hover) {
+  .search-result-category:hover {
+    @apply text-primary;
+  }
 }
 
 .search-result-title {
@@ -412,7 +485,13 @@ span.attribution {
 }
 
 a.attribution {
-  @apply block text-center italic text-xs opacity-90 mt-2 hover:text-primary;
+  @apply block text-center italic text-xs opacity-90 mt-2;
+}
+
+@media (hover: hover) {
+  a.attribution:hover {
+    @apply text-primary;
+  }
 }
 
 .theme-switcher {
@@ -439,13 +518,13 @@ a.attribution {
 
 @media (max-width: 640px) {
   .similar-post-content {
-    @apply p-3 pb-6;
+    @apply p-3 pb-4;
   }
 }
 
 @media (max-width: 640px) {
   .search-result-content {
-    @apply p-4 pb-8;
+    @apply p-4 pb-5;
   }
 }
 
