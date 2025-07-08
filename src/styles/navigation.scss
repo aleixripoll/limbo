@@ -11,6 +11,32 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply block md:flex;
 }
 
+// Improved burger menu animations
+#show-button,
+#hide-button {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+#show-button:hover,
+#hide-button:hover {
+  @apply scale-110;
+}
+
+#nav-menu {
+  @apply transition-all duration-500 ease-in-out transform;
+}
+
+// Mobile menu slide animation
+@media (max-width: 768px) {
+  #nav-menu {
+    @apply transform translate-y-[-10px] opacity-0;
+  }
+  
+  input#nav-toggle:checked ~ #nav-menu {
+    @apply transform translate-y-0 opacity-100;
+  }
+}
+
 // navbar items
 .navbar {
   @apply relative flex max-w-[1260px] flex-wrap items-center justify-between;
@@ -22,6 +48,8 @@ input#nav-toggle:checked ~ #nav-menu {
 
 .navbar-nav {
   @apply text-center md:text-left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-weight: 500;
 }
 
 .nav-item {
@@ -30,10 +58,14 @@ input#nav-toggle:checked ~ #nav-menu {
 
 .nav-link {
   @apply p-3 transition hover:text-primary md:p-4 tracking-wide;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-weight: 500;
 }
 
 .nav-dropdown-list {
   @apply z-10 rounded-lg bg-white px-6 py-3 shadow transition;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-weight: 400;
 }
 
 .nav-dropdown-item {
@@ -42,6 +74,8 @@ input#nav-toggle:checked ~ #nav-menu {
 
 .nav-dropdown-link {
   @apply block min-w-[150px] py-1 transition hover:text-primary;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-weight: 400;
 }
 
 // search style

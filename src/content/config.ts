@@ -10,9 +10,7 @@ const postsCollection = defineCollection({
     description: z.string().optional(),
     date: z.date().optional(),
     // https://docs.astro.build/en/guides/images/#images-in-content-collections
-    image: image().refine((img) => img.width >= 100, {
-      message: "Cover image must be at least 100 pixels wide!",
-    }).optional(),
+    image: image().optional(),
     image_attribution: z.object({
       author: z.string(),
       site: z.string().default("Pexels"),
@@ -32,9 +30,7 @@ const authorsCollection = defineCollection({
     id: z.string().optional(),
     title: z.string(),
     meta_title: z.string().optional(),
-    image: image().refine((img) => img.height >= 400, {
-      message: "Author image must be at least 400 pixels tall!",
-    }).optional(),
+    image: image().optional(),
     description: z.string().optional(),
     social: z.object({
         facebook: z.string().optional(),
@@ -60,9 +56,29 @@ const pagesCollection = defineCollection({
   }),
 });
 
+// About collection schema
+const aboutCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    id: z.string().optional(),
+    title: z.string(),
+    meta_title: z.string().optional(),
+    image: z.string().optional(),
+    draft: z.boolean().optional(),
+    what_i_do: z.object({
+      title: z.string(),
+      items: z.array(z.object({
+        title: z.string(),
+        description: z.string(),
+      })),
+    }).optional(),
+  }),
+});
+
 // Export collections
 export const collections = {
   posts: postsCollection,
   pages: pagesCollection,
   authors: authorsCollection,
+  about: aboutCollection,
 };

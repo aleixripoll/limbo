@@ -18,52 +18,59 @@ interface Props {
 const { className, posts, fluid } = Astro.props;
 ---
 
-<div
-  class="columns-1 sm:columns-2 lg:columns-3 mb-8 text-center gap-6"
->
+<div class={`masonry-grid mt-8 ${className || ""}`}>
   {
     posts.map((post: any, i: number) => (
-      <div class="inline-block py-1.5">
+      <article class="masonry-item">
         {post.data.image && (
-          <a href={`${import.meta.env.BASE_URL}${post.slug}`} class="group">
-            <div class="overflow-hidden rounded m-1 border border-solid border-neutral-200 dark:border-neutral-800">
+          <a href={`${import.meta.env.BASE_URL}${post.slug}`} class="masonry-card group">
+            <div class="masonry-image-container">
               <Image
-                class="h-auto max-w-full max-h-56 transition duration-300 md:group-hover:scale-[1.03] object-cover dark:opacity-90"
+                class="masonry-image"
                 src={post.data.image}
                 alt={post.data.title}
                 width="400"
+                height="300"
               />
+              <div class="masonry-overlay">
+                <span class="masonry-read-more">Llegir més</span>
+              </div>
             </div>
-            <ul class="mt-3 flex flex-wrap items-center justify-center text-xs font-light">
-              <li class="mr-4 flex flex-wrap items-center">
-                <BiCalendar className="pr-1 h-[18px] w-[18px]" />
-                <>{dateFormat(post.data.date)}</>
-              </li>
-              <li class="flex flex-wrap items-center">
-                <BiCategoryAlt className="h-[18px] w-[18px] pr-1" />
-                  <ul>
+            
+            <div class="masonry-content">
+              <div class="masonry-meta">
+                <div class="masonry-date">
+                  <BiCalendar className="masonry-icon" />
+                  <span>{dateFormat(post.data.date)}</span>
+                </div>
+                <div class="masonry-categories">
+                  <BiCategoryAlt className="masonry-icon" />
+                  <div class="masonry-category-list">
                     {post.data.categories.map((category: string, i: number) => (
-                      <li class="inline-block mr-1">
-                          {humanize(category)}{i !== post.data.categories.length - 1 && ","}
-                      </li>
+                      <span class="masonry-category">
+                        {humanize(category)}{i !== post.data.categories.length - 1 && ","}
+                      </span>
                     ))}
-                  </ul>
-              </li>
-            </ul>
-            <h3 class={`text-center my-1.5 text-xl group-hover:text-primary duration-300`}>
-              {post.data.title}
-            </h3>
-            <p class="text-center px mb-8 sm:mb-5 text-sm">
-              {post.data.description
-                ? post.data.description
-                : post.body?.slice(
-                    0,
-                    Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
-                  ) + "..."}
-            </p>
-          </a>  // end of post anchor
+                  </div>
+                </div>
+              </div>
+              
+              <h3 class="masonry-title">
+                {post.data.title}
+              </h3>
+              
+              <p class="masonry-excerpt">
+                {post.data.description
+                  ? post.data.description
+                  : post.body?.slice(
+                      0,
+                      Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
+                    ) + "..."}
+              </p>
+            </div>
+          </a>
         )}
-      </div>
+      </article>
     ))
   }
 </div>
