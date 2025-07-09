@@ -725,6 +725,13 @@ a.attribution {
   .search-result-read-more {
     @apply hidden;
   }
+  
+  // Remove border hover effect on mobile
+  .masonry-card:hover,
+  .similar-post-card:hover,
+  .search-result-card:hover {
+    @apply border-gray-200 dark:border-gray-700;
+  }
 }
 
 // Improved category badges with better contrast
