@@ -753,6 +753,13 @@ a.attribution {
     background: linear-gradient(135deg, rgba(1, 173, 175, 0.15) 0%, rgba(1, 173, 175, 0.08) 100%);
     border: 1px solid rgba(1, 173, 175, 0.2);
   }
+  
+  // Disable border effect on click/tap
+  .masonry-card:active,
+  .similar-post-card:active,
+  .search-result-card:active {
+    @apply border-gray-200 dark:border-gray-700;
+  }
 }
 
 // Improved category badges with better contrast
