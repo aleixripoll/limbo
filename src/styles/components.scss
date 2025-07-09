@@ -726,11 +726,32 @@ a.attribution {
     @apply hidden;
   }
   
-  // Disable border hover effects on mobile
+  // Disable all hover effects on mobile
   .masonry-card:hover,
   .similar-post-card:hover,
   .search-result-card:hover {
-    @apply border-gray-200 dark:border-gray-700;
+    @apply transform-none shadow-sm;
+  }
+  
+  .masonry-card:hover .masonry-image,
+  .similar-post-card:hover .similar-post-image,
+  .search-result-card:hover .search-result-image {
+    @apply scale-100;
+    filter: brightness(0.95) contrast(1.05);
+  }
+  
+  .masonry-title:hover,
+  .similar-post-title:hover,
+  .search-result-title:hover {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+  
+  .masonry-category:hover,
+  .similar-post-category:hover,
+  .search-result-category:hover {
+    @apply text-primary bg-transparent transform-none shadow-none;
+    background: linear-gradient(135deg, rgba(1, 173, 175, 0.15) 0%, rgba(1, 173, 175, 0.08) 100%);
+    border: 1px solid rgba(1, 173, 175, 0.2);
   }
 }
 
