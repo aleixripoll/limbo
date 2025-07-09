@@ -859,13 +859,25 @@ a.attribution {
   .masonry-content,
   .similar-post-content,
   .search-result-content {
-    @apply p-4 pb-5;
+    @apply p-4 pb-5 text-center;
   }
   
   .masonry-title,
   .similar-post-title,
   .search-result-title {
-    @apply text-lg;
+    @apply text-lg text-center;
+  }
+  
+  .masonry-excerpt,
+  .similar-post-excerpt,
+  .search-result-excerpt {
+    @apply text-center;
+  }
+  
+  .masonry-meta,
+  .similar-post-meta,
+  .search-result-meta {
+    @apply justify-center;
   }
   
   .masonry-card,
