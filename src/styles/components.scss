@@ -711,7 +711,15 @@ a.attribution {
   .similar-post-card,
   .search-result-card {
     @apply active:scale-[0.98] active:shadow-md;
-    transition: all 0.2s ease-out;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    border: none;
+    border-bottom: 1px solid rgb(229 231 235);
+  }
+  
+  .dark .masonry-card,
+  .dark .similar-post-card,
+  .dark .search-result-card {
+    border-bottom: 1px solid rgb(55 65 81);
   }
   
   .masonry-overlay,
@@ -731,6 +739,14 @@ a.attribution {
   .similar-post-card:hover,
   .search-result-card:hover {
     @apply transform-none shadow-sm;
+    border: none;
+    border-bottom: 1px solid rgb(229 231 235);
+  }
+  
+  .dark .masonry-card:hover,
+  .dark .similar-post-card:hover,
+  .dark .search-result-card:hover {
+    border-bottom: 1px solid rgb(55 65 81);
   }
   
   .masonry-card:hover .masonry-image,
@@ -758,7 +774,14 @@ a.attribution {
   .masonry-card:active,
   .similar-post-card:active,
   .search-result-card:active {
-    @apply border-gray-200 dark:border-gray-700;
+    border: none;
+    border-bottom: 1px solid rgb(229 231 235);
+  }
+  
+  .dark .masonry-card:active,
+  .dark .similar-post-card:active,
+  .dark .search-result-card:active {
+    border-bottom: 1px solid rgb(55 65 81);
   }
 }
 
