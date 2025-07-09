@@ -720,14 +720,13 @@ a.attribution {
   .masonry-overlay,
   .similar-post-overlay,
   .search-result-overlay {
-    @apply opacity-100;
-    background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 100%);
+    @apply hidden;
   }
   
   .masonry-read-more,
   .similar-post-read-more,
   .search-result-read-more {
-    @apply opacity-100 translate-y-0;
+    @apply hidden;
   }
 }
 
