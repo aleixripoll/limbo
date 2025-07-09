@@ -153,13 +153,12 @@ img[alt$="<"] {
 }
 
 .masonry-card {
-  @apply block bg-white dark:bg-gray-800 rounded-2xl shadow-sm transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 relative;
-  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.98) 100%);
-  backdrop-filter: blur(10px);
+  @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative border-b border-gray-200 dark:border-gray-700;
+  background: transparent;
 }
 
 .dark .masonry-card {
-  background: linear-gradient(135deg, rgba(31,41,55,0.95) 0%, rgba(31,41,55,0.98) 100%);
+  background: transparent;
 }
 
 @media (hover: hover) {
@@ -320,13 +319,12 @@ img[alt$="<"] {
 }
 
 .similar-post-card {
-  @apply block bg-white dark:bg-gray-800 rounded-xl shadow-sm transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 relative;
-  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.98) 100%);
-  backdrop-filter: blur(10px);
+  @apply block rounded-xl shadow-sm transition-all duration-500 overflow-hidden relative border-b border-gray-200 dark:border-gray-700;
+  background: transparent;
 }
 
 .dark .similar-post-card {
-  background: linear-gradient(135deg, rgba(31,41,55,0.95) 0%, rgba(31,41,55,0.98) 100%);
+  background: transparent;
 }
 
 @media (hover: hover) {
@@ -452,13 +450,12 @@ img[alt$="<"] {
 }
 
 .search-result-card {
-  @apply block bg-white dark:bg-gray-800 rounded-2xl shadow-sm transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 relative;
-  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.98) 100%);
-  backdrop-filter: blur(10px);
+  @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative border-b border-gray-200 dark:border-gray-700;
+  background: transparent;
 }
 
 .dark .search-result-card {
-  background: linear-gradient(135deg, rgba(31,41,55,0.95) 0%, rgba(31,41,55,0.98) 100%);
+  background: transparent;
 }
 
 @media (hover: hover) {
