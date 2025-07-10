@@ -627,30 +627,32 @@ a.attribution {
   }
 }
 
-// Mobile animation enhancements
+// Mobile animation enhancements - DISABLED
 @media (max-width: 640px) {
   .masonry-card,
   .similar-post-card,
   .search-result-card {
-    @apply transition-all duration-300;
+    @apply transition-none;
+    transform: none !important;
   }
   
   .masonry-card:active,
   .similar-post-card:active,
   .search-result-card:active {
-    @apply -translate-y-1 shadow-md scale-[1.01];
+    @apply transform-none shadow-sm;
   }
   
   .masonry-image,
   .similar-post-image,
   .search-result-image {
-    @apply transition-transform duration-500;
+    @apply transition-none;
+    transform: none !important;
   }
   
   .masonry-card:active .masonry-image,
   .similar-post-card:active .similar-post-image,
   .search-result-card:active .search-result-image {
-    @apply scale-105;
+    @apply scale-100;
   }
   
   .masonry-content,
@@ -690,11 +692,30 @@ a.attribution {
 .masonry-item:nth-child(5) { animation-delay: 0.5s; }
 .masonry-item:nth-child(6) { animation-delay: 0.6s; }
 
+// Disable animations on mobile
+@media (max-width: 640px) {
+  .masonry-item,
+  .similar-post-item,
+  .search-result-item {
+    animation: none !important;
+    animation-delay: 0s !important;
+  }
+}
+
 // Enhanced loading states
 .masonry-image,
 .similar-post-image,
 .search-result-image {
   @apply transition-all duration-700 ease-out;
+}
+
+// Disable image transitions on mobile
+@media (max-width: 640px) {
+  .masonry-image,
+  .similar-post-image,
+  .search-result-image {
+    @apply transition-none;
+  }
 }
 
 // Skeleton loading animation
@@ -713,6 +734,15 @@ a.attribution {
   animation: skeletonPulse 1.5s ease-in-out infinite;
 }
 
+// Disable skeleton animation on mobile
+@media (max-width: 640px) {
+  .masonry-card.loading,
+  .similar-post-card.loading,
+  .search-result-card.loading {
+    animation: none !important;
+  }
+}
+
 // Improved focus states for keyboard navigation
 .masonry-card:focus-visible,
 .similar-post-card:focus-visible,
@@ -721,13 +751,22 @@ a.attribution {
   transform: translateY(-2px);
 }
 
+// Disable focus animations on mobile
+@media (max-width: 640px) {
+  .masonry-card:focus-visible,
+  .similar-post-card:focus-visible,
+  .search-result-card:focus-visible {
+    transform: none !important;
+  }
+}
+
 // Enhanced touch interactions for mobile
 @media (hover: none) and (pointer: coarse) {
   .masonry-card,
   .similar-post-card,
   .search-result-card {
-    @apply active:scale-[0.98] active:shadow-md;
-    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    @apply active:shadow-sm;
+    transition: none;
     border: none;
     border-bottom: 1px solid rgb(229 231 235);
   }
@@ -770,6 +809,7 @@ a.attribution {
   .search-result-card:hover .search-result-image {
     @apply scale-100;
     filter: brightness(0.95) contrast(1.05);
+    transform: none !important;
   }
   
   .masonry-title:hover,
@@ -784,6 +824,7 @@ a.attribution {
     @apply text-primary bg-transparent transform-none shadow-none;
     background: linear-gradient(135deg, rgba(1, 173, 175, 0.15) 0%, rgba(1, 173, 175, 0.08) 100%);
     border: 1px solid rgba(1, 173, 175, 0.2);
+    transition: none;
   }
   
   // Disable border effect on click/tap
@@ -792,12 +833,14 @@ a.attribution {
   .search-result-card:active {
     border: none;
     border-bottom: 1px solid rgb(229 231 235);
+    transform: none !important;
   }
   
   .dark .masonry-card:active,
   .dark .similar-post-card:active,
   .dark .search-result-card:active {
     border-bottom: 1px solid rgb(55 65 81);
+    transform: none !important;
   }
 }
 
@@ -912,6 +955,25 @@ a.attribution {
   }
 }
 
+// Disable all hover effects on mobile
+@media (max-width: 640px) {
+  .masonry-card:hover,
+  .similar-post-card:hover,
+  .search-result-card:hover {
+    @apply shadow-sm;
+    transform: none !important;
+    will-change: auto;
+  }
+  
+  .masonry-card:hover .masonry-image,
+  .similar-post-card:hover .similar-post-image,
+  .search-result-card:hover .search-result-image {
+    @apply scale-100;
+    filter: brightness(0.95) contrast(1.05);
+    transform: none !important;
+  }
+}
+
 // Improved accessibility for screen readers
 .masonry-card[aria-label],
 .similar-post-card[aria-label],
@@ -1003,5 +1065,54 @@ a.attribution {
   .similar-post-item,
   .search-result-item {
     animation: none;
+  }
+}
+
+// Global disable selection border/highlight for all cards
+.masonry-card,
+.similar-post-card,
+.search-result-card,
+.masonry-card *,
+.similar-post-card *,
+.search-result-card * {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+// Global disable focus ring for all cards
+.masonry-card:focus,
+.similar-post-card:focus,
+.search-result-card:focus,
+.masonry-card:focus-visible,
+.similar-post-card:focus-visible,
+.search-result-card:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  ring: none !important;
+}
+
+// Force disable all animations on mobile regardless of user preference
+@media (max-width: 640px) {
+  .masonry-card,
+  .similar-post-card,
+  .search-result-card,
+  .masonry-image,
+  .similar-post-image,
+  .search-result-image,
+  .masonry-category,
+  .similar-post-category,
+  .search-result-category,
+  .masonry-item,
+  .similar-post-item,
+  .search-result-item {
+    @apply transition-none;
+    animation: none !important;
+    transform: none !important;
   }
 }
