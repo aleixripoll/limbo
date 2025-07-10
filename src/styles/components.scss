@@ -213,12 +213,12 @@ img[alt$="<"] {
 }
 
 .masonry-meta {
-  @apply flex flex-wrap items-center gap-4 mb-3 text-xs text-gray-600 dark:text-gray-400;
+  @apply flex flex-wrap items-baseline gap-4 mb-3 text-xs text-gray-600 dark:text-gray-400;
 }
 
 .masonry-date,
 .masonry-categories {
-  @apply flex items-center gap-1;
+  @apply flex gap-1;
 }
 
 .masonry-icon {
