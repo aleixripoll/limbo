@@ -61,7 +61,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
             }
           </li>*/}
           <li class="pb-2 mx-2 flex flex-wrap items-center">
-            <BiCalendar className="mr-1 h-5 w-5" />
+            <BiCalendar className="mr-1 h-5 w-5 text-primary" />
             <>
               {
                 date ? dateFormat(date) : dateFormat(lastModified)
@@ -69,7 +69,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
             </>
           </li>
           <li class="pb-2 mx-2 flex flex-wrap items-center">
-            <BiCategoryAlt className="mr-1 h-[18px] w-[18px]" />
+            <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-primary" />
             <>
               <ul>
                 {
