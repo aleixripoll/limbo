@@ -1097,6 +1097,22 @@ a.attribution {
   ring: none !important;
 }
 
+// Subtle border highlight on click/tap for all cards
+.masonry-card:active,
+.similar-post-card:active,
+.search-result-card:active {
+  border: 1px solid rgba(1, 173, 175, 0.3) !important;
+  box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.2) !important;
+  transition: border-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+.dark .masonry-card:active,
+.dark .similar-post-card:active,
+.dark .search-result-card:active {
+  border: 1px solid rgba(1, 173, 175, 0.4) !important;
+  box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.3) !important;
+}
+
 // Force disable all animations on mobile regardless of user preference
 @media (max-width: 640px) {
   .masonry-card,
