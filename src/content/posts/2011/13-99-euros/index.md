@@ -2,11 +2,7 @@
 title: "13,99 euros"
 description: "Marketing y consumismo, por Frédéric Beigbeder."
 authors: ["Dr. Fenilalanino"]
-image: ./mobile-1087845_1280.webp
-image_attribution:
-  author: Gerd Altmann
-  site: Pixabay
-  url: https://pixabay.com/es/illustrations/m%C3%B3vil-smartphone-app-redes-1087845/
+image: ./cover.jpeg
 categories: ["literatura"]
 tags: ["societat", "marketing"]
 draft: false

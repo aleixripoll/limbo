@@ -2,11 +2,11 @@
 title: "Macronutrients"
 description: "Ordre a la cuina."
 authors: ["Dr. Fenilalanino"]
-image: "./ai-generated-8440245_1280.jpg"
+image: "./ai-generated-8582954_1280.jpeg"
 image_attribution:
-    author: deeznutz1
+    author: 爪丨丂ㄒ乇尺_卩丨ㄒㄒ丨几Ꮆ乇尺
     site: Pixabay
-    url: https://pixabay.com/es/illustrations/ai-generado-pasta-linguini-8440245/
+    url: https://pixabay.com/es/illustrations/ai-generado-rollo-de-cerdo-asado-8582954/
 categories: ["apunts"]
 tags: ["biologia", "química", "nutrició", "lang-cat"]
 draft: false
