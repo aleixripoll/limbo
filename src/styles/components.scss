@@ -290,6 +290,18 @@ img[alt$="<"] {
   .masonry-card {
     @apply rounded-xl;
   }
+  
+  .masonry-meta {
+    @apply mb-1;
+  }
+  
+  .similar-post-meta {
+    @apply mb-0.5;
+  }
+  
+  .search-result-meta {
+    @apply mb-1;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
