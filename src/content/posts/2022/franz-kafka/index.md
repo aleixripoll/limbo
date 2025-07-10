@@ -4,7 +4,7 @@ description: "Citas de Franz Kafka."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura", "dibuixos"]
-tags: ["quotes", "filosofia"]
+tags: ["frases", "filosofia"]
 draft: false
 date: 2022-09-11T14:18:00Z
 ---
