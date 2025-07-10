@@ -209,6 +209,7 @@ img[alt$="<"] {
 
 .masonry-content {
   @apply p-6 pb-5 relative;
+  padding-top: 1.25rem;
 }
 
 .masonry-meta {
@@ -375,6 +376,7 @@ img[alt$="<"] {
 
 .similar-post-content {
   @apply p-4 pb-4;
+  padding-top: 1rem;
 }
 
 .similar-post-meta {
@@ -507,6 +509,7 @@ img[alt$="<"] {
 
 .search-result-content {
   @apply p-6 pb-5;
+  padding-top: 1.25rem;
 }
 
 .search-result-meta {
