@@ -311,7 +311,7 @@ img[alt$="<"] {
 
 // Similar Posts Grid Styles
 .similar-posts-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12;
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12;
 }
 
 .similar-post-item {
@@ -381,6 +381,7 @@ img[alt$="<"] {
   @apply flex flex-wrap items-center gap-2 mb-2 text-xs text-gray-600 dark:text-gray-400;
 }
 
+.similar-post-date,
 .similar-post-categories {
   @apply flex items-center gap-1;
 }

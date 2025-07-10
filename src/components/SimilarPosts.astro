@@ -1,7 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import { humanize, slugify } from "@lib/utils/textConverter";
-import { BiCategoryAlt, BiTime } from "react-icons/bi/index.js";
+import { BiCategoryAlt, BiTime, BiCalendar } from "react-icons/bi/index.js";
+import dateFormat from "@lib/utils/dateFormat";
 
 const { posts } = Astro.props;
 
@@ -48,6 +49,10 @@ function calculateReadingTime(content: string): number {
               
               <div class="similar-post-content">
                 <div class="similar-post-meta">
+                  <div class="similar-post-date">
+                    <BiCalendar className="similar-post-icon" />
+                    <span>{dateFormat(post.data.date)}</span>
+                  </div>
                   <div class="similar-post-categories">
                     <BiCategoryAlt className="similar-post-icon" />
                     <div class="similar-post-category-list">
