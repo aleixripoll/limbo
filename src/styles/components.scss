@@ -772,14 +772,13 @@ a.attribution {
   .similar-post-card:active,
   .search-result-card:active {
     border: none;
-    border-bottom: 1px solid rgb(229 231 235);
     transform: none !important;
   }
   
   .dark .masonry-card:active,
   .dark .similar-post-card:active,
   .dark .search-result-card:active {
-    border-bottom: 1px solid rgb(55 65 81);
+    border: none;
     transform: none !important;
   }
 }
