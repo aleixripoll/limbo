@@ -153,7 +153,7 @@ img[alt$="<"] {
 }
 
 .masonry-card {
-  @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative border-b border-gray-200 dark:border-gray-700;
+  @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative;
   background: transparent;
 }
 
@@ -185,27 +185,7 @@ img[alt$="<"] {
   }
 }
 
-.masonry-overlay {
-  @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-center justify-center transition-all duration-500 opacity-0;
-  padding: 1.5rem;
-}
 
-@media (hover: hover) {
-  .masonry-card:hover .masonry-overlay {
-    @apply opacity-100;
-  }
-}
-
-.masonry-read-more {
-  @apply text-white font-semibold px-4 py-2 rounded-full bg-primary/90 backdrop-blur-sm transform translate-y-2 opacity-0 transition-all duration-300;
-  box-shadow: 0 4px 12px rgba(1, 173, 175, 0.3);
-}
-
-@media (hover: hover) {
-  .masonry-card:hover .masonry-read-more {
-    @apply translate-y-0 opacity-100;
-  }
-}
 
 .masonry-content {
   @apply p-6 pb-5 relative;
@@ -332,7 +312,7 @@ img[alt$="<"] {
 }
 
 .similar-post-card {
-  @apply block rounded-xl shadow-sm transition-all duration-500 overflow-hidden relative border-b border-gray-200 dark:border-gray-700;
+  @apply block rounded-xl shadow-sm transition-all duration-500 overflow-hidden relative;
   background: transparent;
 }
 
@@ -364,27 +344,7 @@ img[alt$="<"] {
   }
 }
 
-.similar-post-overlay {
-  @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-center justify-center transition-all duration-500 opacity-0;
-  padding: 1rem;
-}
 
-@media (hover: hover) {
-  .similar-post-card:hover .similar-post-overlay {
-    @apply opacity-100;
-  }
-}
-
-.similar-post-read-more {
-  @apply text-white font-semibold px-3 py-1.5 rounded-full bg-primary/90 backdrop-blur-sm transform translate-y-2 opacity-0 transition-all duration-300;
-  box-shadow: 0 4px 12px rgba(1, 173, 175, 0.3);
-}
-
-@media (hover: hover) {
-  .similar-post-card:hover .similar-post-read-more {
-    @apply translate-y-0 opacity-100;
-  }
-}
 
 .similar-post-content {
   @apply p-4 pb-4;
@@ -465,7 +425,7 @@ img[alt$="<"] {
 }
 
 .search-result-card {
-  @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative border-b border-gray-200 dark:border-gray-700;
+  @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative;
   background: transparent;
 }
 
@@ -497,27 +457,7 @@ img[alt$="<"] {
   }
 }
 
-.search-result-overlay {
-  @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-center justify-center transition-all duration-500 opacity-0;
-  padding: 1.5rem;
-}
 
-@media (hover: hover) {
-  .search-result-card:hover .search-result-overlay {
-    @apply opacity-100;
-  }
-}
-
-.search-result-read-more {
-  @apply text-white font-semibold px-4 py-2 rounded-full bg-primary/90 backdrop-blur-sm transform translate-y-2 opacity-0 transition-all duration-300;
-  box-shadow: 0 4px 12px rgba(1, 173, 175, 0.3);
-}
-
-@media (hover: hover) {
-  .search-result-card:hover .search-result-read-more {
-    @apply translate-y-0 opacity-100;
-  }
-}
 
 .search-result-content {
   @apply p-6 pb-5;
