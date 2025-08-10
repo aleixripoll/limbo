@@ -6,7 +6,7 @@ import { plainify } from "@lib/utils/textConverter";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import "@styles/style.scss";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from 'astro:transitions';
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -65,14 +65,14 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       name="theme-color"
       media="(prefers-color-scheme: dark)"
-      content="#17171e"
+      content="#27272e"
     />
     <meta name="generator" content={Astro.generator} />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     {/* Prevents light theme flicker on load */}
     <style>
       html { background-color: #fefeff; }
-      html.dark { background-color: #17171e; }
+      html.dark { background-color: #27272e; }
     </style>
 
     <!-- google font css -->
@@ -175,7 +175,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <TwSizeIndicator />
