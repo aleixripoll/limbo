@@ -147,15 +147,44 @@ img[alt$="<"] {
   column-fill: balance;
 }
 
+/* Mobile: Override column layout for full width */
+@media (max-width: 768px) {
+  .masonry-grid {
+    @apply columns-1 gap-6 space-y-6;
+    column-fill: balance;
+  }
+}
+
 .masonry-item {
   @apply break-inside-avoid mb-12;
   page-break-inside: avoid;
+}
+
+/* Mobile: Ensure items take full width */
+@media (max-width: 768px) {
+  .masonry-item {
+    @apply w-full break-inside-avoid-column;
+    column-span: all;
+  }
 }
 
 .masonry-card {
   @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile: Make cards full width and remove borders */
+@media (max-width: 768px) {
+  .masonry-card {
+    @apply w-full mx-0 max-w-none rounded-none;
+    border: none !important;
+    border-radius: 0 !important;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    max-width: none !important;
+  }
 }
 
 .dark .masonry-card {
@@ -308,6 +337,13 @@ img[alt$="<"] {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12;
 }
 
+/* Mobile: Make similar posts grid single column with full width */
+@media (max-width: 768px) {
+  .similar-posts-grid {
+    @apply grid-cols-1 gap-6;
+  }
+}
+
 .similar-post-item {
   @apply break-inside-avoid;
 }
@@ -316,6 +352,19 @@ img[alt$="<"] {
   @apply block rounded-xl shadow-sm transition-all duration-500 overflow-hidden relative;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile: Make similar post cards full width and remove borders */
+@media (max-width: 768px) {
+  .similar-post-card {
+    @apply w-full mx-0 max-w-none rounded-none;
+    border: none !important;
+    border-radius: 0 !important;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    max-width: none !important;
+  }
 }
 
 .dark .similar-post-card {
@@ -421,15 +470,44 @@ img[alt$="<"] {
   column-fill: balance;
 }
 
+/* Mobile: Override column layout for full width */
+@media (max-width: 768px) {
+  .search-results-grid {
+    @apply columns-1 gap-6 space-y-6;
+    column-fill: balance;
+  }
+}
+
 .search-result-item {
   @apply break-inside-avoid mb-12;
   page-break-inside: avoid;
+}
+
+/* Mobile: Ensure search result items take full width */
+@media (max-width: 768px) {
+  .search-result-item {
+    @apply w-full break-inside-avoid-column;
+    column-span: all;
+  }
 }
 
 .search-result-card {
   @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile: Make search result cards full width and remove borders */
+@media (max-width: 768px) {
+  .search-result-card {
+    @apply w-full mx-0 max-w-none rounded-none;
+    border: none !important;
+    border-radius: 0 !important;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    max-width: none !important;
+  }
 }
 
 .dark .search-result-card {

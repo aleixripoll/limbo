@@ -153,8 +153,6 @@ export default function SearchBar({ searchList }: Props) {
                       item.content?.slice(0, Number(summary_length)) + "..."}
                     </p>
                     
-                    {/* Subtle visual indicator */}
-                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/20 to-primary/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                   </div>
                 </a>
               )}
