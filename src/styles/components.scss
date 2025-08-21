@@ -171,7 +171,7 @@ img[alt$="<"] {
 
 .masonry-image-container {
   @apply relative overflow-hidden;
-  aspect-ratio: 16/10;
+  aspect-ratio: 16/9;
 }
 
 .masonry-image {
@@ -445,7 +445,7 @@ img[alt$="<"] {
 
 .search-result-image-container {
   @apply relative overflow-hidden;
-  aspect-ratio: 16/10;
+  aspect-ratio: 16/9;
 }
 
 .search-result-image {
