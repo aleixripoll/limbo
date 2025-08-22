@@ -171,24 +171,25 @@ img[alt$="<"] {
 .masonry-card {
   @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative;
   background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: none !important;
 }
 
-/* Mobile: Make cards full width and remove borders */
+/* Mobile: Make cards full width */
 @media (max-width: 768px) {
   .masonry-card {
     @apply w-full mx-0 max-w-none rounded-none;
-    border: none !important;
-    border-radius: 0 !important;
     width: 100vw !important;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     max-width: none !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 }
 
 .dark .masonry-card {
-  background: rgba(0, 0, 0, 0.15);
+  background: transparent;
 }
 
 @media (hover: hover) {
@@ -351,24 +352,25 @@ img[alt$="<"] {
 .similar-post-card {
   @apply block rounded-xl shadow-sm transition-all duration-500 overflow-hidden relative;
   background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: none !important;
 }
 
-/* Mobile: Make similar post cards full width and remove borders */
+/* Mobile: Make similar post cards full width */
 @media (max-width: 768px) {
   .similar-post-card {
     @apply w-full mx-0 max-w-none rounded-none;
-    border: none !important;
-    border-radius: 0 !important;
     width: 100vw !important;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     max-width: none !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 }
 
 .dark .similar-post-card {
-  background: rgba(0, 0, 0, 0.15);
+  background: transparent;
 }
 
 @media (hover: hover) {
@@ -494,24 +496,25 @@ img[alt$="<"] {
 .search-result-card {
   @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative;
   background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: none !important;
 }
 
-/* Mobile: Make search result cards full width and remove borders */
+/* Mobile: Make search result cards full width */
 @media (max-width: 768px) {
   .search-result-card {
     @apply w-full mx-0 max-w-none rounded-none;
-    border: none !important;
-    border-radius: 0 !important;
     width: 100vw !important;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     max-width: none !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 }
 
 .dark .search-result-card {
-  background: rgba(0, 0, 0, 0.15);
+  background: transparent;
 }
 
 @media (hover: hover) {
@@ -788,13 +791,6 @@ a.attribution {
   .search-result-card {
     @apply active:shadow-sm;
     transition: none;
-    border: none;
-  }
-  
-  .dark .masonry-card,
-  .dark .similar-post-card,
-  .dark .search-result-card {
-    border: none;
   }
   
   .masonry-overlay,
@@ -814,13 +810,6 @@ a.attribution {
   .similar-post-card:hover,
   .search-result-card:hover {
     @apply transform-none shadow-sm;
-    border: none;
-  }
-  
-  .dark .masonry-card:hover,
-  .dark .similar-post-card:hover,
-  .dark .search-result-card:hover {
-    border: none;
   }
   
   .masonry-card:hover .masonry-image,
@@ -846,18 +835,10 @@ a.attribution {
     transition: none;
   }
   
-  // Disable border effect on click/tap
+  // Disable transform effect on click/tap
   .masonry-card:active,
   .similar-post-card:active,
   .search-result-card:active {
-    border: none;
-    transform: none !important;
-  }
-  
-  .dark .masonry-card:active,
-  .dark .similar-post-card:active,
-  .dark .search-result-card:active {
-    border: none;
     transform: none !important;
   }
 }
@@ -1051,12 +1032,6 @@ a.attribution {
 
 // High contrast mode support
 @media (prefers-contrast: high) {
-  .masonry-card,
-  .similar-post-card,
-  .search-result-card {
-    @apply border-2 border-gray-800 dark:border-gray-200;
-  }
-  
   .masonry-category,
   .similar-post-category,
   .search-result-category {
@@ -1115,19 +1090,17 @@ a.attribution {
   ring: none !important;
 }
 
-// Subtle border highlight on click/tap for all cards
+// Subtle highlight on click/tap for all cards
 .masonry-card:active,
 .similar-post-card:active,
 .search-result-card:active {
-  border: 1px solid rgba(1, 173, 175, 0.3) !important;
   box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.2) !important;
-  transition: border-color 0.1s ease, box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease;
 }
 
 .dark .masonry-card:active,
 .dark .similar-post-card:active,
 .dark .search-result-card:active {
-  border: 1px solid rgba(1, 173, 175, 0.4) !important;
   box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.3) !important;
 }
 
