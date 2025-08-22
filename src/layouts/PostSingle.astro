@@ -159,39 +159,79 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 </button>
 
 <script is:inline>
-  // Attaches links to headings in the document, allowing sharing of sections easily.
-  function addHeadingLinks() {
-    let headings = Array.from(document.querySelectorAll("h2, h3"));
-    for (let heading of headings) {
-      heading.classList.add("group");
-      let link = document.createElement("a");
-      link.innerText = "#";
-      link.className =
-        "heading-link hidden group-hover:inline-block hover:text-primary ml-2 text-light no-underline";
-      link.href = "#" + heading.id;
-      link.ariaHidden = "true";
-      heading.appendChild(link);
+  // Initialize all functionality when DOM is ready
+  function initializePage() {
+    // Only add heading links if we're on a post page (check if scroll-to-top button exists)
+    function addHeadingLinks() {
+      // Only add heading links if we're on a post page
+      if (!document.querySelector("#scroll-to-top")) {
+        return;
+      }
+      
+      // Only target headings within the main post content area
+      let headings = Array.from(document.querySelectorAll(".content h2, .content h3, .content h4"));
+      for (let heading of headings) {
+        // Check if heading already has an anchor link to avoid duplicates
+        if (heading.querySelector(".heading-link")) {
+          continue;
+        }
+        
+        heading.classList.add("group");
+        let link = document.createElement("a");
+        link.innerText = "#";
+        link.className =
+          "heading-link hidden group-hover:inline-block hover:text-primary ml-2 text-light no-underline";
+        link.href = "#" + heading.id;
+        link.ariaHidden = "true";
+        heading.appendChild(link);
+      }
     }
-  }
-  addHeadingLinks();
-
-  // When the user scrolls down 400px from the top of the document, show the "Back to Top" button.
-  window.onscroll = function () {
-    scrollFunction();
-  };
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 400 ||
-      document.documentElement.scrollTop > 400
-    ) {
-      document.querySelector("#scroll-to-top").style.display = "block";
-    } else {
-      document.querySelector("#scroll-to-top").style.display = "none";
+    
+    // Scroll to top functionality
+    function initScrollToTop() {
+      const scrollButton = document.querySelector("#scroll-to-top");
+      if (!scrollButton) return;
+      
+      // Show/hide button based on scroll position
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 400 ||
+          document.documentElement.scrollTop > 400
+        ) {
+          scrollButton.style.display = "block";
+        } else {
+          scrollButton.style.display = "none";
+        }
+      }
+      
+      // Add scroll event listener
+      window.addEventListener("scroll", scrollFunction);
+      
+      // Add click event listener
+      scrollButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+      
+      // Initial check for scroll position
+      scrollFunction();
     }
+    
+    // Initialize all functions
+    addHeadingLinks();
+    initScrollToTop();
   }
-  // Scrolls the document to the top when the "Back to Top" button is clicked.
-  document.querySelector("#scroll-to-top")?.addEventListener("click", () => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  });
+  
+  // Wait for DOM to be ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializePage);
+  } else {
+    // DOM is already ready
+    initializePage();
+  }
+  
+  // Also handle navigation events for SPA-like behavior
+  document.addEventListener("astro:page-load", initializePage);
 </script>
