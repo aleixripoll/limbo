@@ -236,7 +236,7 @@ img[alt$="<"] {
 }
 
 .masonry-category {
-  @apply transition-all duration-200 px-2 py-1 rounded-full text-xs font-medium;
+  @apply transition-all duration-200 px-2 py-1 rounded-full text-xs font-medium flex items-center;
   background: linear-gradient(135deg, rgba(1, 173, 175, 0.1) 0%, rgba(1, 173, 175, 0.05) 100%);
   color: #01ADaF;
 }
@@ -420,7 +420,7 @@ img[alt$="<"] {
 }
 
 .similar-post-category {
-  @apply transition-all duration-200 px-1.5 py-0.5 rounded-full text-xs font-medium;
+  @apply transition-all duration-200 px-1.5 py-0.5 rounded-full text-xs font-medium flex items-center;
   background: linear-gradient(135deg, rgba(1, 173, 175, 0.1) 0%, rgba(1, 173, 175, 0.05) 100%);
   color: #01ADaF;
 }
@@ -566,7 +566,7 @@ img[alt$="<"] {
 }
 
 .search-result-category {
-  @apply transition-all duration-200 px-2 py-1 rounded-full text-xs font-medium;
+  @apply transition-all duration-200 px-2 py-1 rounded-full text-xs font-medium flex items-center;
   background: linear-gradient(135deg, rgba(1, 173, 175, 0.1) 0%, rgba(1, 173, 175, 0.05) 100%);
   color: #01ADaF;
 }
