@@ -201,13 +201,13 @@ img[alt$="<"] {
 
 .masonry-image {
   @apply w-full h-full object-cover transition-all duration-700 ease-out;
-  filter: brightness(0.95) contrast(1.05);
+  filter: brightness(0.9) contrast(0.9);
 }
 
 @media (hover: hover) {
   .masonry-card:hover .masonry-image {
     @apply scale-110;
-    filter: brightness(1.05) contrast(1.1);
+    filter: brightness(0.95) contrast(0.95);
   }
 }
 
@@ -385,7 +385,7 @@ img[alt$="<"] {
 
 .similar-post-image {
   @apply w-full h-full object-cover transition-all duration-700 ease-out;
-  filter: brightness(0.95) contrast(1.05);
+  filter: brightness(0.95) contrast(0.9) saturate(0.7);
 }
 
 @media (hover: hover) {
@@ -532,7 +532,7 @@ img[alt$="<"] {
 
 .search-result-image {
   @apply w-full h-full object-cover transition-all duration-700 ease-out;
-  filter: brightness(0.95) contrast(1.05);
+  filter: brightness(0.95) contrast(0.9) saturate(0.7);
 }
 
 @media (hover: hover) {
