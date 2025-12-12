@@ -1,12 +1,11 @@
 ---
 import { Image } from "astro:assets";
 import config from "@config/config.json";
-import { getSinglePage } from "@lib/contentParser.astro";
+// getSinglePage import removed (not used)
 import dateFormat from "@lib/utils/dateFormat";
-import { humanize, slugify } from "@lib/utils/textConverter";
+import { humanize } from "@lib/utils/textConverter";
 import { BiCategoryAlt, BiCalendar, BiTime } from "react-icons/bi/index.js";
 
-const authors = await getSinglePage("authors");
 const { summary_length } = config.settings;
 
 interface Props {

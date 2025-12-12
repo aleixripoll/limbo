@@ -10,11 +10,14 @@
     "format": "prettier -w ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.3.3",
-    "@astrojs/rss": "^4.0.12",
+    "@astrojs/check": "latest",
+    "@astrojs/mdx": "latest",
+    "@astrojs/react": "latest",
+    "@astrojs/rss": "latest",
+    "@astrojs/sitemap": "latest",
+    "@astrojs/tailwind": "latest",
     "@types/react-dom": "^19.1.6",
-    "astro": "^5.12.9",
+    "astro": "latest",
     "date-fns": "^2.29.3",
     "date-fns-tz": "^2.0.0",
     "dayjs": "^1.11.10",
@@ -28,9 +31,6 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@astrojs/react": "^4.3.0",
-    "@astrojs/sitemap": "^3.4.2",
-    "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@types/marked": "^4.0.8",

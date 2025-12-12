@@ -6,11 +6,18 @@ import { getSinglePage } from "@lib/contentParser.astro";
 // Retrieve all articles
 const posts = await getSinglePage("posts");
 
-// List of items to search in
+// Build a slim search index for the client — avoid sending full post bodies
 const searchList = posts.map((item: any) => ({
   slug: item.slug,
-  data: item.data,
-  content: item.body,
+  data: {
+    title: item.data.title,
+    description: item.data.description,
+    categories: item.data.categories,
+    tags: item.data.tags,
+    image: item.data.image,
+  },
+  // include a short excerpt only to display in results
+  excerpt: item.data.description || item.body?.slice(0, 200) || "",
 }));
 ---
 
