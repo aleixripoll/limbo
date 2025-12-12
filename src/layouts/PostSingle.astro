@@ -1,10 +1,8 @@
 ---
 import { Image } from "astro:assets";
 //import Share from "@components/Share.astro";
-import SimilarPosts from "@components/SimilarPosts.astro";
-import { getSinglePage } from "@lib/contentParser.astro";
+// getSinglePage import removed (not used)
 import dateFormat from "@lib/utils/dateFormat";
-import similarItems from "@lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@lib/utils/textConverter";
 import { BiCalendar, BiCategoryAlt, BiSolidChevronUpCircle } from "react-icons/bi/index.js";
 import Disqus from "@components/Disqus";
@@ -12,11 +10,9 @@ import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 
 //const allAuthors = await getSinglePage("authors");
-const posts = await getSinglePage("posts");
 const { post } = Astro.props;
-const similarPosts = similarItems(post, posts, post.slug);
 const { Content, remarkPluginFrontmatter } = await post.render();
-const { title, description, authors, categories, image, image_attribution, date, tags } = post.data;
+const { title, description, categories, image, image_attribution, date, tags } = post.data;
 
 // https://docs.astro.build/en/recipes/modified-time/
 dayjs.extend(utc);

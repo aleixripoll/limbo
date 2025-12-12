@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import { humanize, slugify } from "@lib/utils/textConverter";
+import { humanize } from "@lib/utils/textConverter";
 import { BiCategoryAlt, BiTime, BiCalendar } from "react-icons/bi/index.js";
 import dateFormat from "@lib/utils/dateFormat";
 
@@ -15,7 +15,7 @@ function calculateReadingTime(content: string): number {
 
 <div class="similar-posts-grid">
   {
-    posts.map((post: any, i: number) => {
+  posts.map((post: any) => {
       const readingTime = calculateReadingTime(post.body || "");
       return (
         <article class="similar-post-item" data-post-slug={post.slug}>
