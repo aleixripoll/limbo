@@ -219,16 +219,19 @@ img[alt$="<"] {
 }
 
 .masonry-meta {
-  @apply flex flex-wrap items-baseline gap-4 mb-2 text-xs text-gray-600 dark:text-gray-400;
+  @apply flex flex-wrap items-baseline gap-2 mb-2 text-xs text-gray-600 dark:text-gray-400;
 }
 
-.masonry-date,
+.masonry-date {
+  @apply flex items-center text-gray-500 font-normal;
+}
+
 .masonry-categories {
-  @apply flex gap-1 items-center;
+  @apply hidden; // categories removed from markup
 }
 
 .masonry-icon {
-  @apply h-4 w-4 text-primary flex items-center;
+  @apply hidden; // icons removed where unused
 }
 
 .masonry-category-list {
@@ -265,12 +268,12 @@ img[alt$="<"] {
 }
 
 .masonry-excerpt {
-  @apply text-base text-gray-600 dark:text-gray-400 line-clamp-3 leading-relaxed;
+  @apply text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 // Enhanced focus states for accessibility

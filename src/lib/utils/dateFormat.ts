@@ -1,13 +1,11 @@
 const dateFormat = (datetime: string | Date) => {
   const dateTime = new Date(datetime);
 
-  const date = dateTime.toLocaleDateString("ca", {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-  });
+  const day = dateTime.getDate();
+  const month = dateTime.getMonth() + 1; // numeric month (1-12)
+  const year = dateTime.getFullYear();
 
-  return date;
+  return `${day}-${month}-${year}`;
 };
 
 export default dateFormat;
