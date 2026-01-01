@@ -62,7 +62,7 @@ function calculateReadingTime(content: string): number {
                         <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-primary" />
                         <div class="masonry-category-list">
                           {post.data.categories.map((category: string, idx: number) => (
-                            <span class="masonry-category" key={idx}>
+                            <span class="masonry-category" id={String(idx)}>
                               {humanize(category)}{idx !== post.data.categories.length - 1 && ","}
                             </span>
                           ))}
