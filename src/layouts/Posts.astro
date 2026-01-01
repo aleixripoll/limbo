@@ -4,7 +4,7 @@ import config from "@config/config.json";
 // getSinglePage import removed (not used)
 import dateFormat from "@lib/utils/dateFormat";
 import { humanize } from "@lib/utils/textConverter";
-import { BiTime } from "react-icons/bi/index.js";
+import { BiTime, BiCategoryAlt } from "react-icons/bi/index.js";
 
 const { summary_length } = config.settings;
 
@@ -57,7 +57,20 @@ function calculateReadingTime(content: string): number {
               <div class="masonry-content">
                 <div class="masonry-meta">
                   <div class="masonry-date">
-                    <span>{dateFormat(post.data.date)}</span>
+                    {post.data.categories && post.data.categories.length > 0 ? (
+                      <>
+                        <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-primary" />
+                        <div class="masonry-category-list">
+                          {post.data.categories.map((category: string, idx: number) => (
+                            <span class="masonry-category" key={idx}>
+                              {humanize(category)}{idx !== post.data.categories.length - 1 && ","}
+                            </span>
+                          ))}
+                        </div>
+                      </>
+                    ) : (
+                      <span>{dateFormat(post.data.date)}</span>
+                    )}
                   </div>
                 </div>
                 

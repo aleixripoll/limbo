@@ -169,7 +169,7 @@ img[alt$="<"] {
 }
 
 .masonry-card {
-  @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative;
+  @apply block rounded-lg shadow-none transition-all duration-500 overflow-hidden relative;
   background: transparent;
   border: none !important;
 }
@@ -189,7 +189,7 @@ img[alt$="<"] {
 
 @media (hover: hover) {
   .masonry-card {
-    @apply hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02];
+    @apply hover:-translate-y-3 hover:scale-[1.02];
     transform-origin: center bottom;
   }
 }
@@ -268,7 +268,7 @@ img[alt$="<"] {
 }
 
 .masonry-excerpt {
-  @apply text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed;
+  @apply text-base text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -297,7 +297,7 @@ img[alt$="<"] {
   }
   
   .masonry-card {
-    @apply rounded-xl;
+    @apply rounded-lg;
   }
   
   .masonry-meta {
@@ -348,7 +348,7 @@ img[alt$="<"] {
 }
 
 .similar-post-card {
-  @apply block rounded-xl shadow-sm transition-all duration-500 overflow-hidden relative;
+  @apply block rounded-lg shadow-none transition-all duration-500 overflow-hidden relative;
   background: transparent;
   border: none !important;
 }
@@ -376,7 +376,7 @@ img[alt$="<"] {
 
 @media (hover: hover) {
   .similar-post-card {
-    @apply hover:shadow-lg hover:-translate-y-2 hover:scale-[1.02];
+    @apply hover:-translate-y-2 hover:scale-[1.02];
     transform-origin: center bottom;
   }
 }
@@ -494,8 +494,8 @@ img[alt$="<"] {
   }
 }
 
-.search-result-card {
-  @apply block rounded-2xl shadow-sm transition-all duration-500 overflow-hidden relative;
+  .search-result-card {
+  @apply block rounded-lg shadow-none transition-all duration-500 overflow-hidden relative;
   background: transparent;
   border: none !important;
 }
@@ -523,7 +523,7 @@ img[alt$="<"] {
 
 @media (hover: hover) {
   .search-result-card {
-    @apply hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02];
+    @apply hover:-translate-y-3 hover:scale-[1.02];
     transform-origin: center bottom;
   }
 }
@@ -1016,7 +1016,7 @@ a.attribution {
   .masonry-card,
   .similar-post-card,
   .search-result-card {
-    @apply rounded-xl;
+    @apply rounded-lg;
   }
   
   // Optimize touch targets
