@@ -177,7 +177,7 @@ img[alt$="<"] {
 /* Mobile: Adjust card styling */
 @media (max-width: 768px) {
   .masonry-card {
-    @apply w-full;
+    @apply w-full rounded-none;
     border: none !important;
     box-shadow: none !important;
   }
@@ -282,6 +282,7 @@ img[alt$="<"] {
 }
 
 // Responsive adjustments
+/*
 @media (max-width: 640px) {
   .masonry-grid {
     @apply columns-1 gap-4;
@@ -296,7 +297,7 @@ img[alt$="<"] {
   }
   
   .masonry-card {
-    @apply rounded-lg;
+    @apply rounded-none;
   }
   
   .masonry-meta {
@@ -310,7 +311,7 @@ img[alt$="<"] {
   .search-result-meta {
     @apply mb-1;
   }
-}
+}*/
 
 @media (min-width: 641px) and (max-width: 1024px) {
   .masonry-grid {
@@ -1015,7 +1016,7 @@ a.attribution {
   .masonry-card,
   .similar-post-card,
   .search-result-card {
-    @apply rounded-lg;
+    @apply rounded-none;
   }
   
   // Optimize touch targets

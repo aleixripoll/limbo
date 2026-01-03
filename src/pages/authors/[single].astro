@@ -46,7 +46,7 @@ const currentPosts = sortPostsByDate.filter((post) => {
   {
     currentPosts.length > 0 && (
       <section class="section pt-0">
-        <div class="container">
+        <div class="container px-0">
           <h1 class="h3 mb-8 text-center uppercase font-light">Articles recents</h1>
           <SimilarPosts posts={currentPosts.slice(0, 4)} />
         </div>
