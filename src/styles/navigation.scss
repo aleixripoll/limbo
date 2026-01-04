@@ -31,7 +31,7 @@ input#nav-toggle:checked ~ #nav-menu {
 // Mobile menu slide animation
 @media (max-width: 768px) {
   #nav-menu {
-    @apply transform translate-y-[-10px] opacity-0;
+    @apply transform translate-y-[-10px] opacity-0 bg-gray-100 dark:bg-gray-900 rounded-lg mt-2 py-2;
   }
   
   input#nav-toggle:checked ~ #nav-menu {
@@ -59,7 +59,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-link {
-  @apply p-3 transition md:p-4;
+  @apply p-3 transition md:p-4 text-base flex items-center gap-1.5 justify-center md:justify-start;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   font-weight: 500;
 }

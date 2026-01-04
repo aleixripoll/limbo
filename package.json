@@ -17,7 +17,7 @@
     "@astrojs/sitemap": "latest",
     "@astrojs/tailwind": "latest",
     "@types/react-dom": "^19.1.6",
-    "astro": "latest",
+    "astro": "^5.16.6",
     "date-fns": "^2.29.3",
     "date-fns-tz": "^2.0.0",
     "dayjs": "^1.11.10",

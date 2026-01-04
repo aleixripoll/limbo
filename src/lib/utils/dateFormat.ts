@@ -2,10 +2,10 @@ const dateFormat = (datetime: string | Date) => {
   const dateTime = new Date(datetime);
 
   const day = dateTime.getDate();
-  const month = dateTime.getMonth() + 1; // numeric month (1-12)
+  const month = dateTime.toLocaleDateString("ca-ES", { month: "long" });
   const year = dateTime.getFullYear();
 
-  return `${day}-${month}-${year}`;
+  return `${day} ${month} ${year}`;
 };
 
 export default dateFormat;
