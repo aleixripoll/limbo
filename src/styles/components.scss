@@ -46,7 +46,7 @@
   li {
     @apply inline-block;
     a {
-      @apply block h-11 w-11 rounded-lg /*border*/ border-light bg-transparent text-center text-white transition;
+      @apply block h-11 w-11 rounded-lg border-light bg-transparent text-center text-white transition;
       svg {
         @apply m-auto h-11 text-base;
       }
@@ -128,7 +128,6 @@ footer.section {
 }
 
 // markdown align images
-// https://stackoverflow.com/questions/255170/markdown-and-image-alignment
 img[alt$=">"] {
   float: right;
   max-width: 50%;
@@ -141,672 +140,292 @@ img[alt$="<"] {
   padding-right: 40px; 
 }
 
-// Masonry Layout Styles
-.masonry-grid {
+// ============================================================
+// SHARED CARD STYLES (masonry, similar-post, search-result)
+// ============================================================
+
+// Shared grid styles
+.masonry-grid,
+.search-results-grid {
   @apply columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-12 space-y-12;
   column-fill: balance;
 }
 
-/* Mobile: Override column layout for full width */
-@media (max-width: 768px) {
-  .masonry-grid {
-    @apply columns-1 gap-6 space-y-6;
-    column-fill: balance;
-  }
-}
-
-.masonry-item {
-  @apply break-inside-avoid mb-12;
-  page-break-inside: avoid;
-}
-
-/* Mobile: Ensure items take full width */
-@media (max-width: 768px) {
-  .masonry-item {
-    @apply w-full break-inside-avoid-column;
-    column-span: all;
-  }
-}
-
-.masonry-card {
-  @apply block rounded-lg shadow-none transition-all duration-500 overflow-hidden relative;
-  background: transparent;
-  border: none !important;
-}
-
-/* Mobile: Adjust card styling */
-@media (max-width: 768px) {
-  .masonry-card {
-    @apply w-full;
-    border: none !important;
-    box-shadow: none !important;
-  }
-}
-
-.dark .masonry-card {
-  background: transparent;
-}
-
-@media (hover: hover) {
-  .masonry-card {
-    @apply hover:-translate-y-3 hover:scale-[1.02];
-    transform-origin: center bottom;
-  }
-}
-
-.masonry-image-container {
-  @apply relative overflow-hidden;
-  aspect-ratio: 16/9;
-}
-
-.masonry-image {
-  @apply w-full h-full object-cover transition-all duration-700 ease-out;
-  filter: brightness(0.9) contrast(0.9);
-}
-
-@media (hover: hover) {
-  .masonry-card:hover .masonry-image {
-    @apply scale-110;
-    filter: brightness(0.95) contrast(0.95);
-  }
-}
-
-
-
-.masonry-content {
-  @apply p-5 pt-4 relative;
-}
-
-.masonry-meta {
-  @apply flex flex-wrap items-baseline gap-2 mb-2 text-xs text-gray-600 dark:text-gray-400;
-}
-
-.masonry-date {
-  @apply flex items-center text-gray-500 font-normal;
-}
-
-.masonry-categories {
-  @apply hidden; // categories removed from markup
-}
-
-.masonry-icon {
-  @apply hidden; // icons removed where unused
-}
-
-.masonry-category-list {
-  @apply flex flex-wrap gap-1;
-}
-
-.masonry-category {
-  @apply transition-colors duration-150 px-2 py-1 rounded-full text-xs font-medium flex items-center;
-  background: rgba(14, 165, 164, 0.06);
-  color: #0ea5a4; /* matches muted primary */
-}
-
-.dark .masonry-category {
-  background: rgba(14, 165, 164, 0.08);
-}
-
-@media (hover: hover) {
-  .masonry-category:hover {
-    @apply text-primary;
-    background: rgba(14, 165, 164, 0.12);
-    transform: translateY(0);
-    box-shadow: none;
-  }
-}
-
-.masonry-title {
-  @apply text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100 line-clamp-2 transition-colors duration-200;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.3;
-  letter-spacing: -0.025em;
-}
-
-.masonry-excerpt {
-  @apply text-base text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.5;
-}
-
-// Enhanced focus states for accessibility
-.masonry-card:focus-within {
-  @apply ring-1 ring-primary/30 ring-offset-1;
-  outline: none;
-}
-
-// Responsive adjustments
-@media (max-width: 640px) {
-  .masonry-grid {
-    @apply columns-1 gap-4;
-  }
-  
-  .masonry-content {
-    @apply p-4 pb-5;
-  }
-  
-  .masonry-title {
-    @apply text-xl mb-1;
-  }
-  
-  .masonry-card {
-    @apply rounded-lg;
-  }
-  
-  .masonry-meta {
-    @apply mb-1;
-  }
-  
-  .similar-post-meta {
-    @apply mb-0.5;
-  }
-  
-  .search-result-meta {
-    @apply mb-1;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  .masonry-grid {
-    @apply columns-2 gap-5;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .masonry-grid {
-    @apply columns-3 gap-6;
-  }
-}
-
-@media (min-width: 1281px) {
-  .masonry-grid {
-    @apply columns-4 gap-6;
-  }
-}
-
-// Similar Posts Grid Styles
 .similar-posts-grid {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12;
 }
 
-/* Mobile: Make similar posts grid single column with full width */
-@media (max-width: 768px) {
-  .similar-posts-grid {
-    @apply grid-cols-1 gap-6;
-  }
+// Shared item styles
+.masonry-item,
+.search-result-item {
+  @apply break-inside-avoid mb-12;
+  page-break-inside: avoid;
 }
 
 .similar-post-item {
   @apply break-inside-avoid;
 }
 
-.similar-post-card {
+// Shared card base styles
+.masonry-card,
+.similar-post-card,
+.search-result-card {
   @apply block rounded-lg shadow-none transition-all duration-500 overflow-hidden relative;
   background: transparent;
   border: none !important;
-}
-
-/* Mobile: Adjust similar post card styling */
-@media (max-width: 768px) {
-  .similar-post-card {
-    @apply w-full;
-    border: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
+  user-select: none !important;
+  outline: none !important;
+  
+  .dark & {
+    background: transparent;
+  }
+  
+  &:focus,
+  &:focus-visible {
+    outline: none !important;
     box-shadow: none !important;
   }
   
-  .similar-post-meta {
-    @apply mb-1;
-  }
-  
-  .similar-post-title {
-    @apply mb-1;
-  }
-}
-
-.dark .similar-post-card {
-  background: transparent;
-}
-
-@media (hover: hover) {
-  .similar-post-card {
-    @apply hover:-translate-y-2 hover:scale-[1.02];
-    transform-origin: center bottom;
+  &:active {
+    box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.2) !important;
+    transition: box-shadow 0.1s ease;
+    
+    .dark & {
+      box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.3) !important;
+    }
   }
 }
 
-.similar-post-image-container {
-  @apply relative overflow-hidden;
-  aspect-ratio: 16/9;
-}
-
-.similar-post-image {
-  @apply w-full h-full object-cover transition-all duration-700 ease-out;
-  filter: brightness(0.95) contrast(0.9) saturate(0.7);
-}
-
-@media (hover: hover) {
-  .similar-post-card:hover .similar-post-image {
-    @apply scale-110;
-    filter: brightness(1.05) contrast(1.1);
-  }
-}
-
-
-
-.similar-post-content {
-  @apply p-4 pb-4;
-  padding-top: 1rem;
-}
-
-.similar-post-meta {
-  @apply flex flex-wrap items-baseline gap-2 mb-2 text-xs text-gray-600 dark:text-gray-400;
-}
-
-.similar-post-date,
-.similar-post-categories {
-  @apply flex gap-1 items-center;
-}
-
-.similar-post-icon {
-  @apply h-3 w-3 text-primary flex items-center;
-}
-
-.similar-post-category-list {
-  @apply flex flex-wrap gap-1;
-}
-
-.similar-post-category {
-  @apply transition-all duration-200 px-1.5 py-0.5 rounded-full text-xs font-medium flex items-center;
-  background: linear-gradient(135deg, rgba(1, 173, 175, 0.1) 0%, rgba(1, 173, 175, 0.05) 100%);
-  color: #01ADaF;
-}
-
-.dark .similar-post-category {
-  background: linear-gradient(135deg, rgba(1, 173, 175, 0.2) 0%, rgba(1, 173, 175, 0.1) 100%);
-}
-
-@media (hover: hover) {
-  .similar-post-category:hover {
-    @apply text-white;
-    background: linear-gradient(135deg, #01ADaF 0%, #0099a1 100%);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(1, 173, 175, 0.3);
-  }
-}
-
-.similar-post-title {
-  @apply text-base font-bold mb-1 text-gray-900 dark:text-gray-100 line-clamp-2 group-hover:text-primary transition-all duration-300;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.3;
-  letter-spacing: -0.025em;
-}
-
-.similar-post-excerpt {
-  @apply text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.5;
-}
-
-// Enhanced focus states for accessibility
-.similar-post-card:focus-within,
-.search-result-card:focus-within {
-  @apply ring-2 ring-primary/50 ring-offset-2;
-  outline: none;
-}
-
-// Search Results Grid Styles
-.search-results-grid {
-  @apply columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-12 space-y-12;
-  column-fill: balance;
-}
-
-/* Mobile: Override column layout for full width */
-@media (max-width: 768px) {
-  .search-results-grid {
-    @apply columns-1 gap-6 space-y-6;
-    column-fill: balance;
-  }
-}
-
-.search-result-item {
-  @apply break-inside-avoid mb-12;
-  page-break-inside: avoid;
-}
-
-/* Mobile: Ensure search result items take full width */
-@media (max-width: 768px) {
-  .search-result-item {
-    @apply w-full break-inside-avoid-column;
-    column-span: all;
-  }
-}
-
-  .search-result-card {
-  @apply block rounded-lg shadow-none transition-all duration-500 overflow-hidden relative;
-  background: transparent;
-  border: none !important;
-}
-
-/* Mobile: Adjust search result card styling */
-@media (max-width: 768px) {
-  .search-result-card {
-    @apply w-full;
-    border: none !important;
-    box-shadow: none !important;
-  }
-  
-  .search-result-meta {
-    @apply mb-1;
-  }
-  
-  .search-result-title {
-    @apply mb-1;
-  }
-}
-
-.dark .search-result-card {
-  background: transparent;
-}
-
-@media (hover: hover) {
-  .search-result-card {
-    @apply hover:-translate-y-3 hover:scale-[1.02];
-    transform-origin: center bottom;
-  }
-}
-
+// Shared image container
+.masonry-image-container,
+.similar-post-image-container,
 .search-result-image-container {
   @apply relative overflow-hidden;
   aspect-ratio: 16/9;
 }
 
+// Shared image styles
+.masonry-image,
+.similar-post-image,
 .search-result-image {
   @apply w-full h-full object-cover transition-all duration-700 ease-out;
+  filter: brightness(0.9) contrast(0.9);
+}
+
+.similar-post-image,
+.search-result-image {
   filter: brightness(0.95) contrast(0.9) saturate(0.7);
 }
 
-@media (hover: hover) {
-  .search-result-card:hover .search-result-image {
-    @apply scale-110;
-    filter: brightness(1.05) contrast(1.1);
-  }
+// Shared content container
+.masonry-content {
+  @apply p-5 pt-4 relative;
 }
 
-
-
-.search-result-content {
-  @apply p-6 pb-5;
+.similar-post-content {
+  @apply p-4 pb-4 relative;
   padding-top: 1rem;
 }
 
-.search-result-meta {
-  @apply flex flex-wrap items-baseline gap-4 mb-3 text-xs text-gray-600 dark:text-gray-400;
+.search-result-content {
+  @apply p-6 pb-5 relative;
+  padding-top: 1rem;
 }
 
+.masonry-content,
+.similar-post-content,
+.search-result-content {
+  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.02) 100%);
+  
+  .dark & {
+    background: linear-gradient(to bottom, transparent 0%, rgba(31, 41, 55, 0.02) 100%);
+  }
+}
+
+// Shared meta styles
+.masonry-meta,
+.similar-post-meta,
+.search-result-meta {
+  @apply flex flex-wrap items-baseline gap-2 mb-2 text-xs text-gray-600 dark:text-gray-400;
+}
+
+.search-result-meta {
+  @apply gap-4 mb-3;
+}
+
+// Shared date styles
+.masonry-date {
+  @apply flex items-center text-gray-500 font-normal;
+}
+
+.similar-post-date,
+.similar-post-categories,
 .search-result-categories {
   @apply flex gap-1 items-center;
 }
 
-.search-result-icon {
-  @apply h-4 w-4 text-primary flex items-center;
+// Hidden elements
+.masonry-categories,
+.masonry-icon {
+  @apply hidden;
 }
 
+// Shared category list
+.masonry-category-list,
+.similar-post-category-list,
 .search-result-category-list {
   @apply flex flex-wrap gap-1;
 }
 
+// Shared category badges
+.masonry-category,
+.similar-post-category,
 .search-result-category {
-  @apply transition-all duration-200 px-2 py-1 rounded-full text-xs font-medium flex items-center;
-  background: linear-gradient(135deg, rgba(1, 173, 175, 0.1) 0%, rgba(1, 173, 175, 0.05) 100%);
-  color: #01ADaF;
-}
-
-.dark .search-result-category {
-  background: linear-gradient(135deg, rgba(1, 173, 175, 0.2) 0%, rgba(1, 173, 175, 0.1) 100%);
-}
-
-@media (hover: hover) {
-  .search-result-category:hover {
-    @apply text-white;
-    background: linear-gradient(135deg, #01ADaF 0%, #0099a1 100%);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(1, 173, 175, 0.3);
+  @apply transition-all duration-200 text-xs font-medium;
+  background: transparent;
+  color: #6b7280;
+  border: none;
+  padding: 0;
+  
+  .dark & {
+    background: transparent;
+    color: #9ca3af;
+    border: none;
+    padding: 0;
   }
 }
 
+// Shared icon styles
+.similar-post-icon,
+.search-result-icon {
+  @apply text-primary flex items-center;
+}
+
+.similar-post-icon {
+  @apply h-3 w-3;
+}
+
+.search-result-icon {
+  @apply h-4 w-4;
+}
+
+// Shared title styles
+.masonry-title,
+.similar-post-title,
 .search-result-title {
-  @apply text-lg font-bold mb-2 text-gray-900 dark:text-gray-100 line-clamp-2 group-hover:text-primary transition-all duration-300;
+  @apply font-bold mb-2 text-gray-900 dark:text-gray-100 line-clamp-2 group-hover:text-primary transition-all duration-300;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 1.3;
   letter-spacing: -0.025em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  
+  .dark & {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
 }
 
+.masonry-title {
+  @apply text-xl;
+}
+
+.similar-post-title {
+  @apply text-base mb-1;
+}
+
+.search-result-title {
+  @apply text-lg;
+}
+
+// Shared excerpt styles
+.masonry-excerpt,
+.similar-post-excerpt,
 .search-result-excerpt {
-  @apply text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed;
+  @apply line-clamp-2 leading-relaxed;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 1.5;
+  color: #6b7280;
+  
+  .dark & {
+    color: #9ca3af;
+  }
 }
 
-// TODO: remove when all posts use frontmatter img attribution fields
-span.attribution {
-  @apply block text-center italic text-xs relative -top-6  opacity-90;
+.masonry-excerpt {
+  @apply text-base;
 }
 
-a.attribution {
-  @apply block text-center italic text-xs opacity-90 mt-2;
+.similar-post-excerpt,
+.search-result-excerpt {
+  @apply text-sm;
 }
 
+// ============================================================
+// HOVER EFFECTS (non-touch devices only)
+// ============================================================
 @media (hover: hover) {
+  .masonry-card,
+  .similar-post-card,
+  .search-result-card {
+    transform-origin: center bottom;
+    
+    &:hover {
+      @apply shadow-xl;
+      transform: translateY(-3px) scale(1.02);
+      will-change: transform;
+    }
+  }
+  
+  .masonry-card:hover .masonry-image,
+  .similar-post-card:hover .similar-post-image,
+  .search-result-card:hover .search-result-image {
+    @apply scale-110;
+    filter: brightness(1.05) contrast(1.1) saturate(1.1);
+  }
+  
+  .masonry-category:hover,
+  .similar-post-category:hover,
+  .search-result-category:hover {
+    @apply text-gray-600 dark:text-gray-400;
+    background: transparent;
+    transform: none;
+    box-shadow: none;
+    border: none;
+  }
+  
   a.attribution:hover {
     @apply text-primary;
   }
 }
 
-.theme-switcher {
-  @apply inline-flex;
-
-  label {
-    @apply bg-border relative inline-block h-4 w-6 cursor-pointer rounded-2xl lg:w-10;
-  }
-
-  input {
-    @apply absolute opacity-0;
-  }
-
-  span {
-    @apply bg-dark absolute -top-1 left-0 flex h-6 w-6 items-center justify-center rounded-full transition-all duration-300 dark:bg-white;
-  }
-
-  input:checked + label {
-    span {
-      @apply lg:left-4;
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  .similar-post-content {
-    @apply p-3 pb-4;
-  }
-}
-
-@media (max-width: 640px) {
-  .search-result-content {
-    @apply p-4 pb-5;
-  }
-}
-
-// Mobile animation enhancements - DISABLED
-@media (max-width: 640px) {
-  .masonry-card,
-  .similar-post-card,
-  .search-result-card {
-    @apply transition-none;
-    transform: none !important;
-  }
-  
-  .masonry-card:active,
-  .similar-post-card:active,
-  .search-result-card:active {
-    @apply transform-none shadow-sm;
-  }
-  
-  .masonry-image,
-  .similar-post-image,
-  .search-result-image {
-    @apply transition-none;
-    transform: none !important;
-  }
-  
-  .masonry-card:active .masonry-image,
-  .similar-post-card:active .similar-post-image,
-  .search-result-card:active .search-result-image {
-    @apply scale-100;
-  }
-  
-  .masonry-content,
-  .similar-post-content,
-  .search-result-content {
-    @apply p-4 pb-5;
-  }
-  
-  .search-result-content {
-    @apply p-4 pb-5;
-  }
-}
-
-// Loading animation for cards
-@keyframes cardFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.masonry-item,
-.similar-post-item,
-.search-result-item {
-  animation: cardFadeIn 0.6s ease-out;
-}
-
-// Stagger animation for multiple cards
-.masonry-item:nth-child(1) { animation-delay: 0.1s; }
-.masonry-item:nth-child(2) { animation-delay: 0.2s; }
-.masonry-item:nth-child(3) { animation-delay: 0.3s; }
-.masonry-item:nth-child(4) { animation-delay: 0.4s; }
-.masonry-item:nth-child(5) { animation-delay: 0.5s; }
-.masonry-item:nth-child(6) { animation-delay: 0.6s; }
-
-// Disable animations on mobile
-@media (max-width: 640px) {
-  .masonry-item,
-  .similar-post-item,
-  .search-result-item {
-    animation: none !important;
-    animation-delay: 0s !important;
-  }
-}
-
-// Enhanced loading states
-.masonry-image,
-.similar-post-image,
-.search-result-image {
-  @apply transition-all duration-700 ease-out;
-}
-
-// Disable image transitions on mobile
-@media (max-width: 640px) {
-  .masonry-image,
-  .similar-post-image,
-  .search-result-image {
-    @apply transition-none;
-  }
-}
-
-// Skeleton loading animation
-@keyframes skeletonPulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-.masonry-card.loading,
-.similar-post-card.loading,
-.search-result-card.loading {
-  animation: skeletonPulse 1.5s ease-in-out infinite;
-}
-
-// Disable skeleton animation on mobile
-@media (max-width: 640px) {
-  .masonry-card.loading,
-  .similar-post-card.loading,
-  .search-result-card.loading {
-    animation: none !important;
-  }
-}
-
-// Improved focus states for keyboard navigation
-.masonry-card:focus-visible,
-.similar-post-card:focus-visible,
-.search-result-card:focus-visible {
-  @apply ring-2 ring-primary ring-offset-2 outline-none;
-  transform: translateY(-2px);
-}
-
-// Disable focus animations on mobile
-@media (max-width: 640px) {
-  .masonry-card:focus-visible,
-  .similar-post-card:focus-visible,
-  .search-result-card:focus-visible {
-    transform: none !important;
-  }
-}
-
-// Enhanced touch interactions for mobile
+// ============================================================
+// TOUCH DEVICE STYLES
+// ============================================================
 @media (hover: none) and (pointer: coarse) {
   .masonry-card,
   .similar-post-card,
   .search-result-card {
     @apply active:shadow-sm;
     transition: none;
+    
+    &:hover,
+    &:active {
+      @apply transform-none shadow-sm;
+      transform: none !important;
+    }
   }
   
   .masonry-overlay,
   .similar-post-overlay,
   .search-result-overlay {
     @apply hidden;
-  }
-  
-  // Disable all hover effects on mobile
-  .masonry-card:hover,
-  .similar-post-card:hover,
-  .search-result-card:hover {
-    @apply transform-none shadow-sm;
   }
   
   .masonry-card:hover .masonry-image,
@@ -831,154 +450,82 @@ a.attribution {
     border: 1px solid rgba(1, 173, 175, 0.2);
     transition: none;
   }
-  
-  // Disable transform effect on click/tap
-  .masonry-card:active,
-  .similar-post-card:active,
-  .search-result-card:active {
-    transform: none !important;
+}
+
+// ============================================================
+// ANIMATIONS
+// ============================================================
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-// Improved category badges with better contrast
-.masonry-category,
-.similar-post-category,
-.search-result-category {
-  @apply transition-all duration-200 text-xs font-medium;
-  background: transparent;
-  color: #6b7280;
-  border: none;
-  padding: 0;
+.masonry-item,
+.similar-post-item,
+.search-result-item {
+  animation: cardFadeIn 0.6s ease-out;
 }
 
-.dark .masonry-category,
-.dark .similar-post-category,
-.dark .search-result-category {
-  background: transparent;
-  color: #9ca3af;
-  border: none;
-  padding: 0;
-}
-
-@media (hover: hover) {
-  .masonry-category:hover,
-  .similar-post-category:hover,
-  .search-result-category:hover {
-    @apply text-gray-600 dark:text-gray-400;
-    background: transparent;
-    transform: none;
-    box-shadow: none;
-    border: none;
+// Stagger animation for masonry cards
+@for $i from 1 through 6 {
+  .masonry-item:nth-child(#{$i}) {
+    animation-delay: #{$i * 0.1}s;
   }
 }
 
-// Enhanced reading time badge
-.reading-time-badge {
-  @apply absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-medium;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+// Skeleton loading animation
+@keyframes skeletonPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
-// Improved visual hierarchy with better typography
-.masonry-title,
-.similar-post-title,
-.search-result-title {
-  @apply font-bold line-clamp-2 group-hover:text-primary transition-all duration-300;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.3;
-  letter-spacing: -0.025em;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+.masonry-card.loading,
+.similar-post-card.loading,
+.search-result-card.loading {
+  animation: skeletonPulse 1.5s ease-in-out infinite;
 }
 
-.dark .masonry-title,
-.dark .similar-post-title,
-.dark .search-result-title {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-// Enhanced excerpt styling
-.masonry-excerpt,
-.similar-post-excerpt,
-.search-result-excerpt {
-  @apply line-clamp-2 leading-relaxed;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.5;
-  color: #6b7280;
-}
-
-.dark .masonry-excerpt,
-.dark .similar-post-excerpt,
-.dark .search-result-excerpt {
-  color: #9ca3af;
-}
-
-// Subtle gradient overlay for better text readability
-.masonry-content,
-.similar-post-content,
-.search-result-content {
-  @apply relative;
-  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.02) 100%);
-}
-
-.dark .masonry-content,
-.dark .similar-post-content,
-.dark .search-result-content {
-  background: linear-gradient(to bottom, transparent 0%, rgba(31, 41, 55, 0.02) 100%);
-}
-
-// Enhanced hover effects with better performance
-@media (hover: hover) {
-  .masonry-card:hover,
-  .similar-post-card:hover,
-  .search-result-card:hover {
-    @apply shadow-xl;
-    transform: translateY(-3px) scale(1.02);
-    transform-origin: center bottom;
-    will-change: transform;
-  }
-  
-  .masonry-card:hover .masonry-image,
-  .similar-post-card:hover .similar-post-image,
-  .search-result-card:hover .search-result-image {
-    @apply scale-110;
-    filter: brightness(1.05) contrast(1.1) saturate(1.1);
+// ============================================================
+// RESPONSIVE: TABLET (641px - 1024px)
+// ============================================================
+@media (min-width: 641px) and (max-width: 1024px) {
+  .masonry-grid,
+  .search-results-grid {
+    @apply columns-2 gap-5;
   }
 }
 
-// Disable all hover effects on mobile
+// ============================================================
+// RESPONSIVE: DESKTOP (1025px - 1280px)
+// ============================================================
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .masonry-grid,
+  .search-results-grid {
+    @apply columns-3 gap-6;
+  }
+}
+
+// ============================================================
+// RESPONSIVE: LARGE DESKTOP (1281px+)
+// ============================================================
+@media (min-width: 1281px) {
+  .masonry-grid,
+  .search-results-grid {
+    @apply columns-4 gap-6;
+  }
+}
+
+// ============================================================
+// RESPONSIVE: MOBILE (max-width: 640px)
+// ============================================================
 @media (max-width: 640px) {
-  .masonry-card:hover,
-  .similar-post-card:hover,
-  .search-result-card:hover {
-    @apply shadow-sm;
-    transform: none !important;
-    will-change: auto;
-  }
-  
-  .masonry-card:hover .masonry-image,
-  .similar-post-card:hover .similar-post-image,
-  .search-result-card:hover .search-result-image {
-    @apply scale-100;
-    filter: brightness(0.95) contrast(1.05);
-    transform: none !important;
-  }
-}
-
-// Improved accessibility for screen readers
-.masonry-card[aria-label],
-.similar-post-card[aria-label],
-.search-result-card[aria-label] {
-  @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
-}
-
-// Better responsive behavior
-@media (max-width: 640px) {
+  // Grid layouts
   .masonry-grid,
   .search-results-grid {
     @apply columns-1 gap-4;
@@ -988,56 +535,91 @@ a.attribution {
     @apply grid-cols-1 gap-4;
   }
   
+  // Items
+  .masonry-item,
+  .search-result-item {
+    @apply w-full break-inside-avoid-column;
+    column-span: all;
+  }
+  
+  // Cards - disable all transforms and animations
+  .masonry-card,
+  .similar-post-card,
+  .search-result-card {
+    @apply w-full rounded-lg transition-none;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    
+    &:active {
+      @apply transform-none shadow-sm;
+    }
+    
+    &:hover {
+      @apply shadow-sm;
+      transform: none !important;
+      will-change: auto;
+    }
+    
+    &:focus-visible {
+      transform: none !important;
+    }
+  }
+  
+  // Images - disable all animations
+  .masonry-image,
+  .similar-post-image,
+  .search-result-image {
+    @apply transition-none;
+    transform: none !important;
+    
+    &:hover {
+      @apply scale-100;
+      filter: brightness(0.95) contrast(1.05);
+      transform: none !important;
+    }
+  }
+  
+  // Content containers
   .masonry-content,
   .similar-post-content,
   .search-result-content {
     @apply p-4 pb-5 text-center;
   }
   
+  // Titles
   .masonry-title,
   .similar-post-title,
   .search-result-title {
-    @apply text-xl text-center;
+    @apply text-xl text-center mb-1;
   }
   
+  // Excerpts
   .masonry-excerpt,
   .similar-post-excerpt,
   .search-result-excerpt {
     @apply text-center;
   }
   
+  // Meta
   .masonry-meta,
   .similar-post-meta,
   .search-result-meta {
-    @apply justify-center;
+    @apply justify-center mb-1;
   }
   
-  .masonry-card,
-  .similar-post-card,
-  .search-result-card {
-    @apply rounded-lg;
-  }
-  
-  // Optimize touch targets
+  // Categories - optimize touch targets
   .masonry-category,
   .similar-post-category,
   .search-result-category {
     @apply py-1.5;
     min-height: 28px;
   }
-}
-
-// High contrast mode support
-@media (prefers-contrast: high) {
-  .masonry-category,
-  .similar-post-category,
-  .search-result-category {
-    @apply border-2 border-primary bg-primary text-white;
-  }
-}
-
-// Reduced motion support
-@media (prefers-reduced-motion: reduce) {
+  
+  // Disable all animations
+  .masonry-item,
+  .similar-post-item,
+  .search-result-item,
   .masonry-card,
   .similar-post-card,
   .search-result-card,
@@ -1047,62 +629,53 @@ a.attribution {
   .masonry-category,
   .similar-post-category,
   .search-result-category {
-    @apply transition-none;
-    animation: none;
+    animation: none !important;
+    animation-delay: 0s !important;
   }
   
-  .masonry-item,
-  .similar-post-item,
-  .search-result-item {
-    animation: none;
+  .masonry-card.loading,
+  .similar-post-card.loading,
+  .search-result-card.loading {
+    animation: none !important;
   }
 }
 
-// Global disable selection border/highlight for all cards
-.masonry-card,
-.similar-post-card,
-.search-result-card,
-.masonry-card *,
-.similar-post-card *,
-.search-result-card * {
-  -webkit-tap-highlight-color: transparent !important;
-  -webkit-touch-callout: none !important;
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
-  outline: none !important;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+// ============================================================
+// ACCESSIBILITY
+// ============================================================
+
+// Focus states
+.masonry-card:focus-within,
+.similar-post-card:focus-within,
+.search-result-card:focus-within {
+  @apply ring-1 ring-primary/30 ring-offset-1;
+  outline: none;
 }
 
-// Global disable focus ring for all cards
-.masonry-card:focus,
-.similar-post-card:focus,
-.search-result-card:focus,
 .masonry-card:focus-visible,
 .similar-post-card:focus-visible,
 .search-result-card:focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-  ring: none !important;
+  @apply ring-2 ring-primary ring-offset-2 outline-none;
+  transform: translateY(-2px);
 }
 
-// Subtle highlight on click/tap for all cards
-.masonry-card:active,
-.similar-post-card:active,
-.search-result-card:active {
-  box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.2) !important;
-  transition: box-shadow 0.1s ease;
+.masonry-card[aria-label],
+.similar-post-card[aria-label],
+.search-result-card[aria-label] {
+  @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
 }
 
-.dark .masonry-card:active,
-.dark .similar-post-card:active,
-.dark .search-result-card:active {
-  box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.3) !important;
+// High contrast mode
+@media (prefers-contrast: high) {
+  .masonry-category,
+  .similar-post-category,
+  .search-result-category {
+    @apply border-2 border-primary bg-primary text-white;
+  }
 }
 
-// Force disable all animations on mobile regardless of user preference
-@media (max-width: 640px) {
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
   .masonry-card,
   .similar-post-card,
   .search-result-card,
@@ -1116,7 +689,47 @@ a.attribution {
   .similar-post-item,
   .search-result-item {
     @apply transition-none;
-    animation: none !important;
-    transform: none !important;
+    animation: none;
   }
+}
+
+// ============================================================
+// MISCELLANEOUS
+// ============================================================
+
+// Attribution styles
+span.attribution {
+  @apply block text-center italic text-xs relative -top-6 opacity-90;
+}
+
+a.attribution {
+  @apply block text-center italic text-xs opacity-90 mt-2;
+}
+
+// Theme switcher
+.theme-switcher {
+  @apply inline-flex;
+
+  label {
+    @apply bg-border relative inline-block h-4 w-6 cursor-pointer rounded-2xl lg:w-10;
+  }
+
+  input {
+    @apply absolute opacity-0;
+  }
+
+  span {
+    @apply bg-dark absolute -top-1 left-0 flex h-6 w-6 items-center justify-center rounded-full transition-all duration-300 dark:bg-white;
+  }
+
+  input:checked + label span {
+    @apply lg:left-4;
+  }
+}
+
+// Reading time badge
+.reading-time-badge {
+  @apply absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-medium;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
