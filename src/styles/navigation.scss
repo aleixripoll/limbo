@@ -59,9 +59,14 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-link {
-  @apply p-3 transition md:p-4 text-base flex items-center gap-1.5 justify-center md:justify-start;
+  @apply p-3 transition md:p-4 text-base flex items-center gap-1.5 justify-center md:justify-start rounded-lg;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   font-weight: 500;
+  -webkit-tap-highlight-color: transparent;
+  
+  &:active {
+    @apply text-primary bg-primary/10;
+  }
 }
 
 @media (hover: hover) {
