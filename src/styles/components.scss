@@ -162,6 +162,21 @@ img[alt$="<"] {
   page-break-inside: avoid;
 }
 
+// Mobile separator between posts
+@media (max-width: 640px) {
+  .masonry-item:not(:last-child)::after {
+    content: '';
+    @apply block mx-auto mt-8;
+    width: 80px;
+    height: 20px;
+    background: linear-gradient(90deg, transparent 0%, transparent 100%);
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, transparent, rgba(1, 173, 175, 0.5), transparent) 1;
+    border-radius: 50%;
+    transform: scaleY(0.5);
+  }
+}
+
 .similar-post-item {
   @apply break-inside-avoid;
 }
