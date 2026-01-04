@@ -2,6 +2,7 @@
 import Logo from "@components/Logo.astro";
 import menu from "@config/menu.json";
 import { IoSearch } from "react-icons/io5/index.js";
+import { BiHome, BiUser, BiCategoryAlt, BiPurchaseTag } from "react-icons/bi/index.js";
 import ThemeToggle from './ThemeToggle.astro';
 //import ThemeSwitcher from './ThemeSwitcher.astro';
 
@@ -18,9 +19,17 @@ export interface NavigationLink {
 }
 
 const { main }: { main: NavigationLink[] } = menu;
+
+// Map menu names to icons
+const menuIcons: Record<string, any> = {
+  "Inici": BiHome,
+  "Autors": BiUser,
+  "Categories": BiCategoryAlt,
+  "Tags": BiPurchaseTag,
+};
 ---
 
-<header class="header /*sticky*/ pt-1 bg-gray-50 dark:bg-gray-800">
+<header class="header /*sticky*/ pt-1 bg-gray-100 dark:bg-gray-900">
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0">
@@ -79,7 +88,11 @@ const { main }: { main: NavigationLink[] } = menu;
               </li>
             ) : (
               <li class="nav-item">
-                <a href={`${import.meta.env.BASE_URL}${menu.url}`} class="nav-link block">
+                <a href={`${import.meta.env.BASE_URL}${menu.url}`} class="nav-link">
+                  {(() => {
+                    const Icon = menuIcons[menu.name];
+                    return Icon ? <Icon className="h-5 w-5 text-primary" /> : null;
+                  })()}
                   {menu.name}
                 </a>
               </li>

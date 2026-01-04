@@ -5,7 +5,7 @@
 
 // container
 .container {
-  @apply max-w-[1100px] px-4 md:px-8;
+  @apply max-w-[1200px] px-4 md:px-8;
 }
 
 // page heading
@@ -170,31 +170,28 @@ img[alt$="<"] {
 .masonry-card,
 .similar-post-card,
 .search-result-card {
-  @apply block rounded-lg shadow-none transition-all duration-500 overflow-hidden relative;
-  background: transparent;
-  border: none !important;
+  @apply block rounded-xl shadow-sm transition-all duration-300 overflow-hidden relative;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  backdrop-filter: blur(8px);
   -webkit-tap-highlight-color: transparent !important;
   -webkit-touch-callout: none !important;
   user-select: none !important;
   outline: none !important;
   
   .dark & {
-    background: transparent;
+    background: rgba(30, 30, 35, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
   }
   
   &:focus,
   &:focus-visible {
     outline: none !important;
-    box-shadow: none !important;
   }
   
   &:active {
-    box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.2) !important;
+    box-shadow: 0 0 0 2px rgba(1, 173, 175, 0.3) !important;
     transition: box-shadow 0.1s ease;
-    
-    .dark & {
-      box-shadow: 0 0 0 1px rgba(1, 173, 175, 0.3) !important;
-    }
   }
 }
 
@@ -204,19 +201,22 @@ img[alt$="<"] {
 .search-result-image-container {
   @apply relative overflow-hidden;
   aspect-ratio: 16/9;
+  
+  &::after {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.15) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
 }
 
 // Shared image styles
 .masonry-image,
 .similar-post-image,
 .search-result-image {
-  @apply w-full h-full object-cover transition-all duration-700 ease-out;
-  filter: brightness(0.9) contrast(0.9);
-}
-
-.similar-post-image,
-.search-result-image {
-  filter: brightness(0.95) contrast(0.9) saturate(0.7);
+  @apply w-full h-full object-cover transition-all duration-500 ease-out;
+  filter: brightness(0.95) contrast(1) saturate(0.95);
 }
 
 // Shared content container
@@ -237,11 +237,7 @@ img[alt$="<"] {
 .masonry-content,
 .similar-post-content,
 .search-result-content {
-  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.02) 100%);
-  
-  .dark & {
-    background: linear-gradient(to bottom, transparent 0%, rgba(31, 41, 55, 0.02) 100%);
-  }
+  @apply relative;
 }
 
 // Shared meta styles
@@ -377,27 +373,37 @@ img[alt$="<"] {
     transform-origin: center bottom;
     
     &:hover {
-      @apply shadow-xl;
-      transform: translateY(-3px) scale(1.02);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15),
+                  0 8px 16px -8px rgba(0, 0, 0, 0.1);
+      border-color: rgba(1, 173, 175, 0.2) !important;
       will-change: transform;
+      
+      .dark & {
+        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.4),
+                    0 8px 16px -8px rgba(0, 0, 0, 0.3);
+        border-color: rgba(1, 173, 175, 0.3) !important;
+      }
     }
+  }
+  
+  .masonry-card:hover .masonry-image-container::after,
+  .similar-post-card:hover .similar-post-image-container::after,
+  .search-result-card:hover .search-result-image-container::after {
+    opacity: 1;
   }
   
   .masonry-card:hover .masonry-image,
   .similar-post-card:hover .similar-post-image,
   .search-result-card:hover .search-result-image {
-    @apply scale-110;
-    filter: brightness(1.05) contrast(1.1) saturate(1.1);
+    @apply scale-105;
+    filter: brightness(1.02) contrast(1.05) saturate(1.1);
   }
   
   .masonry-category:hover,
   .similar-post-category:hover,
   .search-result-category:hover {
-    @apply text-gray-600 dark:text-gray-400;
-    background: transparent;
-    transform: none;
-    box-shadow: none;
-    border: none;
+    @apply text-primary;
   }
   
   a.attribution:hover {
@@ -546,7 +552,7 @@ img[alt$="<"] {
   .masonry-card,
   .similar-post-card,
   .search-result-card {
-    @apply w-full rounded-lg transition-none;
+    @apply w-full rounded-md transition-none;
     border: none !important;
     box-shadow: none !important;
     transform: none !important;
@@ -608,12 +614,16 @@ img[alt$="<"] {
     @apply justify-center mb-1;
   }
   
+  .masonry-date {
+    @apply text-left;
+  }
+  
   // Categories - optimize touch targets
   .masonry-category,
   .similar-post-category,
   .search-result-category {
-    @apply py-1.5;
-    min-height: 28px;
+    @apply py-0;
+    min-height: auto;
   }
   
   // Disable all animations
