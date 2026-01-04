@@ -215,7 +215,7 @@ img[alt$="<"] {
 .similar-post-image-container,
 .search-result-image-container {
   @apply relative overflow-hidden;
-  aspect-ratio: 16/9;
+  aspect-ratio: 2/1;
   
   &::after {
     content: '';
