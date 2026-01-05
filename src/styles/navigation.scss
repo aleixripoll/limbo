@@ -1,25 +1,39 @@
 // navbar toggler
-input#nav-toggle:checked ~ label#show-button {
-  @apply hidden;
-}
-
-input#nav-toggle:checked ~ label#hide-button {
-  @apply flex md:hidden;
-}
-
 input#nav-toggle:checked ~ #nav-menu {
   @apply block md:flex;
 }
 
-// Improved burger menu animations
-#show-button,
-#hide-button {
-  @apply transition-all duration-300 ease-in-out;
+// Animated burger icon
+.burger-icon {
+  @apply relative w-6 h-5 flex flex-col justify-between;
+}
+
+.burger-bar {
+  @apply block w-full h-0.5 bg-current rounded-full;
+  transition: transform 0.25s ease-out, opacity 0.2s ease-out;
+  transform-origin: center;
+}
+
+#burger-button {
+  @apply text-black dark:text-light;
+}
+
+// Transform to X when checked
+input#nav-toggle:checked ~ #burger-button .bar-1 {
+  transform: translateY(9px) rotate(45deg);
+}
+
+input#nav-toggle:checked ~ #burger-button .bar-2 {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+input#nav-toggle:checked ~ #burger-button .bar-3 {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 @media (hover: hover) {
-  #show-button:hover,
-  #hide-button:hover {
+  #burger-button:hover .burger-icon {
     @apply scale-110;
   }
 }
@@ -31,12 +45,41 @@ input#nav-toggle:checked ~ #nav-menu {
 // Mobile menu slide animation
 @media (max-width: 768px) {
   #nav-menu {
-    @apply transform translate-y-[-10px] opacity-0 rounded-lg mt-2 py-2;
+    @apply rounded-lg mt-2 py-2 bg-gray-100 dark:bg-gray-800;
+    display: block !important;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-5px);
+    transform-origin: top center;
+    transition: max-height 0.25s ease-out, 
+                opacity 0.2s ease-out,
+                transform 0.2s ease-out;
   }
   
   input#nav-toggle:checked ~ #nav-menu {
-    @apply transform translate-y-0 opacity-100;
+    max-height: 400px;
+    opacity: 1;
+    transform: translateY(0);
   }
+  
+  // Stagger animation for menu items
+  .nav-item {
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+  }
+  
+  input#nav-toggle:checked ~ #nav-menu .nav-item {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  input#nav-toggle:checked ~ #nav-menu .nav-item:nth-child(1) { transition-delay: 0.05s; }
+  input#nav-toggle:checked ~ #nav-menu .nav-item:nth-child(2) { transition-delay: 0.08s; }
+  input#nav-toggle:checked ~ #nav-menu .nav-item:nth-child(3) { transition-delay: 0.11s; }
+  input#nav-toggle:checked ~ #nav-menu .nav-item:nth-child(4) { transition-delay: 0.14s; }
+  input#nav-toggle:checked ~ #nav-menu .nav-item:nth-child(5) { transition-delay: 0.17s; }
 }
 
 // navbar items
