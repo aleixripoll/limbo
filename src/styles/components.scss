@@ -186,7 +186,7 @@ img[alt$="<"] {
 .similar-post-card,
 .search-result-card {
   @apply block rounded-xl shadow-sm transition-all duration-300 overflow-hidden relative;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.06) !important;
   backdrop-filter: blur(8px);
   -webkit-tap-highlight-color: transparent !important;
@@ -195,8 +195,8 @@ img[alt$="<"] {
   outline: none !important;
   
   .dark & {
-    background: rgba(30, 30, 35, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: rgba(30, 30, 35, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
   
   &:focus,
