@@ -45,7 +45,7 @@ input#nav-toggle:checked ~ #burger-button .bar-3 {
 // Mobile menu slide animation
 @media (max-width: 768px) {
   #nav-menu {
-    @apply rounded-lg mt-2 py-2 bg-gray-100 dark:bg-gray-800;
+    @apply rounded-lg mt-2 py-2 bg-gray-100 dark:bg-gray-900/50;
     display: block !important;
     max-height: 0;
     overflow: hidden;
