@@ -568,6 +568,8 @@ img[alt$="<"] {
   .similar-post-card,
   .search-result-card {
     @apply w-full rounded-md transition-none;
+    background: transparent !important;
+    backdrop-filter: none !important;
     border: none !important;
     box-shadow: none !important;
     transform: none !important;
@@ -752,9 +754,10 @@ a.attribution {
   }
 }
 
-// Reading time badge
-.reading-time-badge {
-  @apply absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-medium;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+// Reading time badge - hidden for now
+.reading-time-badge,
+.masonry-image-container > div[class*="absolute"],
+.similar-post-image-container > div[class*="absolute"],
+.search-result-image-container > div[class*="absolute"] {
+  @apply hidden !important;
 }
