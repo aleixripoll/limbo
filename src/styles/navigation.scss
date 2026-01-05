@@ -45,20 +45,27 @@ input#nav-toggle:checked ~ #burger-button .bar-3 {
 // Mobile menu slide animation
 @media (max-width: 768px) {
   #nav-menu {
-    @apply rounded-lg mt-2 py-2 bg-transparent dark:bg-transparent;
+    @apply rounded-lg bg-transparent dark:bg-transparent;
     display: block !important;
     max-height: 0;
+    padding: 0;
+    margin-top: 0;
     overflow: hidden;
     opacity: 0;
     transform: translateY(-5px);
     transform-origin: top center;
     transition: max-height 0.25s ease-out, 
                 opacity 0.2s ease-out,
-                transform 0.2s ease-out;
+                transform 0.2s ease-out,
+                padding 0.25s ease-out,
+                margin-top 0.25s ease-out;
   }
   
   input#nav-toggle:checked ~ #nav-menu {
     max-height: 400px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
     opacity: 1;
     transform: translateY(0);
   }
