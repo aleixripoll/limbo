@@ -36,10 +36,7 @@ const {
         }}
       />
     ) : logo_text ? (
-      // If logo_text contains "|" we will use double-styling
-      <>
-        <BiLandscape className="relative -top-1 h-8 w-8 mr-1 inline"/>{logo_text.split("|")[0]}<span class="font-light">{logo_text.split("|")[1]}</span>
-      </>
+      <span class="font-light">{logo_text}</span>
     ) : (
       title
     )
