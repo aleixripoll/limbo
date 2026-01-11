@@ -2,11 +2,11 @@
 title: "El descontento"
 description: "Beatriz Serrano"
 authors: ["Dra. Valina"]
-image: ./fashion-1979136_1280.jpg
+image: ./despaired-2261021.jpg
 image_attribution:
-    author: matham315
+    author: kirill_makes_pics
     site: Pixabay
-    url: https://pixabay.com/photos/fashion-suit-tailor-clothes-1979136/
+    url: https://pixabay.com/es/photos/desesperado-empresario-negocio-2261021/
 categories: ["literatura"]
 tags: ["lang-es"]
 draft: false
