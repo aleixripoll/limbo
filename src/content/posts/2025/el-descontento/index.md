@@ -2,7 +2,7 @@
 title: "El descontento"
 description: "Beatriz Serrano"
 authors: ["Dra. Valina"]
-image: ./despaired-2261021.jpg
+image: ./despaired-2261021.webp
 image_attribution:
     author: kirill_makes_pics
     site: Pixabay
