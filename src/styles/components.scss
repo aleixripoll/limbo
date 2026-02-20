@@ -29,6 +29,7 @@
   }
   img {
     @apply object-cover;
+    filter: saturate(0.5) brightness(1.08) contrast(1.05);
   }
 }
 
@@ -218,7 +219,7 @@ img[alt$="<"] {
 .similar-post-image,
 .search-result-image {
   @apply w-full h-full object-cover transition-all duration-500 ease-out;
-  filter: brightness(0.95) contrast(1) saturate(0.4);
+  filter: brightness(1.08) contrast(1.05) saturate(0.6);
 }
 
 // Shared content container
@@ -399,7 +400,7 @@ img[alt$="<"] {
   .similar-post-card:hover .similar-post-image,
   .search-result-card:hover .search-result-image {
     @apply scale-105;
-    filter: brightness(1.02) contrast(1.05) saturate(0.75);
+    filter: brightness(1.12) contrast(1.08) saturate(0.85);
   }
   
   .masonry-category:hover,
@@ -440,7 +441,7 @@ img[alt$="<"] {
   .similar-post-card:hover .similar-post-image,
   .search-result-card:hover .search-result-image {
     @apply scale-100;
-    filter: brightness(0.95) contrast(1.05) saturate(0.4);
+    filter: brightness(1.08) contrast(1.05) saturate(0.6);
     transform: none !important;
   }
   
@@ -591,7 +592,7 @@ img[alt$="<"] {
     
     &:hover {
       @apply scale-100;
-      filter: brightness(0.95) contrast(1.05);
+      filter: brightness(1.08) contrast(1.05);
       transform: none !important;
     }
   }
