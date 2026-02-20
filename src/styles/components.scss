@@ -218,7 +218,7 @@ img[alt$="<"] {
 .similar-post-image,
 .search-result-image {
   @apply w-full h-full object-cover transition-all duration-500 ease-out;
-  filter: brightness(0.95) contrast(1) saturate(0.95);
+  filter: brightness(0.95) contrast(1) saturate(0.4);
 }
 
 // Shared content container
@@ -399,7 +399,7 @@ img[alt$="<"] {
   .similar-post-card:hover .similar-post-image,
   .search-result-card:hover .search-result-image {
     @apply scale-105;
-    filter: brightness(1.02) contrast(1.05) saturate(1.1);
+    filter: brightness(1.02) contrast(1.05) saturate(0.75);
   }
   
   .masonry-category:hover,
@@ -440,7 +440,7 @@ img[alt$="<"] {
   .similar-post-card:hover .similar-post-image,
   .search-result-card:hover .search-result-image {
     @apply scale-100;
-    filter: brightness(0.95) contrast(1.05);
+    filter: brightness(0.95) contrast(1.05) saturate(0.4);
     transform: none !important;
   }
   
