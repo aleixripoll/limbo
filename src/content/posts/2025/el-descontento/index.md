@@ -2,7 +2,7 @@
 title: "El descontento"
 description: "Beatriz Serrano"
 authors: ["Dra. Valina"]
-image: ./hell_is_empty.jpeg
+image: ./hell_is_empty.png
 categories: ["literatura"]
 tags: ["lang-es"]
 draft: false

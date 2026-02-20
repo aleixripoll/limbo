@@ -2,7 +2,7 @@
 title: "¿Qué puede salir mal?"
 description: "Sandra Ortonobes, La Hiperactina"
 authors: ["Dra. Valina"]
-image: ./cover.jpg
+image: ./virus.png
 #image_attribution:
 #    author: GrumpyBeere
 #    site: Pixabay

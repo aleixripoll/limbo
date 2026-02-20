@@ -2,7 +2,7 @@
 title: "Cereals panificables"
 description: "Blat contra tots."
 authors: ["Dra. Valina"]
-image: ./pa_suspects.jpg
+image: ./pa_suspects.png
 categories: ["apunts", "dibuixos"]
 tags: ["nutrició", "pa", "gluten", "lang-cat"]
 draft: false

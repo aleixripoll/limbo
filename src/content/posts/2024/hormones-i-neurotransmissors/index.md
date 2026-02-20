@@ -2,7 +2,7 @@
 title: "Hormones i neurotransmissors"
 description: "S'assemblen però no."
 authors: ["Dra. Valina"]
-image: ./hormona_neurona.webp
+image: ./hormona_neurona.png
 categories: ["apunts", "dibuixos"]
 tags: ["neurociència", "lang-cat"]
 draft: false
