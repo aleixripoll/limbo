@@ -183,12 +183,26 @@ img[alt$="<"] {
 .masonry-card,
 .similar-post-card,
 .search-result-card {
-  @apply block rounded-xl overflow-hidden relative border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#151d2c] transition-all duration-200;
+  /* Only transform is transitioned; ring + hover shadow use box-shadow — transition-all animates a click flash */
+  @apply block rounded-xl overflow-hidden relative border border-gray-200 dark:border-transparent bg-white dark:bg-[#151d2c] transition-transform duration-200 ease-out;
   -webkit-tap-highlight-color: transparent;
+  outline: none;
 
-  &:focus,
+  &:focus {
+    outline: none;
+  }
+
+  &:focus:not(:focus-visible) {
+    @apply ring-0 ring-offset-0;
+  }
+
+  &:active {
+    outline: none;
+    @apply ring-0 ring-offset-0;
+  }
+
   &:focus-visible {
-    @apply outline-none ring-2 ring-primary/40 ring-offset-2 ring-offset-white dark:ring-offset-[#151d2c];
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-white dark:ring-offset-[#151d2c];
   }
 }
 
@@ -196,7 +210,7 @@ img[alt$="<"] {
 .masonry-image-container,
 .search-result-image-container {
   @apply relative overflow-hidden bg-gray-200 dark:bg-gray-800;
-  height: 12rem;
+  height: 10rem;
 }
 
 .similar-post-image-container {
@@ -215,7 +229,7 @@ img[alt$="<"] {
 }
 
 .masonry-card-placeholder {
-  @apply flex h-full min-h-[12rem] w-full items-center justify-center text-4xl font-semibold text-gray-400 dark:text-gray-600;
+  @apply flex h-full min-h-[10rem] w-full items-center justify-center text-4xl font-semibold text-gray-400 dark:text-gray-600;
   background: linear-gradient(
     135deg,
     rgb(229 231 235) 0%,
@@ -615,26 +629,6 @@ img[alt$="<"] {
 // ============================================================
 // ACCESSIBILITY
 // ============================================================
-
-// Focus states
-.masonry-card:focus-within,
-.similar-post-card:focus-within,
-.search-result-card:focus-within {
-  @apply ring-1 ring-primary/30 ring-offset-1;
-  outline: none;
-}
-
-.masonry-card:focus-visible,
-.similar-post-card:focus-visible,
-.search-result-card:focus-visible {
-  @apply ring-2 ring-primary ring-offset-2 outline-none;
-}
-
-.masonry-card[aria-label],
-.similar-post-card[aria-label],
-.search-result-card[aria-label] {
-  @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
-}
 
 // High contrast mode
 @media (prefers-contrast: high) {
