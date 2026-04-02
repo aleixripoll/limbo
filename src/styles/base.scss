@@ -12,7 +12,17 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold leading-tight text-dark dark:text-stone-200;
+  @apply font-semibold leading-tight text-dark dark:text-stone-200;
+}
+
+/* Post body: Source Serif 4 (same stack as pixelperson) */
+.content {
+  @apply font-source-serif text-lg leading-[1.75] text-dark dark:text-stone-200;
+  letter-spacing: 0.01em;
+}
+
+.content :where(h2, h3, h4, h5, h6) {
+  @apply font-primary;
 }
 
 h2, h3, h4, h5, .footnotes > ol > li, sup > a {

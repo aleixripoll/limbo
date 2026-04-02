@@ -9,7 +9,7 @@ let h3 = h4 * font_scale;
 let h2 = h3 * font_scale;
 let h1 = h2 * font_scale;
 let fontPrimary, fontPrimaryType, fontSecondary, fontSecondaryType;
-if (theme.fonts.font_family.primary) {
+if (theme.fonts.font_family.primary?.trim()) {
   fontPrimary = theme.fonts.font_family.primary
     .replace(/\+/g, " ")
     .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
@@ -65,8 +65,30 @@ export default {
         h6: h6 + "rem",
       },
       fontFamily: {
-        primary: [fontPrimary, fontPrimaryType],
-        secondary: [fontSecondary, fontSecondaryType],
+        primary: fontPrimary
+          ? [fontPrimary, fontPrimaryType || "sans-serif"]
+          : [
+              "system-ui",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "Segoe UI",
+              "sans-serif",
+            ],
+        secondary: fontSecondary
+          ? [fontSecondary, fontSecondaryType || "sans-serif"]
+          : [
+              "system-ui",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "Segoe UI",
+              "sans-serif",
+            ],
+        "source-serif": [
+          '"Source Serif 4"',
+          "Georgia",
+          '"Times New Roman"',
+          "serif",
+        ],
       },
       typography: {
         DEFAULT: {

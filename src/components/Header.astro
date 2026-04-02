@@ -2,7 +2,7 @@
 import Logo from "@components/Logo.astro";
 import menu from "@config/menu.json";
 import { IoSearch } from "react-icons/io5/index.js";
-import { BiHome, BiUser, BiCategoryAlt, BiPurchaseTag } from "react-icons/bi/index.js";
+import { BiUser, BiCategoryAlt, BiPurchaseTag } from "react-icons/bi/index.js";
 import ThemeToggle from './ThemeToggle.astro';
 //import ThemeSwitcher from './ThemeSwitcher.astro';
 
@@ -22,14 +22,13 @@ const { main }: { main: NavigationLink[] } = menu;
 
 // Map menu names to icons
 const menuIcons: Record<string, any> = {
-  "Inici": BiHome,
   "Autors": BiUser,
   "Categories": BiCategoryAlt,
   "Tags": BiPurchaseTag,
 };
 ---
 
-<header class="header /*sticky*/ pt-1 bg-gray-100 dark:bg-gray-900/50">
+<header class="header border-b border-gray-200 bg-transparent pt-1 dark:border-gray-700 dark:bg-transparent">
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0">

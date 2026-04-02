@@ -145,22 +145,32 @@ img[alt$="<"] {
 // SHARED CARD STYLES (masonry, similar-post, search-result)
 // ============================================================
 
-// Shared grid styles
+// Row-major grid: posts flow left → right in date order (same idea as pixelperson)
 .masonry-grid,
 .search-results-grid {
-  @apply columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-12 space-y-12;
-  column-fill: balance;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+
+  @media (min-width: 540px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.75rem;
+  }
 }
 
 .similar-posts-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12;
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8;
 }
 
 // Shared item styles
 .masonry-item,
 .search-result-item {
-  @apply break-inside-avoid mb-12;
-  page-break-inside: avoid;
+  @apply min-w-0;
 }
 
 // Mobile separator between posts
@@ -169,62 +179,61 @@ img[alt$="<"] {
   @apply break-inside-avoid;
 }
 
-// Shared card base styles
+// Shared card base styles (clean borders; no glass / forced user-select)
 .masonry-card,
 .similar-post-card,
 .search-result-card {
-  @apply block rounded-xl shadow-sm transition-all duration-300 overflow-hidden relative;
-  background: rgba(255, 255, 255, 0.5);
-  border: none !important;
-  backdrop-filter: blur(8px);
-  -webkit-tap-highlight-color: transparent !important;
-  -webkit-touch-callout: none !important;
-  user-select: none !important;
-  outline: none !important;
-  
-  .dark & {
-    background: rgba(30, 30, 35, 0.5);
-    border: none !important;
-  }
-  
+  @apply block rounded-xl overflow-hidden relative border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#151d2c] transition-all duration-200;
+  -webkit-tap-highlight-color: transparent;
+
   &:focus,
   &:focus-visible {
-    outline: none !important;
-  }
-  
-  &:active {
-    box-shadow: 0 0 0 2px rgba(1, 173, 175, 0.3) !important;
-    transition: box-shadow 0.1s ease;
+    @apply outline-none ring-2 ring-primary/40 ring-offset-2 ring-offset-white dark:ring-offset-[#151d2c];
   }
 }
 
-// Shared image container
+// Masonry / search cards: fixed image band (pixelperson-style)
 .masonry-image-container,
-.similar-post-image-container,
 .search-result-image-container {
-  @apply relative overflow-hidden;
-  aspect-ratio: 2/1;
-  
-  &::after {
-    content: '';
-    @apply absolute inset-0 pointer-events-none;
-    background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.15) 100%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
+  @apply relative overflow-hidden bg-gray-200 dark:bg-gray-800;
+  height: 12rem;
+}
+
+.similar-post-image-container {
+  @apply relative overflow-hidden bg-gray-200 dark:bg-gray-800;
+  aspect-ratio: 16 / 10;
 }
 
 // Shared image styles
 .masonry-image,
-.similar-post-image,
 .search-result-image {
-  @apply w-full h-full object-cover transition-all duration-500 ease-out;
-  filter: brightness(1.08) contrast(1.05) saturate(0.6);
+  @apply w-full h-full object-cover transition-transform duration-200 ease-out;
+}
+
+.similar-post-image {
+  @apply w-full h-full object-cover transition-transform duration-200 ease-out;
+}
+
+.masonry-card-placeholder {
+  @apply flex h-full min-h-[12rem] w-full items-center justify-center text-4xl font-semibold text-gray-400 dark:text-gray-600;
+  background: linear-gradient(
+    135deg,
+    rgb(229 231 235) 0%,
+    rgb(209 213 219) 100%
+  );
+
+  .dark & {
+    background: linear-gradient(
+      135deg,
+      rgb(55 65 81) 0%,
+      rgb(75 85 99) 100%
+    );
+  }
 }
 
 // Shared content container
 .masonry-content {
-  @apply p-5 pt-4 relative;
+  @apply p-4 px-5 relative;
 }
 
 .similar-post-content {
@@ -256,7 +265,11 @@ img[alt$="<"] {
 
 // Shared date styles
 .masonry-date {
-  @apply flex items-center text-gray-500 font-normal;
+  @apply flex flex-wrap items-center gap-x-0 text-sm text-gray-500 dark:text-gray-400 font-normal;
+}
+
+.masonry-date-text {
+  @apply whitespace-nowrap;
 }
 
 .similar-post-date,
@@ -314,18 +327,12 @@ img[alt$="<"] {
 .masonry-title,
 .similar-post-title,
 .search-result-title {
-  @apply font-bold mb-2 text-gray-900 dark:text-gray-100 line-clamp-2 group-hover:text-primary transition-all duration-300;
+  @apply font-semibold mb-2 text-gray-900 dark:text-gray-100 line-clamp-2 group-hover:text-primary transition-colors duration-200;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 1.3;
-  letter-spacing: -0.025em;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  
-  .dark & {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  }
 }
 
 .masonry-title {
@@ -358,7 +365,8 @@ img[alt$="<"] {
 }
 
 .masonry-excerpt {
-  @apply text-base;
+  @apply text-base line-clamp-3;
+  -webkit-line-clamp: 3;
 }
 
 .similar-post-excerpt,
@@ -373,34 +381,20 @@ img[alt$="<"] {
   .masonry-card,
   .similar-post-card,
   .search-result-card {
-    transform-origin: center bottom;
-    
     &:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15),
-                  0 8px 16px -8px rgba(0, 0, 0, 0.1);
-      border-color: rgba(1, 173, 175, 0.2) !important;
-      will-change: transform;
-      
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.12);
+
       .dark & {
-        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.4),
-                    0 8px 16px -8px rgba(0, 0, 0, 0.3);
-        border-color: rgba(1, 173, 175, 0.3) !important;
+        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.35);
       }
     }
   }
-  
-  .masonry-card:hover .masonry-image-container::after,
-  .similar-post-card:hover .similar-post-image-container::after,
-  .search-result-card:hover .search-result-image-container::after {
-    opacity: 1;
-  }
-  
+
   .masonry-card:hover .masonry-image,
   .similar-post-card:hover .similar-post-image,
   .search-result-card:hover .search-result-image {
-    @apply scale-105;
-    filter: brightness(1.12) contrast(1.08) saturate(0.85);
+    @apply scale-[1.02];
   }
   
   .masonry-category:hover,
@@ -441,7 +435,6 @@ img[alt$="<"] {
   .similar-post-card:hover .similar-post-image,
   .search-result-card:hover .search-result-image {
     @apply scale-100;
-    filter: brightness(1.08) contrast(1.05) saturate(0.6);
     transform: none !important;
   }
   
@@ -478,14 +471,7 @@ img[alt$="<"] {
 .masonry-item,
 .similar-post-item,
 .search-result-item {
-  animation: cardFadeIn 0.6s ease-out;
-}
-
-// Stagger animation for masonry cards
-@for $i from 1 through 6 {
-  .masonry-item:nth-child(#{$i}) {
-    animation-delay: #{$i * 0.1}s;
-  }
+  animation: cardFadeIn 0.45s ease-out;
 }
 
 // Skeleton loading animation
@@ -501,60 +487,26 @@ img[alt$="<"] {
 }
 
 // ============================================================
-// RESPONSIVE: TABLET (641px - 1024px)
-// ============================================================
-@media (min-width: 641px) and (max-width: 1024px) {
-  .masonry-grid,
-  .search-results-grid {
-    @apply columns-2 gap-5;
-  }
-}
-
-// ============================================================
-// RESPONSIVE: DESKTOP (1025px - 1280px)
-// ============================================================
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .masonry-grid,
-  .search-results-grid {
-    @apply columns-3 gap-6;
-  }
-}
-
-// ============================================================
-// RESPONSIVE: LARGE DESKTOP (1281px+)
-// ============================================================
-@media (min-width: 1281px) {
-  .masonry-grid,
-  .search-results-grid {
-    @apply columns-4 gap-6;
-  }
-}
-
-// ============================================================
 // RESPONSIVE: MOBILE (max-width: 640px)
 // ============================================================
 @media (max-width: 640px) {
-  // Grid layouts
   .masonry-grid,
   .search-results-grid {
-    @apply columns-1 gap-2 space-y-4 px-2;
-    margin-top: 0.25rem !important;
+    @apply gap-4 px-1;
   }
-  
+
   .masonry-item,
   .search-result-item {
-    @apply mb-4;
+    @apply mb-0;
   }
   
   .similar-posts-grid {
     @apply grid-cols-1 gap-4;
   }
   
-  // Items
   .masonry-item,
   .search-result-item {
-    @apply w-full break-inside-avoid-column;
-    column-span: all;
+    @apply w-full;
   }
   
   // Cards - disable all transforms and animations
@@ -592,7 +544,6 @@ img[alt$="<"] {
     
     &:hover {
       @apply scale-100;
-      filter: brightness(1.08) contrast(1.05);
       transform: none !important;
     }
   }
@@ -677,7 +628,6 @@ img[alt$="<"] {
 .similar-post-card:focus-visible,
 .search-result-card:focus-visible {
   @apply ring-2 ring-primary ring-offset-2 outline-none;
-  transform: translateY(-2px);
 }
 
 .masonry-card[aria-label],
@@ -748,10 +698,3 @@ a.attribution {
   }
 }
 
-// Reading time badge - hidden for now
-.reading-time-badge,
-.masonry-image-container > div[class*="absolute"],
-.similar-post-image-container > div[class*="absolute"],
-.search-result-image-container > div[class*="absolute"] {
-  @apply hidden !important;
-}

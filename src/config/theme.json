@@ -2,7 +2,7 @@
   "colors": {
     "default": {
       "theme_color": {
-        "primary": "#0ea5a4",
+        "primary": "#0d9488",
         "body": "#fff",
         "border": "#D5D5D5",
         "theme_light": "#FAFAFA",
@@ -17,7 +17,7 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Fira Sans",
+      "primary": "",
       "primary_type": "sans-serif",
       "secondary": "",
       "secondary_type": "sans-serif"

@@ -1,10 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import config from "@config/config.json";
-// getSinglePage import removed (not used)
 import dateFormat from "@lib/utils/dateFormat";
-import { humanize } from "@lib/utils/textConverter";
-import { BiTime, BiCategoryAlt } from "react-icons/bi/index.js";
 
 const { summary_length } = config.settings;
 
@@ -15,83 +12,54 @@ interface Props {
 }
 
 const { className, posts, fluid } = Astro.props;
-
-// Calculate reading time (rough estimate: 200 words per minute)
-function calculateReadingTime(content: string): number {
-  const words = content.split(/\s+/).length;
-  return Math.ceil(words / 200);
-}
 ---
 
 <div class={`masonry-grid mt-8 ${className || ""}`}>
   {
-    posts.map((post: any, i: number) => {
-      const readingTime = calculateReadingTime(post.body || "");
-      return (
-        <article class="masonry-item" data-post-slug={post.slug}>
-          {post.data.image && (
-            <a 
-              href={`${import.meta.env.BASE_URL}${post.slug}`} 
-              class="masonry-card group"
-              aria-label={`Llegir article: ${post.data.title}`}
-            >
-              <div class="masonry-image-container">
-                <Image
-                  class="masonry-image"
-                  src={post.data.image}
-                  alt={post.data.title}
-                  width="400"
-                  height="300"
-                  loading="lazy"
-                />
-                
-                {/* Reading time badge */}
-                {readingTime > 0 && (
-                  <div class="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-medium">
-                    <BiTime className="inline mr-1 h-3 w-3" />
-                    {readingTime} min
-                  </div>
-                )}
+    posts.map((post: any, i: number) => (
+      <article class="masonry-item" data-post-slug={post.slug}>
+        <a
+          href={`${import.meta.env.BASE_URL}${post.slug}`}
+          class="masonry-card group"
+          aria-label={`Llegir article: ${post.data.title}`}
+        >
+          <div class="masonry-image-container">
+            {post.data.image ? (
+              <Image
+                class="masonry-image"
+                src={post.data.image}
+                alt={post.data.title}
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            ) : (
+              <div class="masonry-card-placeholder" aria-hidden="true">
+                {post.data.title?.slice(0, 1)?.toUpperCase() ?? "?"}
               </div>
-              
-              <div class="masonry-content">
-                <div class="masonry-meta">
-                  <div class="masonry-date">
-                    {post.data.categories && post.data.categories.length > 0 ? (
-                      <>
-                        <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-primary" />
-                        <div class="masonry-category-list">
-                          {post.data.categories.map((category: string, idx: number) => (
-                            <span class="masonry-category" id={String(idx)}>
-                              {humanize(category)}{idx !== post.data.categories.length - 1 && ","}
-                            </span>
-                          ))}
-                        </div>
-                      </>
-                    ) : (
-                      <span>{dateFormat(post.data.date)}</span>
-                    )}
-                  </div>
-                </div>
-                
-                <h3 class="masonry-title">
-                  {post.data.title}
-                </h3>
-                
-                <p class="masonry-excerpt">
-                  {post.data.description
-                    ? post.data.description
-                    : post.body?.slice(
-                        0,
-                        Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
-                      ) + "..."}
-                </p>
-                
+            )}
+          </div>
+
+          <div class="masonry-content">
+            <div class="masonry-meta">
+              <div class="masonry-date">
+                <span class="masonry-date-text">{dateFormat(post.data.date)}</span>
               </div>
-            </a>
-          )}
-        </article>
-      );
-    })
+            </div>
+
+            <h3 class="masonry-title">{post.data.title}</h3>
+
+            <p class="masonry-excerpt">
+              {post.data.description
+                ? post.data.description
+                : post.body?.slice(
+                    0,
+                    Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
+                  ) + "..."}
+            </p>
+          </div>
+        </a>
+      </article>
+    ))
   }
 </div>
