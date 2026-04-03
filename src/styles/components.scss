@@ -282,7 +282,8 @@ img[alt$="<"] {
   @apply flex flex-wrap items-center gap-x-0 text-xs text-gray-500 dark:text-gray-400 font-normal;
 }
 
-.masonry-date-text {
+.masonry-date-text,
+.similar-post-date-text {
   @apply whitespace-nowrap;
 }
 

@@ -4,5 +4,5 @@ description: "Ja està tot dit i dibuixat."
 authors: ["Dra. Valina", "Natilla"]
 date: 2022-04-13T09:00
 categories: [ Dibuixos ]
-image: ./bob_earth.jpg
+image: ./bob_earth.png
 ---
