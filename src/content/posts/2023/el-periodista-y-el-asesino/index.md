@@ -1,13 +1,13 @@
 ---
 title: "El periodista y el asesino"
-description: "Libro sobre los límites morales del periodismo, por Janet Malcolm."
-authors: ["Dra. Valina"]
+description: "Janet Malcolm"
+authors: [ "Dra. Valina" ]
 image: ./pexels-markus-spiske-97050.webp
 image_attribution:
-    author: Markus Spiske
-    url: https://www.pexels.com/ca-es/foto/cafe-tassa-copa-telefon-intel-ligent-97050/
-categories: ["literatura"]
-tags: ["assaig", "periodisme", "psicologia"]
+  author: Markus Spiske
+  url: https://www.pexels.com/ca-es/foto/cafe-tassa-copa-telefon-intel-ligent-97050/
+categories: [ "literatura" ]
+tags: [ "assaig", "periodisme", "psicologia" ]
 draft: false
 date: 2023-10-29T16:48
 ---

@@ -1,13 +1,13 @@
 ---
 title: "Dejar ir, de David R. Hawkins"
-description: "Libro de autoayuda que algo ayuda."
-authors: ["Dra. Valina"]
+description: "David R. Hawkins"
+authors: [ "Dra. Valina" ]
 image: ./pexels-min-an-715567.jpg
 image_attribution:
-    author: Min An
-    url: https://www.pexels.com/ca-es/foto/aigua-barca-llac-riu-715567/
-categories: ["literatura"]
-tags: ["assaig", "psicologia"]
+  author: Min An
+  url: https://www.pexels.com/ca-es/foto/aigua-barca-llac-riu-715567/
+categories: [ "literatura" ]
+tags: [ "assaig", "psicologia" ]
 draft: false
 date: 2022-06-12T17:37
 ---

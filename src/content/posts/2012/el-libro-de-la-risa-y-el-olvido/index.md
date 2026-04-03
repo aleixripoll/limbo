@@ -1,10 +1,10 @@
 ---
 title: "El libro de la risa y el olvido"
-description: "Novela de Milan Kundera."
-authors: ["Dr. Fenilalanino"]
+description: "Milan Kundera"
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
-categories: ["literatura"]
-tags: ["filosofia", "societat"]
+categories: [ "literatura" ]
+tags: [ "filosofia", "societat" ]
 draft: false
 date: 2012-12-31T18:30
 ---

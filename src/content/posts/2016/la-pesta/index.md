@@ -1,14 +1,14 @@
 ---
 title: "La pesta"
-description: "Novel·la d'Albert Camus."
-authors: ["Dr. Fenilalanino"]
+description: "Albert Camus"
+authors: [ "Dr. Fenilalanino" ]
 image: ./hubistavern-w37Tyg8bYYM-unsplash.jpg
 image_attribution:
-    author: нυвιѕ тανєяη
-    site: Unsplash
-    url: https://unsplash.com/photos/person-holding-umbrella-with-light-w37Tyg8bYYM
-categories: ["literatura"]
-tags: ["societat", "lang-cat"]
+  author: нυвιѕ тανєяη
+  site: Unsplash
+  url: https://unsplash.com/photos/person-holding-umbrella-with-light-w37Tyg8bYYM
+categories: [ "literatura" ]
+tags: [ "societat", "lang-cat" ]
 draft: false
 date: 2016-03-06T12:59
 ---

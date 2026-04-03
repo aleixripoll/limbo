@@ -1,13 +1,13 @@
 ---
 title: "Three men in a boat"
-description: "Monty Python's hecho novela, por Jerome K. Jerome."
-authors: ["Dr. Fenilalanino"]
+description: "Jerome K. Jerome"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-vietnamese-private-tours-1162639.jpg
 image_attribution:
-    author: Vietnamese Private Tours
-    url: https://www.pexels.com/ca-es/foto/1162639/
-categories: ["literatura"]
-tags: ["humor", "lang-en"]
+  author: Vietnamese Private Tours
+  url: https://www.pexels.com/ca-es/foto/1162639/
+categories: [ "literatura" ]
+tags: [ "humor", "lang-en" ]
 draft: false
 date: 2016-05-21T19:18
 ---

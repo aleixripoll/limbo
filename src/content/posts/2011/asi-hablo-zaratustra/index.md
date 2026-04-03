@@ -1,13 +1,13 @@
 ---
 title: "Así habló Zaratustra"
-description: "Ensayo de Friedrich Nietzsche."
-authors: ["Dr. Fenilalanino"]
+description: "Friedrich Nietzsche"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-mayu-6348820.jpg
 image_attribution:
   author: Mayu
   url: https://www.pexels.com/ca-es/foto/alba-cel-ennuvolat-silueta-6348820/
-categories: ["literatura"]
-tags: ["assaig", "filosofia"]
+categories: [ "literatura" ]
+tags: [ "assaig", "filosofia" ]
 draft: false
 date: 2011-05-14T11:39
 ---

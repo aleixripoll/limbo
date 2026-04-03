@@ -1,12 +1,12 @@
 ---
 title: "La senda del perdedor"
-description: "Nihilismo-anarquismo, por Charles Bukowski."
-authors: ["Dr. Fenilalanino"]
+description: "Charles Bukowski"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-ksusha-semakina-64102.jpg
 image_attribution:
-    author: Ksusha Semakina
-    url: https://www.pexels.com/ca-es/foto/cel-camp-cami-agricultura-64102/
-categories: ["literatura"]
+  author: Ksusha Semakina
+  url: https://www.pexels.com/ca-es/foto/cel-camp-cami-agricultura-64102/
+categories: [ "literatura" ]
 tags: []
 draft: false
 date: 2019-09-06T09:01

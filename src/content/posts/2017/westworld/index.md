@@ -1,14 +1,14 @@
 ---
 title: "Westworld"
-description: "La primera temporada y ya."
-authors: ["Dr. Fenilalanino"]
+description: "HBO"
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
 image_attribution:
-    author: Westworld
-    site: HBO
-    url: https://www.hbo.com/westworld
-categories: ["cine"]
-tags: ["sèrie TV", "filosofia", "societat", "ciència ficció", "lang-en"]
+  author: Westworld
+  site: HBO
+  url: https://www.hbo.com/westworld
+categories: [ "cine" ]
+tags: [ "sèrie TV", "filosofia", "societat", "ciència ficció", "lang-en" ]
 draft: false
 date: 2017-12-17T19:35
 ---

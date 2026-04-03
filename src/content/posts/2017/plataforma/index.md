@@ -1,14 +1,14 @@
 ---
 title: "Plataforma"
-description: "Tercera novela de Michel Houellebecq."
-authors: ["Dr. Fenilalanino"]
+description: "Michel Houellebecq"
+authors: [ "Dr. Fenilalanino" ]
 image: ./alexander-krivitskiy-zhG_w269I7I-unsplash.jpg
 image_attribution:
-    author: Alexander Krivitskiy
-    site: Unsplash
-    url: https://unsplash.com/photos/grayscale-photo-of-woman-zhG_w269I7I
-categories: ["literatura"]
-tags: ["societat"]
+  author: Alexander Krivitskiy
+  site: Unsplash
+  url: https://unsplash.com/photos/grayscale-photo-of-woman-zhG_w269I7I
+categories: [ "literatura" ]
+tags: [ "societat" ]
 draft: false
 date: 2017-11-29T18:13
 ---

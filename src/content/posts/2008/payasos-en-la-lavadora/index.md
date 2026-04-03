@@ -1,14 +1,14 @@
 ---
 title: "Payasos en la lavadora"
-description: "Novela de Álex de la Iglesia."
-authors: ["Dr. Fenilalanino"]
+description: "Álex de la Iglesia"
+authors: [ "Dr. Fenilalanino" ]
 image: ./anshita-nair-Hs951eXWbow-unsplash.jpg
 image_attribution:
-    author: Anshita Nair
-    site: Unsplash
-    url: https://unsplash.com/photos/Hs951eXWbow
-categories: ["literatura"]
-tags: ["societat"]
+  author: Anshita Nair
+  site: Unsplash
+  url: https://unsplash.com/photos/Hs951eXWbow
+categories: [ "literatura" ]
+tags: [ "societat" ]
 draft: false
 date: 2008-05-31T11:44
 ---

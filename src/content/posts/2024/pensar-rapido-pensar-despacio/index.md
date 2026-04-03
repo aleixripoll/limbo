@@ -1,10 +1,10 @@
 ---
 title: "Pensar rápido, pensar despacio"
-description: "Biaixos cognitius, per Daniel Kahneman."
-authors: ["Dr. Fenilalanino"]
+description: "Daniel Kahneman"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pensa.webp
-categories: ["literatura", "dibuixos"]
-tags: ["assaig", "psicologia", "neurociència"]
+categories: [ "literatura", "dibuixos" ]
+tags: [ "assaig", "psicologia", "neurociència" ]
 draft: false
 date: 2024-04-14T15:00
 ---

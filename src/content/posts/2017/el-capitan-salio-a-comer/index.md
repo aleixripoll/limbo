@@ -1,13 +1,13 @@
 ---
 title: "El capitán salió a comer y los marineros tomaron el barco"
-description: "Dietario de Charles Bukowski."
-authors: ["Dr. Fenilalanino"]
+description: "Charles Bukowski"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-pixabay-275637.jpg
 image_attribution:
-    author: Pixabay
-    url: https://www.pexels.com/ca-es/foto/fusta-barca-navegant-vaixell-275637/
-categories: ["literatura"]
-tags: ["societat"]
+  author: Pixabay
+  url: https://www.pexels.com/ca-es/foto/fusta-barca-navegant-vaixell-275637/
+categories: [ "literatura" ]
+tags: [ "societat" ]
 draft: false
 date: 2017-08-12T12:24
 ---

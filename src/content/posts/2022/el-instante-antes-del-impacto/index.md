@@ -1,10 +1,10 @@
 ---
 title: "El instante antes del impacto"
-description: "La vida después del consumismo, por Glòria de Castro."
-authors: ["Dra. Valina"]
+description: "Glòria de Castro"
+authors: [ "Dra. Valina" ]
 image: ./cover.webp
-categories: ["literatura", "dibuixos"]
-tags: ["humor", "societat"]
+categories: [ "literatura", "dibuixos" ]
+tags: [ "humor", "societat" ]
 draft: false
 date: 2022-10-30T07:03
 ---

@@ -1,10 +1,10 @@
 ---
 title: "Victus"
-description: "Guerra de successió i setge de Barcelona, per Albert Sánchez Piñol."
-authors: ["Dr. Fenilalanino"]
+description: "Albert Sánchez Piñol"
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.jpg
-categories: ["literatura"]
-tags: ["historia", "lang-cat"]
+categories: [ "literatura" ]
+tags: [ "historia", "lang-cat" ]
 draft: false
 date: 2020-02-22T08:01
 ---

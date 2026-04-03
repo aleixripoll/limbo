@@ -1,10 +1,10 @@
 ---
 title: "Soy una jaula"
-description: "Citas de Franz Kafka."
-authors: ["Dr. Fenilalanino"]
+description: "Cites de Franz Kafka."
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
-categories: ["literatura", "dibuixos"]
-tags: ["frases", "filosofia"]
+categories: [ "literatura", "dibuixos" ]
+tags: [ "frases", "filosofia" ]
 draft: false
 date: 2022-09-11T14:18
 ---

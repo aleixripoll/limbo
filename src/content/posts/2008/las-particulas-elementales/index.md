@@ -1,14 +1,14 @@
 ---
 title: "Las partículas elementales"
-description: "Novela de Michel Houellebecq."
-authors: ["Dr. Fenilalanino"]
+description: "Michel Houellebecq"
+authors: [ "Dr. Fenilalanino" ]
 image: ./ai-generated-8408141_1280.jpg
 image_attribution:
-    author: Gerd Altmann
-    site: Pixabay
-    url: https://pixabay.com/es/illustrations/ai-generado-cerebro-explosi%C3%B3n-8408141/
-categories: ["literatura"]
-tags: ["societat"]
+  author: Gerd Altmann
+  site: Pixabay
+  url: https://pixabay.com/es/illustrations/ai-generado-cerebro-explosi%C3%B3n-8408141/
+categories: [ "literatura" ]
+tags: [ "societat" ]
 draft: false
 date: 2008-05-31T16:21
 ---

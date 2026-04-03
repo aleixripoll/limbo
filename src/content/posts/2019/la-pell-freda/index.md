@@ -1,10 +1,10 @@
 ---
 title: "La pell freda"
-description: "Novel·la d'Albert Sánchez Piñol."
-authors: ["Dr. Fenilalanino"]
+description: "Albert Sánchez Piñol"
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
-categories: ["literatura"]
-tags: ["lang-cat"]
+categories: [ "literatura" ]
+tags: [ "lang-cat" ]
 draft: false
 date: 2019-01-26T21:14
 ---

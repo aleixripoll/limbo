@@ -1,13 +1,13 @@
 ---
 title: "Fundamentos de Psicobiología"
-description: "Sí, a veces leo libros de la UNED."
-authors: ["Dra. Valina"]
+description: "A vegades llegeixo llibres de l'UNED."
+authors: [ "Dra. Valina" ]
 image: ./pexels-tetyana-kovyrina-2422777.jpg
 image_attribution:
-    author: Tetyana Kovyrina
-    url: https://www.pexels.com/ca-es/foto/naturalesa-natura-animal-ulls-2422777/
-categories: ["literatura"]
-tags: ["neurociència", "psicologia"]
+  author: Tetyana Kovyrina
+  url: https://www.pexels.com/ca-es/foto/naturalesa-natura-animal-ulls-2422777/
+categories: [ "literatura" ]
+tags: [ "neurociència", "psicologia" ]
 draft: false
 date: 2022-11-10T13:38
 ---

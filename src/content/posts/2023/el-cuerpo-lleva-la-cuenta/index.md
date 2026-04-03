@@ -1,14 +1,14 @@
 ---
 title: "El cuerpo lleva la cuenta"
-description: "Efectos del estrés psicológico en el cuerpo, por Bessel van der Kolk."
-authors: ["Dra. Valina"]
+description: "Bessel van der Kolk"
+authors: [ "Dra. Valina" ]
 image: ./ball-5586847_1920.jpg
 image_attribution:
-    author: Alexa
-    site: Pixabay
-    url: https://pixabay.com/es/photos/pelota-pelota-antiestr%C3%A9s-emoci%C3%B3n-5586847/
-categories: ["literatura"]
-tags: ["assaig", "psicologia"]
+  author: Alexa
+  site: Pixabay
+  url: https://pixabay.com/es/photos/pelota-pelota-antiestr%C3%A9s-emoci%C3%B3n-5586847/
+categories: [ "literatura" ]
+tags: [ "assaig", "psicologia" ]
 draft: false
 date: 2023-06-10T16:34
 ---

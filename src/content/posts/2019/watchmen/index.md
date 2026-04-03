@@ -1,10 +1,10 @@
 ---
 title: "Watchmen"
-description: "Película de Zack Snyder, basada en el cómic de Alan Moore que no he leído."
-authors: ["Dr. Fenilalanino"]
+description: "Pel·lícula de Zack Snyder basada en el còmic d'Alan Moore."
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
-categories: ["cine"]
-tags: ["peli", "lang-en"]
+categories: [ "cine" ]
+tags: [ "peli", "lang-en" ]
 draft: false
 date: 2019-12-20T14:01
 ---

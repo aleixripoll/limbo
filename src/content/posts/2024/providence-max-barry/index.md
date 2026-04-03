@@ -1,11 +1,11 @@
 ---
 title: "Providence"
 slug: providence-max-barry
-description: "Ciència ficció existencialista, per Max Barry."
-authors: ["Dr. Fenilalanino"]
+description: "Max Barry"
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.jpg
-categories: ["literatura"]
-tags: ["psicologia", "existencialisme", "ciència ficció", "lang-en"]
+categories: [ "literatura" ]
+tags: [ "psicologia", "existencialisme", "ciència ficció", "lang-en" ]
 draft: false
 date: 2024-02-28T07:00
 ---

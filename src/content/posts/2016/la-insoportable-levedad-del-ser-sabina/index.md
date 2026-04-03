@@ -1,13 +1,13 @@
 ---
 title: "La insoportable levedad del ser (Sabina)"
-description: "Novela de Milan Kundera."
-authors: ["Dr. Fenilalanino"]
+description: "Milan Kundera"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-alexander-krivitskiy-1399073.jpg
 image_attribution:
-    author: Alexander Krivitskiy
-    url: https://www.pexels.com/ca-es/foto/blanc-i-negre-persona-dona-nena-1399073/
-categories: ["literatura"]
-tags: ["societat", "filosofia"]
+  author: Alexander Krivitskiy
+  url: https://www.pexels.com/ca-es/foto/blanc-i-negre-persona-dona-nena-1399073/
+categories: [ "literatura" ]
+tags: [ "societat", "filosofia" ]
 draft: false
 date: 2016-03-16T12:39
 ---

@@ -1,14 +1,14 @@
 ---
 title: "Aforismos"
-description: "Recopilatorio de citas de Friedrich Nietzsche."
-authors: ["Dr. Fenilalanino"]
+description: "Friedrich Nietzsche"
+authors: [ "Dr. Fenilalanino" ]
 image: ./jaredd-craig-HH4WBGNyltc-unsplash.jpg
 image_attribution:
-    author: Jaredd Craig
-    site: Unsplash
-    url: https://unsplash.com/photos/view-of-floating-open-book-from-stacked-books-in-library-HH4WBGNyltc
-categories: ["literatura"]
-tags: ["frases", "filosofia"]
+  author: Jaredd Craig
+  site: Unsplash
+  url: https://unsplash.com/photos/view-of-floating-open-book-from-stacked-books-in-library-HH4WBGNyltc
+categories: [ "literatura" ]
+tags: [ "frases", "filosofia" ]
 draft: false
 date: 2009-04-10T17:23
 ---

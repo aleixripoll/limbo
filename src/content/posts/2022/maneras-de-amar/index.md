@@ -1,13 +1,13 @@
 ---
 title: "Maneras de amar"
-description: "La ciencia de los estilos de apego, por Amir Levine y Rachel Heller."
-authors: ["Dra. Valina"]
+description: "Amir Levine, Rachel Heller"
+authors: [ "Dra. Valina" ]
 image: ./pexels-kawaiiart-1767434.jpg
 image_attribution:
-    author: KawaiiArt1980
-    url: https://www.pexels.com/ca-es/foto/banc-amor-gent-relaxacio-1767434/
-categories: ["literatura"]
-tags: ["assaig", "psicologia", "neurociència", "apego"]
+  author: KawaiiArt1980
+  url: https://www.pexels.com/ca-es/foto/banc-amor-gent-relaxacio-1767434/
+categories: [ "literatura" ]
+tags: [ "assaig", "psicologia", "neurociència", "apego" ]
 draft: false
 date: 2022-05-17T17:54
 ---

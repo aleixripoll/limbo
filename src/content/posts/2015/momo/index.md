@@ -1,9 +1,9 @@
 ---
 title: "Momo"
-description: "Novela de Michael Ende."
-authors: ["Dr. Fenilalanino"]
+description: "Michael Ende"
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.jpg
-categories: ["literatura"]
+categories: [ "literatura" ]
 tags: []
 draft: false
 date: 2015-11-29T12:04

@@ -1,10 +1,10 @@
 ---
 title: "Trainspotting"
-description: "Novela de Irvine Welsh."
-authors: ["Dr. Fenilalanino"]
+description: "Irvine Welsh"
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
-categories: ["literatura", "cine"]
-tags: ["societat"]
+categories: [ "literatura", "cine" ]
+tags: [ "societat" ]
 draft: false
 date: 2008-06-14T15:35
 ---

@@ -145,7 +145,7 @@ img[alt$="<"] {
 // SHARED CARD STYLES (masonry, similar-post, search-result)
 // ============================================================
 
-// Row-major grid: posts flow left → right in date order (same idea as pixelperson)
+// Row-major grid: posts flow left → right in date order
 .masonry-grid,
 .search-results-grid {
   display: grid;
@@ -184,7 +184,7 @@ img[alt$="<"] {
 .similar-post-card,
 .search-result-card {
   /* Only transform is transitioned; ring + hover shadow use box-shadow — transition-all animates a click flash */
-  @apply block rounded-xl overflow-hidden relative border border-gray-200 dark:border-transparent bg-white dark:bg-[#151d2c] transition-transform duration-200 ease-out;
+  @apply block rounded-xl overflow-hidden relative border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#151d2c] transition-transform duration-200 ease-out;
   -webkit-tap-highlight-color: transparent;
   outline: none;
 
@@ -206,7 +206,7 @@ img[alt$="<"] {
   }
 }
 
-// Masonry / search cards: fixed image band (pixelperson-style)
+// Masonry / search cards: fixed image band
 .masonry-image-container,
 .search-result-image-container {
   @apply relative overflow-hidden bg-gray-200 dark:bg-gray-800;

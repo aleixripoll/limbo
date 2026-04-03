@@ -1,14 +1,14 @@
 ---
 title: "Psychology: A concise introduction"
-description: "Llibre acadèmic de psicologia, per Richard A. Griggs i Sherri L. Jackson."
-authors: ["Dr. Fenilalanino"]
+description: "Richard A. Griggs, Sherri L. Jackson"
+authors: [ "Dr. Fenilalanino" ]
 image: "./ai-generated-8864559_1280.jpg"
 image_attribution:
-    author: geralt
-    site: Pixabay
-    url: https://pixabay.com/es/illustrations/ai-generado-pensamientos-pensando-8864559/
-categories: ["literatura"]
-tags: ["assaig", "neurociència", "psicologia", "lang-en"]
+  author: geralt
+  site: Pixabay
+  url: https://pixabay.com/es/illustrations/ai-generado-pensamientos-pensando-8864559/
+categories: [ "literatura" ]
+tags: [ "assaig", "neurociència", "psicologia", "lang-en" ]
 draft: false
 date: 2022-08-10T13:16
 ---

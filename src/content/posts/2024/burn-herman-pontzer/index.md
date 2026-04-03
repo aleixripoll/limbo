@@ -1,11 +1,11 @@
 ---
 title: "Burn (Quema)"
 slug: burn-herman-pontzer
-description: "La ciència del metabolisme energètic, per Herman Pontzer."
-authors: ["Dr. Fenilalanino"]
+description: "Herman Pontzer"
+authors: [ "Dr. Fenilalanino" ]
 image: "./burn.png"
-categories: ["literatura", "dibuixos"]
-tags: ["nutrició", "metabolisme", "lang-en"]
+categories: [ "literatura", "dibuixos" ]
+tags: [ "nutrició", "metabolisme", "lang-en" ]
 draft: false
 date: 2024-03-11T18:00
 ---

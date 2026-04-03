@@ -1,10 +1,10 @@
 ---
 title: "El principito"
-description: "Novela de Antoine de Saint-Exupéry."
-authors: ["Dr. Fenilalanino"]
+description: "Antoine de Saint-Exupéry"
+authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
-categories: ["literatura"]
-tags: ["filosofia"]
+categories: [ "literatura" ]
+tags: [ "filosofia" ]
 draft: false
 date: 2008-05-31T12:11
 ---

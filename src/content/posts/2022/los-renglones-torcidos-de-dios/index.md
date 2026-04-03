@@ -1,13 +1,13 @@
 ---
 title: "Los renglones torcidos de Dios"
-description: "El Shutter Island de Torcuato Luca de Tena."
-authors: ["Dra. Valina"]
+description: "Torcuato Luca de Tena"
+authors: [ "Dra. Valina" ]
 image: ./pexels-george-becker-136351.jpg
 image_attribution:
-    author: George Becker
-    url: https://www.pexels.com/ca-es/foto/136351/
-categories: ["literatura"]
-tags: ["psicologia"]
+  author: George Becker
+  url: https://www.pexels.com/ca-es/foto/136351/
+categories: [ "literatura" ]
+tags: [ "psicologia" ]
 draft: false
 date: 2022-08-15T21:20
 ---

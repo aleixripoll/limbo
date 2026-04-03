@@ -1,14 +1,14 @@
 ---
 title: "Más allá del bien y del mal"
-description: "Ensayo filosófico de Friedrich Nietzsche."
-authors: ["Dr. Fenilalanino"]
+description: "Friedrich Nietzsche"
+authors: [ "Dr. Fenilalanino" ]
 image: ./david-marcu-78A265wPiO4-unsplash.jpg
 image_attribution:
-    author: David Marcu
-    site: Unsplash
-    url: https://unsplash.com/photos/landscape-photography-of-mountain-hit-by-sun-rays-78A265wPiO4
-categories: ["literatura"]
-tags: ["assaig", "filosofia"]
+  author: David Marcu
+  site: Unsplash
+  url: https://unsplash.com/photos/landscape-photography-of-mountain-hit-by-sun-rays-78A265wPiO4
+categories: [ "literatura" ]
+tags: [ "assaig", "filosofia" ]
 draft: false
 date: 2008-06-09T12:13
 ---

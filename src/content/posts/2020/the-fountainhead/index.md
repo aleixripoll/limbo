@@ -1,13 +1,13 @@
 ---
 title: "The Fountainhead"
-description: "Oda al neoliberalismo, por Ayn Rand."
-authors: ["Dr. Fenilalanino"]
+description: "Ayn Rand"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-gotta-be-worth-it-919179.jpg
 image_attribution:
-    author: Gotta Be Worth It
-    url: https://www.pexels.com/ca-es/foto/919179/
-categories: ["literatura"]
-tags: ["filosofia", "societat", "lang-en"]
+  author: Gotta Be Worth It
+  url: https://www.pexels.com/ca-es/foto/919179/
+categories: [ "literatura" ]
+tags: [ "filosofia", "societat", "lang-en" ]
 draft: false
 date: 2020-04-26T15:45
 ---

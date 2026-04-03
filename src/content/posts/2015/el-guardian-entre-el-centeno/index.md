@@ -1,12 +1,12 @@
 ---
 title: "El guardián entre el centeno"
-description: "Dramas de adolescencia, por J.D. Salinger."
-authors: ["Dr. Fenilalanino"]
+description: "J.D. Salinger"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-nikolett-emmert-18727478.jpg
 image_attribution:
-    author: Nikolett Emmert
-    url: https://www.pexels.com/ca-es/foto/menjar-paisatge-naturalesa-cel-18727478/
-categories: ["literatura"]
+  author: Nikolett Emmert
+  url: https://www.pexels.com/ca-es/foto/menjar-paisatge-naturalesa-cel-18727478/
+categories: [ "literatura" ]
 tags: []
 draft: false
 date: 2015-12-20T11:43

@@ -1,13 +1,13 @@
 ---
 title: "Dune"
-description: "Novela de Frank Herbert."
-authors: ["Dra. Valina"]
+description: "Frank Herbert"
+authors: [ "Dra. Valina" ]
 image: ./pexels-emiliano-arano-1352196.jpg
 image_attribution:
-    author: Emiliano Arano
-    url: https://www.pexels.com/ca-es/foto/paisatge-naturalesa-cel-sorra-1352196/
-categories: ["literatura", "cine"]
-tags: ["filosofia", "ciència ficció"]
+  author: Emiliano Arano
+  url: https://www.pexels.com/ca-es/foto/paisatge-naturalesa-cel-sorra-1352196/
+categories: [ "literatura", "cine" ]
+tags: [ "filosofia", "ciència ficció" ]
 draft: false
 date: 2021-12-16T15:21
 ---

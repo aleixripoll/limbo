@@ -1,10 +1,10 @@
 ---
 title: "Apego y psicopatología: la ansiedad y su origen"
-description: Libro de Manuel Hernández Pacheco.
-authors: ["Dra. Valina"]
+description: Manuel Hernández Pacheco
+authors: [ "Dra. Valina" ]
 image: ./cover.webp
-categories: ["literatura", "dibuixos"]
-tags: ["assaig", "psicologia"]
+categories: [ "literatura", "dibuixos" ]
+tags: [ "assaig", "psicologia" ]
 draft: false
 date: 2022-10-04T07:00
 ---

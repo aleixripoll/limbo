@@ -1,10 +1,10 @@
 ---
 title: "Sapiens: A Brief History of Humankind"
-description: "Historia de la humanidad con un toque de filosofía, por Yuval Noah Harari."
-authors: ["Dra. Valina"]
+description: "Yuval Noah Harari"
+authors: [ "Dra. Valina" ]
 image: ./cover.jpg
-categories: ["literatura"]
-tags: ["assaig", "historia", "filosofia", "lang-en"]
+categories: [ "literatura" ]
+tags: [ "assaig", "historia", "filosofia", "lang-en" ]
 draft: false
 date: 2021-02-25T09:14
 ---

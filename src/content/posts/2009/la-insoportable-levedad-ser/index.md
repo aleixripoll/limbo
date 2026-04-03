@@ -1,13 +1,13 @@
 ---
 title: "La insoportable levedad del ser"
-description: "Novela de Milan Kundera."
-authors: ["Dr. Fenilalanino"]
+description: "Milan Kundera"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-pixabay-56832.jpg
 image_attribution:
-    author: Pixabay
-    url: https://www.pexels.com/ca-es/foto/carretera-naturalesa-natura-cel-56832/
-categories: ["literatura"]
-tags: ["societat", "filosofia"]
+  author: Pixabay
+  url: https://www.pexels.com/ca-es/foto/carretera-naturalesa-natura-cel-56832/
+categories: [ "literatura" ]
+tags: [ "societat", "filosofia" ]
 draft: false
 date: 2009-06-14T12:02
 ---

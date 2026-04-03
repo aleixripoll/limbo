@@ -1,13 +1,13 @@
 ---
 title: "La masa enfurecida"
-description: "Ensayo sobre las masas y la opinión pública, por Douglas Murray."
-authors: ["Dr. Fenilalanino"]
+description: "Douglas Murray"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-shane-aldendorff-4561540.webp
 image_attribution:
-    author: Shane Aldendorff
-    url: https://www.pexels.com/ca-es/foto/gent-carrer-signe-multitud-4561540/
-categories: ["literatura"]
-tags: ["assaig", "historia", "filosofia"]
+  author: Shane Aldendorff
+  url: https://www.pexels.com/ca-es/foto/gent-carrer-signe-multitud-4561540/
+categories: [ "literatura" ]
+tags: [ "assaig", "historia", "filosofia" ]
 draft: false
 date: 2020-11-08T14:00
 ---

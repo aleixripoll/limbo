@@ -1,14 +1,14 @@
 ---
 title: "Ampliación del campo de batalla"
-description: "Crítica al liberalismo, primera novela de Michel Houellebecq."
-authors: ["Dr. Fenilalanino"]
+description: "Michel Houellebecq"
+authors: [ "Dr. Fenilalanino" ]
 image: ./nasa-Q1p7bh3SHj8-unsplash.jpg
 image_attribution:
-    author: NASA
-    site: Unsplash
-    url: https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8
-categories: ["literatura"]
-tags: ["societat"]
+  author: NASA
+  site: Unsplash
+  url: https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8
+categories: [ "literatura" ]
+tags: [ "societat" ]
 draft: false
 date: 2017-10-20T16:48
 ---

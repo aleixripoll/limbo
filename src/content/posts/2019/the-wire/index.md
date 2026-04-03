@@ -1,14 +1,14 @@
 ---
 title: "The Wire"
-description: "La mejor serie de la historia. Dirigida por David Simon, HBO."
-authors: ["Dr. Fenilalanino"]
+description: "Sèrie d'HBO, dirigida por David Simon."
+authors: [ "Dr. Fenilalanino" ]
 image: ./the-wire-ka-1920.webp
 image_attribution:
-    author: The Wire
-    site: HBO
-    url: https://www.hbo.com/the-wire
-categories: ["cine"]
-tags: ["sèrie TV", "societat", "lang-en"]
+  author: The Wire
+  site: HBO
+  url: https://www.hbo.com/the-wire
+categories: [ "cine" ]
+tags: [ "sèrie TV", "societat", "lang-en" ]
 draft: false
 date: 2019-09-01T20:22
 ---

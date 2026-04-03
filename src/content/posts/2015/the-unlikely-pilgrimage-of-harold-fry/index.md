@@ -1,14 +1,14 @@
 ---
 title: "The unlikely pilgrimage of Harold Fry"
-description: "Novela de Rachel Joyce."
-authors: ["Dr. Fenilalanino"]
+description: "Rachel Joyce"
+authors: [ "Dr. Fenilalanino" ]
 image: ./jad-limcaco-fRggLY1DQTM-unsplash.jpg
 image_attribution:
-    author: Jad Limcaco
-    site: Unsplash
-    url: https://unsplash.com/photos/silhouette-of-person-walking-under-white-clouds-fRggLY1DQTM
-categories: ["literatura"]
-tags: ["lang-en"]
+  author: Jad Limcaco
+  site: Unsplash
+  url: https://unsplash.com/photos/silhouette-of-person-walking-under-white-clouds-fRggLY1DQTM
+categories: [ "literatura" ]
+tags: [ "lang-en" ]
 draft: false
 date: 2015-11-29T12:23
 ---

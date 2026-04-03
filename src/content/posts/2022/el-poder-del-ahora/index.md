@@ -1,13 +1,13 @@
 ---
 title: "El poder del ahora"
-description: "Autoayuda cinco estrellas, por Eckhart Tolle."
-authors: ["Dra. Valina"]
+description: "Eckhart Tolle"
+authors: [ "Dra. Valina" ]
 image: ./pexels-pixabay-301614.jpg
 image_attribution:
-    author: Pixabay
-    url: https://www.pexels.com/ca-es/foto/fusta-llum-clareja-lleuger-301614/
-categories: ["literatura"]
-tags: ["assaig", "psicologia"]
+  author: Pixabay
+  url: https://www.pexels.com/ca-es/foto/fusta-llum-clareja-lleuger-301614/
+categories: [ "literatura" ]
+tags: [ "assaig", "psicologia" ]
 draft: false
 date: 2022-02-02T20:25
 ---

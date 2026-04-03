@@ -1,13 +1,13 @@
 ---
 title: "Superviviente"
-description: "Segunda novela de Chuck Palahniuk."
-authors: ["Dr. Fenilalanino"]
+description: "Chuck Palahniuk"
+authors: [ "Dr. Fenilalanino" ]
 image: ./pexels-austin-zhang-2441844.jpg
 image_attribution:
   author: Austin Zhang
   url: https://www.pexels.com/ca-es/foto/vol-volant-edificis-gratacels-2441844/
-categories: ["literatura"]
-tags: ["societat"]
+categories: [ "literatura" ]
+tags: [ "societat" ]
 draft: false
 date: 2011-06-23T17:41
 ---

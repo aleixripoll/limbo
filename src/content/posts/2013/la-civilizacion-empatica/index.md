@@ -1,14 +1,14 @@
 ---
 title: "La civilización empática"
-description: "Ensayo sobre la civilización, por Jeremy Rifkin."
-authors: ["Dr. Fenilalanino"]
+description: "Jeremy Rifkin"
+authors: [ "Dr. Fenilalanino" ]
 image: ./elevators-1598431_1280.jpg
 image_attribution:
   author: "3093594"
   site: Pixabay
   url: https://pixabay.com/es/photos/ascensores-berlina-1598431/
-categories: ["literatura"]
-tags: ["assaig", "societat", "biologia"]
+categories: [ "literatura" ]
+tags: [ "assaig", "societat", "biologia" ]
 draft: false
 date: 2013-07-14T14:53
 ---
