@@ -12,12 +12,11 @@ date: 2024-02-09T07:00
 ## Taula de continguts
 
 
-## Informació general
+# Informació general
 - Són substàncies **inorgàniques** presents al terra i a l'aigua que el cos necessita en petites quantitats.
 - Es divideixen en **macroelements** (7, > 50mg/dia) i oligoelements o **elements traça** (~11, < 50mg/dia).
 
-
-## Macroelements
+# Macroelements
 
 ### Calci
 - Formació d'**ossos i dents**, coagulació de la sang, contracció muscular, regulació del ritme cardíac, neurotransmissor.
@@ -65,9 +64,8 @@ date: 2024-02-09T07:00
 - **Fonts:** Es troba a la proteïna: carn, peix, ous, fruits secs, llegums, cereals integrals.
 - Deficiència i toxicitat molt rares.
 
----
 
-## Elements traça
+# Elements traça
 
 ### Cobalt
 - Component de la **vitamina B12**.

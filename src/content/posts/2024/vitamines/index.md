@@ -9,7 +9,7 @@ draft: false
 date: 2024-02-07T07:00
 ---
 
-### Taula de continguts
+## Taula de continguts
 
 
 # Informació general
