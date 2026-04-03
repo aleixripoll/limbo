@@ -29,10 +29,10 @@ export default defineConfig(
 
 2. Actualizar todos los enlaces para incluir el subpath, este valor es accesible en la variable de entorno `import.meta.env.BASE_URL`. Quedaría algo así:
 ```
-<a href={`${import.meta.env.BASE_URL}/${post.slug}`} ... />
+<a href={`${import.meta.env.BASE_URL}/${post.id}`} ... />
 ```
 
-Con esto ya tenemos el sitio funcionando desde un repo *non-root*, el problema viene si quieres que tu sitio pueda moverse entre los dos: con un repo *root*, Astro setea `base: "/"`; en el ejemplo anterior el enlace ahora quedaría como `//${post.slug}` (atención al detalle de la doble barra), lo cual rompe la generación de enlaces en Astro.
+Con esto ya tenemos el sitio funcionando desde un repo *non-root*, el problema viene si quieres que tu sitio pueda moverse entre los dos: con un repo *root*, Astro setea `base: "/"`; en el ejemplo anterior el enlace ahora quedaría como `//${post.id}` (atención al detalle de la doble barra), lo cual rompe la generación de enlaces en Astro.
 
 Para solucionarlo tuve que:
 
@@ -40,7 +40,7 @@ Para solucionarlo tuve que:
 
 4. Para evitar el problema de la doble barra, quitar la barra después de `base` en todos los enlaces, ejemplo:
 ```
-<a href={`${import.meta.env.BASE_URL}${post.slug}`} ... />
+<a href={`${import.meta.env.BASE_URL}${post.id}`} ... />
 ```
 
 5. Setear parámetro [trailingSlash](https://docs.astro.build/en/reference/configuration-reference/#trailingslash) a `"ignore"`. Con `"never"`, Astro quitará el trailing slash que acabamos de añadir a `base`, rompiendo otra vez la generación de enlaces. Con `"always"`, todos los enlaces que no acaben en barra devolverán un 404 (todas las entradas por ejemplo).
