@@ -5,7 +5,7 @@
 
 // Same content width as old listing (1200px outer minus md:px-7 gutters); no side padding md+
 .container {
-  @apply mx-auto w-full max-w-[1144px] px-4 md:px-0;
+  @apply mx-auto w-full max-w-[1144px] px-4 sm:px-5 md:px-0;
 }
 
 // page heading
@@ -506,7 +506,7 @@ img[alt$="<"] {
 @media (max-width: 640px) {
   .masonry-grid,
   .search-results-grid {
-    @apply gap-4 px-1;
+    @apply gap-3 px-0;
   }
 
   .masonry-item,
@@ -515,41 +515,21 @@ img[alt$="<"] {
   }
   
   .similar-posts-grid {
-    @apply grid-cols-1 gap-4;
+    @apply grid-cols-1 gap-3;
   }
   
   .masonry-item,
   .search-result-item {
     @apply w-full;
   }
-  
-  // Cards - disable all transforms and animations
+
+  /* Keep same card chrome as desktop (border, bg, radius); only tighten layout */
   .masonry-card,
   .similar-post-card,
   .search-result-card {
-    @apply w-full rounded-md transition-none;
-    background: transparent !important;
-    backdrop-filter: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    transform: none !important;
-    
-    &:active {
-      @apply transform-none shadow-sm;
-    }
-    
-    &:hover {
-      @apply shadow-sm;
-      transform: none !important;
-      will-change: auto;
-    }
-    
-    &:focus-visible {
-      transform: none !important;
-    }
+    @apply w-full;
   }
   
-  // Images - disable all animations
   .masonry-image,
   .similar-post-image,
   .search-result-image {
@@ -562,28 +542,24 @@ img[alt$="<"] {
     }
   }
   
-  // Content containers
   .masonry-content,
   .similar-post-content,
   .search-result-content {
-    @apply p-4 pb-5 text-center;
+    @apply px-3 py-4 pb-5 text-center;
   }
   
-  // Titles
   .masonry-title,
   .similar-post-title,
   .search-result-title {
     @apply text-lg text-center mb-1;
   }
   
-  // Excerpts
   .masonry-excerpt,
   .similar-post-excerpt,
   .search-result-excerpt {
     @apply text-center;
   }
   
-  // Meta
   .masonry-meta,
   .similar-post-meta,
   .search-result-meta {
@@ -591,7 +567,7 @@ img[alt$="<"] {
   }
   
   .masonry-date {
-    @apply text-left;
+    @apply text-center;
   }
   
   // Categories - optimize touch targets
