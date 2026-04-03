@@ -1,5 +1,5 @@
 ---
-title: "Macronutrients"
+title: "Macronutrients 101"
 description: "El coneixement ocupa lloc, però poc."
 authors: [ "Dr. Fenilalanino" ]
 image: "./cover.png"
