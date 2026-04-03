@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "filosofia"]
 draft: false
-date: 2011-05-14T11:39:00.006+02:00
+date: 2011-05-14T11:39
 ---
 
 Es difícil vivir con hombres, porque callar es muy difícil.

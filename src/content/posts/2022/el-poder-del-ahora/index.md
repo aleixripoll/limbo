@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "psicologia"]
 draft: false
-date: 2022-02-02T20:25:00Z
+date: 2022-02-02T20:25
 ---
 
 Pero entonces llega esta relación especial. Parece ser la respuesta a todos los problemas del ego y llenar todas sus necesidades. Al menos así parece al principio. Todas las demás cosas de las que usted derivaba su sentido de sí mismo antes, ahora se vuelven relativamente insignificantes. Usted tiene ahora un solo punto focal que las reemplaza a todas, da sentido a su vida, y a través del cual usted define su identidad: la persona de la que está "enamorado". Ya no es un fragmento desconectado en un universo carente de afecto, o eso parece. Su mundo ahora tiene un centro: el amado. El hecho de que el centro esté fuera de usted y que, por lo tanto, usted todavía tenga un sentido de sí mismo derivado del exterior, no parece importar al principio. Lo que importa es que los sentimientos subyacentes de no plenitud, miedo, carencia y falta de realización, tan característicos del estado egotista, ya no están ahí. ¿O sí? ¿Se han disuelto o continúan existiendo bajo la feliz realidad superficial?

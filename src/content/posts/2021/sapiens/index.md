@@ -6,7 +6,7 @@ image: ./cover.jpg
 categories: ["literatura"]
 tags: ["assaig", "historia", "filosofia", "lang-en"]
 draft: false
-date: 2021-02-25T09:14:00Z
+date: 2021-02-25T09:14
 ---
 
 Any large-scale human cooperation – whether a modern state, a medieval church, an ancient city or an archaic tribe – is rooted in common myths that exist only in people's collective imagination. Churches are rooted in common religious myths. Two Catholics who have never met can nevertheless go together on crusade or pool funds to build a hospital because they both believe that God was incarnated in human flesh and allowed Himself to be crucified to redeem our sins. States are rooted in common national myths. Two Serbs who have never met might risk their lives to save one another because both believe in the existence of the Serbian nation, the Serbian homeland and the Serbian flag. Judicial systems are rooted in common legal myths. Two lawyers who have never met can nevertheless combine efforts to defend a complete stranger because they both believe in the existence of laws, justice, human rights – and the money paid out in fees.

@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["societat"]
 draft: false
-date: 2011-06-23T17:41:00.000+02:00
+date: 2011-06-23T17:41
 ---
 
 Para mi asistente, cuando empezamos hace diez años, yo no era un mangui. Al principio, yo era un caso de desorden obsesivo-compulsivo. Ella acababa de sacarse el título y tenía aún sus libros de texto para demostrarlo.

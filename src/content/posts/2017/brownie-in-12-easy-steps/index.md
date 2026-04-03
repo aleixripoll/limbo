@@ -5,6 +5,6 @@ authors: ["Dra.Valina", "Natilla"]
 categories: ["Dibuixos"]
 tags: [ "pòster", "recepta", "lang-en" ]
 image: ./brownie_poster.webp
-date: 2017-07-21T19:01:00.000+01:00
+date: 2017-07-21T19:01
 draft: false
 ---

@@ -16,15 +16,21 @@ export const markdownify = (content: string) => {
 };
 
 // humanize
-export const humanize = (content: string) => {
+export const humanize = (
+  content: string,
+  options?: { capitalizeFirst?: boolean }
+) => {
   if (!content) return null;
 
-  return content
+  const result = content
     .replace(/^[\s_]+|[\s_]+$/g, "")
-    .replace(/[_\s]+/g, " ")
-    .replace(/^[a-z]/, function (m) {
-      return m.toUpperCase();
-    });
+    .replace(/[_\s]+/g, " ");
+
+  if (options?.capitalizeFirst === false) {
+    return result;
+  }
+
+  return result.replace(/^[a-z]/, (m) => m.toUpperCase());
 };
 
 // plainify

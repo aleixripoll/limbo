@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["frases"]
 draft: false
-date: 2009-04-04T23:09:00.005+02:00
+date: 2009-04-04T23:09
 ---
 
 El hombre razonable se adapta constantemente al mundo. El hombre no razonable quiere que el mundo se adapte a él. Por consiguiente, el progreso depende del hombre no razonable.\

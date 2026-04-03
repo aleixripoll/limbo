@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "historia", "filosofia"]
 draft: false
-date: 2020-11-08T14:00:00Z
+date: 2020-11-08T14:00
 ---
 
 Para empezar, deberíamos acostumbrarnos a preguntar: «¿En comparación con qué?». Por ejemplo, cuando alguien califica nuestra sociedad actual de monstruosa, racista, sexista, homófoba, tránsfoba y patriarcal. Si nuestro sistema no funciona, ¿cuál sí funciona? Esto no quiere decir que en nuestra sociedad no haya aspectos mejorables ni que no debamos combatir la injusticia allá donde se encuentre. Solo que, cuando uno habla de nuestras sociedades con ese tono hostil de quien se erige a la vez en juez, jurado y verdugo, tenemos derecho a exigir que se explique.

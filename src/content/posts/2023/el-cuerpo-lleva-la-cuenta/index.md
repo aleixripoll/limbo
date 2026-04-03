@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "psicologia"]
 draft: false
-date: 2023-06-10T16:34:00Z
+date: 2023-06-10T16:34
 ---
 
 > Lyons-Ruth estaba especialmente interesada en el fenómeno de la disociación, cuya manifestación es sentirse perdido, abrumado, abandonado y desconectado del mundo y verse uno mismo como una persona no querida, vacía, inútil, atrapada y asfixiada. Descubrió una relación «sorprendente e inesperada» entre la desafección materna y la falta de sincronía durante los dos primeros años de vida y los síntomas disociativos en la edad adulta temprana.<p>

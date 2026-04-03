@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura", "dibuixos"]
 tags: ["assaig", "psicologia"]
 draft: false
-date: 2022-10-04T07:00:00Z
+date: 2022-10-04T07:00
 ---
 
 La sensación de vergüenza patológica va siempre relacionada con la creencia de «no valgo», es decir, soy defectuoso. Esta percepción distorsionada de la realidad se compensa con acciones que ayuden a reducir el malestar. Quiero resaltar el gradiente de dos tipos de personalidad muy comunes para reducir la sensación de malestar:

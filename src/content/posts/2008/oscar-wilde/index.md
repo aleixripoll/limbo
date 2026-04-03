@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura"]
 tags: ["frases"]
 draft: false
-date: 2008-06-05T10:47:00.000+02:00
+date: 2008-06-05T10:47
 ---
 
 > La mujer representa el triunfo de la materia sobre la inteligencia; de la misma manera que el hombre representa el triunfo de la inteligencia sobre la moral.

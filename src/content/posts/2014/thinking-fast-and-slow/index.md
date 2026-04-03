@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "neurociència", "psicologia", "lang-en"]
 draft: false
-date: 2014-11-01T18:04:00.001+01:00
+date: 2014-11-01T18:04
 ---
 
 The discovery I made on that day was that the flight instructors were trapped in an unfortunate contingency: because they punished cadets when performance was poor, they were mostly rewarded by a subsequent improvement, even if punishment was actually ineffective.

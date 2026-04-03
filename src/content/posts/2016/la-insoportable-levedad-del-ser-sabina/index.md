@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["societat", "filosofia"]
 draft: false
-date: 2016-03-16T12:39:00Z
+date: 2016-03-16T12:39
 ---
 
 Después de cuatro años pasados en Ginebra, Sabina se fue a vivir a París y no era capaz de recuperarse de la melancolía. Si alguien le hubiera preguntado qué le había pasado, no habría encontrado palabras para explicarlo.

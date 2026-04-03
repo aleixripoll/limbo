@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura", "cine"]
 tags: ["societat"]
 draft: false
-date: 2008-06-14T15:35:00.004+02:00
+date: 2008-06-14T15:35
 ---
 
 

@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["jocs"]
 tags: ["humor", "lang-en"]
 draft: false
-date: 2012-11-12T21:13:00.002+01:00
+date: 2012-11-12T21:13
 ---
 
 &mdash; How's the flow tonight?

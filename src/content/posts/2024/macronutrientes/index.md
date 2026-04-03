@@ -10,7 +10,7 @@ image: "./cover.png"
 categories: ["apunts"]
 tags: ["biologia", "química", "nutrició", "lang-cat"]
 draft: false
-date: 2024-03-16T19:00:00Z
+date: 2024-03-16T19:00
 ---
 
 ### Taula de continguts

@@ -6,7 +6,7 @@ image: ./cover.jpg
 categories: ["literatura"]
 tags: ["assaig", "economia"]
 draft: false
-date: 2019-06-26T14:16:00Z
+date: 2019-06-26T14:16
 ---
 
 Las mujeres normalmente ganan menos que los hombres. Hay varias razones para esto, una de ellas la discriminación sexual. Para eliminar lo primero, se acepta generalmente que los hombres y mujeres que hacen el mismo trabajo deben recibir el mismo salario. La idea de «igual salario por igual trabajo» está fuera de toda controversia.

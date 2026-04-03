@@ -7,7 +7,7 @@ image: "./burn.png"
 categories: ["literatura", "dibuixos"]
 tags: ["nutrició", "metabolisme", "lang-en"]
 draft: false
-date: 2024-03-11T18:00:00Z
+date: 2024-03-11T18:00
 ---
 
 > Faced with calorie restriction, our hypothalamus reduces our metabolic rate and cranks up our drive to eat. When excess calories come pouring in, metabolic rates go up, burning off much of the excess intake. Think for a moment about what that means for your organs and all of their various tasks: when energy is scarce, some nonessential metabolic processes are suppressed; when times are good, some nonessential metabolic processes are promoted.<p/>

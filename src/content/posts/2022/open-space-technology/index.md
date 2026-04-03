@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "empresa", "lang-en"]
 draft: false
-date: 2022-09-02T07:20:00Z
+date: 2022-09-02T07:20
 ---
 
 Behavior at an Open Space gathering is guided by four principles and one law.

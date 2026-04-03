@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["neurociència", "lang-es"]
 draft: false
-date: 2025-06-21T11:00:00Z
+date: 2025-06-21T11:00
 ---
 
 Estoy sentado ante mi escritorio durante el horario de oficina de la tarde; dos estudiantes de mi clase están haciendo preguntas sobre temas de las lecciones; divagamos sobre el determinismo biológico, el libre albedrío, todo el tinglado, que es de lo que trata en última instancia el curso. Uno de los alumnos duda de hasta qué punto carecemos de libre albedrío. He estado en esta coyuntura de la discusión muchas veces, y he llegado a reconocer que existe una probabilidad significativa de que este alumno lleve a cabo ahora un comportamiento concreto: se inclinará hacia delante, cogerá un bolígrafo de mi mesa, lo levantará en el aire y me dirá, con gran énfasis: *«Ya está, acabo de decidir coger este bolígrafo; ¿me está diciendo que eso estaba completamente fuera de mi control?»*.

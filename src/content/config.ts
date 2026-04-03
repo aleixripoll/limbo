@@ -8,7 +8,7 @@ const postsCollection = defineCollection({
     title: z.string(),
     meta_title: z.string().optional(),
     description: z.string().optional(),
-    date: z.date().optional(),
+    date: z.coerce.date().optional(),
     // https://docs.astro.build/en/guides/images/#images-in-content-collections
     image: image().optional(),
     image_attribution: z.object({

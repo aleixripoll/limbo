@@ -3,9 +3,9 @@
   @apply py-10 lg:py-20;
 }
 
-// container
+// Same content width as old listing (1200px outer minus md:px-7 gutters); no side padding md+
 .container {
-  @apply max-w-[1200px] px-4 md:px-8;
+  @apply mx-auto w-full max-w-[1144px] px-4 md:px-0;
 }
 
 // page heading
@@ -105,9 +105,9 @@
 
 // content style
 .content {
-  @apply prose dark:prose-invert max-w-none prose-headings:font-bold dark:prose-headings:text-stone-200 prose-h1:mb-4 prose-h1:text-h1-sm prose-h2:mb-4 prose-h2:mt-4 prose-h2:text-h2-sm prose-h3:mt-4 prose-h3:text-h3-sm prose-h4:mt-4 prose-h5:mb-4 prose-h6:mb-6 prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-blockquote:px-3 sm:prose-blockquote:px-5 prose-blockquote:py-1 prose-pre:px-6 prose-pre:py-5 md:prose-h1:text-h1 md:prose-h2:text-h2 md:prose-h3:text-h3 lg:text-lg prose-blockquote:not-italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-primary dark:prose-a:text-light hover:prose-a:text-primary prose-img:border-none prose-img:mt-1 prose-blockquote:leading-relaxed;
+  @apply prose dark:prose-invert max-w-none prose-headings:font-medium dark:prose-headings:text-stone-200 prose-h1:mb-4 prose-h1:text-h1-sm prose-h2:mb-4 prose-h2:mt-4 prose-h2:text-h2-sm prose-h3:mt-4 prose-h3:text-h3-sm prose-h4:mt-4 prose-h5:mb-4 prose-h6:mb-6 prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-blockquote:px-3 sm:prose-blockquote:px-5 prose-blockquote:py-1 prose-pre:px-6 prose-pre:py-5 md:prose-h1:text-h1 md:prose-h2:text-h2 md:prose-h3:text-h3 lg:text-lg prose-blockquote:not-italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-primary dark:prose-a:text-light hover:prose-a:text-primary   prose-img:border-none prose-img:mt-1 prose-img:max-w-full prose-img:w-auto prose-img:h-auto prose-blockquote:leading-relaxed;
   img {
-    @apply rounded border-neutral-700 border mb-6;
+    @apply w-auto max-w-full h-auto rounded border-neutral-700 border mb-6;
   }
 }
 

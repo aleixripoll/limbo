@@ -10,7 +10,7 @@ image_attribution:
 categories: ["apunts"]
 tags: ["programació", "astro", "github"]
 draft: false
-date: 2024-02-20T07:00:00Z
+date: 2024-02-20T07:00
 ---
 
 Entrada un poco meta para documentar algunos problemillas que encontré desplegando este sitio en Github Pages.

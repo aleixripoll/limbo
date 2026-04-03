@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura", "cine"]
 tags: ["filosofia", "ciència ficció"]
 draft: false
-date: 2021-12-16T15:21:00Z
+date: 2021-12-16T15:21
 ---
 
 Jessica volvió a perder la calma. Sintió el castañeo de sus dientes y los apretó con fuerza. Luego oyó cómo Paul recitaba la letanía con voz baja y calmada:

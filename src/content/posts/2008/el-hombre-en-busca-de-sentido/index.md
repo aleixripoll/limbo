@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "psicologia"]
 draft: false
-date: 2008-05-31T11:55:00.007+02:00
+date: 2008-05-31T11:55
 ---
 
 Por regla general, los recién llegados no sabían nada de las condiciones de un campo de concentración. Al entrar en él, las mentes de los prisioneros sufrían un cambio. Con el fin de la incertidumbre venía la incertidumbre del fin. Era imposible prever cuándo y cómo terminaría aquella existencia, caso de tener fin. El vocablo latín finis tiene dos significados: final y meta a alcanzar. El hombre que no podía ver el fin de su "existencia provisional", tampoco podía aspirar a una meta última en la vida. Cesaba de vivir para el futuro en contraste con el hombre normal. Por consiguiente cambiaba toda la estructura de su vida íntima. El obrero parado, por ejemplo, está en una posición similar. Su existencia es provisional en ese momento y, en cierto sentido, no puede vivir para el futuro ni marcarse una meta.

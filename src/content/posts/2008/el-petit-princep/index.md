@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura"]
 tags: ["filosofia"]
 draft: false
-date: 2008-05-31T12:11:00.015+02:00
+date: 2008-05-31T12:11
 ---
 
 &ndash; Conozco un planeta donde hay un Señor Carmesí. Jamás ha aspirado una flor. Jamás ha mirado a una estrella. Jamás ha querido a nadie. No ha hecho más que sumas y restas. Y todo el día repite como tú: «¡Soy un hombre serio! ¡Soy un hombre serio!» Se infla de orgullo. Pero no es un hombre; ¡es un hongo!

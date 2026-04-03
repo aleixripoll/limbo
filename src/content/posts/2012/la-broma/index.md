@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura"]
 tags: ["filosofia", "societat"]
 draft: false
-date: 2012-12-20T22:01:00.000+01:00
+date: 2012-12-20T22:01
 ---
 
 La mayoría de la gente se engaña mediante una doble creencia errónea: cree en el eterno recuerdo (de la gente, de las cosas, de los actos, de las naciones) y en la posibilidad de reparación (de los actos, de los errores, de los pecados, de las injusticias). Ambas creencias son falsas. La realidad es precisamente al contrario: todo será olvidado y nada será reparado. El papel de la reparación (de la venganza y del perdón) lo lleva a cabo el olvido. Nadie reparará las injusticias que se cometieron, pero todas las injusticias serán olvidadas.

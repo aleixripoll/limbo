@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "psicologia"]
 draft: false
-date: 2023-10-07T07:00:00Z
+date: 2023-10-07T07:00
 ---
 
 Quizá no siempre sabemos exactamente por qué hacemos lo que hacemos, escogemos lo que escogemos, o sentimos lo que sentimos. Sin embargo, la imprecisión de nuestras motivaciones reales no nos impide inventar razones aparentemente lógicas para explicar acciones, decisiones o sentimientos.

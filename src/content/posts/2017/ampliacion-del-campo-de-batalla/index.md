@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["societat"]
 draft: false
-date: 2017-10-20T16:48:00Z
+date: 2017-10-20T16:48
 ---
 
 Durante unos minutos descansé contra un Peugeot 104, y luego empecé a subir una calle que parecía llevar a una confluencia más importante. Me hizo falta una media hora para recorrer quinientos metros. El dolor había dejado de aumentar, pero se mantenía en un nivel alto. Por el contrario, las dificultades respiratorias eran cada vez más graves, y eso era lo más alarmante. Tenía la impresión de que si la cosa seguía me iba a morir en unas pocas horas, antes del alba en cualquier caso.

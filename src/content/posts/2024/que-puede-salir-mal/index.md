@@ -10,7 +10,7 @@ image: ./virus.png
 categories: ["literatura"]
 tags: ["biologia", "neurociència"]
 draft: false
-date: 2024-10-02T17:56:00Z
+date: 2024-10-02T17:56
 ---
 
 > Los efectos del tabaco y, entre ellos, su capacidad adictiva se deben a su principal compuesto psicoactivo: la nicotina, la segunda droga más consumida después del alcohol. La nicotina activa los receptores del neurotransmisor acetilcolina, que se encuentran en el cerebro y en otras zonas del cuerpo. La acetilcolina interviene en procesos como la excitación mental y física, el aprendizaje, la memoria y algunos aspectos de la emoción, además de afectar a otras partes del cuerpo, como el movimiento muscular o el ritmo cardíaco. Como la nicotina tiene una estructura parecida a la acetilcolina, se hace pasar por ella, uniéndose a sus receptores y activándolos.<p>

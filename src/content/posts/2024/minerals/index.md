@@ -10,7 +10,7 @@ image_attribution:
 categories: ["apunts"]
 tags: ["nutrició", "lang-cat"]
 draft: false
-date: 2024-02-09T07:00:00Z
+date: 2024-02-09T07:00
 ---
 
 ## Taula de continguts

@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["poesia", "lang-en"]
 draft: false
-date: 2008-05-31T11:32:00.010+02:00
+date: 2008-05-31T11:32
 ---
 
 Had I the heavens’ embroidered cloths,\

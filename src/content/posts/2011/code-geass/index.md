@@ -6,7 +6,7 @@ image: ./cover.jpg
 categories: ["cine"]
 tags: ["sèrie TV", "anime", "lang-en"]
 draft: false
-date: 2011-06-06T21:25:00.007+02:00
+date: 2011-06-06T21:25
 ---
 
 > False tears bring pain to those around you. A false smile brings pain to oneself.

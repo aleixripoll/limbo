@@ -1,5 +1,6 @@
 const dateFormat = (datetime: string | Date) => {
   const dateTime = new Date(datetime);
+  if (Number.isNaN(dateTime.getTime())) return String(datetime);
 
   const day = dateTime.getDate();
   const month = dateTime.toLocaleDateString("ca-ES", { month: "long" });

@@ -4,28 +4,42 @@ import { Image } from "astro:assets";
 // getSinglePage import removed (not used)
 import dateFormat from "@lib/utils/dateFormat";
 import { humanize, markdownify, slugify } from "@lib/utils/textConverter";
-import { BiCalendar, BiCategoryAlt, BiSolidChevronUpCircle } from "react-icons/bi/index.js";
+import { BiCategoryAlt, BiSolidChevronUpCircle } from "react-icons/bi/index.js";
 import Disqus from "@components/Disqus";
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
-
 //const allAuthors = await getSinglePage("authors");
 const { post } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await post.render();
 const { title, description, categories, image, image_attribution, date, tags } = post.data;
 
-// https://docs.astro.build/en/recipes/modified-time/
-dayjs.extend(utc);
-const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
-  .utc()
-  .format("HH:mm:ss DD MMMM YYYY UTC");
+const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefined;
 ---
 
 <section class="section">
-  <div class="container max-w-[1000px]">
+  <div class="container max-w-[900px]">
     <article class="row justify-center -mx-4">
+      {(image || image_attribution) && (
+        <div class="col-12 md:col-10 mb-6 px-0 sm:px-2 w-auto">
+          {
+            image && (
+              <Image
+                src={image}
+                widths={[720, 900]}
+                sizes={`(max-width: 720px) 720px, 900px`}
+                alt={title}
+                class="sm:rounded-lg max-h-[110vh] w-auto max-w-full block mx-auto"
+              />
+            )
+          }
+          {image_attribution && (
+              <a target="_blank" href={post.data.image_attribution.url} class="attribution">
+                Foto de {post.data.image_attribution.author} a {post.data.image_attribution.site}
+              </a>
+          )}
+        </div>
+      )}
+
       <div class="text-center md:col-10">
-        <h1 set:html={markdownify(title)} class="h2" />
+        <h1 set:html={markdownify(title)} class="h2 font-medium" />
         <p class="py-4 lg:text-xl font-light">{description}</p>
         <ul class="mt-2 flex flex-wrap items-center justify-center text-sm font-light">
           {/*<li class="mx-3">
@@ -57,12 +71,7 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
             }
           </li>*/}
           <li class="pb-2 mx-2 flex flex-wrap items-center">
-            <BiCalendar className="mr-1 h-5 w-5 text-primary" />
-            <>
-              {
-                date ? dateFormat(date) : dateFormat(lastModified)
-              }
-            </>
+            {date ? dateFormat(date) : lastModifiedIso ? dateFormat(lastModifiedIso) : ""}
           </li>
           <li class="pb-2 mx-2 flex flex-wrap items-center">
             <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-primary" />
@@ -86,25 +95,6 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
         </ul>
       </div>
 
-      <div class="col-12 mb-4 mt-8 px-0 sm:px-2 w-auto">
-        {
-          image && (
-            <Image
-              src={image}
-              widths={[720, 900]}
-              sizes={`(max-width: 720px) 720px, 900px`}
-              alt={title}
-              class="sm:rounded-lg max-h-[110vh] w-full"
-            />
-          )
-        }
-        {image_attribution && (
-            <a target="_blank" href={post.data.image_attribution.url} class="attribution">
-              Foto de {post.data.image_attribution.author} a {post.data.image_attribution.site}
-            </a>
-        )}
-      </div>
-
       <div class="md:col-10">
         <div class="content mb-16 text-left">
           <Content />
@@ -116,9 +106,9 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
                 <li class="inline-block mb-2">
                   <a
                     href={`${import.meta.env.BASE_URL}tags/${slugify(tag)}`}
-                    class="block rounded-lg bg-theme-light dark:bg-theme-dark px-4 py-2 hover:text-primary italic"
+                    class="block rounded-lg bg-theme-light dark:bg-theme-dark px-4 py-2 text-sm hover:text-primary"
                   >
-                    # {humanize(tag)}
+                    # {humanize(tag, { capitalizeFirst: false })}
                   </a>
                 </li>
               ))

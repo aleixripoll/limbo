@@ -6,7 +6,7 @@ image: ./hormona_vs_neurona_Gemini_color.png
 categories: ["apunts", "dibuixos"]
 tags: ["neurociència", "lang-cat"]
 draft: false
-date: 2024-03-19T16:00:00Z
+date: 2024-03-19T16:00
 ---
 
 ## Taula de continguts

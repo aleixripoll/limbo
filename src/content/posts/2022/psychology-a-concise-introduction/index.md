@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "neurociència", "psicologia", "lang-en"]
 draft: false
-date: 2022-08-10T13:16:00Z
+date: 2022-08-10T13:16
 ---
 
 Bartlett had his participants study some stories that were rather unusual. He then tested their memory for these stories at varying time intervals. When the participants recalled the stories, **they made them more consistent with their own schemas about the world.** For example, one story did not say anyone was wounded in the battle described, but participants recalled that many men were wounded, fitting their schemas for battles. Unusual details were normalized. For example, participants recalled incorrectly that the men in another story were fishing rather than hunting seals. In addition, the stories were greatly shortened in length when recalled. Strangely, the participants did not even realize that they were changing many of the details of the stories. In fact, the parts that they changed were those that they were most confident about remembering. Bartlett’s participants had reconstructed the stories using their schemas and did not even realize it.

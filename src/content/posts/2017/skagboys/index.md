@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura"]
 tags: ["humor", "societat"]
 draft: false
-date: 2017-07-13T18:58:00Z
+date: 2017-07-13T18:58
 ---
 
 A Renton parece fascinarle el poli socorrista, un mutante alto, delgado, con la cabeza rapada y piel cetrina. Tiene unos ojos como risueños que no casan con la raja cruel que tiene por boca.

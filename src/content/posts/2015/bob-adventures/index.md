@@ -4,11 +4,8 @@ description: "Recopilatori de la superpopular tira còmica que vaig dibuixar ent
 authors: ["Dra. Valina", "Natilla"]
 categories: [ "Dibuixos" ]
 tags: [ "lang-en" ]
-image: ./pexels-khairul-nizam-16516.jpg
-image_attribution:
-  author: khairul nizam
-  url: https://www.pexels.com/ca-es/foto/blanc-i-negre-art-creatiu-creativitat-16516/
-date: 2015-08-24T18:06:00.000+02:00
+image: ./cover.jpeg
+date: 2015-08-24T18:06
 ---
 
 ### Bob 101: The arrival
