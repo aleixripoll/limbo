@@ -1,5 +1,5 @@
 ---
-title: "Burn (Quema)"
+title: "Burn"
 slug: burn-herman-pontzer
 description: "Herman Pontzer"
 authors: [ "Dr. Fenilalanino" ]
