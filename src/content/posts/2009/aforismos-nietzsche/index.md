@@ -2,11 +2,7 @@
 title: "Aforismos"
 description: "Friedrich Nietzsche"
 authors: [ "Dr. Fenilalanino" ]
-image: ./jaredd-craig-HH4WBGNyltc-unsplash.jpg
-image_attribution:
-  author: Jaredd Craig
-  site: Unsplash
-  url: https://unsplash.com/photos/view-of-floating-open-book-from-stacked-books-in-library-HH4WBGNyltc
+image: ./cover.png
 categories: [ "literatura" ]
 tags: [ "frases", "filosofia" ]
 draft: false

@@ -28,7 +28,11 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
                 widths={[640, 720, 800]}
                 sizes={`(max-width: 640px) 100vw, 800px`}
                 alt={title}
-                class="sm:rounded-lg max-h-[110vh] w-auto max-w-full block mx-auto"
+                class="sm:rounded-lg h-auto w-auto max-w-full object-scale-down block mx-auto"
+                style={{
+                  maxWidth: `min(100%, ${image.width}px)`,
+                  maxHeight: `min(110vh, ${image.height}px)`,
+                }}
               />
             )
           }
