@@ -16,31 +16,6 @@
   }
 }
 
-// form style
-.form-inputs * {
-  @apply mb-5 leading-10;
-}
-
-// image cover
-.img-cover {
-  @apply leading-none;
-  span {
-    @apply h-full w-full;
-  }
-  img {
-    @apply object-cover;
-    filter: saturate(0.5) brightness(1.08) contrast(1.05);
-  }
-}
-
-// author-image
-.author-image {
-  @apply mr-2 align-top;
-  img {
-    @apply max-h-[25px] max-w-[25px] rounded-full;
-  }
-}
-
 // social icon style
 .social-icons {
   @apply space-x-4;
@@ -97,18 +72,25 @@
   }
 }
 
-// form style
+// Forms (contact, search input, etc.)
 .form-input,
 .form-textarea {
   @apply rounded-md border-border py-3 text-text focus:border-primary focus:ring-transparent;
 }
 
-// content style
+// Post / page markdown (typography + body font from former base layer)
 .content {
-  @apply prose dark:prose-invert max-w-none prose-headings:font-medium dark:prose-headings:text-stone-200 prose-p:leading-[1.76] prose-li:leading-[1.76] prose-h1:mb-3 prose-h1:text-h1-sm prose-h2:mb-3 prose-h2:mt-4 prose-h2:text-h2-sm prose-h3:mt-3 prose-h3:text-h3-sm prose-h4:mt-3 prose-h4:text-h4-sm prose-h5:mb-3 prose-h5:text-h5-sm prose-h6:mb-4 prose-h6:text-h6 prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-blockquote:px-3 sm:prose-blockquote:px-5 prose-blockquote:py-1 prose-pre:px-6 prose-pre:py-5 lg:text-lg prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-primary dark:prose-a:text-light hover:prose-a:text-primary   prose-img:border-none prose-img:mt-1 prose-img:max-w-full prose-img:w-auto prose-img:h-auto prose-blockquote:leading-[1.76];
+  @apply font-source-serif text-lg leading-[1.76] text-dark dark:text-stone-200;
+  letter-spacing: 0.01em;
+  @apply prose dark:prose-invert max-w-none prose-headings:font-medium dark:prose-headings:text-stone-200 prose-p:leading-[1.76] prose-li:leading-[1.76] prose-h1:mb-3 prose-h1:text-h1-sm prose-h2:mb-3 prose-h2:mt-4 prose-h2:text-h2-sm prose-h3:mt-3 prose-h3:text-h3-sm prose-h4:mt-3 prose-h4:text-h4-sm prose-h5:mb-3 prose-h5:text-h5-sm prose-h6:mb-4 prose-h6:text-h6 prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-blockquote:px-3 sm:prose-blockquote:px-5 prose-blockquote:py-1 prose-pre:px-6 prose-pre:py-5 lg:text-lg prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-primary dark:prose-a:text-light hover:prose-a:text-primary prose-img:border-none prose-img:mt-1 prose-img:max-w-full prose-img:w-auto prose-img:h-auto prose-blockquote:leading-[1.76];
+
   img {
-    @apply w-auto max-w-full h-auto rounded border-neutral-700 border mb-6;
+    @apply mb-6 h-auto w-auto max-w-full rounded border border-neutral-700;
   }
+}
+
+.content :where(h1, h2, h3, h4, h5, h6) {
+  @apply font-primary font-medium;
 }
 
 // remark-toc: softer than body prose (heading + list)
@@ -128,10 +110,6 @@
   a:hover {
     @apply text-primary;
   }
-}
-
-.sticky {
-  @apply fixed top-0 w-full z-10 bg-white dark:bg-theme-dark;
 }
 
 a > svg {
@@ -239,12 +217,9 @@ img[alt$="<"] {
 
 // Shared image styles
 .masonry-image,
+.similar-post-image,
 .search-result-image {
-  @apply w-full h-full object-cover transition-transform duration-200 ease-out;
-}
-
-.similar-post-image {
-  @apply w-full h-full object-cover transition-transform duration-200 ease-out;
+  @apply h-full w-full object-cover transition-transform duration-200 ease-out;
 }
 
 .masonry-card-placeholder {
@@ -266,22 +241,19 @@ img[alt$="<"] {
 
 // Shared content container
 .masonry-content {
-  @apply p-4 px-5 relative;
+  @apply relative p-4 px-5;
 }
 
 .similar-post-content {
-  @apply p-4 pb-4 relative;
-  padding-top: 1rem;
+  @apply relative p-4 pb-4 pt-4;
 }
 
 .search-result-content {
-  @apply p-6 pb-5 relative;
-  padding-top: 1rem;
+  @apply relative p-6 pb-5 pt-4;
 }
 
 .masonry-content,
-.similar-post-content,
-.search-result-content {
+.similar-post-content {
   @apply relative;
 }
 
@@ -296,26 +268,20 @@ img[alt$="<"] {
   @apply gap-4 mb-3;
 }
 
-// Shared date styles
-.masonry-date {
-  @apply flex flex-wrap items-center gap-x-0 text-xs text-gray-500 dark:text-gray-400 font-normal;
+// Shared date styles (similar posts still show date + categories)
+.masonry-date,
+.similar-post-date {
+  @apply flex flex-wrap items-center gap-x-0 text-xs font-normal text-gray-500 dark:text-gray-400;
 }
 
-.masonry-date-text,
 .similar-post-date-text {
   @apply whitespace-nowrap;
 }
 
-.similar-post-date,
+.masonry-categories,
 .similar-post-categories,
 .search-result-categories {
-  @apply flex gap-1 items-center;
-}
-
-// Hidden elements
-.masonry-categories,
-.masonry-icon {
-  @apply hidden;
+  @apply flex items-center gap-1;
 }
 
 // Shared category list
@@ -325,47 +291,34 @@ img[alt$="<"] {
   @apply flex flex-wrap gap-1;
 }
 
-// Shared category badges
+// Shared category badges (plain text chips)
 .masonry-category,
 .similar-post-category,
 .search-result-category {
-  @apply transition-all duration-200 text-xs font-medium;
-  background: transparent;
-  color: #6b7280;
-  border: none;
-  padding: 0;
-  
-  .dark & {
-    background: transparent;
-    color: #9ca3af;
-    border: none;
-    padding: 0;
-  }
+  @apply border-0 bg-transparent p-0 text-xs font-medium text-gray-500 dark:text-gray-400;
 }
 
 // Shared icon styles
+.masonry-icon,
 .similar-post-icon,
 .search-result-icon {
-  @apply text-primary flex items-center;
+  @apply flex shrink-0 items-center text-primary;
+}
+
+.masonry-icon,
+.search-result-icon {
+  @apply h-4 w-4;
 }
 
 .similar-post-icon {
   @apply h-3 w-3;
 }
 
-.search-result-icon {
-  @apply h-4 w-4;
-}
-
-// Shared title styles
+// Shared title styles (line-clamp from Tailwind)
 .masonry-title,
 .similar-post-title,
 .search-result-title {
-  @apply font-semibold mb-2 text-gray-900 dark:text-gray-100 line-clamp-2 group-hover:text-primary transition-colors duration-200;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  @apply mb-2 line-clamp-2 font-semibold text-gray-900 transition-colors duration-200 group-hover:text-primary dark:text-gray-100;
   line-height: 1.3;
 }
 
@@ -385,22 +338,12 @@ img[alt$="<"] {
 .masonry-excerpt,
 .similar-post-excerpt,
 .search-result-excerpt {
-  @apply line-clamp-2 leading-relaxed;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  @apply line-clamp-2 leading-relaxed text-gray-500 dark:text-gray-400;
   line-height: 1.5;
-  color: #6b7280;
-  
-  .dark & {
-    color: #9ca3af;
-  }
 }
 
 .masonry-excerpt {
-  @apply text-base line-clamp-3;
-  -webkit-line-clamp: 3;
+  @apply line-clamp-3 text-base;
 }
 
 .similar-post-excerpt,
@@ -430,13 +373,7 @@ img[alt$="<"] {
   .search-result-card:hover .search-result-image {
     @apply scale-[1.02];
   }
-  
-  .masonry-category:hover,
-  .similar-post-category:hover,
-  .search-result-category:hover {
-    @apply text-primary;
-  }
-  
+
   a.attribution:hover {
     @apply text-primary;
   }
@@ -459,7 +396,6 @@ img[alt$="<"] {
     }
   }
   
-  .masonry-overlay,
   .similar-post-overlay,
   .search-result-overlay {
     @apply hidden;
@@ -476,15 +412,6 @@ img[alt$="<"] {
   .similar-post-title:hover,
   .search-result-title:hover {
     @apply text-gray-900 dark:text-gray-100;
-  }
-  
-  .masonry-category:hover,
-  .similar-post-category:hover,
-  .search-result-category:hover {
-    @apply text-primary bg-transparent transform-none shadow-none;
-    background: linear-gradient(135deg, rgba(1, 173, 175, 0.15) 0%, rgba(1, 173, 175, 0.08) 100%);
-    border: 1px solid rgba(1, 173, 175, 0.2);
-    transition: none;
   }
 }
 
@@ -531,16 +458,11 @@ img[alt$="<"] {
 
   .masonry-item,
   .search-result-item {
-    @apply mb-0;
+    @apply mb-0 w-full;
   }
-  
+
   .similar-posts-grid {
-    @apply grid-cols-1 gap-y-6 gap-x-0;
-  }
-  
-  .masonry-item,
-  .search-result-item {
-    @apply w-full;
+    @apply grid-cols-1 gap-x-0 gap-y-6;
   }
 
   /* Keep same card chrome as desktop (border, bg, radius); only tighten layout */
@@ -586,8 +508,8 @@ img[alt$="<"] {
     @apply justify-center mb-1;
   }
   
-  .masonry-date {
-    @apply text-center;
+  .masonry-categories {
+    @apply justify-center;
   }
   
   // Categories - optimize touch targets
