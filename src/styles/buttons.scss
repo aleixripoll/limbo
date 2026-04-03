@@ -5,13 +5,3 @@
 .btn-primary {
   @apply bg-primary text-white dark:text-light;
 }
-
-.btn-outline-primary {
-  @apply border-primary bg-transparent;
-}
-
-@media (hover: hover) {
-  .btn-outline-primary:hover {
-    @apply bg-primary text-white;
-  }
-}
