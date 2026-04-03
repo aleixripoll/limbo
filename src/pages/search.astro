@@ -8,7 +8,7 @@ const posts = await getSinglePage("posts");
 
 // Build a slim search index for the client — avoid sending full post bodies
 const searchList = posts.map((item: any) => ({
-  slug: item.slug,
+  slug: item.id,
   data: {
     title: item.data.title,
     description: item.data.description,

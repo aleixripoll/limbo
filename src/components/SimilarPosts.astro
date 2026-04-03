@@ -11,10 +11,10 @@ const { posts } = Astro.props;
   {
   posts.map((post: any) => {
       return (
-        <article class="similar-post-item" data-post-slug={post.slug}>
+        <article class="similar-post-item" data-post-slug={post.id}>
           {post.data.image && (
             <a
-              href={`${import.meta.env.BASE_URL}${post.slug}`}
+              href={`${import.meta.env.BASE_URL}${post.id}`}
               class="similar-post-card group"
               aria-label={`Llegir article: ${post.data.title}`}
             >

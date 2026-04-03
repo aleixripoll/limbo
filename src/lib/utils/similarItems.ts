@@ -28,7 +28,7 @@ const similarItems = (currentItem: any, allItems: any, slug: string) => {
   const mergedItems = [...new Set([...filterByTags, ...filterByCategories])];
 
   // filter by slug
-  const filterBySlug = mergedItems.filter((product) => product.slug !== slug);
+  const filterBySlug = mergedItems.filter((product) => product.id !== slug);
 
   return filterBySlug;
 };
