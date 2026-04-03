@@ -12,12 +12,6 @@ draft: false
 date: 2023-03-04T18:15
 ---
 
-*Road movie de l'estil de **Fear and loathing in Las Vegas** però a la catalana i on l'objectiu dels protagonistes és assassinar el rei d'Espanya. Pel meu gust la novel.la més divertida de Jair Domínguez. Com a punt negatiu, la trama va derivant en una fumada inconnexa i es perd el fil narratiu. O això o jo sóc curtet i no puc seguir-lo. En qualsevol cas rius una estona.*
-
-*Adjunto un fragment.*
-
----
-
 En Junior Montblanc va a cursets per gestionar la ràbia i ha llogat un petit xalet adossat en una urbanització als afores. Arriba a casa el primer dia i descobreix que els seus veïns són uns putos xarnegos: bandera espanyola, tovallola amb el toro, crits, gossos i el cotxe aparcat ocupant mig carrer. No hi ha lloc pel preciós cotxe d’en Junior, un Fiat Spider Sport del 68 amb el seient rebaixat i els pedals substituïts per paletes a la part posterior del volant.
 
 En Junior baixa del cotxe i veu el fill de puta del veí: quaranta anys, panxa de set mesos, calb, sense samarreta, banyador Adidas i xancles de piscina pública. A en Junior, com a bon català, no li agrada que els espanyols vinguin a Catalunya a vantar-se dels seus símbols, perquè la línia que separa l’orgull de la provocació és tan fina que la majoria de vegades no existeix. A en Junior li repugna el concepte Espanya, però encara li repugna més la gent que en fa bandera.
