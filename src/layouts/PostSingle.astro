@@ -74,8 +74,8 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
           <li class="pb-2 mx-2 flex flex-wrap items-center">
             {date ? dateFormat(date) : lastModifiedIso ? dateFormat(lastModifiedIso) : ""}
           </li>
-          <li class="pb-2 mx-2 flex flex-wrap items-center">
-            <CategoryGridIcon className="mr-2 h-[18px] w-[18px] shrink-0 text-primary" />
+          <li class="group pb-2 mx-2 flex flex-wrap items-center">
+            <CategoryGridIcon className="mr-2 h-[18px] w-[18px] shrink-0 text-current transition-colors group-hover:text-primary" />
             <>
               <ul>
                 {
