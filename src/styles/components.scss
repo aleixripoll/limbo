@@ -655,6 +655,60 @@ img[alt$="<"] {
 }
 
 // ============================================================
+// PAGINATION (dropdown + prev/next, pixelperson-style)
+// ============================================================
+
+.pagination {
+  @apply mb-4 mt-10 flex flex-wrap items-center justify-center gap-4;
+}
+
+.pagination-jump {
+  @apply inline-flex flex-wrap items-center gap-2 py-0.5;
+}
+
+.pagination-jump-label,
+.pagination-jump-of {
+  @apply text-sm font-normal text-gray-500 dark:text-gray-400;
+}
+
+.pagination-select-wrap {
+  @apply relative inline-flex items-stretch;
+}
+
+// Match forms’ select chevron spacing (plugin sets padding-right on bare `select`; align with our box)
+.pagination-select {
+  -webkit-appearance: none;
+  appearance: none;
+  @apply m-0 min-w-[3rem] cursor-pointer rounded-md border border-border bg-white py-1.5 pl-3 pr-10 text-sm font-normal text-text transition-colors dark:bg-[#151d2c] dark:text-stone-200;
+}
+
+.pagination-select:hover {
+  @apply border-gray-400 dark:border-gray-600;
+}
+
+.pagination-select:focus {
+  @apply border-primary outline-none ring-2 ring-primary/25;
+}
+
+.pagination-link {
+  @apply text-sm font-medium text-primary no-underline;
+}
+
+.pagination-link:hover {
+  @apply underline;
+}
+
+.pagination-link:focus-visible {
+  @apply outline outline-2 outline-offset-2 outline-primary;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pagination-select {
+    @apply transition-none;
+  }
+}
+
+// ============================================================
 // MISCELLANEOUS
 // ============================================================
 
