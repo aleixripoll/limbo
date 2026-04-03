@@ -1,12 +1,8 @@
 ---
-title: "Minerals"
+title: "Minerals 101"
 description: "Tot el que cal menjar de la taula periòdica."
 authors: ["Dra. Valina"]
-image: "./ai-generated-8741232_1280.jpg"
-image_attribution:
-    author: MeditativeKaleidoscope
-    site: Pixabay
-    url: https://pixabay.com/es/illustrations/ai-generado-cristales-geoda-8741232/
+image: cover.jpeg
 categories: ["apunts"]
 tags: ["nutrició", "lang-cat"]
 draft: false

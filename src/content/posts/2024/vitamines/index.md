@@ -1,5 +1,5 @@
 ---
-title: "Vitamines, visió general"
+title: "Vitamines 101"
 description: "Definició i resum de funcions per a gent ocupada."
 authors: ["Dra. Valina"]
 image: "./vitamines.webp"
@@ -11,74 +11,73 @@ date: 2024-02-07T07:00
 
 ### Taula de continguts
 
-## General
-- Son substàncies **orgàniques**, és a dir, contenen carboni.
+
+# Informació general
+- Son substàncies **orgàniques** (contenen carboni).
 - Son necessàries per a diversos processos metabòlics.
-- Poden ser **hidrosolubles** (es dissolen en aigua, B i C) o **liposolubles** (es dissolen en oli, ADEK). Donat que som bàsicament aigua, no podem emmagatzemar les hidrosolubles i les hem de consumir tots els dies, la seva deficiència es manifesta en pocs dies o setmanes, les liposolubles poden tardar mesos o anys.
+- Poden ser **hidrosolubles** (B i C, es dissolen en aigua, les hem de consumir tots els dies, la deficiència es manifesta en poques setmanes) o **liposolubles** (ADEK, es dissolen en oli, la deficiència es manifesta en mesos o anys).
 
-> **Apunt de solubilitat:** Se sol dir que oli i aigua no es barregen per la diferència de densitats però en realitat és per diferència de polaritats: l'aigua (H<sub>2</sub>O) és una mol·lècula **polar**: l'àtom d'oxigen atrau els dos hidrògens i genera dos pols amb càrrega elèctrica, convertint-la en un imant. L'oli és una molècula no polar: no hi ha grans forces internes i no té càrrega elèctrica, per tant no reacciona en contacte amb l'aigua.
+> **Apunt:** Oli i aigua no es barregen per la diferència de polaritats, no de densitats. L'aigua (H<sub>2</sub>O) és una mol·lècula **polar**: l'àtom d'oxigen atrau els dos hidrògens i genera dos pols amb càrrega elèctrica, convertint-la en un imant. L'oli és una molècula no polar: no hi ha grans forces internes i no té càrrega elèctrica, per tant no reacciona en contacte amb l'aigua.
 
 
-## Hidrosolubles
+# Hidrosolubles
 
-### Vitamines B
+## Vitamines B
 - Estan relacionades amb el metabolisme energètic i l'estat d'ànim.
 - La seva deficiència és rara, exceptuant la B12.
 - La toxicitat és molt rara, la seva absorció disminueix en augmentar la dosi.
 
-#### B1 - Tiamina
+### B1: Tiamina
 - Metabolisme dels hidrats de carboni.
 - **Fonts**: Cereals integrals, mongetes, llenties, pèsols.
 - **Deficiència**: Degeneració cognitiva (pèrdua de memòria), fallada cardíaca, pèrdua de pes, debilitat muscular, neuropatia perifèrica (mans, peus), immunitat reduïda.
 
-#### B2 - Riboflavina
+### B2: Riboflavina
 - Metabolisme energètic, conversió de B6 i B9 a les formes actives.
 - **Fonts**: Carn, lactis.
 - **Deficiència**: Degeneració del sistema nerviós i endocrí, anèmia, trastorns de la pell.
 
-#### B3 - Niacina
+### B3: Niacina
 - Metabolisme energètic.
 - L'aminoàcid **triptòfan** és un precursor de B3.
 - Es troba a molts aliments, especialment d'origen animal.
 - La seva deficiència provoca **pelagra**, la malaltia de les 4 D's (depressió, diarrea, deliris, demència).
 
-#### B5 - Àcid pantotènic
+### B5: Àcid pantotènic
 - Metabolisme de greixos.
 - Es troba a pràcticament tots els aliments.
 - **Deficiència**: Migranya, irritabilitat, rampes musculars, fatiga, formigueig o cremor a mans i peus, nàusees, trastorns del son.
 
-#### B6 - Piridoxina
+### B6: Piridoxina
 - Metabolisme energètic.
 - **Deficiència**: Sol anar lligada a la deficiència de B9 i B12. Símptomes: anèmia, trastorns de la pell, depressió, immunitat reduïda. El risc de deficiència augmenta en situació de: disfunció renal, malaltia autoimmune intestinal, artritis reumatoide o alcoholisme.
 - **Toxicitat**: Neuropatia perifèrica, atàxia, nàusees.
 
-#### B7 - Biotina
+### B7: Biotina
 - Metabolisme energètic.
 - **Fonts**: Salmó, alvocat, ous, porc, fruits secs, llavors.
 - **Deficiència**: Pèrdua de cabell, erupcions cutànies, ungles trencadisses.
 
-#### B9 - Àcid fòlic
+### B9: Àcid fòlic
 - Metabolisme de proteïnes, síntesi d'ADN i ARN.
 - **Fonts**: Es troba en una gran varietat d'aliments en forma de **folats** i en suplements com **àcid fòlic** amb una absorció de gairebé el doble.
 
-#### B12 - Cobalamina
+### B12: Cobalamina
 - Desenvolupament del cervell i cèl·lules nervioses.
 - **Fonts**: Aliments d'origen animal, aliments enriquits amb B12 (begudes vegetals, cereals, etc.).
 - **Deficiència**: El millor marcador sanguini de deficiència de B12 no és la B12 en si, sinó l'augment d'àcid metilmalònic i d'homocisteïna. Se sol produir en dietes veganes, deficiència de factor intrínsec [^1] i hipoclorhidia estomacal. Símptomes: anèmia, debilitat, neuropaties, formigueig a mans i peus, pèrdua de memòria, depressió, convulsions.
 - A diferència de les altres vitamines hidrosolubles, **s'emmagatzema en grans quantitats al fetge** i la seva deficiència no apareix fins passats 3-5 anys.
 
-### Vitamina C
+## Vitamina C
 - S'obté d'aliments d'**origen vegetal**: cítrics (taronja, mandarina, kiwi, llimona, aranja), pebrot, maduixa, tomàquet, patata, verdures crucíferes (bròquil, col de cabdell, col de Brussel·les, coliflor).
 - **Funcions**: Antioxidant, control d'infeccions (però no evita refredats), cicatrització, síntesi de col·lagen, hormones i neurotransmissors.
 - **Deficiència**: Rara, pot passar en dietes pobres en fruites i hortalisses, en fumadors (actius i passius) i en persones amb alts consums d'alcohol o drogues. Provoca fatiga, anèmia i escorbut (pèrdua de col·lagen que comporta el trencament de vasos sanguinis, sagnat de genives, pèrdua de cabell i curació de ferides lenta).
 - **Toxicitat**: Rara, quan augmenta la dosi es redueix l'absorció.
 
----
 
-## Liposolubles
+# Liposolubles
 
-### Vitamina A
-![Vitamina A](vitamina_A.webp "Vitamina A")
+## Vitamina A
 - No la podem produir, l'hem d'obtenir d'aliments d'origen animal (**retinoides**) o d'origen vegetal (**carotenoides**).
 - Els retinoides s'absorbeixen gairebé al 100%. **Fonts:** fetge i greixos (carn, llet, rovell d'ou, oli de peix).
 - El principal carotenoide és el **beta-carotè**, present en **fruites i hortalisses de color groc, taronja i vermell** (*pastanaga, tomàquet, mango, préssec, meló, taronja, mandarina*) i **verdures de fulla verda fosca** (*espinacs, bròquil*). Té propietats **antioxidants**. 
@@ -87,7 +86,7 @@ date: 2024-02-07T07:00
 - **Deficiència**: Nictalopia (ceguesa nocturna), sequedat, descamació i picor de la pell, augment de les infeccions, anèmia.
 - **Toxicitat**: Pràcticament impossible per carotenoides, molt rara per retinoides.
 
-### Vitamina D
+## Vitamina D
 - Es comporta com una hormona (missatger químic).
 - Es troba en dues formes: D2, **ergocalciferol**, d'origen vegetal, i D3, **colecalciferol**, d'origen animal.
 - **Fonts**: No està present en pràcticament cap aliment, la principal font són els **peixos grassos** (truita, salmó, tonyina, verat) i en menor quantitat ous i lactis Alguns aliments (llet, iogurts, cereals) estan enriquits amb vitamina D. En molts casos són necessaris suplements.
@@ -101,14 +100,14 @@ date: 2024-02-07T07:00
 - La deficiència deriva en osteomalàcia (major risc de fractures) i raquitisme en nens (ossos febles i tous).
 - **Toxicitat**: Molt rara.
 
-### Vitamina E
+## Vitamina E
 - Existeix en diverses formes però l'única utilitzable en el cos humà és l'**alfa-tocoferol**.
 - **Funcions**: Antioxidant, component del sistema immune, prevenció de coàguls a les artèries.
 - **Fonts**: Olis vegetals (girasol, blat de moro, soja), fruits secs (ametlla, avellana).
 - **Deficiència**: Rara, es pot produir per problemes digestius que impedeixin absorbir greixos. Provoca retinopatia, neuropatia en mans i peus, atàxia (pèrdua de control muscular), afectació al sistema immune.
 - **Toxicitat**: Sense evidències.
 
-### Vitamina K
+## Vitamina K
 - Es troba en dues formes: **filoquinona**, d'origen vegetal, i **menaquinona**, d'origen animal, que també pot ser produïda per bacteris del nostre cos. 
 - **Funcions**: Cicatrització, formació ossos.
 - **Fonts**: Verdures (col, espinac, enciam, bròquil, kale, col de cabdell).
@@ -117,7 +116,7 @@ date: 2024-02-07T07:00
 
 ---
 
-## Referències
+# Referències
 
 - [Harvard - Vitamins](https://www.hsph.harvard.edu/nutritionsource/vitamins/)
 

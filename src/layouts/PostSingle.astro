@@ -73,8 +73,8 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
           <li class="pb-2 mx-2 flex flex-wrap items-center">
             {date ? dateFormat(date) : lastModifiedIso ? dateFormat(lastModifiedIso) : ""}
           </li>
-          <li class="pb-2 mx-2 flex flex-wrap items-center">
-            <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-primary" />
+          <li class="group pb-2 mx-2 flex flex-wrap items-center">
+            <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-current transition-colors group-hover:text-primary" />
             <>
               <ul>
                 {
@@ -82,7 +82,7 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
                     <li class="inline-block">
                       <a
                         href={`${import.meta.env.BASE_URL}categories/${slugify(category)}`}
-                        class="mr-1 hover:text-primary"
+                        class="mr-1 transition-colors hover:text-primary"
                       >
                         {humanize(category)}{i !== post.data.categories.length - 1 && ","}
                       </a>

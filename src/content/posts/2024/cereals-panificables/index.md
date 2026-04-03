@@ -1,5 +1,5 @@
 ---
-title: "Cereals panificables"
+title: "Cereals 101"
 description: "Blat contra tots."
 authors: ["Dra. Valina"]
 image: ./pa_suspects.png
@@ -11,12 +11,10 @@ date: 2024-02-27T07:00
 
 ## Taula de continguts
 
-## Comparativa
-
-> **NOTA:** Tots els cereals panificables (excepte el fajol) son diferents varietats del blat. Anomenen "blat" a la varietat més extesa o popular.
-
-### Blat
+# Blat
 *[en: wheat, es: trigo]*
+
+Tots els cereals panificables (excepte el fajol) son diferents varietats del blat. Anomenen "blat" a la varietat més popular.
 
 Aporta principalment:
 - Hidrats de carboni.
@@ -26,7 +24,7 @@ Aporta principalment:
 - Vitamines B1, B2, B3, B6 i B9.
 - Minerals: calci, ferro, fòsfor, magnesi, zinc i seleni.
 
-### Sègol
+# Sègol
 *[en: rye, es: centeno]*
 
 - Menys gluten que el blat, té un color més fosc, és més compacte, menys esponjós i es conserva més temps.
@@ -35,7 +33,7 @@ Aporta principalment:
 - Més fibra, vitamines i minerals.
 - Conté àcid linoleic (omega 6, millora la circulació).
 
-### Espelta
+# Espelta
 *[en: spelt, es: espelta]*
 
 - Té una closca dura que la protegeix de pesticides i herbicides, per tant és més **"eco"**.
@@ -44,13 +42,13 @@ Aporta principalment:
 - Més fibra, vitamines i minerals.
 - Conté **8 dels 9 aminoàcids essencials**, per tant és una proteïna quasi completa.
 
-### Kamut
+# Kamut
 - Menys gluten.
 - Conté menys aigua, per tant és menys esponjós i té major densitat nutricional (proteïnes, àcids grassos, vitamines i minerals).
 - Conté **8 dels 9 aminoàcids essencials**, per tant és una proteïna quasi completa.
 - S'importa d'Amèrica, per tant més car i menys sostenible.
 
-### Fajol
+# Fajol
 *[en: buckwheat, es: trigo sarraceno]*
 - És un **pseudocereal** com la quinoa.
 - No conté gluten (menys esponjós, més digestiu).
@@ -59,13 +57,13 @@ Aporta principalment:
 - Més car.
 
 
-## Recomanacions generals
+# Recomanacions generals
 - Consumir cereals **integrals** es més important que el cereal escollit.
 - Si no patim al·lèrgies ni intoleràncies no hi ha cap necessitat ni benefici en suprimir el pa de la dieta.
 - La varietat de cereals (i de la dieta en general) es més important que les modes.
 
 
-## Referències
+# Referències
 
 - [El Mundo - La trola de los cereales 'cuquis'](https://www.elmundo.es/papel/boticaria-garcia/2020/03/07/5e611b72fc6c83de468b45b6.html)
 

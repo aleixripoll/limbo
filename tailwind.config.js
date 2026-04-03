@@ -45,7 +45,7 @@ export default {
         text: theme.colors.default.text_color.default,
         light: theme.colors.default.text_color.light,
         dark: theme.colors.default.text_color.dark,
-        primary: theme.colors.default.theme_color.primary,
+        primary: "rgb(var(--color-primary-rgb) / <alpha-value>)",
         secondary: theme.colors.default.theme_color.secondary,
         body: theme.colors.default.theme_color.body,
         border: theme.colors.default.theme_color.border,

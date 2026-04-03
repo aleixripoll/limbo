@@ -29,6 +29,17 @@ export interface Props {
 // distructure frontmatters
 const { title, meta_title, description, image, noindex, canonical } =
   Astro.props;
+
+const themeColors = theme.colors.default.theme_color;
+function hexToRgbChannels(hex: string) {
+  const n = hex.replace(/^#/, "").trim();
+  return `${parseInt(n.slice(0, 2), 16)} ${parseInt(n.slice(2, 4), 16)} ${parseInt(n.slice(4, 6), 16)}`;
+}
+const primaryRgbLight = hexToRgbChannels(themeColors.primary);
+const primaryRgbDark = hexToRgbChannels(
+  themeColors.primary_dark ?? themeColors.primary
+);
+const primaryVarsCss = `:root{--color-primary-rgb:${primaryRgbLight}}html.dark{--color-primary-rgb:${primaryRgbDark}}`;
 ---
 
 <!DOCTYPE html>
@@ -82,6 +93,7 @@ const { title, meta_title, description, image, noindex, canonical } =
       html { background-color: #fefeff; }
       html.dark { background-color: #27272e; }
     </style>
+    <style is:inline set:html={primaryVarsCss}></style>
 
     <!-- google font css -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
