@@ -3,7 +3,7 @@
     "title": "Limbo",
     "base_url": "https://aleixripoll.github.io",
     "base_path": "/limbo/",
-    "favicon": "/limbo/images/favicon.ico",
+    "favicon": "images/favicon.svg",
     "logo": "",
     "logo_width": "160",
     "logo_height": "24",
@@ -23,7 +23,7 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Tema basat en [Bookworm Light](https://github.com/themefisher/bookworm-light-astro) de [Themefisher](https://themefisher.com)"
+    "copyright": "limbo"
   },
 
   "contactinfo": {

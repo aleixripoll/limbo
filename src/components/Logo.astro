@@ -20,24 +20,44 @@ const {
 
 <a
   href={import.meta.env.BASE_URL}
-  class="navbar-brand block text-2xl font-primary font-medium tracking-wider text-primary lg:hover:brightness-110"
+  class="navbar-brand group inline-flex items-center gap-2.5 text-xl font-primary font-medium tracking-normal hover:[&_img]:brightness-110"
 >
-  {
-    src || logo ? (
-      <Image
-        width={logo_width.replace("px", "") * 2}
-        height={logo_height.replace("px", "") * 2}
-        src={src ? src : logo}
-        alt={title}
-        style={{
-          height: logo_height.replace("px", "") + "px",
-          width: logo_width.replace("px", "") + "px",
-        }}
-      />
-    ) : logo_text ? (
-      <span>{logo_text}</span>
-    ) : (
-      title
-    )
-  }
+  <span
+    class="shrink-0 text-gray-500 transition-colors duration-200 group-hover:text-primary dark:text-gray-400"
+    aria-hidden="true"
+  >
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2z"></path>
+      <path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6z"></path>
+    </svg>
+  </span>
+  <span class="text-dark transition-colors duration-200 group-hover:text-primary dark:text-stone-200">
+    {
+      src || logo ? (
+        <Image
+          width={logo_width.replace("px", "") * 2}
+          height={logo_height.replace("px", "") * 2}
+          src={src ? src : logo}
+          alt={title}
+          style={{
+            height: logo_height.replace("px", "") + "px",
+            width: logo_width.replace("px", "") + "px",
+          }}
+        />
+      ) : logo_text ? (
+        <span>{logo_text}</span>
+      ) : (
+        title
+      )
+    }
+  </span>
 </a>

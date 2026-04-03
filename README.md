@@ -1,101 +1,55 @@
-<h1 align=center>Bookworm Light Astro</h1>
-<p align=center>Bookworm Light is a feature-rich, minimal, highly customizable, easy-to-use free Astro blog theme.</p>
-<h2 align="center"> <a target="_blank" href="https://bookworm-light-astro.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbookworm-light-astro.vercel.app%2F&form_factor=desktop">Page Speed (100%)🚀</a>
-</h2>
+# Limbo
 
-<p align=center>
-  <a href="https://github.com/withastro/astro/releases/tag/astro%402.0.11" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=ASTRO&message=2.0&color=000&logo=astro" />
-  </a>
+Personal blog built with [Astro](https://astro.build/), deployed to GitHub Pages at [aleixripoll.github.io/limbo](https://aleixripoll.github.io/limbo/).
 
-  <a href="https://github.com/themefisher/bookworm-light-astro/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/themefisher/bookworm-light-astro" alt="license"></a>
+## Stack
 
-  <img src="https://img.shields.io/github/languages/code-size/themefisher/bookworm-light-astro" alt="code size">
+- **Astro** 5 (content collections, MDX, View Transitions)
+- **Tailwind CSS** 3 and Sass for styles
+- **React** for interactive pieces (search, Disqus, icons)
+- **Fuse.js** for client-side search
 
-  <a href="https://github.com/themefisher/bookworm-light-astro/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/themefisher/bigspring-light-astro" alt="contributors"></a>
-</p>
+## Requirements
 
-![bookworm-light](https://demo.gethugothemes.com/thumbnails/bookworm-light.png)
+- Node.js LTS (matches Astro’s [supported versions](https://docs.astro.build/en/install-and-setup/#prerequisites))
 
-Bookworm Light is a minimal multi-author free Astro blog theme which is perfect for any kind of blog website. Whether you're interested in food, beauty, travel, photography, lifestyle, fitness, health, or other topics, this theme is a great fit. The theme is super fast and SEO friendly which makes it easier for your content to be discovered by search engines.
+## Scripts
 
-## 🔑Key Features
+| Command        | Description                          |
+| -------------- | ------------------------------------ |
+| `npm install`  | Install dependencies                 |
+| `npm run dev`  | Local dev server with hot reload     |
+| `npm run build`| Typecheck (`astro check`) + production build to `dist/` |
+| `npm run sync` | Regenerate Astro content types       |
+| `npm run format` | Format with Prettier               |
 
-- 🎨 Highly Customizable (Color, Font, Menu, Social Links, SEO Meta Tags, etc.)
-- 👥 Multi-Author Support
-- 📚 Authors Page
-- 👤 Author Single Page
-- 🔍 Search Functionality with FuseJS
-- 🏷️ Tags and Categories Support
-- 📲 Post Social Share Option
-- 🔗 Similar Post Suggestions
-- ⚡ Fast by Default (95+ Google PageSpeed Score)
-- ⚙️ Netlify Settings Pre-configured
-- 📬 Contact Form Support
-- 🌅 Support OG Image
-- ✍️ Write and Update Content in Markdown / MDX
-- 📚 MDX Components Auto Import
-- 📝 Includes Draft Pages and Posts
-- 🚀 Built with Tailwind CSS Framework
-- 📱 Fully Responsive on Desktops, Tablets, and Smartphones
-- 🔍 SEO Friendly
+## Configuration
 
+| File | Purpose |
+| ---- | ------- |
+| [`src/config/config.json`](src/config/config.json) | Site URL, `base_path` (e.g. `/limbo/` for GitHub Pages), title, logo, metadata |
+| [`src/config/theme.json`](src/config/theme.json) | Colors and typography tokens (wired into Tailwind) |
+| [`src/config/menu.json`](src/config/menu.json) | Header and footer navigation |
+| [`src/config/social.json`](src/config/social.json) | Social links for the footer |
 
-<!-- installation -->
-## 🔧Installation
+`astro.config.mjs` reads `base_url` and `base_path` from `config.json` for `site` and `base`. Change those when moving hosts or switching between root and subdirectory deploys.
 
-After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
+## Content
 
-### ⚙️Install prerequisites (once for a machine)
+Collections are defined in [`src/content/config.ts`](src/content/config.ts).
 
-- **Node Installation:** [Install node js](https://nodejs.org/en/download/) [Recommended LTS version]
+- **Posts** — `src/content/posts/<year>/<slug>/index.md` (or `.mdx`). Frontmatter includes `title`, `date`, `categories`, `tags`, `authors`, optional `image`, `draft`, etc.
+- **Authors** — `src/content/authors/<slug>/index.md`
+- **Static pages** — `src/content/pages/` (e.g. contact, 404)
+- **About** — `src/content/about/`
 
-### 🖥️Local setup
+Markdown uses **remark-toc** with heading `Taula de continguts` (see `astro.config.mjs`). Default locale for i18n is Catalan (`ca`), with `es` and `en` also listed in config.
 
-After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
+## Deployment
 
-- Install dependencies
+- **GitHub Pages**: `base_path` in `config.json` must match the repository path (e.g. `/limbo/`).
+- **Netlify**: [`netlify.toml`](netlify.toml) publishes `dist/`. If you use npm and `package-lock.json`, set the build command to `npm run build` in the Netlify UI (or align `netlify.toml`) so it matches your package manager.
 
-```
-npm install
-```
+## License
 
-- Run locally
-
-```
-npm run dev
-```
-
-After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
-
-## 🔨Production Build
-
-After finishing all the customization, you can create a production build by running this command.
-
-```
-npm run build
-```
-
-<!-- reporting issue -->
-## 🐞Reporting Issues
-
-We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/themefisher/bookworm-light-astro/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/bookworm-light-astro/issues).
-
-
-<!-- licence -->
-## 📄License
-
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
-
-**Code License:** Released under the [MIT](https://github.com/themefisher/bookworm-light-astro/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
-
-## 👨‍💻Need Custom Development Services?
-
-Besides developing beautifully designed and blazing-fast themes, we help businesses create fast, performance-focused, scalable & secure websites based on NextJs, Hugo, Astro, etc.
-
-If you need a custom theme, theme customization, or complete website development services from scratch you can [Hire Us](https://themefisher.com/contact). 
+MIT (see [`package.json`](package.json) `license` field).
