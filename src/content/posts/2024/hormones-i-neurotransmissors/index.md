@@ -1,5 +1,5 @@
 ---
-title: "Hormones i neurotransmissors"
+title: "Hormones vs. Neurotransmissors"
 description: "S'assemblen però no."
 authors: ["Dra. Valina"]
 image: ./hormona_vs_neurona_Gemini_color.png
@@ -64,7 +64,7 @@ Són missatgers químics alliberats a la sang per les **glàndules endocrines** 
 
 
 
-## Referències
+# Referències
 
 - [Cleveland Clinic](https://my.clevelandclinic.org/health/articles/22464-hormones)
 
