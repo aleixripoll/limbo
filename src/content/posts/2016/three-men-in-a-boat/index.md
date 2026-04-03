@@ -2,10 +2,7 @@
 title: "Three men in a boat"
 description: "Jerome K. Jerome"
 authors: [ "Dr. Fenilalanino" ]
-image: ./pexels-vietnamese-private-tours-1162639.jpg
-image_attribution:
-  author: Vietnamese Private Tours
-  url: https://www.pexels.com/ca-es/foto/1162639/
+image: ./cover.jpg
 categories: [ "literatura" ]
 tags: [ "humor", "lang-en" ]
 draft: false
