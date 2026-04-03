@@ -4,7 +4,8 @@ import { Image } from "astro:assets";
 // getSinglePage import removed (not used)
 import dateFormat from "@lib/utils/dateFormat";
 import { humanize, markdownify, slugify } from "@lib/utils/textConverter";
-import { BiCategoryAlt, BiSolidChevronUpCircle } from "react-icons/bi/index.js";
+import CategoryGridIcon from "@components/CategoryGridIcon";
+import { BiSolidChevronUpCircle } from "react-icons/bi/index.js";
 import Disqus from "@components/Disqus";
 //const allAuthors = await getSinglePage("authors");
 const { post } = Astro.props;
@@ -73,8 +74,8 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
           <li class="pb-2 mx-2 flex flex-wrap items-center">
             {date ? dateFormat(date) : lastModifiedIso ? dateFormat(lastModifiedIso) : ""}
           </li>
-          <li class="group pb-2 mx-2 flex flex-wrap items-center">
-            <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-current transition-colors group-hover:text-primary" />
+          <li class="pb-2 mx-2 flex flex-wrap items-center">
+            <CategoryGridIcon className="mr-2 h-[18px] w-[18px] shrink-0 text-primary" />
             <>
               <ul>
                 {

@@ -1,4 +1,5 @@
 //import dateFormat from "@lib/utils/dateFormat";
+import CategoryGridIcon from "@components/CategoryGridIcon";
 import { humanize } from "@lib/utils/textConverter";
 import { useEffect, useRef, useState } from "react";
 
@@ -137,9 +138,7 @@ export default function SearchBar({ searchList }: Props) {
                 <div className="search-result-content">
                   <div className="search-result-meta">
                     <div className="search-result-categories">
-                      <svg className="search-result-icon inline mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                        <path d="M3 7h6v6H3zM15 3h6v6h-6zM15 15h6v6h-6z" fill="currentColor" />
-                      </svg>
+                      <CategoryGridIcon className="search-result-icon inline mr-1 h-4 w-4" />
                       <div className="search-result-category-list">
                         {categories.map((category: string, i: number) => (
                           <span key={`${category}-${i}`} className="search-result-category">

@@ -23,7 +23,7 @@ const posts = await getSinglePage("posts");
 const filterByTags = taxonomyFilter(posts, "tags", tag);
 const sortedPosts = sortByDate(filterByTags);
 
-const title = humanize(tag || "");
+const title = humanize(tag || "", { capitalizeFirst: false });
 ---
 
 <Base title={title || "Tag"}>

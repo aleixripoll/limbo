@@ -21,7 +21,7 @@ const tags = await getTaxonomy("posts", "tags");
                 class="group flex items-center rounded-lg bg-theme-light dark:bg-theme-dark px-4 py-2 text-dark dark:text-light hover:bg-primary hover:text-white"
               >
                 <FaHashtag className="mr-1 text-primary group-hover:text-white" />
-                <>{humanize(tag || "")}</>
+                <>{humanize(tag || "", { capitalizeFirst: false })}</>
               </a>
             </li>
           ))

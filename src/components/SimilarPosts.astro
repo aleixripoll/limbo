@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { humanize } from "@lib/utils/textConverter";
-import { BiCategoryAlt } from "react-icons/bi/index.js";
+import CategoryGridIcon from "@components/CategoryGridIcon";
 import dateFormat from "@lib/utils/dateFormat";
 
 const { posts } = Astro.props;
@@ -38,7 +38,7 @@ const { posts } = Astro.props;
                     <span class="similar-post-date-text">{dateFormat(post.data.date)}</span>
                   </div>
                   <div class="similar-post-categories">
-                    <BiCategoryAlt className="similar-post-icon" />
+                    <CategoryGridIcon className="similar-post-icon" />
                     <div class="similar-post-category-list">
                       {post.data.categories.map((category: string, i: number) => (
                         <span class="similar-post-category">
