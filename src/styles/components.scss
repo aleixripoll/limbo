@@ -1,5 +1,9 @@
 // section style
 .section {
+  @apply pt-8 pb-10 lg:pt-14 lg:pb-20;
+}
+
+footer.section {
   @apply py-10 lg:py-20;
 }
 
