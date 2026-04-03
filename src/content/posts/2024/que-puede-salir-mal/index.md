@@ -3,10 +3,6 @@ title: "¿Qué puede salir mal?"
 description: "Sandra Ortonobes, La Hiperactina"
 authors: ["Dra. Valina"]
 image: ./virus.png
-image_attribution:
-    author: GrumpyBeere
-    site: Pixabay
-    url: https://pixabay.com/es/illustrations/ai-generado-adn-gen%C3%A9tico-estructura-8829659/
 categories: ["literatura"]
 tags: ["biologia", "neurociència"]
 draft: false
