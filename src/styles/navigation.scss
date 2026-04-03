@@ -109,11 +109,11 @@ input#nav-toggle:checked ~ #burger-button .bar-3 {
 }
 
 .nav-link {
-  @apply p-3 transition md:p-4 text-base flex items-center gap-1.5 justify-center md:justify-start rounded-lg;
+  @apply p-3 transition md:p-4 text-base flex items-center gap-1.5 justify-center md:justify-start rounded-lg text-text dark:text-light;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   font-weight: 500;
   -webkit-tap-highlight-color: transparent;
-  
+
   &:active {
     @apply text-primary bg-primary/10;
   }

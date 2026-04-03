@@ -80,7 +80,9 @@ const menuIcons: Record<string, any> = {
                 <a href={`${import.meta.env.BASE_URL}${menu.url}`} class="nav-link">
                   {(() => {
                     const Icon = menuIcons[menu.name];
-                    return Icon ? <Icon className="h-5 w-5 text-primary" /> : null;
+                    return Icon ? (
+                      <Icon className="h-5 w-5 shrink-0 text-current" />
+                    ) : null;
                   })()}
                   {menu.name}
                 </a>
