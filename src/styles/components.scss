@@ -350,7 +350,7 @@ img[alt$="<"] {
 }
 
 .masonry-title {
-  @apply text-xl;
+  @apply text-lg;
 }
 
 .similar-post-title {
@@ -358,7 +358,7 @@ img[alt$="<"] {
 }
 
 .search-result-title {
-  @apply text-lg;
+  @apply text-base;
 }
 
 // Shared excerpt styles
@@ -573,7 +573,7 @@ img[alt$="<"] {
   .masonry-title,
   .similar-post-title,
   .search-result-title {
-    @apply text-xl text-center mb-1;
+    @apply text-lg text-center mb-1;
   }
   
   // Excerpts

@@ -17,12 +17,6 @@ interface SearchResult {
   refIndex: number;
 }
 
-// Calculate reading time (rough estimate: 200 words per minute)
-function calculateReadingTime(content: string): number {
-  const words = content.split(/\s+/).length;
-  return Math.ceil(words / 200);
-}
-
 export default function SearchBar({ searchList }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [inputVal, setInputVal] = useState("");
@@ -111,7 +105,6 @@ export default function SearchBar({ searchList }: Props) {
 
       <div className="search-results-grid">
         {searchResults?.map(({ item }) => {
-          const readingTime = calculateReadingTime(item.excerpt || "");
           const categories = item.data.categories ?? [];
           const imageSrc = item.data.image?.src as string | undefined;
           return (
@@ -139,16 +132,6 @@ export default function SearchBar({ searchList }: Props) {
                       <span className="search-result-read-more">Llegir més</span>
                     </div>
                   ) : null}
-
-                  {readingTime > 0 && (
-                    <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-medium">
-                      <svg className="inline mr-1 h-3 w-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                        <path d="M12 7v5l3 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.5" />
-                      </svg>
-                      {readingTime} min
-                    </div>
-                  )}
                 </div>
 
                 <div className="search-result-content">

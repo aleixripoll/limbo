@@ -155,8 +155,13 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
       }
       
       // Only target headings within the main post content area
-      let headings = Array.from(document.querySelectorAll(".content h2, .content h3, .content h4"));
+      let headings = Array.from(
+        document.querySelectorAll(".content h1, .content h2, .content h3, .content h4")
+      );
       for (let heading of headings) {
+        if (!heading.id) {
+          continue;
+        }
         // Check if heading already has an anchor link to avoid duplicates
         if (heading.querySelector(".heading-link")) {
           continue;
