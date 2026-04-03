@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["lang-cat"]
 draft: false
-date: 2019-04-04T18:13:00Z
+date: 2019-04-04T18:13
 ---
 
 A la biblioteca, un dia Climent em preguntà:

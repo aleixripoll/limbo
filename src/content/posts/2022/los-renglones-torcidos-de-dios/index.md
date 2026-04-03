@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["psicologia"]
 draft: false
-date: 2022-08-15T21:20:00Z
+date: 2022-08-15T21:20
 ---
 
 El doctor Ruipérez no pudo menos de sonreír. Aquella mujer de aspecto intelectual y superior manejaba con singular acierto el arte de la simulación, pero ello no era óbice para que fuera declarando frase a frase el terrible mal que la aquejaba. Cada palabra suya era una confirmación de los síndromes paranoicos diagnosticados por el doctor Donadío. Cuando, en otras psicopatías, el delirio del enfermo se manifiesta durante una crisis aguda, no hay nada tan fácil para un especialista como detectarlo. Se le descubre con la facilidad con que se distingue a un hombre vestido de rojo caminando por la nieve; por el contrario, cuando el delirio es crónico, hay que andarse con pies de plomo antes de declarar o rechazar la sanidad de un enfermo.

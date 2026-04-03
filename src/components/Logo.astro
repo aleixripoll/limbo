@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import config from "@config/config.json";
-import { BiLandscape } from "react-icons/bi/index.js";
 
 const { src } = Astro.props;
 const {
@@ -21,7 +20,7 @@ const {
 
 <a
   href={import.meta.env.BASE_URL}
-  class="navbar-brand block text-2xl font-bold text-primary lg:hover:brightness-110"
+  class="navbar-brand block text-2xl font-primary font-medium tracking-wider text-primary lg:hover:brightness-110"
 >
   {
     src || logo ? (
@@ -36,7 +35,7 @@ const {
         }}
       />
     ) : logo_text ? (
-      <span class="font-light">{logo_text}</span>
+      <span>{logo_text}</span>
     ) : (
       title
     )

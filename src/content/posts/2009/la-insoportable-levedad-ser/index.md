@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["societat", "filosofia"]
 draft: false
-date: 2009-06-14T12:02:00Z
+date: 2009-06-14T12:02
 ---
 
 De la confusa mezcla de estas ocurrencias, crece ante Teresa una idea blasfema de la que no puede librarse: el amor que la une a Karenin es mejor que el que existe entre ella y Tomás. Mejor, no mayor. Teresa no quiere culpar a Tomás ni culparse a sí misma, no pretende afirmar que pudieran quererse más. Pero le da la impresión de que la pareja humana está hecha de tal manera que su amor es a priori de peor clase de la que puede ser el amor entre una persona y un perro, esa extravagancia en la historia del hombre, probablemente no planeada por el Creador.

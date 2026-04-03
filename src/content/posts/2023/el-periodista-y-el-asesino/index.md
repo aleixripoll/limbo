@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "periodisme", "psicologia"]
 draft: false
-date: 2023-10-29T16:48:00Z
+date: 2023-10-29T16:48
 ---
 
 > El desastre sufrido por Buckley y Wambaugh en sus testimonios ilustra una verdad que muchos de nosotros aprendemos cuando somos niños: la invariable ineficiencia de la defensa “No me eches la culpa, pues todo el mundo lo hace”. La sociedad cumple funciones de mediadora entre los extremos de una moral intolerablemente estricta por un lado, y por otro lado una permisividad peligrosamente anárquica por obra de un acuerdo tácito en virtud del cual se nos da permiso para transgredir las reglas de la moral más estricta, siempre que lo hagamos con tranquilidad y discreción. La hipocresía es el lubricante que mantiene a la sociedad en un funcionamiento agradable al admitir la falibilidad humana y al conciliar las aparentemente irreconciliables necesidades humanas de orden y de placer.<p>

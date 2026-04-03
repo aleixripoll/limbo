@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["cine"]
 tags: ["peli", "lang-en"]
 draft: false
-date: 2019-12-20T14:01:00Z
+date: 2019-12-20T14:01
 ---
 
 Edward Blake, The Comedian, born 1918, buried in the rain. Murdered. Is that what happens to us? No time for friends? Only our enemies leave roses. Violent lives ending violently. Blake understood. Humans are savage in nature. No matter how much you try to dress it up, to disguise it. Blake saw society's true face. Chose to be a parody of it, a joke.

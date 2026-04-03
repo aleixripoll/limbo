@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["humor", "lang-cat"]
 draft: false
-date: 2023-03-04T18:15:00Z
+date: 2023-03-04T18:15
 ---
 
 *Road movie de l'estil de **Fear and loathing in Las Vegas** però a la catalana i on l'objectiu dels protagonistes és assassinar el rei d'Espanya. Pel meu gust la novel.la més divertida de Jair Domínguez. Com a punt negatiu, la trama va derivant en una fumada inconnexa i es perd el fil narratiu. O això o jo sóc curtet i no puc seguir-lo. En qualsevol cas rius una estona.*

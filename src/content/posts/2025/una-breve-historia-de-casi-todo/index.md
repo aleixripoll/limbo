@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["lang-es", "ciència"]
 draft: false
-date: 2025-04-05T16:00:00Z
+date: 2025-04-05T16:00
 ---
 
 Un asteroide o un cometa que viajase a velocidades cósmicas entraría en la atmósfera terrestre a tal velocidad que el aire no podría quitarse de en medio debajo de él y resultaría comprimido como en un bombín de bicicleta. Como sabe cualquiera que lo haya usado, el aire comprimido se calienta muy deprisa y la temperatura se elevaría debajo de él hasta llegar a unos 60.000 grados kelvin o diez veces la temperatura de la superficie del Sol. En ese instante de la llegada del meteorito a la atmósfera, todo lo que estuviese en su trayectoria (personas, casas, fábricas, coches) se arrugaría y se esfumaría como papel de celofán puesto al fuego.

@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "filosofia"]
 draft: false
-date: 2008-06-09T12:13:00.015+02:00
+date: 2008-06-09T12:13
 ---
 
 ### En la cima de los montes

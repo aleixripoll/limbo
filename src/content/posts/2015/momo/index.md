@@ -6,7 +6,7 @@ image: ./cover.jpg
 categories: ["literatura"]
 tags: []
 draft: false
-date: 2015-11-29T12:04:00.001+01:00
+date: 2015-11-29T12:04
 ---
 
 Algunos opinaban que a Beppo Barrendero le faltaba algún tornillo. Lo decían porque ante las preguntas se limitaba a sonreír amablemente y no contestaba. Pensaba. Y cuando creía que una respuesta era innecesaria, se callaba. Pero cuando la creía necesaria, pensaba sobre ella. A veces tardaba dos horas en contestar, pero otras tardaba todo un día. Mientras tanto, el otro, claro está, había olvidado qué había preguntado, por lo que la respuesta de Beppo le sorprendía.

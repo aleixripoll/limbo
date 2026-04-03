@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura"]
 tags: ["assaig", "lang-en"]
 draft: false
-date: 2012-10-12T15:57:00.000+02:00
+date: 2012-10-12T15:57
 ---
 
 Historically speaking, if I was in a room and there was someone in that room who could make my life an utter hell on earth, I would find that person, hope they would engage me in conversation, feel like I'd found the lost piece to my puzzle, see pictures in my head of us waking up together, our children, our adjoining burial plots fifty years down the line, and I'd truly believe that it was all for the best. For some reason, God made the women I'm attracted to crazy.

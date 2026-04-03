@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura"]
 tags: ["filosofia", "societat"]
 draft: false
-date: 2012-12-31T18:30:00.002+01:00
+date: 2012-12-31T18:30
 ---
 
 La grafomanía (la manía de escribir libros) se convierte fatalmente en una epidemia masiva cuando el desarrollo de la sociedad adquiere tres características básicas:

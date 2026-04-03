@@ -8,8 +8,10 @@ let h4 = h5 * font_scale;
 let h3 = h4 * font_scale;
 let h2 = h3 * font_scale;
 let h1 = h2 * font_scale;
+/** Slightly smaller display headings site-wide (prose + .h1–.h6 + utilities). */
+const headingScale = 0.9;
 let fontPrimary, fontPrimaryType, fontSecondary, fontSecondaryType;
-if (theme.fonts.font_family.primary) {
+if (theme.fonts.font_family.primary?.trim()) {
   fontPrimary = theme.fonts.font_family.primary
     .replace(/\+/g, " ")
     .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
@@ -52,21 +54,43 @@ export default {
       },
       fontSize: {
         base: font_base + "px",
-        h1: h1 + "rem",
-        "h1-sm": h1 * 0.8 + "rem",
-        h2: h2 + "rem",
-        "h2-sm": h2 * 0.8 + "rem",
-        h3: h3 + "rem",
-        "h3-sm": h3 * 0.8 + "rem",
-        h4: h4 + "rem",
-        "h4-sm": h4 * 0.8 + "rem",
-        h5: h5 + "rem",
-        "h5-sm": h5 * 0.8 + "rem",
-        h6: h6 + "rem",
+        h1: h1 * headingScale + "rem",
+        "h1-sm": h1 * 0.8 * headingScale + "rem",
+        h2: h2 * headingScale + "rem",
+        "h2-sm": h2 * 0.8 * headingScale + "rem",
+        h3: h3 * headingScale + "rem",
+        "h3-sm": h3 * 0.8 * headingScale + "rem",
+        h4: h4 * headingScale + "rem",
+        "h4-sm": h4 * 0.8 * headingScale + "rem",
+        h5: h5 * headingScale + "rem",
+        "h5-sm": h5 * 0.8 * headingScale + "rem",
+        h6: h6 * headingScale + "rem",
       },
       fontFamily: {
-        primary: [fontPrimary, fontPrimaryType],
-        secondary: [fontSecondary, fontSecondaryType],
+        primary: fontPrimary
+          ? [fontPrimary, fontPrimaryType || "sans-serif"]
+          : [
+              "system-ui",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "Segoe UI",
+              "sans-serif",
+            ],
+        secondary: fontSecondary
+          ? [fontSecondary, fontSecondaryType || "sans-serif"]
+          : [
+              "system-ui",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "Segoe UI",
+              "sans-serif",
+            ],
+        "source-serif": [
+          '"Source Serif 4"',
+          "Georgia",
+          '"Times New Roman"',
+          "serif",
+        ],
       },
       typography: {
         DEFAULT: {

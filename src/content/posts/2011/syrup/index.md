@@ -6,7 +6,7 @@ image: ./cover.jpg
 categories: ["literatura"]
 tags: ["marketing", "humor", "lang-en"]
 draft: false
-date: 2011-11-17T23:49:00.001+01:00
+date: 2011-11-17T23:49
 ---
 
 If you have a men's magazine in the vicinity, I'd like you to flip to the "model profile" section. You know, the part where the mag quits pretending it's in the business of producing high-brow fiction and informative reports on the decline of efficient manufacturing processes in America and gets down to the business of showing pictures of naked women.

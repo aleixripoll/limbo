@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["humor", "lang-en"]
 draft: false
-date: 2016-05-21T19:18:00.002+02:00
+date: 2016-05-21T19:18
 ---
 
 It is a most extraordinary thing, but I never read a patent medicine advertisement without being impelled to the conclusion that I am suffering from the particular disease therein dealt with in its most virulent form. The diagnosis seems in every case to correspond exactly with all the sensations that I have ever felt.

@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura", "dibuixos"]
 tags: ["frases", "filosofia"]
 draft: false
-date: 2022-09-11T14:18:00Z
+date: 2022-09-11T14:18
 ---
 
 > A partir de cierto punto no hay retorno. Ese es el punto que hay que alcanzar.

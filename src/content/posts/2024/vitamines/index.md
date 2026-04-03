@@ -6,7 +6,7 @@ image: "./vitamines.webp"
 categories: ["apunts", "dibuixos"]
 tags: ["vitamines", "nutrició", "lang-cat"]
 draft: false
-date: 2024-02-07T07:00:00Z
+date: 2024-02-07T07:00
 ---
 
 ### Taula de continguts

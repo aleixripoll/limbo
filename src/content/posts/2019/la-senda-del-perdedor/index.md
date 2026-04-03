@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: []
 draft: false
-date: 2019-09-06T09:01:00Z
+date: 2019-09-06T09:01
 ---
 
 La instrucción me mantenía apartado de los deportes mientras los demás chicos los practicaban todos los días. Formaban equipos colegiales, ganaban sus partidos y conquistaban a las chicas. La mayoría de mis días transcurrían haciendo marchas bajo el sol.

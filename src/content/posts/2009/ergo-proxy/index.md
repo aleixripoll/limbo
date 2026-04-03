@@ -6,7 +6,7 @@ image: ./cover.jpg
 categories: ["cine"]
 tags: ["sèrie TV", "anime", "filosofia", "lang-en"]
 draft: false
-date: 2009-04-01T23:05:00.006+02:00
+date: 2009-04-01T23:05
 ---
 
 Sweet is sleep to me\

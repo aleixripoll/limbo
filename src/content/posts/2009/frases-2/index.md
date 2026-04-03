@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["frases"]
 draft: false
-date: 2009-03-17T22:28:00.003+01:00
+date: 2009-03-17T22:28
 ---
 
 Disculpen si les llamo caballeros, pero es que no les conozco muy bien.\

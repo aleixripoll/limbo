@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["dibuixos"]
 tags: []
 draft: false
-date: 2024-08-03T13:30:00Z
+date: 2024-08-03T13:30
 ---
 
 ### #1: Jesús no sonríe en las selfies

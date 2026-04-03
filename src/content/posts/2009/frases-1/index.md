@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["frases"]
 draft: false
-date: 2009-03-15T22:22:00.006+01:00
+date: 2009-03-15T22:22
 ---
 
 A algunos hombres los disfraces no los disfrazan, sino los revelan. Cada uno se disfraza de aquello que es por dentro.\

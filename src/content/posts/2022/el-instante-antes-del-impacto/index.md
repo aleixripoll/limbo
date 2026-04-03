@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura", "dibuixos"]
 tags: ["humor", "societat"]
 draft: false
-date: 2022-10-30T07:03:00Z
+date: 2022-10-30T07:03
 ---
 
 > Después de unos cuantos fracasos de pareja, preferí salir con hombres de lugares lejanos. Milán. Ámsterdam. Suecia.<p>

@@ -6,7 +6,7 @@ image: ./cover.jpg
 categories: ["cine"]
 tags: ["peli", "lang-en"]
 draft: false
-date: 2011-11-21T13:57:00.001+01:00
+date: 2011-11-21T13:57
 ---
 
 > They want you dead, or in their lie. There's only one thing a man can do &mdash; find something that's his, and make an island for himself.

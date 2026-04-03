@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "historia", "filosofia"]
 draft: false
-date: 2021-12-04T20:21:00Z
+date: 2021-12-04T20:21
 ---
 
 El budismo comparte la idea básica del acercamiento biológico a la felicidad, es decir, que la felicidad es el resultado de procesos que tienen lugar dentro del cuerpo, no de acontecimientos que ocurren en el mundo exterior. Sin embargo, partiendo de la misma idea el budismo alcanza conclusiones muy distintas. Según el budismo, la mayoría de la gente identifica la felicidad con sensaciones placenteras, al tiempo que identifica el sufrimiento con sensaciones desagradables. Por lo tanto, la gente atribuye una gran importancia a lo que siente, y anhela experimentar cada vez más sensaciones placenteras al tiempo que evita las dolorosas. Sea lo que fuere que hacemos a lo largo de nuestra vida, ya sea rascarnos una pierna, movernos ligeramente en la silla o librar guerras mundiales, solo estamos intentando obtener sensaciones agradables. El problema, según el budismo, es que nuestras sensaciones no son más que vibraciones pasajeras, que cambian a cada momento, como las olas del océano. Si hace cinco minutos me sentía gozoso y con un fin determinado, ahora estas sensaciones han desaparecido y quizá me sienta triste y abatido. De modo que si quiero experimentar sensaciones agradables, he de buscarlas constantemente, al tiempo que alejo las sensaciones desagradables. Aun en el caso de que tenga éxito, tengo que empezar de nuevo todo el proceso, sin siquiera obtener ninguna recompensa duradera por mis esfuerzos.

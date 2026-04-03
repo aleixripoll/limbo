@@ -7,5 +7,5 @@ image: ./sistema_nervios.webp
 categories: ["dibuixos"]
 tags: ["biologia", "neurociència"]
 draft: false
-date: 2024-08-07T20:00:00Z
+date: 2024-08-07T20:00
 ---

@@ -10,7 +10,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "societat", "biologia"]
 draft: false
-date: 2013-07-14T14:53:00.000+02:00
+date: 2013-07-14T14:53
 ---
 
 

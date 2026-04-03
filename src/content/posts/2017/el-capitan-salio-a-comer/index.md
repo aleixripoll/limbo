@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["societat"]
 draft: false
-date: 2017-08-12T12:24:00Z
+date: 2017-08-12T12:24
 ---
 
 En cuanto a la escritura, básicamente sigo escribiendo de la misma manera que hace 50 años; puede que un poco mejor, pero no mucho. ¿Por qué tuve que cumplir los 51 antes de poder pagar el alquiler con lo que escribía? Quiero decir, si no estoy equivocado y mi escritura no ha cambiado, ¿por qué tardé tanto? ¿Tuve que esperar a que el mundo me alcanzara? Y ahora, si me ha alcanzado, ¿dónde estoy?

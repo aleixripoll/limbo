@@ -10,7 +10,7 @@ image_attribution:
 categories: ["cine"]
 tags: ["sèrie TV", "lang-en"]
 draft: false
-date: 2012-01-08T17:38:00.002+01:00
+date: 2012-01-08T17:38
 ---
 
 &mdash; You know what I think?

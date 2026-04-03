@@ -6,7 +6,7 @@ image: ./cover.jpg
 categories: ["literatura"]
 tags: ["frases", "filosofia"]
 draft: false
-date: 2008-06-06T09:35:00.000+02:00
+date: 2008-06-06T09:35
 ---
 
 > Algunas personas miran al mundo y dicen: «¿Por qué?». Otras miran al mundo y dicen: «¿Por qué no?».

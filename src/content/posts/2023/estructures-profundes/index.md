@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["literatura"]
 tags: ["humor", "lang-cat"]
 draft: false
-date: 2023-10-01T18:10:00Z
+date: 2023-10-01T18:10
 ---
 
 Molt fan de Jair Domínguez, he llegit quasi tots els seus llibres i recomano especialment **Estructures profundes** i **Hawaii Meteor** (segurament els que han rebut pitjor crítica, així que no em feu gaire cas).

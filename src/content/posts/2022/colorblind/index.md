@@ -5,7 +5,7 @@ authors: ["Dra. Valina", "Natilla"]
 image: ./cover.webp
 categories: ["Dibuixos"]
 tags: ["lang-cat", "lang-en"]
-date: 2022-07-26T18:00:00.000+02:00
+date: 2022-07-26T18:00
 ---
 
 De la Wikipedia:

@@ -5,6 +5,6 @@ authors: ["Dra.Valina", "Natilla"]
 categories: ["Dibuixos"]
 tags: [ "pòster", "recepta", "lang-en" ]
 image: ./pizza_poster.webp
-date: 2016-01-17T19:15:00.000+01:00
+date: 2016-01-17T19:15
 draft: false
 ---

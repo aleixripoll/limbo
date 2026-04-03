@@ -6,7 +6,7 @@ image: ./cover.jpg
 categories: ["literatura"]
 tags: ["assaig", "psicologia"]
 draft: false
-date: 2022-09-06T19:25:00Z
+date: 2022-09-06T19:25
 ---
 
 Una de las maneras más comunes de no respetar a una persona es correr en su ayuda cuando se siente “mal” o incómoda. Ser “servicial” con actitudes protectoras, bromas, etc., impide a la persona vivenciar plenamente su tristeza, cólera, soledad, etc. Y sólo experimentándolas plenamente puede aceptarlas, asimilarlas en la experiencia total de su vida y desarrollarse como un ser humano más completo e integrado. Casi siempre el “ayudador” se ayuda realmente a él mismo ayudando a otros. Apresurándose con sus primeros auxilios, detiene la expresión de sentimientos que son dolorosos para él. Además se convence y convence a los otros de que es capaz de ayudar a otros y no necesita la ayuda de nadie. Casi todo “ayudador” tiene fuertes sentimientos de desamparo que se atenúan temporalmente cuando ayuda a alguien.

@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "filosofia"]
 draft: false
-date: 2019-03-02T11:16:00Z
+date: 2019-03-02T11:16
 ---
 
 Hace muchas décadas que el mundo occidental empezó a usar los países del Tercer Mundo como telón de fondo para sus viajes iniciáticos personales. Esta tentación procede directamente de la teoría contracultural. Dado que nuestra cultura es un sistema de manipulación y control, quizá logremos librarnos del engaño si nos zambullimos en otra cultura (cuanto más radicalmente opuesta, mejor).

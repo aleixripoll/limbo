@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["cine"]
 tags: ["peli", "humor", "lang-en"]
 draft: false
-date: 2013-08-23T15:53:00.000+02:00
+date: 2013-08-23T15:53
 ---
 
 &mdash; They're gonna cancel Latin. They've got to make room for Japanese.

@@ -6,7 +6,7 @@ image: ./cover.webp
 categories: ["cine"]
 tags: ["lang-en"]
 draft: false
-date: 2012-11-18T22:12:00.000+01:00
+date: 2012-11-18T22:12
 ---
 
 

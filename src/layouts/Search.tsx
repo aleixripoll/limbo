@@ -17,12 +17,6 @@ interface SearchResult {
   refIndex: number;
 }
 
-// Calculate reading time (rough estimate: 200 words per minute)
-function calculateReadingTime(content: string): number {
-  const words = content.split(/\s+/).length;
-  return Math.ceil(words / 200);
-}
-
 export default function SearchBar({ searchList }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [inputVal, setInputVal] = useState("");
@@ -53,7 +47,7 @@ export default function SearchBar({ searchList }: Props) {
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [searchList]);
 
   useEffect(() => {
     const searchUrl = new URLSearchParams(window.location.search);
@@ -83,7 +77,7 @@ export default function SearchBar({ searchList }: Props) {
     } else {
       history.replaceState(history.state, "", window.location.pathname);
     }
-  }, [inputVal]);
+  }, [inputVal, fuse]);
 
   return (
     <div className="min-h-[45vh]">
@@ -111,69 +105,59 @@ export default function SearchBar({ searchList }: Props) {
 
       <div className="search-results-grid">
         {searchResults?.map(({ item }) => {
-          const readingTime = calculateReadingTime(item.excerpt || "");
+          const categories = item.data.categories ?? [];
+          const imageSrc = item.data.image?.src as string | undefined;
           return (
             <article key={item.slug} className="search-result-item" data-post-slug={item.slug}>
-              {item.data.image && (
-                <a 
-                  href={`${import.meta.env.BASE_URL}${item.slug}`} 
-                  className="search-result-card group"
-                  aria-label={`Llegir article: ${item.data.title}`}
-                >
-                  <div className="search-result-image-container">
+              <a
+                href={`${import.meta.env.BASE_URL}${item.slug}`}
+                className="search-result-card group"
+                aria-label={`Llegir article: ${item.data.title}`}
+              >
+                <div className="search-result-image-container">
+                  {imageSrc ? (
                     <img
                       className="search-result-image"
-                      src={item.data.image.src}
+                      src={imageSrc}
                       alt={item.data.title}
                       width={445}
                       height={230}
                       loading="lazy"
                     />
+                  ) : (
+                    <div className="masonry-card-placeholder" aria-hidden />
+                  )}
+                  {imageSrc ? (
                     <div className="search-result-overlay">
                       <span className="search-result-read-more">Llegir més</span>
                     </div>
-                    
-                    {/* Reading time badge */}
-                    {readingTime > 0 && (
-                      <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-medium">
-                        {/* small inline clock icon to avoid react-icons bundle */}
-                        <svg className="inline mr-1 h-3 w-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <path d="M12 7v5l3 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                          <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.5" />
-                        </svg>
-                        {readingTime} min
-                      </div>
-                    )}
-                  </div>
-                  
-                  <div className="search-result-content">
-                    <div className="search-result-meta">
-                      <div className="search-result-categories">
-                        {/* small inline category/tag icon */}
-                        <svg className="search-result-icon inline mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <path d="M3 7h6v6H3zM15 3h6v6h-6zM15 15h6v6h-6z" fill="currentColor" />
-                        </svg>
-                        <div className="search-result-category-list">
-                          {item.data.categories.map((category: string, i: number) => (
-                            <span className="search-result-category">
-                              {humanize(category)}{i !== item.data.categories.length - 1 && ","}
-                            </span>
-                          ))}
-                        </div>
+                  ) : null}
+                </div>
+
+                <div className="search-result-content">
+                  <div className="search-result-meta">
+                    <div className="search-result-categories">
+                      <svg className="search-result-icon inline mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                        <path d="M3 7h6v6H3zM15 3h6v6h-6zM15 15h6v6h-6z" fill="currentColor" />
+                      </svg>
+                      <div className="search-result-category-list">
+                        {categories.map((category: string, i: number) => (
+                          <span key={`${category}-${i}`} className="search-result-category">
+                            {humanize(category)}
+                            {i !== categories.length - 1 && ","}
+                          </span>
+                        ))}
                       </div>
                     </div>
-                    
-                    <h3 className="search-result-title">
-                      {item.data.title}
-                    </h3>
-                    
-                    <p className="search-result-excerpt">
-                      {item.data.description ? item.data.description : item.excerpt}
-                    </p>
-                    
                   </div>
-                </a>
-              )}
+
+                  <h3 className="search-result-title">{item.data.title}</h3>
+
+                  <p className="search-result-excerpt">
+                    {item.data.description ? item.data.description : item.excerpt}
+                  </p>
+                </div>
+              </a>
             </article>
           );
         })}

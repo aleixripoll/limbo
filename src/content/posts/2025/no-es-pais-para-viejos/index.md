@@ -6,7 +6,7 @@ image: ./pexels-jplenio-1102914.jpg
 categories: ["literatura"]
 tags: ["lang-es"]
 draft: false
-date: 2025-03-02T15:00:00Z
+date: 2025-03-02T15:00
 ---
 
 Hace tiempo leí en un periódico de aquí que unos maestros encontraron de casualidad una encuesta que enviaron en los años treinta a varias escuelas del país. Incluía un cuestionario sobre cuáles eran los problemas de la enseñanza en las escuelas. Y encontraron unos formularios que habían enviado desde varios puntos del país respondiendo a estas preguntas. Y los mayores problemas mencionados eran cosas como hablar en clase y correr por los pasillos. Mascar chicle. Copiar los deberes. Cosas por el estilo. Cogieron uno de los impresos que estaba en blanco, hicieron fotocopias y los volvieron a enviar a las mismas escuelas. Cuarenta años después. Y he aquí las respuestas. Violación, incendio premeditado, asesinato. Drogas. Suicidio. Me puse a pensar en eso. Porque la mayoría de las veces cuando digo que el mundo se está yendo al infierno la gente simplemente sonríe y me dice que me estoy haciendo viejo. Que ese es uno de los síntomas. Pero lo que yo creo es que cualquiera que no vea la diferencia entre violar y asesinar gente y mascar chicle tiene un problema mucho mayor que el que tengo yo. (...)

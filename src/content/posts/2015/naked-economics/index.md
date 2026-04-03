@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["assaig", "economia"]
 draft: false
-date: 2015-08-30T15:19:00.003+02:00
+date: 2015-08-30T15:19
 ---
 
 To give you some sense of how modern money is a confidence game, consider a bizarre phenomenon in India. Most Indians involved in commerce —shopkeepers, taxi drivers, etc.— will not accept a torn, crumpled, or overly soiled rupee note. Since other Indians know that many of their countrymen will not accept torn notes, they will not accept them either.

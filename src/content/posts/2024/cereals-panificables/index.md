@@ -6,7 +6,7 @@ image: ./pa_suspects.png
 categories: ["apunts", "dibuixos"]
 tags: ["nutrició", "pa", "gluten", "lang-cat"]
 draft: false
-date: 2024-02-27T07:00:00Z
+date: 2024-02-27T07:00
 ---
 
 ## Taula de continguts

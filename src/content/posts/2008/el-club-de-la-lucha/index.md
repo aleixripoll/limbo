@@ -6,7 +6,7 @@ image: ./fight_club_edward_norton.avif
 categories: ["literatura", "cine"]
 tags: []
 draft: false
-date: 2008-06-02T16:20:00.016+02:00
+date: 2008-06-02T16:20
 ---
 
 

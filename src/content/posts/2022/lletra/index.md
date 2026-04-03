@@ -9,7 +9,7 @@ image_attribution:
 categories: ["literatura"]
 tags: ["poesia", "lang-cat"]
 draft: false
-date: 2022-09-01T07:35:00Z
+date: 2022-09-01T07:35
 ---
 
 Ara que estic ben sol i és nit a fora\

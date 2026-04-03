@@ -8,9 +8,13 @@ import Header from "@components/Header.astro";
 import "@styles/style.scss";
 import { ClientRouter } from 'astro:transitions';
 
-// font families
-const pf = theme.fonts.font_family.primary;
-const sf = theme.fonts.font_family.secondary;
+// Google Fonts: optional primary/secondary from theme; Source Serif 4 for article body (pixelperson-style)
+const rawPf = theme.fonts.font_family.primary?.trim();
+const rawSf = theme.fonts.font_family.secondary?.trim();
+const googleFontParams = [rawPf, rawSf]
+  .filter(Boolean)
+  .map((name) => `family=${encodeURIComponent(name).replace(/%20/g, "+")}`)
+  .join("&");
 
 // types for frontmatters
 export interface Props {
@@ -78,10 +82,16 @@ const { title, meta_title, description, image, noindex, canonical } =
     <!-- google font css -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    {
+      googleFontParams && (
+        <link
+          href={`https://fonts.googleapis.com/css2?${googleFontParams}&display=swap`}
+          rel="stylesheet"
+        />
+      )
+    }
     <link
-      href={`https://fonts.googleapis.com/css2?family=${pf}${
-        sf ? "&family=" + sf : ""
-      }&display=swap`}
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&display=swap"
       rel="stylesheet"
     />
 
