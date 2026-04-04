@@ -41,7 +41,6 @@ Collections are defined in [`src/content/config.ts`](src/content/config.ts).
 - **Posts** — `src/content/posts/<year>/<slug>/index.md` (or `.mdx`). Frontmatter includes `title`, `date`, `categories`, `tags`, `authors`, optional `image`, `draft`, etc.
 - **Authors** — `src/content/authors/<slug>/index.md`
 - **Static pages** — `src/content/pages/` (e.g. contact, 404)
-- **About** — `src/content/about/`
 
 Markdown uses **remark-toc** with heading `Taula de continguts` (see `astro.config.mjs`). Default locale for i18n is Catalan (`ca`), with `es` and `en` also listed in config.
 
