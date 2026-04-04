@@ -30,9 +30,6 @@ const currentPosts = sortPostsByDate.filter((post) => {
     .map((author: string) => slugify(author))
     .includes(slugify(title));
 });
-//const postImages = import.meta.glob<{ default: ImageMetadata }>(
-//  "/src/assets/images/posts/*/*.{jpeg,jpg,png,gif,webp}"
-//);
 ---
 
 <Base
