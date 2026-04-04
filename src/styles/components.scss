@@ -208,16 +208,12 @@ img[alt$="<"] {
   }
 }
 
-// Masonry / search cards: fixed image band
+// Masonry / search / similar-post cards: same fixed image band height
 .masonry-image-container,
-.search-result-image-container {
-  @apply relative overflow-hidden bg-gray-200 dark:bg-gray-800;
-  height: 10rem;
-}
-
+.search-result-image-container,
 .similar-post-image-container {
   @apply relative overflow-hidden bg-gray-200 dark:bg-gray-800;
-  aspect-ratio: 16 / 10;
+  height: 10rem;
 }
 
 // Shared image styles
@@ -328,25 +324,21 @@ img[alt$="<"] {
   font-size: 1.1775rem;
 }
 
-.similar-post-title {
-  @apply mb-1;
-}
-
 // Shared excerpt styles
 .masonry-excerpt,
 .similar-post-excerpt,
 .search-result-excerpt {
-  @apply line-clamp-2 leading-relaxed text-gray-500 dark:text-gray-400;
+  @apply leading-relaxed text-gray-500 dark:text-gray-400;
   line-height: 1.5;
 }
 
-.masonry-excerpt {
+.masonry-excerpt,
+.similar-post-excerpt {
   @apply line-clamp-3 text-base;
 }
 
-.similar-post-excerpt,
 .search-result-excerpt {
-  @apply text-sm;
+  @apply line-clamp-2 text-sm;
 }
 
 // ============================================================
@@ -450,9 +442,22 @@ img[alt$="<"] {
 // RESPONSIVE: MOBILE (max-width: 640px)
 // ============================================================
 @media (max-width: 640px) {
+  /* Break out of `.container` horizontal padding for edge-to-edge cards */
   .masonry-grid,
   .search-results-grid {
-    @apply gap-x-3 gap-y-6 px-0;
+    @apply gap-x-3 gap-y-10 px-0;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  @media (min-width: 540px) {
+    .masonry-grid,
+    .search-results-grid {
+      width: calc(100% + 2.5rem);
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+    }
   }
 
   .masonry-item,
@@ -461,14 +466,24 @@ img[alt$="<"] {
   }
 
   .similar-posts-grid {
-    @apply grid-cols-1 gap-x-0 gap-y-6;
+    @apply grid-cols-1 gap-x-0 gap-y-10;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
-  /* Keep same card chrome as desktop (border, bg, radius); only tighten layout */
+  @media (min-width: 540px) {
+    .similar-posts-grid {
+      width: calc(100% + 2.5rem);
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+    }
+  }
+
   .masonry-card,
   .similar-post-card,
   .search-result-card {
-    @apply w-full;
+    @apply w-full border-0 rounded-none;
   }
   
   .masonry-image,
