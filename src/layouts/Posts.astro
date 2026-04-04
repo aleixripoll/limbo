@@ -1,8 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import CategoryGridIcon from "@components/CategoryGridIcon";
 import config from "@config/config.json";
-import { humanize } from "@lib/utils/textConverter";
+import dateFormat from "@lib/utils/dateFormat";
 
 const { summary_length } = config.settings;
 
@@ -30,8 +29,9 @@ const { className, posts, fluid } = Astro.props;
                 class="masonry-image"
                 src={post.data.image}
                 alt={post.data.title}
-                width="400"
-                height="300"
+                width={400}
+                height={300}
+                fit="contain"
                 loading="lazy"
               />
             ) : (
@@ -42,19 +42,13 @@ const { className, posts, fluid } = Astro.props;
           </div>
 
           <div class="masonry-content">
-            <div class="masonry-meta">
-              <div class="masonry-categories">
-                <CategoryGridIcon className="masonry-icon inline mr-1 h-4 w-4" />
-                <div class="masonry-category-list">
-                  {post.data.categories.map((category: string, j: number) => (
-                    <span class="masonry-category">
-                      {humanize(category)}
-                      {j !== post.data.categories.length - 1 && ","}
-                    </span>
-                  ))}
+            {post.data.date && (
+              <div class="masonry-meta">
+                <div class="masonry-date">
+                  <span class="masonry-date-text">{dateFormat(post.data.date)}</span>
                 </div>
               </div>
-            </div>
+            )}
 
             <h3 class="masonry-title">{post.data.title}</h3>
 
