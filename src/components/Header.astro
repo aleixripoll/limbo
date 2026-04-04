@@ -3,8 +3,7 @@ import Logo from "@components/Logo.astro";
 import menu from "@config/menu.json";
 import { IoSearch } from "react-icons/io5/index.js";
 import { BiUser, BiCategoryAlt, BiPurchaseTag } from "react-icons/bi/index.js";
-import ThemeToggle from './ThemeToggle.astro';
-//import ThemeSwitcher from './ThemeSwitcher.astro';
+import ThemeToggle from "./ThemeToggle.astro";
 
 export interface ChildNavigationLink {
   name: string;
@@ -20,27 +19,49 @@ export interface NavigationLink {
 
 const { main }: { main: NavigationLink[] } = menu;
 
-// Map menu names to icons
 const menuIcons: Record<string, any> = {
-  "Autors": BiUser,
-  "Categories": BiCategoryAlt,
-  "Tags": BiPurchaseTag,
+  Autors: BiUser,
+  Categories: BiCategoryAlt,
+  Tags: BiPurchaseTag,
 };
+
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+let cur = Astro.url.pathname.replace(/\/$/, "") || "/";
+if (basePath && cur.startsWith(basePath)) {
+  cur = cur.slice(basePath.length) || "/";
+}
+if (!cur.startsWith("/")) cur = `/${cur}`;
+
+function isActivePath(rel: string): boolean {
+  const target = (`/${rel.replace(/^\//, "")}`).replace(/\/+/g, "/").replace(/\/$/, "") || "/";
+  return cur === target || (target !== "/" && cur.startsWith(`${target}/`));
+}
 ---
 
-<header class="header bg-transparent pt-1">
-  <nav class="navbar container border-b border-gray-200 pb-1 dark:border-gray-700 dark:bg-transparent">
-    <!-- logo -->
-    <div class="order-0">
+<header class="header relative z-40 bg-transparent pt-1">
+  <nav
+    class="navbar layout-container border-b border-gray-200 pb-1 dark:border-gray-700 dark:bg-transparent"
+    aria-label="Principal"
+  >
+    <input id="nav-toggle" type="checkbox" class="hidden" autocomplete="off" />
+    <label
+      for="nav-toggle"
+      class="nav-scrim"
+      aria-hidden="true"
+      tabindex="-1"
+    ></label>
+
+    <div class="order-0 relative z-[12] min-w-0 shrink">
       <Logo />
     </div>
-    <!-- navbar toggler -->
-    <input id="nav-toggle" type="checkbox" class="hidden" />
+
     <label
       id="burger-button"
       for="nav-toggle"
-      class="order-2 flex cursor-pointer items-center md:order-1 md:hidden"
-      aria-label="Toggle menu"
+      class="order-2 relative z-[12] flex cursor-pointer items-center rounded-lg p-2.5 transition hover:bg-black/5 dark:hover:bg-white/10 md:order-1 md:hidden"
+      aria-label="Obrir o tancar el menú"
+      aria-controls="nav-menu"
+      aria-expanded="false"
     >
       <div class="burger-icon">
         <span class="burger-bar bar-1"></span>
@@ -48,43 +69,98 @@ const menuIcons: Record<string, any> = {
         <span class="burger-bar bar-3"></span>
       </div>
     </label>
-    <!-- /navbar toggler -->
 
     <ul
       id="nav-menu"
-      class="navbar-nav order-3 w-full md:order-1 md:flex md:w-auto lowercase"
+      class="navbar-nav relative z-[11] order-3 w-full gap-0.5 lowercase md:order-1 md:flex md:w-auto md:items-center md:gap-1"
     >
       {
-        main.map((menu) => (
+        main.map((item) => (
           <>
-            {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative cursor-pointer">
-                <span class="nav-link inline-flex items-center">
-                  {menu.name}
-                  <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </span>
-                <ul class="nav-dropdown-list hidden group-hover:block md:invisible md:absolute md:block md:opacity-0 md:group-hover:visible md:group-hover:opacity-100">
-                  {menu.children?.map((child) => (
-                    <li class="nav-dropdown-item">
-                      <a href={`${import.meta.env.BASE_URL}${child.url}`} class="nav-dropdown-link">
-                        {child.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+            {item.hasChildren ? (
+              <li class="nav-item nav-dropdown w-full md:w-auto">
+                <details class="group nav-mobile-accordion md:hidden">
+                  <summary class="nav-link flex cursor-pointer list-none items-center justify-center gap-1.5 rounded-lg py-3.5 [&::-webkit-details-marker]:hidden">
+                    <span class="inline-flex items-center gap-1.5">
+                      {item.name}
+                      <svg
+                        class="nav-chevron h-4 w-4 shrink-0 opacity-70 transition-transform duration-200 group-open:rotate-180 md:h-5 md:w-5"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </span>
+                  </summary>
+                  <ul class="nav-dropdown-list nav-dropdown-list--mobile mt-1 space-y-0.5 border-l-2 border-primary/25 py-1 pl-4 dark:border-primary/40">
+                    {item.children?.map((child) => (
+                      <li class="nav-dropdown-item">
+                        <a
+                          href={`${import.meta.env.BASE_URL}${child.url}`}
+                          class:list={[
+                            "nav-dropdown-link rounded-md px-2 py-2",
+                            isActivePath(child.url) && "nav-link--active",
+                          ]}
+                          aria-current={isActivePath(child.url) ? "page" : undefined}
+                        >
+                          {child.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+                <div class="nav-desktop-dropdown group relative hidden md:block">
+                  <span class="nav-link inline-flex cursor-pointer items-center gap-1">
+                    {item.name}
+                    <svg
+                      class="nav-chevron h-5 w-5 shrink-0 opacity-70"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </span>
+                  <ul class="nav-dropdown-list nav-dropdown-list--desktop invisible absolute left-0 top-full z-20 mt-1 min-w-[12rem] opacity-0 shadow-lg ring-1 ring-black/5 transition-[opacity,visibility] duration-150 ease-out group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 dark:ring-white/10">
+                    {item.children?.map((child) => (
+                      <li class="nav-dropdown-item">
+                        <a
+                          href={`${import.meta.env.BASE_URL}${child.url}`}
+                          class:list={[
+                            "nav-dropdown-link",
+                            isActivePath(child.url) && "nav-link--active",
+                          ]}
+                          aria-current={isActivePath(child.url) ? "page" : undefined}
+                        >
+                          {child.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </li>
             ) : (
-              <li class="nav-item">
-                <a href={`${import.meta.env.BASE_URL}${menu.url}`} class="nav-link">
+              <li class="nav-item w-full md:w-auto">
+                <a
+                  href={`${import.meta.env.BASE_URL}${item.url}`}
+                  class:list={[
+                    "nav-link",
+                    isActivePath(item.url) && "nav-link--active",
+                  ]}
+                  aria-current={isActivePath(item.url) ? "page" : undefined}
+                >
                   {(() => {
-                    const Icon = menuIcons[menu.name];
+                    const Icon = menuIcons[item.name];
                     return Icon ? (
-                      <Icon className="h-5 w-5 shrink-0 text-current" />
+                      <Icon className="h-5 w-5 shrink-0 text-current opacity-80" />
                     ) : null;
                   })()}
-                  {menu.name}
+                  {item.name}
                 </a>
               </li>
             )}
@@ -92,17 +168,69 @@ const menuIcons: Record<string, any> = {
         ))
       }
     </ul>
-    <div class="order-1 ml-auto gap-4 flex md:order-2 md:ml-0">
+
+    <div
+      class="relative z-[12] order-1 ml-auto flex shrink-0 items-center gap-1 sm:gap-2 md:order-2 md:ml-0"
+    >
       <ThemeToggle />
-      {/*}<ThemeSwitcher />*/}
       <a
-        class="mr-4 inline-block cursor-pointer p-2 text-xl text-dark dark:text-light transition hover:text-primary md:mr-0"
+        class="inline-flex cursor-pointer items-center justify-center rounded-lg p-2.5 text-xl text-dark transition hover:bg-black/5 hover:text-primary dark:text-light dark:hover:bg-white/10 md:p-2"
         href={`${import.meta.env.BASE_URL}search`}
-        title="search"
-        aria-label="search"
+        title="Cercar"
+        aria-label="Cercar"
       >
         <IoSearch />
       </a>
     </div>
   </nav>
 </header>
+
+<script>
+  function setupNav() {
+    const input = document.getElementById("nav-toggle") as HTMLInputElement | null;
+    const burger = document.getElementById("burger-button");
+    const menu = document.getElementById("nav-menu");
+    if (!input || !burger) return;
+
+    const mq = window.matchMedia("(max-width: 767px)");
+
+    const syncExpanded = () => {
+      burger.setAttribute("aria-expanded", String(input.checked));
+    };
+
+    const closeIfMobile = () => {
+      if (mq.matches) input.checked = false;
+      syncExpanded();
+    };
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && input.checked) {
+        input.checked = false;
+        syncExpanded();
+        burger.focus();
+      }
+    };
+
+    input.addEventListener("change", syncExpanded);
+    document.addEventListener("keydown", onKey);
+
+    const anchors = menu?.querySelectorAll("a") ?? [];
+    anchors.forEach((a) => a.addEventListener("click", closeIfMobile));
+
+    syncExpanded();
+
+    return () => {
+      input.removeEventListener("change", syncExpanded);
+      document.removeEventListener("keydown", onKey);
+      anchors.forEach((a) => a.removeEventListener("click", closeIfMobile));
+    };
+  }
+
+  let teardown: (() => void) | undefined;
+  const run = () => {
+    teardown?.();
+    teardown = setupNav();
+  };
+  run();
+  document.addEventListener("astro:page-load", run);
+</script>

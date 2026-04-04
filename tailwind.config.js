@@ -26,7 +26,12 @@ if (theme.fonts.font_family.secondary) {
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,css}"],
+  corePlugins: {
+    preflight: false,
+    // Site uses `.layout-container` in site.css (max 1144px); disable the framework utility.
+    container: false,
+  },
   darkMode: 'selector',
   theme: {
     screens: {
@@ -36,10 +41,8 @@ export default {
       xl: "1280px",
       "2xl": "1536px",
     },
-    container: {
-      center: true,
-      padding: "2rem",
-    },
+    // Do not set `container` here — Tailwind v4 emits a `.container` utility with
+    // breakpoint max-widths (up to 1536px) that would clash with layout wrappers.
     extend: {
       colors: {
         text: theme.colors.default.text_color.default,
@@ -130,9 +133,9 @@ export default {
   },
   plugins: [
     require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
     require("tailwind-bootstrap-grid")({
-      generateContainer: false,
+      // Plugin expects snake_case; camelCase was ignored → container rules were still generated.
+      generate_container: false,
       gridGutters: {
         1: "0.5rem",
         2: "0.75rem",

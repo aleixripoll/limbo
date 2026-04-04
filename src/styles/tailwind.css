@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+/* Global site rules live in native CSS; @tailwindcss/vite expands @apply here. */
+@import "./site.css";

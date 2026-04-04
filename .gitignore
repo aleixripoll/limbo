@@ -23,3 +23,5 @@ yarn.lock
 
 # ignore .astro directory
 .astro
+
+# Sass → CSS bridge for Tailwind v4 (see astro.config.mjs)
