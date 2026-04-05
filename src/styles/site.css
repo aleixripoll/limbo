@@ -87,7 +87,7 @@
 }
 @layer components {
   .section {
-    @apply pt-8 pb-10 lg:pt-8 lg:pb-20;
+    @apply pt-8 pb-10 lg:pt-10 lg:pb-20;
   }
   footer.section {
     @apply py-10 lg:py-20;
@@ -452,7 +452,7 @@
   @media (max-width: 640px) {
     .masonry-grid,
     .search-results-grid {
-      @apply gap-x-3 gap-y-10 px-0;
+      @apply gap-x-3 gap-y-8 px-0;
     }
     .masonry-item,
     .search-result-item {
