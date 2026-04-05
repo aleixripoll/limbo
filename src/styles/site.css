@@ -10,6 +10,7 @@
   html {
     @apply text-base scroll-smooth motion-reduce:scroll-auto;
     overflow-x: clip;
+    /* scrollbar-gutter: stable; */
   }
   body {
     @apply font-primary font-normal leading-relaxed text-text min-h-screen flex flex-col dark:text-light bg-gray-50 dark:bg-gray-800;
