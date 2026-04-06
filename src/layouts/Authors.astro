@@ -17,7 +17,9 @@ const { authors } = Astro.props;
               <Image
                 src={author.data.image}
                 alt={author.data.title}
-                height={600}
+                widths={[320, 480, 640, 828, 1080]}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                quality={82}
                 class="mx-auto h-auto max-h-[300px] w-auto max-w-[min(100%,288px)] rounded-lg"
               />
             </a>

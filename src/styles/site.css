@@ -483,7 +483,7 @@
     .masonry-content,
     .similar-post-content,
     .search-result-content {
-      @apply px-3 py-4 pb-5;
+      @apply px-5 py-4;
     }
     .masonry-title,
     .similar-post-title,

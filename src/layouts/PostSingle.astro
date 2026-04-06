@@ -25,7 +25,8 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
             image && (
               <Image
                 src={image}
-                widths={[640, 720, 800]}
+                widths={[320, 480, 640, 828, 1080]}
+                quality={82}
                 sizes={`(max-width: 640px) 100vw, 800px`}
                 alt={title}
                 class="sm:rounded-lg h-auto w-auto max-w-full object-scale-down block mx-auto"

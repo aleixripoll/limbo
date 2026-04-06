@@ -31,8 +31,9 @@ const { className, posts, fluid } = Astro.props;
                 class="masonry-image"
                 src={post.data.image}
                 alt={post.data.title}
-                width={400}
-                height={300}
+                widths={[320, 480, 640, 828, 1080]}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                quality={82}
                 fit="contain"
                 loading="lazy"
               />
