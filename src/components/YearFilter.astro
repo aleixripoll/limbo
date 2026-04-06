@@ -1,0 +1,35 @@
+---
+interface Props {
+  baseUrl: string;
+  years: number[];
+  currentYear: number | null; // null = "All"
+}
+
+const { baseUrl, years, currentYear } = Astro.props;
+---
+<div class="year-filter mb-8 flex flex-wrap items-center gap-2">
+  <span class="text-sm text-(--color-muted) mr-1">Any:</span>
+  <div class="filter-select-wrap">
+    <select
+      class="filter-select"
+      aria-label="Filter by year"
+      data-year-filter
+    >
+      <option value={baseUrl} {...(currentYear === null && { selected: true })}>Tots</option>
+      {years.map((y) => (
+        <option value={`${baseUrl}year/${y}/`} {...(currentYear === y && { selected: true })}>
+          {y}
+        </option>
+      ))}
+    </select>
+  </div>
+</div>
+<script>
+  // Delegated listener: survives astro view transitions (scripts run once; DOM is swapped).
+  document.addEventListener("change", (e) => {
+    const target = e.target;
+    if (!(target instanceof HTMLSelectElement)) return;
+    if (!target.matches("[data-year-filter]")) return;
+    if (target.value) window.location.href = target.value;
+  });
+</script>

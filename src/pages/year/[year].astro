@@ -1,0 +1,29 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getSinglePage } from "@lib/contentParser.astro";
+import Posts from "@layouts/Posts.astro";
+import YearFilter from "../../components/YearFilter.astro";
+
+export async function getStaticPaths() {
+  const allPosts = await getSinglePage("posts");
+  const years = [...new Set(allPosts.map((p: any) => p.data.date.getFullYear()))].sort((a: any, b: any) => b - a);
+  return years.map((year) => {
+    const posts = allPosts.filter((p: any) => p.data.date.getFullYear() === year);
+    return {
+      params: { year: String(year) },
+      props: { posts, year, years },
+    };
+  });
+}
+const { posts, year, years } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<Base>
+  <section class="section">
+    <div class="layout-container">
+      <YearFilter baseUrl={baseUrl} years={years} currentYear={year} />
+      <Posts className="mb-8 md:mb-16" posts={posts} />
+    </div>
+  </section>
+</Base>

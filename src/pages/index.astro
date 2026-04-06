@@ -5,16 +5,27 @@ import Pagination from "@components/Pagination.astro";
 import Posts from "@layouts/Posts.astro";
 import { getSinglePage } from "@lib/contentParser.astro";
 import { sortByDate } from "@lib/utils/sortFunctions";
+import YearFilter from "../components/YearFilter.astro";
+import CategoryFilter from "../components/CategoryFilter.astro";
 
 const posts = await getSinglePage("posts");
 const sortedPosts = sortByDate(posts);
 const totalPages = Math.ceil(posts.length / config.settings.pagination);
 const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+const years = [...new Set(posts.map((p: any) => p.data.date.getFullYear()))].sort((a, b) => b - a);
+const categories = [...new Set(posts.map((p: any) => p.data.categories[0]).map((c) => c.toLowerCase()))]
+  .filter((c) => c !== "")
+  .sort();
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Base>
   <section class="section">
     <div class="layout-container">
+      <div class="flex flex-wrap items-center gap-x-8">
+        <YearFilter baseUrl={baseUrl} years={years} currentYear={null} />
+        {/*<CategoryFilter baseUrl={baseUrl} categories={categories} currentCategory={null} />*/}
+      </div>
       <Posts posts={currentPosts} className="mb-8 md:mb-16" />
       <Pagination currentPage={1} totalPages={totalPages} />
     </div>

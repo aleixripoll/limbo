@@ -546,6 +546,22 @@
       animation: none;
     }
   }
+  /* CSS chevron: WebKit often drops the native select indicator after view transitions. */
+  .filter-select-wrap {
+    @apply relative inline-flex items-stretch;
+  }
+  .filter-select {
+    -webkit-appearance: none;
+    appearance: none;
+    @apply m-0 min-w-[4.5rem] cursor-pointer rounded-md border border-(--color-border) bg-transparent py-1.5 pl-3 pr-9 text-sm font-medium text-(--color-text);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem 1rem;
+  }
+  html.dark .filter-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a8a29e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  }
   .pagination {
     @apply mb-4 mt-10 flex flex-wrap items-center justify-center gap-4;
   }
