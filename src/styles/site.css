@@ -715,7 +715,7 @@
     }
   }
   .navbar {
-    @apply relative flex w-full flex-wrap items-center justify-between gap-y-2;
+    @apply relative flex w-full flex-wrap items-center justify-between;
   }
   .navbar-brand img {
     height: auto !important;
