@@ -24,7 +24,7 @@ const baseUrl = import.meta.env.BASE_URL;
     <div class="layout-container">
       <div class="flex flex-wrap items-center gap-x-8">
         <YearFilter baseUrl={baseUrl} years={years} currentYear={null} />
-        <CategoryFilter baseUrl={baseUrl} categories={categories} currentCategory={null} />
+        {/*<CategoryFilter baseUrl={baseUrl} categories={categories} currentCategory={null} />*/}
       </div>
       <Posts posts={currentPosts} className="mb-8 md:mb-16" />
       <Pagination currentPage={1} totalPages={totalPages} />
