@@ -18,7 +18,9 @@ const { Content } = await render(entry);
             class="mb-4 font-light"
             set:html={markdownify(entry.data.title)}
           />
+          <span class="text-3xl font-light">
           <Content />
+          </span>
         </div>
       </div>
     </div>
