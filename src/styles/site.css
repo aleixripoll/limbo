@@ -286,7 +286,7 @@
     @apply h-full w-full object-cover transition-transform duration-200 ease-out;
   }
   .masonry-card-placeholder {
-    @apply flex h-full min-h-[10rem] w-full items-center justify-center text-4xl font-semibold text-gray-400 dark:text-gray-600;
+    @apply flex h-full min-h-40 w-full items-center justify-center text-4xl font-semibold text-gray-400 dark:text-gray-600;
     background: linear-gradient(135deg, rgb(229, 231, 235) 0%, rgb(209, 213, 219) 100%);
   }
   .dark .masonry-card-placeholder {
@@ -562,7 +562,7 @@
   .pagination-select {
     -webkit-appearance: none;
     appearance: none;
-    @apply m-0 min-w-[3rem] cursor-pointer rounded-md border border-border bg-white py-1.5 pl-3 pr-10 text-sm font-normal text-text transition-colors dark:bg-[#151d2c] dark:text-stone-200;
+    @apply m-0 min-w-12 cursor-pointer rounded-md border border-border bg-white py-1.5 pl-3 pr-10 text-sm font-normal text-text transition-colors dark:bg-[#151d2c] dark:text-stone-200;
   }
   .pagination-select:hover {
     @apply border-gray-400 dark:border-gray-600;
@@ -577,7 +577,7 @@
     @apply underline;
   }
   .pagination-link:focus-visible {
-    @apply outline outline-2 outline-offset-2 outline-primary;
+    @apply outline-2 outline-offset-2 outline-primary;
   }
   @media (prefers-reduced-motion: reduce) {
     .pagination-select {
