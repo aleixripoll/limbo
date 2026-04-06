@@ -1,0 +1,35 @@
+---
+interface Props {
+  baseUrl: string;
+  categories: string[];
+  currentCategory: string | null; // null = "All"
+}
+
+const { baseUrl, categories, currentCategory } = Astro.props;
+---
+<div class="category-filter mb-8 flex flex-wrap items-center gap-2">
+  <span class="text-sm text-(--color-muted) mr-1">Categoria:</span>
+  <div class="filter-select-wrap">
+    <select
+      class="filter-select"
+      aria-label="Filter by category"
+      data-category-filter
+    >
+      <option value={baseUrl} {...(currentCategory === null && { selected: true })}>Totes</option>
+      {categories.map((c) => (
+        <option value={`${baseUrl}categories/${c}/`} {...(currentCategory === c && { selected: true })}>
+          {c}
+        </option>
+      ))}
+    </select>
+  </div>
+</div>
+<script>
+  // Delegated listener: survives astro view transitions (scripts run once; DOM is swapped).
+  document.addEventListener("change", (e) => {
+    const target = e.target;
+    if (!(target instanceof HTMLSelectElement)) return;
+    if (!target.matches("[data-category-filter]")) return;
+    if (target.value) window.location.href = target.value;
+  });
+</script>
