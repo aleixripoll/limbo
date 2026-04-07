@@ -3,7 +3,7 @@ title: "El descontento"
 description: "Beatriz Serrano"
 authors: ["Dra. Valina"]
 image: ./cover.png
-categories: ["literatura", "dibuixos"]
+categories: ["literatura"]
 tags: ["lang-es"]
 draft: false
 date: 2025-08-10T10:00
