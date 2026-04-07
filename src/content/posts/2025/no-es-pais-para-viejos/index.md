@@ -2,7 +2,7 @@
 title: "No es país para viejos"
 description: "Cormac McCarthy"
 authors: ["Dra. Valina"]
-image: ./pexels-jplenio-1102914.jpg
+image: ./cover.png
 categories: ["literatura"]
 tags: ["lang-es"]
 draft: false

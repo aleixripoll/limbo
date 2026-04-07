@@ -10,7 +10,7 @@
   html {
     @apply text-base scroll-smooth motion-reduce:scroll-auto;
     overflow-x: clip;
-    /* scrollbar-gutter: stable; */
+    scrollbar-gutter: stable;
   }
   body {
     @apply font-primary font-normal leading-relaxed text-text min-h-screen flex flex-col dark:text-light bg-gray-50 dark:bg-gray-800;
@@ -432,7 +432,7 @@
       transform: translateY(0);
     }
   }
-  .masonry-item,
+  /*.masonry-item,
   .similar-post-item,
   .search-result-item {
     animation: cardFadeIn 0.45s ease-out;
@@ -449,7 +449,7 @@
   .similar-post-card.loading,
   .search-result-card.loading {
     animation: skeletonPulse 1.5s ease-in-out infinite;
-  }
+  }*/
   @media (max-width: 640px) {
     .masonry-grid,
     .search-results-grid {

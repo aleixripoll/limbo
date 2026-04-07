@@ -2,11 +2,7 @@
 title: "Una breve historia de casi todo"
 description: "Bill Bryson"
 authors: []
-image: "./pexels-suzyhazelwood-1098515.jpg"
-image_attribution:
-    author: Suzy Hazelwood
-    site: Pexels
-    url: https://www.pexels.com/ca-es/foto/1098515/
+image: ./cover.png
 categories: ["literatura"]
 tags: ["lang-es", "ciència"]
 draft: false

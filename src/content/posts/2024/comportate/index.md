@@ -2,7 +2,7 @@
 title: "Compórtate"
 description: "Robert Sapolsky"
 authors: ["Dr. Fenilalanino"]
-image: ./cover.jpeg
+image: ./cover.png
 categories: ["literatura"]
 tags: ["neurociència", "lang-es"]
 draft: false
