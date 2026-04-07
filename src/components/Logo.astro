@@ -20,10 +20,10 @@ const {
 
 <a
   href={import.meta.env.BASE_URL}
-  class="navbar-brand group inline-flex items-center gap-2.5 text-xl font-primary font-medium tracking-normal hover:[&_img]:brightness-110"
+  class="navbar-brand group inline-flex items-center gap-2.5 text-xl font-primary font-medium leading-none tracking-normal hover:[&_img]:brightness-110"
 >
   <span
-    class="shrink-0 text-gray-500 transition-colors duration-200 group-hover:text-primary dark:text-gray-400"
+    class="inline-flex shrink-0 items-center text-gray-500 transition-colors duration-200 group-hover:text-primary dark:text-gray-400"
     aria-hidden="true"
   >
     <svg
@@ -40,7 +40,7 @@ const {
       <path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6z"></path>
     </svg>
   </span>
-  <span class="text-dark transition-colors duration-200 group-hover:text-primary dark:text-stone-200">
+  <span class="flex items-center text-dark transition-colors duration-200 group-hover:text-primary dark:text-stone-200">
     {
       src || logo ? (
         <Image
