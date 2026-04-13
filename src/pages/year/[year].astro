@@ -24,7 +24,9 @@ const baseUrl = import.meta.env.BASE_URL;
 <Base>
   <section class="section">
     <div class="layout-container">
-      <YearFilter baseUrl={baseUrl} years={years} currentYear={year} />
+      <div class="flex flex-wrap items-center gap-x-8">
+        <YearFilter baseUrl={baseUrl} years={years} currentYear={year} />
+      </div>
       <Posts className="mb-8 md:mb-16" posts={posts} />
     </div>
   </section>
