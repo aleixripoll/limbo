@@ -96,6 +96,10 @@
   .layout-container {
     @apply mx-auto w-full max-w-[1100px] px-3 sm:px-5 md:px-0;
   }
+  /** Header keeps side gutters on md+; body layout-container stays full-bleed to max-width. */
+  .layout-container.layout-container--header {
+    @apply md:px-6 lg:px-8;
+  }
   .page-heading {
     @apply mb-20 text-center font-bold leading-10;
   }
@@ -169,7 +173,7 @@
     box-shadow: none;
   }
   .content {
-    @apply font-source-serif leading-[1.76] text-dark dark:text-stone-200;
+    @apply font-source-serif leading-[1.76] text-dark dark:text-stone-200 px-1 md:px-0;
     letter-spacing: 0.01em;
     @apply prose dark:prose-invert max-w-none prose-headings:font-medium dark:prose-headings:text-stone-200 prose-p:leading-[1.76] prose-li:leading-[1.76] prose-h1:mb-3 prose-h1:text-h1-sm prose-h2:mb-3 prose-h2:mt-4 prose-h2:text-h2-sm prose-h3:mt-3 prose-h3:text-h3-sm prose-h4:mt-3 prose-h4:text-h4-sm prose-h5:mb-3 prose-h5:text-h5-sm prose-h6:mb-4 prose-h6:text-h6 prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-blockquote:px-3 sm:prose-blockquote:px-5 prose-blockquote:py-1 prose-pre:px-6 prose-pre:py-5 prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-primary dark:prose-a:text-light hover:prose-a:text-primary prose-img:border-none prose-img:mt-1 prose-img:max-w-full prose-img:w-auto prose-img:h-auto prose-blockquote:leading-[1.76];
     font-size: 1.125rem;

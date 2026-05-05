@@ -1,7 +1,6 @@
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import config from "./src/config/config.json";
 import { remarkModifiedTime } from "./src/lib/utils/remarkModifiedTime.mjs";
@@ -12,9 +11,6 @@ export default defineConfig({
   site: config.site.base_url,
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: "ignore",
-  vite: {
-    plugins: [tailwindcss()],
-  },
   i18n: {
     defaultLocale: "ca",
     locales: ["ca", "es", "en"],
