@@ -252,10 +252,37 @@
   .masonry-card,
   .similar-post-card,
   .search-result-card {
-    /* Only transform is transitioned; ring + hover shadow use box-shadow — transition-all animates a click flash */
-    @apply block rounded-xl overflow-hidden relative border border-gray-200 dark:border-[#2e3646] bg-transparent transition-[transform,box-shadow,background-color] duration-200 ease-out;
+    /* overflow-visible so ::after foot shows; sections clip image/corners. z-0 keeps ::after stacking inside the card. */
+    @apply block z-0 rounded-xl overflow-visible relative border border-gray-200 dark:border-[#2e3646] bg-transparent transition-[transform,background-color] duration-200 ease-out;
     -webkit-tap-highlight-color: transparent;
     outline: none;
+  }
+  .masonry-card::after,
+  .similar-post-card::after,
+  .search-result-card::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    bottom: -0.42rem;
+    height: 0.38rem;
+    z-index: -1;
+    border-radius: 0 0 0.75rem 0.75rem;
+    background-color: rgb(15 23 42 / 0.09);
+    opacity: 0;
+    transition:
+      opacity 200ms ease-out,
+      height 200ms ease-out,
+      bottom 200ms ease-out,
+      left 200ms ease-out,
+      right 200ms ease-out,
+      background-color 200ms ease-out;
+  }
+  .dark .masonry-card::after,
+  .dark .similar-post-card::after,
+  .dark .search-result-card::after {
+    background-color: rgb(255 255 255 / 0.06);
   }
   .masonry-card:focus,
   .similar-post-card:focus,
@@ -281,7 +308,7 @@
   .masonry-image-container,
   .search-result-image-container,
   .similar-post-image-container {
-    @apply relative overflow-hidden bg-gray-200 dark:bg-gray-800;
+    @apply relative overflow-hidden rounded-t-xl bg-gray-200 dark:bg-gray-800;
     height: 10rem;
   }
   .masonry-image-container .masonry-image,
@@ -297,17 +324,13 @@
     background: linear-gradient(135deg, rgb(55, 65, 81) 0%, rgb(75, 85, 99) 100%);
   }
   .masonry-content {
-    @apply relative p-4 px-5;
+    @apply relative rounded-b-xl p-4 px-5;
   }
   .similar-post-content {
-    @apply relative p-4 pb-4 pt-4;
+    @apply relative rounded-b-xl p-4 pb-4 pt-4;
   }
   .search-result-content {
-    @apply relative p-6 pb-5 pt-4;
-  }
-  .masonry-content,
-  .similar-post-content {
-    @apply relative;
+    @apply relative rounded-b-xl p-6 pb-5 pt-4;
   }
   .masonry-meta,
   .similar-post-meta,
@@ -379,12 +402,21 @@
     .search-result-card:hover {
       transform: translateY(-4px);
       @apply bg-theme-light dark:bg-[#151d2c];
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.12);
     }
-    .dark .masonry-card:hover,
-    .dark .similar-post-card:hover,
-    .dark .search-result-card:hover {
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.35);
+    .masonry-card:hover::after,
+    .similar-post-card:hover::after,
+    .search-result-card:hover::after {
+      opacity: 1;
+      left: 6.5%;
+      right: 6.5%;
+      bottom: -0.55rem;
+      height: 0.55rem;
+      background-color: rgb(15 23 42 / 0.1);
+    }
+    .dark .masonry-card:hover::after,
+    .dark .similar-post-card:hover::after,
+    .dark .search-result-card:hover::after {
+      background-color: rgb(255 255 255 / 0.07);
     }
     .masonry-card:hover .masonry-image,
     .similar-post-card:hover .similar-post-image,
@@ -399,7 +431,6 @@
     .masonry-card,
     .similar-post-card,
     .search-result-card {
-      @apply active:shadow-sm;
       transition: none;
     }
     .masonry-card:hover, .masonry-card:active,
@@ -407,7 +438,7 @@
     .similar-post-card:active,
     .search-result-card:hover,
     .search-result-card:active {
-      @apply transform-none shadow-sm;
+      @apply transform-none;
       transform: none !important;
     }
     .similar-post-overlay,
@@ -537,6 +568,9 @@
     .masonry-card,
     .similar-post-card,
     .search-result-card,
+    .masonry-card::after,
+    .similar-post-card::after,
+    .search-result-card::after,
     .masonry-image,
     .similar-post-image,
     .search-result-image,
