@@ -45,21 +45,21 @@ const { className, posts, fluid } = Astro.props;
           </div>
 
           <div class="masonry-content">
-            {post.data.date && (
+            {/*{post.data.date && (
               <div class="masonry-meta">
                 <div class="masonry-date">
                   <span class="masonry-date-text">{dateFormat(post.data.date)}</span>
                 </div>
-                {/*<div class="masonry-categories">
+                {<div class="masonry-categories">
                   <CategoryGridIcon className="similar-post-icon" />
                   {post.data.categories.map((category: any, i: number) => (
                         <span class="masonry-category">
                           {humanize(category)}{i !== post.data.categories.length - 1 && ","}
                         </span>
                   ))}
-                </div>*/}
+                </div>}
               </div>
-            )}
+            )}*/}
 
             <h3 class="masonry-title">{post.data.title}</h3>
 

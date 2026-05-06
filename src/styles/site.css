@@ -489,16 +489,6 @@
     .search-result-content {
       @apply px-5 py-4;
     }
-    .masonry-title,
-    .similar-post-title,
-    .search-result-title {
-      @apply mb-1;
-    }
-    .masonry-meta,
-    .similar-post-meta,
-    .search-result-meta {
-      @apply mb-1;
-    }
     .masonry-category,
     .similar-post-category,
     .search-result-category {
