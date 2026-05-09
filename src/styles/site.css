@@ -11,6 +11,7 @@
     @apply text-base scroll-smooth motion-reduce:scroll-auto;
     overflow-x: clip;
     scrollbar-gutter: stable;
+    scroll-padding-top: 4.5rem;
   }
   body {
     @apply font-primary font-normal leading-relaxed text-text min-h-screen flex flex-col dark:text-light bg-gray-50 dark:bg-gray-800;
@@ -173,11 +174,12 @@
     box-shadow: none;
   }
   .content {
-    @apply font-source-serif leading-[1.76] text-dark dark:text-stone-200;
-    @apply prose dark:prose-invert max-w-none prose-headings:font-medium dark:prose-headings:text-stone-200 prose-p:leading-[1.76] prose-li:leading-[1.76] prose-h1:mb-3 prose-h1:text-h1-sm prose-h2:mb-3 prose-h2:mt-4 prose-h2:text-h2-sm prose-h3:mt-3 prose-h3:text-h3-sm prose-h4:mt-3 prose-h4:text-h4-sm prose-h5:mb-3 prose-h5:text-h5-sm prose-h6:mb-4 prose-h6:text-h6 prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-blockquote:px-3 sm:prose-blockquote:px-5 prose-blockquote:py-1 prose-pre:px-6 prose-pre:py-5 prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-primary dark:prose-a:text-light hover:prose-a:text-primary prose-img:border-none prose-img:mt-1 prose-img:max-w-full prose-img:w-auto prose-img:h-auto prose-blockquote:leading-[1.76] text-lg;
+    /* Wrapper: light theme uses `colors.dark` (text_color.dark); dark theme uses `colors.on-dark` (text_color.on_dark). Paragraphs still follow --tw-prose-* from typography. */
+    @apply font-source-serif leading-8 text-dark dark:text-on-dark;
+    @apply prose dark:prose-invert max-w-none prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-300 prose-h1:text-3xl prose-h1:uppercase prose-h1:pt-8 prose-img:mt-2 prose-blockquote:px-5 prose-blockquote:py-0.5 prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-primary dark:prose-a:text-light hover:prose-a:text-primary text-lg;
   }
   .content img {
-    @apply mb-6 h-auto w-auto max-w-full rounded border border-neutral-700;
+    @apply mb-6 h-auto w-auto max-w-full rounded;
   }
   .content :where(h1, h2, h3, h4, h5, h6) {
     @apply font-primary font-medium;
