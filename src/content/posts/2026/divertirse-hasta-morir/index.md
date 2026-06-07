@@ -2,7 +2,7 @@
 title: "Divertirse hasta morir"
 description: "Neil Postman"
 authors: ["Dra. Fenilalanino"]
-image: ./cover.jpg
+image: ./cover.png
 categories: ["literatura"]
 tags: ["lang-es"]
 draft: false
