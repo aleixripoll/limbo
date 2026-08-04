@@ -4,6 +4,8 @@ import menu from "@config/menu.json";
 import { IoSearch } from "react-icons/io5/index.js";
 import { BiUser, BiCategoryAlt, BiPurchaseTag } from "react-icons/bi/index.js";
 import ThemeToggle from "./ThemeToggle.astro";
+import { getTaxonomy } from "@lib/taxonomyParser.astro";
+import { humanize } from "@lib/utils/textConverter";
 
 export interface ChildNavigationLink {
   name: string;
@@ -17,7 +19,23 @@ export interface NavigationLink {
   children?: ChildNavigationLink[];
 }
 
-const { main }: { main: NavigationLink[] } = menu;
+let { main }: { main: NavigationLink[] } = menu;
+
+// Fetch categories and populate the Categories menu item
+const categories = await getTaxonomy("posts", "categories");
+main = main.map((item) => {
+  if (item.name === "Categories") {
+    return {
+      ...item,
+      hasChildren: true,
+      children: categories.map((category) => ({
+        name: humanize(category).charAt(0).toUpperCase() + humanize(category).slice(1),
+        url: `categories/${category}`,
+      })),
+    };
+  }
+  return item;
+});
 
 const menuIcons: Record<string, any> = {
   Autors: BiUser,
@@ -74,7 +92,7 @@ function isActivePath(rel: string): boolean {
 
     <ul
       id="nav-menu"
-      class="navbar-nav relative z-11 order-3 w-full gap-0.5 lowercase md:order-1 md:flex md:w-auto md:items-center md:gap-1"
+      class="navbar-nav relative z-11 order-3 w-full gap-0.5 lowercase justify-start md:order-1 md:flex md:w-auto md:items-center md:gap-1"
     >
       {
         main.map((item) => (
@@ -82,8 +100,14 @@ function isActivePath(rel: string): boolean {
             {item.hasChildren ? (
               <li class="nav-item nav-dropdown w-full md:w-auto">
                 <details class="group nav-mobile-accordion md:hidden">
-                  <summary class="nav-link flex cursor-pointer list-none items-center justify-center gap-1.5 rounded-lg py-3.5 [&::-webkit-details-marker]:hidden">
+                  <summary class="nav-link flex cursor-pointer list-none items-center justify-start gap-1.5 rounded-lg py-3.5 [&::-webkit-details-marker]:hidden">
                     <span class="inline-flex items-center gap-1.5">
+                      {(() => {
+                        const Icon = menuIcons[item.name];
+                        return Icon ? (
+                          <Icon className="h-5 w-5 shrink-0 text-current opacity-80" />
+                        ) : null;
+                      })()}
                       {item.name}
                       <svg
                         class="nav-chevron h-4 w-4 shrink-0 opacity-70 transition-transform duration-200 group-open:rotate-180 md:h-5 md:w-5"
@@ -116,6 +140,12 @@ function isActivePath(rel: string): boolean {
                 </details>
                 <div class="nav-desktop-dropdown group relative hidden md:block">
                   <span class="nav-link inline-flex cursor-pointer items-center gap-1">
+                    {(() => {
+                      const Icon = menuIcons[item.name];
+                      return Icon ? (
+                        <Icon className="h-5 w-5 shrink-0 text-current opacity-80" />
+                      ) : null;
+                    })()}
                     {item.name}
                     <svg
                       class="nav-chevron h-5 w-5 shrink-0 opacity-70"
@@ -186,6 +216,25 @@ function isActivePath(rel: string): boolean {
     </div>
   </nav>
 </header>
+
+<style>
+  /* Adjust categories dropdown width */
+  .nav-item:has(> .nav-desktop-dropdown [href*="categories"]) .nav-dropdown-list--desktop {
+    width: min-content !important;
+    min-width: unset !important;
+    padding: 0.5rem 0 !important;
+  }
+
+  .nav-item:has(> .nav-desktop-dropdown [href*="categories"]) .nav-dropdown-item {
+    padding: 0 !important;
+  }
+
+  .nav-item:has(> .nav-desktop-dropdown [href*="categories"]) .nav-dropdown-link {
+    text-transform: capitalize;
+    padding: 0.5rem 0.75rem 0.5rem 1.5rem !important;
+    display: block;
+  }
+</style>
 
 <script>
   function setupNav() {
