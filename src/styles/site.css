@@ -175,8 +175,8 @@
   }
   .content {
     /* Wrapper: light theme uses `colors.dark` (text_color.dark); dark theme uses `colors.on-dark` (text_color.on_dark). Paragraphs still follow --tw-prose-* from typography. */
-    @apply font-source-serif leading-8 text-dark dark:text-on-dark;
-    @apply prose dark:prose-invert max-w-none prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-300 prose-h1:text-3xl prose-h1:uppercase prose-h1:pt-8 prose-img:mt-2 prose-blockquote:px-5 prose-blockquote:py-0.5 prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-primary dark:prose-a:text-light hover:prose-a:text-primary text-base sm:text-lg;
+    @apply font-source-serif leading-7 sm:leading-8 text-dark dark:text-on-dark;
+    @apply prose dark:prose-invert max-w-none prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-300 prose-h1:text-3xl prose-h1:uppercase prose-h1:pt-8 prose-img:mt-2 prose-blockquote:px-5 prose-blockquote:py-0.5 prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-primary dark:prose-a:text-light hover:prose-a:text-primary text-[1.0625rem] sm:text-lg;
   }
   .content img {
     @apply mb-6 h-auto w-auto max-w-full rounded;
