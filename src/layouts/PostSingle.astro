@@ -29,7 +29,7 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
                 quality={80}
                 sizes={`(max-width: 640px) 100vw, 800px`}
                 alt={title}
-                class="sm:rounded-lg h-auto w-auto max-w-full object-scale-down block mx-auto"
+                class="post-cover-image sm:rounded-lg h-auto w-auto max-w-full object-scale-down block mx-auto"
                 style={{
                   maxWidth: `min(100%, ${image.width}px)`,
                   maxHeight: `min(70vh, ${image.height}px)`,
@@ -133,6 +133,14 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
     <Disqus className="mt-20" client:load />
   </div>
 </section>
+
+<style is:global>
+  @media (max-width: 640px) {
+    .post-cover-image {
+      max-height: 40vh !important;
+    }
+  }
+</style>
 
 <!-- similar posts -->
 <!--{
