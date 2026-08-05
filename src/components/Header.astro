@@ -29,7 +29,7 @@ main = main.map((item) => {
       ...item,
       hasChildren: true,
       children: categories.map((category) => ({
-        name: humanize(category).charAt(0).toUpperCase() + humanize(category).slice(1),
+        name: humanize(category) ?? category,
         url: `categories/${category}`,
       })),
     };
