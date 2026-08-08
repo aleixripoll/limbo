@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import config from "@config/config.json";
-import dateFormat from "@lib/utils/dateFormat";
 import { humanize } from "@lib/utils/textConverter";
 import CategoryGridIcon from "@components/CategoryGridIcon";
 
@@ -34,7 +33,6 @@ const { className, posts, fluid } = Astro.props;
                 widths={[320, 480, 640, 828, 1080]}
                 sizes="(max-width: 539px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw"
                 quality={80}
-                fit="cover"
                 loading="lazy"
               />
             ) : (
@@ -45,21 +43,16 @@ const { className, posts, fluid } = Astro.props;
           </div>
 
           <div class="masonry-content">
-            {/*{post.data.date && (
-              <div class="masonry-meta">
-                <div class="masonry-date">
-                  <span class="masonry-date-text">{dateFormat(post.data.date)}</span>
-                </div>
-                {<div class="masonry-categories">
-                  <CategoryGridIcon className="similar-post-icon" />
-                  {post.data.categories.map((category: any, i: number) => (
-                        <span class="masonry-category">
-                          {humanize(category)}{i !== post.data.categories.length - 1 && ","}
-                        </span>
-                  ))}
-                </div>}
+            {post.data.categories && (
+              <div class="masonry-categories">
+                <CategoryGridIcon className="masonry-icon" />
+                {post.data.categories.map((category: any, i: number) => (
+                  <span class="masonry-category">
+                    {humanize(category)}{i !== post.data.categories.length - 1 && ","}
+                  </span>
+                ))}
               </div>
-            )}*/}
+            )}
 
             <h3 class="masonry-title">{post.data.title}</h3>
 

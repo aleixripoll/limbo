@@ -107,20 +107,23 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
           <Content />
         </div>
         <div class="flex flex-wrap items-center justify-between">
-          <ul class="mb-4 mr-4 space-x-3">
-            {
-              tags.map((tag: string) => (
-                <li class="inline-block mb-2">
-                  <a
-                    href={`${import.meta.env.BASE_URL}tags/${slugify(tag)}`}
-                    class="block rounded-lg bg-theme-light dark:bg-theme-dark p-2 text-sm hover:text-primary"
-                  >
-                    # {humanize(tag, { capitalizeFirst: false })}
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
+          <div class="flex flex-wrap items-center mb-4 mr-4">
+            <span class="mr-2 text-sm font-semibold dark:text-gray-400">Tags:</span>
+            <ul class="flex flex-wrap items-center gap-y-2">
+              {
+                tags.map((tag: string, i: number) => (
+                  <li class="flex items-center">
+                    <a
+                      href={`${import.meta.env.BASE_URL}tags/${slugify(tag)}`}
+                      class="text-sm italic dark:text-gray-400 hover:text-primary"
+                    >
+                      {humanize(tag, { capitalizeFirst: false })}
+                    </a>{i !== tags.length - 1 && <span class="mr-1">,</span>}
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
           {/* <Share
             className="social-share mb-4"
             title={title}
