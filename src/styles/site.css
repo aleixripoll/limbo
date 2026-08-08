@@ -317,8 +317,9 @@
     aspect-ratio: 3 / 2;
   }
   .masonry-image-container .masonry-image {
-    @apply block w-full saturate-[.85] transition-transform duration-200 ease-out;
+    @apply block w-full object-cover saturate-[.85] transition-transform duration-200 ease-out;
     height: auto;
+    max-height: 320px;
   }
   .search-result-image-container .search-result-image,
   .similar-post-image-container .similar-post-image {
