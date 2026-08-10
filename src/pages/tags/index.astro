@@ -18,7 +18,7 @@ const tags = await getTaxonomy("posts", "tags");
             <li class="inline-block">
               <a
                 href={`${import.meta.env.BASE_URL}tags/${tag}`}
-                class="group flex items-center rounded-lg bg-theme-light px-4 py-2 text-dark hover:bg-primary hover:text-white"
+                class="group flex items-center rounded-lg bg-theme-light dark:bg-theme-dark px-4 py-2 text-dark dark:text-light hover:bg-primary hover:text-white"
               >
                 <FaHashtag className="mr-1 text-primary group-hover:text-white" />
                 <>{humanize(tag || "", { capitalizeFirst: false })}</>

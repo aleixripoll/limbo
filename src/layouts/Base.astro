@@ -36,12 +36,37 @@ function hexToRgbChannels(hex: string) {
   return `${parseInt(n.slice(0, 2), 16)} ${parseInt(n.slice(2, 4), 16)} ${parseInt(n.slice(4, 6), 16)}`;
 }
 const primaryRgbLight = hexToRgbChannels(themeColors.primary);
-const primaryVarsCss = `:root{--color-primary-rgb:${primaryRgbLight}}`;
+const primaryRgbDark = hexToRgbChannels(
+  themeColors.primary_dark ?? themeColors.primary
+);
+const primaryVarsCss = `:root{--color-primary-rgb:${primaryRgbLight}}html.dark{--color-primary-rgb:${primaryRgbDark}}`;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script is:inline>
+      // This script is identical to the one in ThemeToggle.astro, but with "is:inline" parameter to
+      // avoid light theme flickering on page load for browsers that do not support ViewTransitions.
+      const theme = (() => {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
+
+      if (theme === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
     <!-- favicon: book icon on teal rounded square (public/images/favicon.svg) -->
     <link
       rel="icon"
@@ -51,11 +76,22 @@ const primaryVarsCss = `:root{--color-primary-rgb:${primaryRgbLight}}`;
     <!-- theme meta -->
     <meta name="theme-name" content="bookworm-light-astro" />
     <meta name="msapplication-TileColor" content="#000000" />
-    <meta name="theme-color" content="#fefeff" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#fefeff"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#27272e"
+    />
     <meta name="generator" content={Astro.generator} />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    {/* Prevents light theme flicker on load */}
     <style>
       html { background-color: #fefeff; }
+      html.dark { background-color: #27272e; }
     </style>
     <style is:inline set:html={primaryVarsCss}></style>
 

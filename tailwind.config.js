@@ -32,6 +32,7 @@ export default {
     // Site uses `.layout-container` in site.css (max 1144px); disable the framework utility.
     container: false,
   },
+  darkMode: 'selector',
   theme: {
     screens: {
       sm: "540px",
@@ -46,7 +47,10 @@ export default {
       colors: {
         text: theme.colors.default.text_color.default,
         light: theme.colors.default.text_color.light,
+        /** Primary ink on *light* backgrounds (body copy, headings in light theme). Not "dark mode". */
         dark: theme.colors.default.text_color.dark,
+        /** Main article/body text when `html` is in dark theme (`dark:prose-invert`, surfaces). */
+        "on-dark": theme.colors.default.text_color.on_dark,
         primary: "rgb(var(--color-primary-rgb) / <alpha-value>)",
         secondary: theme.colors.default.theme_color.secondary,
         body: theme.colors.default.theme_color.body,
@@ -97,6 +101,7 @@ export default {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
+            // Light theme: driven by `text_color.dark` in theme.json → `colors.dark`.
             "--tw-prose-body": theme("colors.dark"),
             "--tw-prose-headings": theme("colors.dark"),
             "--tw-prose-bold": theme("colors.dark"),
@@ -111,6 +116,25 @@ export default {
             "blockquote p:last-of-type::after": {
               content: '""',
             },
+          },
+        },
+        invert: {
+          css: {
+            // Dark theme: `.content` uses `dark:prose-invert` — use `text_color.on_dark` from theme.json.
+            "--tw-prose-body": theme("colors.on-dark"),
+            "--tw-prose-headings": theme("colors.on-dark"),
+            "--tw-prose-bold": theme("colors.on-dark"),
+            "--tw-prose-lead": theme("colors.on-dark"),
+            "--tw-prose-code": theme("colors.on-dark"),
+            "--tw-prose-quotes": theme("colors.gray.300"),
+            "--tw-prose-quote-borders": theme("colors.gray.600"),
+            "--tw-prose-counters": theme("colors.gray.400"),
+            "--tw-prose-bullets": theme("colors.gray.500"),
+            "--tw-prose-captions": theme("colors.gray.400"),
+            "--tw-prose-kbd": theme("colors.gray.100"),
+            "--tw-prose-pre-bg": theme("colors.gray.900"),
+            "--tw-prose-th-borders": theme("colors.gray.600"),
+            "--tw-prose-td-borders": theme("colors.gray.700"),
           },
         },
       }),
