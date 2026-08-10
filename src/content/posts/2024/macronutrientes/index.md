@@ -3,10 +3,10 @@ title: "Macronutrients 101"
 description: "El coneixement ocupa lloc, però poc."
 authors: [ "Dr. Fenilalanino" ]
 image: "./cover.png"
-#image_attribution:
-#    author: 爪丨丂ㄒ乇尺_卩丨ㄒㄒ丨几Ꮆ乇尺
-#    site: Pixabay
-#    url: https://pixabay.com/es/illustrations/ai-generado-rollo-de-cerdo-asado-8582954/
+image_attribution:
+    author: 爪丨丂ㄒ乇尺_卩丨ㄒㄒ丨几Ꮆ乇尺
+    site: Pixabay
+    url: https://pixabay.com/es/illustrations/ai-generado-rollo-de-cerdo-asado-8582954/
 categories: [ "apunts" ]
 tags: [ "biologia", "química", "nutrició", "lang-cat" ]
 draft: false
