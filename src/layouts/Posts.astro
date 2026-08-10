@@ -10,12 +10,50 @@ interface Props {
   className?: string;
   posts: any;
   fluid?: boolean;
+  /** "gallery" renders just the image, no title/description/categories.
+   *  "list" renders a text list of links with a thumbnail and description. */
+  variant?: "default" | "gallery" | "list";
 }
 
-const { className, posts, fluid } = Astro.props;
+const { className, posts, fluid, variant = "default" } = Astro.props;
 ---
 
-<div class={`masonry-grid mt-6 ${className || ""}`}>
+{variant === "list" ? (
+  <ul class={`simple-post-list mt-6 ${className || ""}`}>
+    {
+      posts.map((post: any) => (
+        <li class="simple-post-item">
+          <a href={`${import.meta.env.BASE_URL}${post.id}`} class="simple-post-link">
+            <div class="simple-post-image-container">
+              {post.data.image ? (
+                <Image
+                  class="simple-post-image"
+                  src={post.data.image}
+                  alt={post.data.title}
+                  widths={[80, 160]}
+                  sizes="80px"
+                  quality={80}
+                  loading="lazy"
+                />
+              ) : (
+                <div class="simple-post-image-placeholder" aria-hidden="true">
+                  {post.data.title?.slice(0, 1)?.toUpperCase() ?? "?"}
+                </div>
+              )}
+            </div>
+            <div class="simple-post-text">
+              <span class="simple-post-title">{post.data.title}</span>
+              {post.data.description && (
+                <p class="simple-post-description">{post.data.description}</p>
+              )}
+            </div>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+) : (
+<div class={`masonry-grid mt-6 ${variant === "default" ? "masonry-grid--compact" : ""} ${className || ""}`}>
   {
     posts.map((post: any, i: number) => (
       <article class="masonry-item" data-post-slug={post.id}>
@@ -42,31 +80,34 @@ const { className, posts, fluid } = Astro.props;
             )}
           </div>
 
-          <div class="masonry-content">
-            {post.data.categories && (
-              <div class="masonry-categories">
-                <CategoryGridIcon className="masonry-icon" />
-                {post.data.categories.map((category: any, i: number) => (
-                  <span class="masonry-category">
-                    {humanize(category)}{i !== post.data.categories.length - 1 && ","}
-                  </span>
-                ))}
-              </div>
-            )}
+          {variant === "default" && (
+            <div class="masonry-content">
+              {post.data.categories && (
+                <div class="masonry-categories">
+                  <CategoryGridIcon className="masonry-icon" />
+                  {post.data.categories.map((category: any, i: number) => (
+                    <span class="masonry-category">
+                      {humanize(category)}{i !== post.data.categories.length - 1 && ","}
+                    </span>
+                  ))}
+                </div>
+              )}
 
-            <h3 class="masonry-title">{post.data.title}</h3>
+              <h3 class="masonry-title">{post.data.title}</h3>
 
-            <p class="masonry-excerpt">
-              {post.data.description
-                ? post.data.description
-                : post.body?.slice(
-                    0,
-                    Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
-                  ) + "..."}
-            </p>
-          </div>
+              <p class="masonry-excerpt">
+                {post.data.description
+                  ? post.data.description
+                  : post.body?.slice(
+                      0,
+                      Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
+                    ) + "..."}
+              </p>
+            </div>
+          )}
         </a>
       </article>
     ))
   }
 </div>
+)}
