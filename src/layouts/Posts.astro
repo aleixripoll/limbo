@@ -95,14 +95,18 @@ const { className, posts, fluid, variant = "default" } = Astro.props;
 
               <h3 class="masonry-title">{post.data.title}</h3>
 
-              <p class="masonry-excerpt">
-                {post.data.description
-                  ? post.data.description
-                  : post.body?.slice(
-                      0,
-                      Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
-                    ) + "..."}
-              </p>
+              {
+                (post.data.description || post.body) && (
+                  <p class="masonry-excerpt">
+                    {post.data.description
+                      ? post.data.description
+                      : post.body?.slice(
+                          0,
+                          Number(i < 2 && fluid != false ? summary_length * 2 : summary_length)
+                        ) + "..."}
+                  </p>
+                )
+              }
             </div>
           )}
         </a>
