@@ -3,7 +3,7 @@ title: "Minerals 101"
 description: "Tot el que cal menjar de la taula periòdica."
 authors: ["Dra. Valina"]
 image: cover.jpeg
-categories: ["apunts"]
+categories: ["apunts", "dibuixos"]
 tags: ["nutrició", "lang-cat"]
 draft: false
 date: 2024-02-09T07:00

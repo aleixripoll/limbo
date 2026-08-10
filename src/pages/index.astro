@@ -1,33 +1,70 @@
 ---
-import config from "@config/config.json";
 import Base from "@layouts/Base.astro";
-import Pagination from "@components/Pagination.astro";
 import Posts from "@layouts/Posts.astro";
 import { getSinglePage } from "@lib/contentParser.astro";
+import { getTaxonomy } from "@lib/taxonomyParser.astro";
+import taxonomyFilter from "@lib/utils/taxonomyFilter";
 import { sortByDate } from "@lib/utils/sortFunctions";
-import YearFilter from "../components/YearFilter.astro";
-import CategoryFilter from "../components/CategoryFilter.astro";
+import { humanize } from "@lib/utils/textConverter";
+import { BiCategoryAlt, BiTime } from "react-icons/bi/index.js";
 
+const categories = await getTaxonomy("posts", "categories");
 const posts = await getSinglePage("posts");
-const sortedPosts = sortByDate(posts);
-const totalPages = Math.ceil(posts.length / config.settings.pagination);
-const currentPosts = sortedPosts.slice(0, config.settings.pagination);
-const years = [...new Set(posts.map((p: any) => p.data.date.getFullYear()))].sort((a, b) => b - a);
-const categories = [...new Set(posts.map((p: any) => p.data.categories[0]).map((c) => c.toLowerCase()))]
-  .filter((c) => c !== "")
-  .sort();
 const baseUrl = import.meta.env.BASE_URL;
+
+const latestPosts = sortByDate(posts).slice(0, 4);
+
+const sections = categories
+  .map((category) => {
+    const isDibuixos = category === "dibuixos";
+    const sorted = sortByDate(taxonomyFilter(posts, "categories", category));
+    return {
+      category,
+      title: humanize(category || ""),
+      posts: sorted.slice(0, 4),
+      variant: isDibuixos ? ("gallery" as const) : ("list" as const),
+    };
+  })
+  .sort((a, b) => (a.category === "dibuixos" ? -1 : b.category === "dibuixos" ? 1 : 0));
 ---
 
 <Base>
   <section class="section">
     <div class="layout-container">
-      <div class="flex flex-wrap items-center gap-x-8">
-        <YearFilter baseUrl={baseUrl} years={years} currentYear={null} />
-        {/*<CategoryFilter baseUrl={baseUrl} categories={categories} currentCategory={null} />*/}
+      <div class="mb-16">
+        <div class="mb-4 flex items-center gap-3">
+          <h2 class="h3 flex items-center gap-2 text-gray-500 dark:text-gray-400">
+            <BiTime className="h-6 w-6 shrink-0" />
+            Més recents
+          </h2>
+          <a
+            href={`${baseUrl}posts`}
+            class="self-center whitespace-nowrap rounded-lg bg-gray-100 dark:bg-gray-700 px-3 py-1.5 text-sm font-medium text-gray-500 dark:text-gray-400 transition hover:bg-primary hover:text-white"
+          >
+            Veure més →
+          </a>
+        </div>
+        <Posts posts={latestPosts} fluid={false} variant="list" />
       </div>
-      <Posts posts={currentPosts} className="mb-8 md:mb-16" />
-      <Pagination currentPage={1} totalPages={totalPages} />
+      {
+        sections.map((section) => (
+          <div class="mb-16">
+            <div class="mb-4 flex items-center gap-3">
+              <h2 class="h3 flex items-center gap-2 text-gray-500 dark:text-gray-400">
+                <BiCategoryAlt className="h-6 w-6 shrink-0" />
+                {section.title}
+              </h2>
+              <a
+                href={`${baseUrl}categories/${section.category}`}
+                class="self-center whitespace-nowrap rounded-lg bg-gray-100 dark:bg-gray-700 px-3 py-1.5 text-sm font-medium text-gray-500 dark:text-gray-400 transition hover:bg-primary hover:text-white"
+              >
+                Veure més →
+              </a>
+            </div>
+            <Posts posts={section.posts} fluid={false} variant={section.variant} />
+          </div>
+        ))
+      }
     </div>
   </section>
 </Base>

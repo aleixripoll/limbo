@@ -3,9 +3,11 @@ interface Props {
   baseUrl: string;
   years: number[];
   currentYear: number | null; // null = "All"
+  /** Link for the "Tots" option; defaults to baseUrl (home). */
+  allHref?: string;
 }
 
-const { baseUrl, years, currentYear } = Astro.props;
+const { baseUrl, years, currentYear, allHref } = Astro.props;
 ---
 <div class="year-filter mb-4 flex flex-wrap items-center gap-2">
   <span class="text-sm text-(--color-muted) mr-1">Any:</span>
@@ -15,7 +17,7 @@ const { baseUrl, years, currentYear } = Astro.props;
       aria-label="Filter by year"
       data-year-filter
     >
-      <option value={baseUrl} {...(currentYear === null && { selected: true })}>Tots</option>
+      <option value={allHref ?? baseUrl} {...(currentYear === null && { selected: true })}>Tots</option>
       {years.map((y) => (
         <option value={`${baseUrl}year/${y}/`} {...(currentYear === y && { selected: true })}>
           {y}

@@ -181,6 +181,22 @@
   .content img {
     @apply mb-6 h-auto w-auto max-w-full rounded;
   }
+  .content--drawings img,
+  .post-cover-image--drawings {
+    display: block;
+    width: 100vw;
+    height: auto;
+    max-height: 100vh;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    .content--drawings img {
+      max-height: 65vh;
+    }
+    .post-cover-image--drawings {
+      max-height: 90vh;
+    }
+  }
   .content :where(h1, h2, h3, h4, h5, h6) {
     @apply font-primary font-medium;
   }
@@ -265,6 +281,33 @@
   .similar-posts-grid {
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8;
   }
+  .simple-post-list {
+    @apply divide-y divide-border/40 border-t border-b border-border/40 dark:divide-gray-700 dark:border-gray-700;
+  }
+  .simple-post-link {
+    @apply flex items-center gap-4 py-3 no-underline transition-colors;
+  }
+  .simple-post-image-container {
+    @apply relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-800;
+  }
+  .simple-post-image {
+    @apply h-full w-full object-cover;
+  }
+  .simple-post-image-placeholder {
+    @apply flex h-full w-full items-center justify-center text-lg font-semibold text-gray-400 dark:text-gray-600;
+  }
+  .simple-post-text {
+    @apply min-w-0;
+  }
+  .simple-post-title {
+    @apply block font-medium text-dark dark:text-light transition-colors;
+  }
+  .simple-post-link:hover .simple-post-title {
+    @apply text-primary;
+  }
+  .simple-post-description {
+    @apply mt-0.5 line-clamp-1 text-sm text-gray-500 dark:text-gray-400;
+  }
   .masonry-item {
     @apply min-w-0 block;
     break-inside: avoid;
@@ -320,6 +363,12 @@
     @apply block w-full object-cover saturate-[.85] transition-transform duration-200 ease-out;
     height: auto;
     max-height: 320px;
+  }
+  .masonry-grid--compact .masonry-image-container .masonry-image {
+    max-height: 200px;
+  }
+  .masonry-grid--gallery .masonry-image-container .masonry-image {
+    max-height: 100vh;
   }
   .search-result-image-container .search-result-image,
   .similar-post-image-container .similar-post-image {
@@ -639,21 +688,6 @@
   }
   a.attribution {
     @apply block text-center italic text-xs opacity-90 mt-2;
-  }
-  .theme-switcher {
-    @apply inline-flex;
-  }
-  .theme-switcher label {
-    @apply bg-border relative inline-block h-4 w-6 cursor-pointer rounded-2xl lg:w-10;
-  }
-  .theme-switcher input {
-    @apply absolute opacity-0;
-  }
-  .theme-switcher span {
-    @apply bg-dark absolute -top-1 left-0 flex h-6 w-6 items-center justify-center rounded-full transition-all duration-300 dark:bg-white;
-  }
-  .theme-switcher input:checked + label span {
-    @apply lg:left-4;
   }
   .nav-scrim {
     display: none;

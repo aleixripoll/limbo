@@ -14,13 +14,14 @@ const { Content, remarkPluginFrontmatter } = await render(post);
 const { title, description, categories, image, image_attribution, date, tags } = post.data;
 
 const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefined;
+const isDrawingsPost = categories.some((category: string) => slugify(category) === "dibuixos");
 ---
 
 <section class="section">
   <div class="layout-container max-w-[800px]">
     <article class="row justify-center -mx-4">
       {(image || image_attribution) && (
-        <div class="col-12 md:col-10 mb-6 px-0 sm:px-2 w-auto">
+        <div class={`col-12 md:col-10 mb-6 px-0 sm:px-2 w-auto ${isDrawingsPost ? "flex justify-center" : ""}`}>
           {
             image && (
               <Image
@@ -29,10 +30,14 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
                 quality={80}
                 sizes={`(max-width: 640px) 100vw, 800px`}
                 alt={title}
-                class="post-cover-image sm:rounded-lg h-auto w-auto max-w-full object-scale-down block mx-auto"
-                style={{
+                class={
+                  isDrawingsPost
+                    ? "post-cover-image sm:rounded-lg object-scale-down mx-auto post-cover-image--drawings"
+                    : "post-cover-image sm:rounded-lg h-auto w-auto max-w-full object-scale-down block mx-auto"
+                }
+                style={isDrawingsPost ? undefined : {
                   maxWidth: `min(100%, ${image.width}px)`,
-                  maxHeight: `min(70vh, ${image.height}px)`,
+                  maxHeight: `min(50vh, ${image.height}px)`,
                 }}
               />
             )
@@ -103,12 +108,11 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
       </div>
 
       <div class="md:col-10">
-        <div class="content mb-16 text-left">
+        <div class={`content mb-16 text-left ${isDrawingsPost ? "content--drawings" : ""}`}>
           <Content />
         </div>
         <div class="flex flex-wrap items-center justify-between">
           <div class="flex flex-wrap items-center mb-4 mr-4">
-            <span class="mr-2 text-sm font-semibold dark:text-gray-400">Tags:</span>
             <ul class="flex flex-wrap items-center gap-y-2">
               {
                 tags.map((tag: string, i: number) => (
@@ -139,7 +143,7 @@ const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefin
 
 <style is:global>
   @media (max-width: 640px) {
-    .post-cover-image {
+    .post-cover-image:not(.post-cover-image--drawings) {
       max-height: 40vh !important;
     }
   }

@@ -47,7 +47,7 @@ export default {
       colors: {
         text: theme.colors.default.text_color.default,
         light: theme.colors.default.text_color.light,
-        /** Primary ink on *light* backgrounds (body copy, headings in light theme). Not “dark mode”. */
+        /** Primary ink on *light* backgrounds (body copy, headings in light theme). Not "dark mode". */
         dark: theme.colors.default.text_color.dark,
         /** Main article/body text when `html` is in dark theme (`dark:prose-invert`, surfaces). */
         "on-dark": theme.colors.default.text_color.on_dark,
