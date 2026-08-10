@@ -6,6 +6,7 @@ import { getTaxonomy } from "@lib/taxonomyParser.astro";
 import taxonomyFilter from "@lib/utils/taxonomyFilter";
 import { humanize } from "@lib/utils/textConverter";
 import { sortByDate } from "@lib/utils/sortFunctions";
+import { BiCategoryAlt } from "react-icons/bi/index.js";
 
 export async function getStaticPaths() {
   const categories = await getTaxonomy("posts", "categories");
@@ -30,7 +31,7 @@ const isGallery = category === "dibuixos";
 <Base title={title || "Category"}>
   <div class="section">
     <div class="layout-container">
-      <div class="mb-16 flex items-center gap-3">
+      <div class="mt-8 mb-12 flex items-center gap-3">
         <a
           href={import.meta.env.BASE_URL}
           class="inline-flex shrink-0 items-center justify-center rounded-lg p-2 text-gray-500 transition hover:bg-black/5 hover:text-primary"
@@ -41,7 +42,10 @@ const isGallery = category === "dibuixos";
             <path d="M12 19l-7-7 7-7" />
           </svg>
         </a>
-        <h1 class="h2 text-gray-500">{title}</h1>
+        <h1 class="h2 flex items-center gap-2 text-gray-500">
+          <BiCategoryAlt className="h-6 w-6 shrink-0" />
+          {title}
+        </h1>
       </div>
       <Posts posts={sortedPosts} fluid={false} variant={isGallery ? "gallery" : "default"} />
     </div>

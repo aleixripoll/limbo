@@ -53,7 +53,7 @@ const { className, posts, fluid, variant = "default" } = Astro.props;
     }
   </ul>
 ) : (
-<div class={`masonry-grid mt-6 ${variant === "default" ? "masonry-grid--compact" : ""} ${className || ""}`}>
+<div class={`masonry-grid mt-6 ${variant === "default" ? "masonry-grid--compact" : ""} ${variant === "gallery" ? "masonry-grid--gallery" : ""} ${className || ""}`}>
   {
     posts.map((post: any, i: number) => (
       <article class="masonry-item" data-post-slug={post.id}>
