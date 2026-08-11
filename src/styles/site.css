@@ -95,7 +95,7 @@
     @apply py-10 lg:py-20;
   }
   .layout-container {
-    @apply mx-auto w-full max-w-[1100px] px-4 sm:px-5 md:px-0;
+    @apply mx-auto w-full max-w-275 px-4 sm:px-5 md:px-0;
   }
   /** Header keeps side gutters on md+; body layout-container stays full-bleed to max-width. */
   .layout-container.layout-container--header {
@@ -854,7 +854,7 @@
     @apply mb-0 md:mb-1;
   }
   .nav-dropdown-link {
-    @apply block min-w-[140px] rounded-md py-2 px-3 transition md:min-w-[150px] md:py-1.5 text-left;
+    @apply block min-w-35 rounded-md py-2 px-3 transition md:min-w-37.5 md:py-1.5 text-left;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     font-weight: 400;
   }
