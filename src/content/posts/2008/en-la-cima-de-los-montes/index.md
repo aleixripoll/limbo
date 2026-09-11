@@ -8,7 +8,7 @@ image_attribution:
   site: Unsplash
   url: https://unsplash.com/photos/landscape-photography-of-mountain-hit-by-sun-rays-78A265wPiO4
 categories: [ "literatura" ]
-tags: [ "assaig", "filosofia" ]
+tags: ["filosofia"]
 draft: false
 date: 2008-06-09T12:13
 ---

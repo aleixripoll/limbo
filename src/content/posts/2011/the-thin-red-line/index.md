@@ -4,7 +4,8 @@ description: "Pel·lícula de Terrence Malick basada en la novel·la de James Jo
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]
-tags: ["peli", "lang-en"]
+tags: ["peli"]
+lang: en
 draft: false
 date: 2011-11-21T13:57
 ---

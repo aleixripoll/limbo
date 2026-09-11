@@ -4,7 +4,8 @@ description: "Yuval Noah Harari"
 authors: [ "Dra. Valina" ]
 image: ./cover.jpg
 categories: [ "literatura" ]
-tags: [ "assaig", "historia", "filosofia", "lang-en" ]
+tags: ["historia", "filosofia"]
+lang: en
 draft: false
 date: 2021-02-25T09:14
 ---

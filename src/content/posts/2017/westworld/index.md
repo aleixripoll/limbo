@@ -8,7 +8,8 @@ image_attribution:
   site: HBO
   url: https://www.hbo.com/westworld
 categories: [ "cine" ]
-tags: [ "sèrie TV", "filosofia", "societat", "ciència ficció", "lang-en" ]
+tags: ["tv", "filosofia", "societat", "ciència ficció"]
+lang: en
 draft: false
 date: 2017-12-17T19:35
 ---

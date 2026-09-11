@@ -1,6 +1,6 @@
 ---
 title: "Jesús selfie"
-description: "Jesús no sonríe en las selfies. No seas como Jesús"
+description: "Jesús no sonríe en las selfies. No seas como Jesús."
 authors: ["Dr. Fenilalanino"]
 image: ./jesus_sonrie.webp
 categories: ["dibuixos"]

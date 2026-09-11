@@ -4,7 +4,8 @@ description: "S'assemblen però no."
 authors: ["Dra. Valina"]
 image: ./hormona_vs_neurona_Gemini_color.png
 categories: ["apunts", "dibuixos"]
-tags: ["neurociència", "lang-cat"]
+tags: ["neurociència"]
+lang: ca
 draft: false
 date: 2024-03-19T16:00
 ---

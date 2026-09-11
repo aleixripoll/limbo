@@ -4,7 +4,8 @@ description: "Blat contra tots."
 authors: ["Dra. Valina"]
 image: ./pa_suspects.png
 categories: ["apunts", "dibuixos"]
-tags: ["nutrició", "pa", "gluten", "lang-cat"]
+tags: ["nutrició", "pa", "gluten"]
+lang: ca
 draft: false
 date: 2024-02-27T07:00
 ---

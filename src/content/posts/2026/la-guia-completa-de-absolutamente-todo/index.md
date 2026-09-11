@@ -4,7 +4,8 @@ description: "Adam Rutherford, Hannah Fry"
 authors: ["Dra. Valina"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["lang-es"]
+tags: []
+lang: es
 draft: false
 date: 2026-05-05T11:10
 ---

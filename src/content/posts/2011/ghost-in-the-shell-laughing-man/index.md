@@ -4,7 +4,8 @@ description: "Laughing Man, frase de J.D. Salinger."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["cine"]
-tags: ["sèrie TV", "anime", "lang-en"]
+tags: ["tv", "anime"]
+lang: en
 draft: false
 date: 2011-06-04T15:41
 ---

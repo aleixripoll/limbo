@@ -8,7 +8,8 @@ image_attribution:
   site: Pixabay
   url: https://pixabay.com/es/illustrations/ai-generado-pensamientos-pensando-8864559/
 categories: [ "literatura" ]
-tags: [ "assaig", "neurociència", "psicologia", "lang-en" ]
+tags: ["neurociència", "psicologia"]
+lang: en
 draft: false
 date: 2022-08-10T13:16
 ---

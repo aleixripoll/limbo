@@ -4,7 +4,7 @@ description: Manuel Hernández Pacheco
 authors: [ "Dra. Valina" ]
 image: ./cover.webp
 categories: [ "literatura", "dibuixos" ]
-tags: [ "assaig", "psicologia" ]
+tags: ["psicologia"]
 draft: false
 date: 2022-10-04T07:00
 ---

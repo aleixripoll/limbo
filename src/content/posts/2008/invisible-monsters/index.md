@@ -4,7 +4,8 @@ description: "Chuck Palahniuk"
 authors: [ "Dr. Fenilalanino" ]
 image: ./cover.jpg
 categories: [ "literatura" ]
-tags: [ "lang-en" ]
+tags: []
+lang: en
 draft: false
 date: 2008-06-11T11:56
 ---

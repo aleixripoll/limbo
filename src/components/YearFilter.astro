@@ -5,17 +5,20 @@ interface Props {
   currentYear: number | null; // null = "All"
   /** Link for the "Tots" option; defaults to baseUrl (home). */
   allHref?: string;
+  /** Render greyed-out and non-interactive (e.g. while another filter is active). */
+  disabled?: boolean;
 }
 
-const { baseUrl, years, currentYear, allHref } = Astro.props;
+const { baseUrl, years, currentYear, allHref, disabled = false } = Astro.props;
 ---
-<div class="year-filter mb-4 flex flex-wrap items-center gap-2">
+<div class:list={["year-filter mb-4 flex flex-wrap items-center gap-2", disabled && "opacity-50"]}>
   <span class="text-sm text-(--color-muted) mr-1">Any:</span>
   <div class="filter-select-wrap">
     <select
-      class="filter-select"
+      class:list={["filter-select", disabled && "cursor-not-allowed"]}
       aria-label="Filter by year"
       data-year-filter
+      disabled={disabled}
     >
       <option value={allHref ?? baseUrl} {...(currentYear === null && { selected: true })}>Tots</option>
       {years.map((y) => (

@@ -8,18 +8,18 @@ import { sortByDate } from "@lib/utils/sortFunctions";
 
 export async function getStaticPaths() {
   const allPosts = await getSinglePage("posts");
-  const years = [...new Set(allPosts.map((p: any) => p.data.date.getFullYear()))].sort((a: any, b: any) => b - a);
   const langs = [...new Set(allPosts.map((p: any) => p.data.lang).filter(Boolean))].sort();
-  return years.map((year) => {
-    const posts = sortByDate(allPosts.filter((p: any) => p.data.date.getFullYear() === year));
+  const years = [...new Set(allPosts.map((p: any) => p.data.date.getFullYear()))].sort((a: any, b: any) => b - a);
+  return langs.map((lang) => {
+    const posts = sortByDate(allPosts.filter((p: any) => p.data.lang === lang));
     return {
-      params: { year: String(year) },
-      props: { posts, year, years, langs },
+      params: { lang: String(lang) },
+      props: { posts, lang, langs, years },
     };
   });
 }
 
-const { posts, year, years, langs } = Astro.props;
+const { posts, lang, langs, years } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL;
 ---
 
@@ -27,8 +27,8 @@ const baseUrl = import.meta.env.BASE_URL;
   <section class="section">
     <div class="layout-container">
       <div class="flex flex-wrap items-center gap-x-8">
-        <YearFilter baseUrl={baseUrl} allHref={`${baseUrl}posts`} years={years} currentYear={year} />
-        <LangFilter baseUrl={baseUrl} allHref={`${baseUrl}posts`} langs={langs} currentLang={null} disabled />
+        <YearFilter baseUrl={baseUrl} allHref={`${baseUrl}posts`} years={years} currentYear={null} disabled />
+        <LangFilter baseUrl={baseUrl} allHref={`${baseUrl}posts`} langs={langs} currentLang={lang} />
       </div>
       <Posts className="mb-8 md:mb-16" posts={posts} />
     </div>

@@ -4,7 +4,8 @@ description: "I can't remember to forget you, de Christopher Nolan."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]
-tags: ["lang-en"]
+tags: []
+lang: en
 draft: false
 date: 2022-05-25T08:06
 ---

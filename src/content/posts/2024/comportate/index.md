@@ -4,7 +4,8 @@ description: "Robert Sapolsky"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.png
 categories: ["literatura"]
-tags: ["neurociència", "lang-es"]
+tags: ["neurociència"]
+lang: es
 draft: false
 date: 2024-12-20T17:00
 ---

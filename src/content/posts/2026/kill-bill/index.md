@@ -4,7 +4,8 @@ description: "Quentin Tarantino"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]
-tags: ["lang-en"]
+tags: []
+lang: en
 draft: false
 date: 2026-08-12T15:00
 ---

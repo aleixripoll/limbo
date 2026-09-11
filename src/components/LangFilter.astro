@@ -1,0 +1,46 @@
+---
+interface Props {
+  baseUrl: string;
+  langs: string[];
+  currentLang: string | null; // null = "All"
+  /** Link for the "Tots" option; defaults to baseUrl (home). */
+  allHref?: string;
+  /** Render greyed-out and non-interactive (e.g. while another filter is active). */
+  disabled?: boolean;
+}
+
+const { baseUrl, langs, currentLang, allHref, disabled = false } = Astro.props;
+
+const LANG_LABELS: Record<string, string> = {
+  ca: "Català",
+  es: "Español",
+  en: "English",
+};
+---
+<div class:list={["lang-filter mb-4 flex flex-wrap items-center gap-2", disabled && "opacity-50"]}>
+  <span class="text-sm text-(--color-muted) mr-1">Idioma:</span>
+  <div class="filter-select-wrap">
+    <select
+      class:list={["filter-select", disabled && "cursor-not-allowed"]}
+      aria-label="Filter by language"
+      data-lang-filter
+      disabled={disabled}
+    >
+      <option value={allHref ?? baseUrl} {...(currentLang === null && { selected: true })}>Tots</option>
+      {langs.map((l) => (
+        <option value={`${baseUrl}lang/${l}/`} {...(currentLang === l && { selected: true })}>
+          {LANG_LABELS[l] ?? l}
+        </option>
+      ))}
+    </select>
+  </div>
+</div>
+<script>
+  // Delegated listener: survives astro view transitions (scripts run once; DOM is swapped).
+  document.addEventListener("change", (e) => {
+    const target = e.target;
+    if (!(target instanceof HTMLSelectElement)) return;
+    if (!target.matches("[data-lang-filter]")) return;
+    if (target.value) window.location.href = target.value;
+  });
+</script>

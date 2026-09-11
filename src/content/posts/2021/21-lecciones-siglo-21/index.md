@@ -7,7 +7,7 @@ image_attribution:
     author: NastyaSensei
     url: https://www.pexels.com/ca-es/foto/terra-univers-viatjar-negoci-335393/
 categories: ["literatura"]
-tags: ["assaig", "historia", "filosofia"]
+tags: ["historia", "filosofia"]
 draft: false
 date: 2021-12-04T20:21
 ---

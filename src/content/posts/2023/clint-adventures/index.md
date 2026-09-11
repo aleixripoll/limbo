@@ -5,7 +5,8 @@ authors: ["Dra. Valina", "Natilla"]
 date: 2023-10-07T18:08
 categories: [ Dibuixos ]
 image: ./cover.png
-tags: [ "lang-cat", "lang-en"]
+tags: []
+lang: ca
 ---
 
 Recopilació dels tres i fins ara únics capítols de les aventures d'en Clint, un extraterrestre que s'avorria molt.

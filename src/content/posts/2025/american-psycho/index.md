@@ -4,7 +4,8 @@ description: "Bret Easton Ellis"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.png
 categories: ["literatura"]
-tags: ["lang-es"]
+tags: []
+lang: es
 draft: false
 date: 2025-02-01T16:00
 ---

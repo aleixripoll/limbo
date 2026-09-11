@@ -4,7 +4,8 @@ description: "Película de Richard Linklater basada en la novela de Philip K. Di
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["cine"]
-tags: ["peli", "lang-en"]
+tags: ["peli"]
+lang: en
 draft: false
 date: 2011-11-11T15:03
 ---

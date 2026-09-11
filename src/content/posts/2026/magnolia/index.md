@@ -4,7 +4,8 @@ description: "Paul Thomas Anderson"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]
-tags: ["lang-en"]
+tags: []
+lang: en
 draft: false
 date: 2026-08-11T19:00
 ---

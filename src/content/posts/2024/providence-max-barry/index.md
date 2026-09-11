@@ -5,7 +5,8 @@ description: "Max Barry"
 authors: [ "Dr. Fenilalanino" ]
 image: ./cover.jpg
 categories: [ "literatura" ]
-tags: [ "psicologia", "existencialisme", "ciència ficció", "lang-en" ]
+tags: ["psicologia", "existencialisme", "ciència ficció"]
+lang: en
 draft: false
 date: 2024-02-28T07:00
 ---

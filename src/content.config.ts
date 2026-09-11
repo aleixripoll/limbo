@@ -20,7 +20,8 @@ const postsCollection = defineCollection({
         .optional(),
       authors: z.array(z.string()).default(["admin"]),
       categories: z.array(z.string()).default(["untagged"]),
-      tags: z.array(z.string()).default(["untagged"]),
+      tags: z.array(z.string()).default([]),
+      lang: z.string().optional(),
       draft: z.boolean().optional(),
     }),
 });

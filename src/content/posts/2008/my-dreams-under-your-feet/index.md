@@ -7,7 +7,8 @@ image_attribution:
     author: Tobi
     url: https://www.pexels.com/ca-es/foto/631986/
 categories: ["literatura"]
-tags: ["poesia", "lang-en"]
+tags: ["poesia"]
+lang: en
 draft: false
 date: 2008-05-31T11:32
 ---

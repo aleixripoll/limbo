@@ -4,7 +4,7 @@ description: "Daniel Kahneman"
 authors: [ "Dr. Fenilalanino" ]
 image: ./pensa.webp
 categories: [ "literatura", "dibuixos" ]
-tags: [ "assaig", "psicologia", "neurociència" ]
+tags: ["psicologia", "neurociència"]
 draft: false
 date: 2024-04-14T15:00
 ---

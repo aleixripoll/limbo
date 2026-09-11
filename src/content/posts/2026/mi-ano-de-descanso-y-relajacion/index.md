@@ -4,7 +4,8 @@ description: "Ottessa Moshfegh"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["literatura"]
-tags: ["lang-es"]
+tags: []
+lang: es
 draft: false
 date: 2026-06-28T10:45
 ---

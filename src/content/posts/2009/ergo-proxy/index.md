@@ -4,7 +4,8 @@ description: "Anime filosòfic."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpg
 categories: ["cine"]
-tags: ["sèrie TV", "anime", "filosofia", "lang-en"]
+tags: ["tv", "anime", "filosofia"]
+lang: en
 draft: false
 date: 2009-04-01T23:05
 ---

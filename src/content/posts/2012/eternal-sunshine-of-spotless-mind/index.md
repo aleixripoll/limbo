@@ -4,7 +4,8 @@ description: "Pel·lícula de Michel Gondry, guió de Charlie Kaufman."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["cine"]
-tags: ["lang-en"]
+tags: []
+lang: en
 draft: false
 date: 2012-11-18T22:12
 ---

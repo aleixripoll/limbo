@@ -4,7 +4,8 @@ description: "Beatriz Serrano"
 authors: ["Dra. Valina"]
 image: ./cover.png
 categories: ["literatura"]
-tags: ["lang-es"]
+tags: []
+lang: es
 draft: false
 date: 2025-08-10T10:00
 ---

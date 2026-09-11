@@ -4,7 +4,8 @@ description: "Neil Postman"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.png
 categories: ["literatura"]
-tags: ["lang-es"]
+tags: []
+lang: es
 draft: false
 date: 2026-05-09T17:00
 ---

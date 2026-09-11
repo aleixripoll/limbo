@@ -4,7 +4,8 @@ description: "Cormac McCarthy"
 authors: ["Dra. Valina"]
 image: ./cover.png
 categories: ["literatura"]
-tags: ["lang-es"]
+tags: []
+lang: es
 draft: false
 date: 2025-03-02T15:00
 ---

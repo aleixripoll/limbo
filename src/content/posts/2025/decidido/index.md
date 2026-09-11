@@ -8,7 +8,8 @@ image_attribution:
     site: Pixabay
     url: https://pixabay.com/es/illustrations/inteligencia-artificial-cerebro-7768523/
 categories: ["literatura"]
-tags: ["neurociència", "lang-es"]
+tags: ["neurociència"]
+lang: es
 draft: false
 date: 2025-06-21T11:00
 ---

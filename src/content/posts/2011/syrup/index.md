@@ -4,7 +4,8 @@ description: "Max Barry"
 authors: [ "Dr. Fenilalanino" ]
 image: ./cover.jpg
 categories: [ "literatura" ]
-tags: [ "marketing", "humor", "lang-en" ]
+tags: ["marketing", "humor"]
+lang: en
 draft: false
 date: 2011-11-17T23:49
 ---

@@ -4,7 +4,8 @@ description: "Sèrie de Carl Sagan."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["cine"]
-tags: ["sèrie TV", "ciència", "lang-en"]
+tags: ["tv", "ciència"]
+lang: en
 draft: false
 date: 2015-11-29T13:05
 ---

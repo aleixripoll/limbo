@@ -4,7 +4,8 @@ description: "Max Barry"
 authors: ["Dr. Fenilalanino"]
 image: ./cover.jpeg
 categories: ["literatura"]
-tags: ["lang-en"]
+tags: []
+lang: en
 draft: false
 date: 2025-03-15T19:35
 ---

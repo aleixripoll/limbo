@@ -8,7 +8,8 @@ image_attribution:
   site: Unsplash
   url: https://unsplash.com/photos/silhouette-of-person-walking-under-white-clouds-fRggLY1DQTM
 categories: [ "literatura" ]
-tags: [ "lang-en" ]
+tags: []
+lang: en
 draft: false
 date: 2015-11-29T12:23
 ---

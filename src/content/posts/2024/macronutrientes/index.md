@@ -8,7 +8,8 @@ image_attribution:
     site: Pixabay
     url: https://pixabay.com/es/illustrations/ai-generado-rollo-de-cerdo-asado-8582954/
 categories: [ "apunts" ]
-tags: [ "biologia", "química", "nutrició", "lang-cat" ]
+tags: ["biologia", "química", "nutrició"]
+lang: ca
 draft: false
 date: 2024-03-16T19:00
 ---

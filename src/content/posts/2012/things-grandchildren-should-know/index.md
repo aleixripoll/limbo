@@ -4,7 +4,8 @@ description: "Autobiografia de Mark Oliver Everett, cantant dels Eels."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["literatura"]
-tags: ["assaig", "lang-en"]
+tags: []
+lang: en
 draft: false
 date: 2012-10-12T15:57
 ---

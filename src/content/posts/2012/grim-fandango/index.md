@@ -4,7 +4,8 @@ description: "Point and click nostalgia, per Lucasarts."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["jocs"]
-tags: ["humor", "lang-en"]
+tags: ["humor"]
+lang: en
 draft: false
 date: 2012-11-12T21:13
 ---

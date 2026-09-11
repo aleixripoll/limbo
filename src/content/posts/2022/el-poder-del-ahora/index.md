@@ -7,7 +7,7 @@ image_attribution:
   author: Pixabay
   url: https://www.pexels.com/ca-es/foto/fusta-llum-clareja-lleuger-301614/
 categories: [ "literatura" ]
-tags: [ "assaig", "psicologia" ]
+tags: ["psicologia"]
 draft: false
 date: 2022-02-02T20:25
 ---

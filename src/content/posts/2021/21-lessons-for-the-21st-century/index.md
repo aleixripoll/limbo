@@ -8,7 +8,8 @@ image_attribution:
     site: Pixabay
     url: https://pixabay.com/es/illustrations/ai-generado-ojo-humano-ojo-humano-8965985/
 categories: ["literatura"]
-tags: ["assaig", "historia", "filosofia", "lang-en"]
+tags: ["historia", "filosofia"]
+lang: en
 draft: false
 date: 2021-10-07T20:23
 ---

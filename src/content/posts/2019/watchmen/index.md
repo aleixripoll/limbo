@@ -4,7 +4,8 @@ description: "Pel·lícula de Zack Snyder basada en el còmic d'Alan Moore."
 authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
 categories: [ "cine" ]
-tags: [ "peli", "lang-en" ]
+tags: ["peli"]
+lang: en
 draft: false
 date: 2019-12-20T14:01
 ---

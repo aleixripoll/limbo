@@ -4,7 +4,8 @@ description: "Película de Wes Anderson."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["cine"]
-tags: ["peli", "humor", "lang-en"]
+tags: ["peli", "humor"]
+lang: en
 draft: false
 date: 2013-08-23T15:53
 ---

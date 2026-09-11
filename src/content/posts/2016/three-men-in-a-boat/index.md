@@ -4,7 +4,8 @@ description: "Jerome K. Jerome"
 authors: [ "Dr. Fenilalanino" ]
 image: ./cover.jpg
 categories: [ "literatura" ]
-tags: [ "humor", "lang-en" ]
+tags: ["humor"]
+lang: en
 draft: false
 date: 2016-05-21T19:18
 ---

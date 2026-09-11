@@ -8,7 +8,8 @@ image_attribution:
     site: HBO
     url: https://www.hbo.com/six-feet-under
 categories: ["cine"]
-tags: ["sèrie TV", "lang-en"]
+tags: ["tv"]
+lang: en
 draft: false
 date: 2012-01-08T17:38
 ---

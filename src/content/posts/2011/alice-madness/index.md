@@ -4,7 +4,8 @@ description: "Alícia al país de les meravelles, el videojoc."
 authors: ["Dr. Fenilalanino"]
 image: ./cover.webp
 categories: ["jocs"]
-tags: ["lang-en"]
+tags: []
+lang: en
 draft: false
 date: 2011-11-12T13:22
 ---

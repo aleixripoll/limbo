@@ -8,7 +8,7 @@ image_attribution:
   site: Pixabay
   url: https://pixabay.com/es/photos/pelota-pelota-antiestr%C3%A9s-emoci%C3%B3n-5586847/
 categories: [ "literatura" ]
-tags: [ "assaig", "psicologia" ]
+tags: ["psicologia"]
 draft: false
 date: 2023-06-10T16:34
 ---

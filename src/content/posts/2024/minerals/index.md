@@ -4,7 +4,8 @@ description: "Tot el que cal menjar de la taula periòdica."
 authors: ["Dra. Valina"]
 image: cover.jpeg
 categories: ["apunts", "dibuixos"]
-tags: ["nutrició", "lang-cat"]
+tags: ["nutrició"]
+lang: ca
 draft: false
 date: 2024-02-09T07:00
 ---

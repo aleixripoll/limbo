@@ -8,7 +8,8 @@ image_attribution:
   site: HBO
   url: https://www.hbo.com/the-wire
 categories: [ "cine" ]
-tags: [ "sèrie TV", "societat", "lang-en" ]
+tags: ["tv", "societat"]
+lang: en
 draft: false
 date: 2019-09-01T20:22
 ---

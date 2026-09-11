@@ -4,7 +4,8 @@ description: "Jair Domínguez"
 authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
 categories: [ "literatura" ]
-tags: [ "humor", "lang-cat" ]
+tags: ["humor"]
+lang: ca
 draft: false
 date: 2023-10-01T18:10
 ---

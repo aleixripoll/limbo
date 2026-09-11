@@ -8,7 +8,8 @@ image_attribution:
   site: Unsplash
   url: https://unsplash.com/photos/person-holding-umbrella-with-light-w37Tyg8bYYM
 categories: [ "literatura" ]
-tags: [ "societat", "lang-cat" ]
+tags: ["societat"]
+lang: ca
 draft: false
 date: 2016-03-06T12:59
 ---

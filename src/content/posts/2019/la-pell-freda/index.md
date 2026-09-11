@@ -4,7 +4,8 @@ description: "Albert Sánchez Piñol"
 authors: [ "Dr. Fenilalanino" ]
 image: ./cover.webp
 categories: [ "literatura" ]
-tags: [ "lang-cat" ]
+tags: []
+lang: ca
 draft: false
 date: 2019-01-26T21:14
 ---

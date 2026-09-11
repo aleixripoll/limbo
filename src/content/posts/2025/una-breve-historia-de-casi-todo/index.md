@@ -4,7 +4,8 @@ description: "Bill Bryson"
 authors: []
 image: ./cover.png
 categories: ["literatura"]
-tags: ["lang-es", "ciència"]
+tags: ["ciència"]
+lang: es
 draft: false
 date: 2025-04-05T16:00
 ---

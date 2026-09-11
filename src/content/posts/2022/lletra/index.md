@@ -7,7 +7,8 @@ image_attribution:
     author: Pixabay
     url: https://www.pexels.com/ca-es/foto/home-brac-ma-a-l-aire-lliure-40141/
 categories: ["literatura"]
-tags: ["poesia", "lang-cat"]
+tags: ["poesia"]
+lang: ca
 draft: false
 date: 2022-09-01T07:35
 ---
