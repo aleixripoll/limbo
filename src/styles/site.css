@@ -658,26 +658,41 @@
   .pagination-jump-of {
     @apply text-sm font-normal text-gray-500 dark:text-gray-400;
   }
-  .pagination-select-wrap {
-    @apply relative inline-flex items-stretch;
+  /* Custom page dropdown (native <select> avoided so the option list matches the
+     dark theme and shows no OS checkmark on the selected item). */
+  .pagination-page-select {
+    @apply relative inline-block;
   }
-  .pagination-select {
-    -webkit-appearance: none;
-    appearance: none;
-    @apply m-0 min-w-12 cursor-pointer rounded-lg border border-gray-300 bg-gray-100 py-2 pl-3 pr-9 text-sm font-medium text-gray-600 transition-colors dark:border-white/10 dark:bg-white/5 dark:text-gray-300;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 0.5rem center;
-    background-size: 1rem 1rem;
+  .pagination-page-trigger {
+    @apply inline-flex cursor-pointer items-center gap-1.5 rounded-lg border border-gray-300 bg-gray-100 py-2 pl-3 pr-2.5 text-sm font-medium text-gray-600 transition-colors dark:border-white/10 dark:bg-white/5 dark:text-gray-300;
   }
-  html.dark .pagination-select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a8a29e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-  }
-  .pagination-select:hover {
+  .pagination-page-trigger:hover {
     @apply border-gray-400 bg-gray-200 text-gray-900 dark:border-white/20 dark:bg-white/10 dark:text-white;
   }
-  .pagination-select:focus {
+  .pagination-page-trigger:focus-visible {
     @apply border-primary outline-none ring-2 ring-primary/20;
+  }
+  .pagination-page-chevron {
+    @apply shrink-0 opacity-70 transition-transform duration-150;
+  }
+  .pagination-page-trigger[aria-expanded="true"] .pagination-page-chevron {
+    @apply rotate-180;
+  }
+  .pagination-page-list {
+    @apply absolute left-1/2 z-50 m-0 max-h-60 min-w-full -translate-x-1/2 list-none overflow-y-auto rounded-lg border border-gray-200 bg-white p-1 shadow-lg dark:border-white/10 dark:bg-gray-900;
+    bottom: calc(100% + 6px);
+  }
+  .pagination-page-list[hidden] {
+    display: none;
+  }
+  .pagination-page-option {
+    @apply cursor-pointer rounded-md px-2.5 py-1.5 text-center text-sm text-gray-700 transition-colors dark:text-gray-200;
+  }
+  .pagination-page-option:hover {
+    @apply bg-primary/10 text-primary;
+  }
+  .pagination-page-option--selected {
+    @apply bg-primary/15 font-medium text-primary;
   }
   .pagination-link {
     @apply text-sm font-medium text-primary no-underline;
@@ -689,7 +704,9 @@
     @apply outline-2 outline-offset-2 outline-primary;
   }
   @media (prefers-reduced-motion: reduce) {
-    .pagination-select {
+    .pagination-page-trigger,
+    .pagination-page-chevron,
+    .pagination-page-option {
       @apply transition-none;
     }
   }

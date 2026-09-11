@@ -21,7 +21,6 @@ function hrefForPage(n: number): string {
 }
 
 const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
-const selectId = `pagination-select-${section ?? "posts"}-${currentPage}`;
 ---
 
 {
@@ -34,17 +33,46 @@ const selectId = `pagination-select-${section ?? "posts"}-${currentPage}`;
       )}
 
       <div class="pagination-jump">
-        <label for={selectId} class="pagination-jump-label">
-          Pàgina
-        </label>
-        <div class="pagination-select-wrap">
-          <select id={selectId} class="pagination-select" data-pagination-select>
+        <span class="pagination-jump-label">Pàgina</span>
+        <div class="pagination-page-select" data-page-select>
+          <button
+            type="button"
+            class="pagination-page-trigger"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            data-page-trigger
+          >
+            <span>{currentPage}</span>
+            <svg
+              class="pagination-page-chevron"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <ul class="pagination-page-list" role="listbox" data-page-list hidden>
             {pageNumbers.map((n) => (
-              <option value={hrefForPage(n)} selected={n === currentPage}>
+              <li
+                role="option"
+                aria-selected={n === currentPage}
+                data-href={hrefForPage(n)}
+                class:list={[
+                  "pagination-page-option",
+                  n === currentPage && "pagination-page-option--selected",
+                ]}
+              >
                 {n}
-              </option>
+              </li>
             ))}
-          </select>
+          </ul>
         </div>
         <span class="pagination-jump-of">de {totalPages}</span>
       </div>
@@ -59,17 +87,53 @@ const selectId = `pagination-select-${section ?? "posts"}-${currentPage}`;
 }
 
 <script is:inline>
-  function initPaginationSelects() {
-    document.querySelectorAll("[data-pagination-select]").forEach((el) => {
-      if (el.dataset.paginationBound === "1") return;
-      el.dataset.paginationBound = "1";
-      el.addEventListener("change", (e) => {
-        const t = e.target;
-        const href = t && "value" in t ? t.value : "";
-        if (href) window.location.href = href;
-      });
+  let paginationDocBound = false;
+
+  function closeAllPageSelects() {
+    document.querySelectorAll("[data-page-select]").forEach((root) => {
+      const list = root.querySelector("[data-page-list]");
+      const trigger = root.querySelector("[data-page-trigger]");
+      if (list) list.hidden = true;
+      if (trigger) trigger.setAttribute("aria-expanded", "false");
     });
   }
-  initPaginationSelects();
-  document.addEventListener("astro:page-load", initPaginationSelects);
+
+  function initPageSelects() {
+    document.querySelectorAll("[data-page-select]").forEach((root) => {
+      if (root.dataset.pageBound === "1") return;
+      root.dataset.pageBound = "1";
+
+      const trigger = root.querySelector("[data-page-trigger]");
+      const list = root.querySelector("[data-page-list]");
+      if (!trigger || !list) return;
+
+      trigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const willOpen = list.hidden;
+        closeAllPageSelects();
+        if (willOpen) {
+          list.hidden = false;
+          trigger.setAttribute("aria-expanded", "true");
+        }
+      });
+
+      list.querySelectorAll("[data-href]").forEach((opt) => {
+        opt.addEventListener("click", () => {
+          const href = opt.getAttribute("data-href");
+          if (href) window.location.href = href;
+        });
+      });
+    });
+
+    if (!paginationDocBound) {
+      paginationDocBound = true;
+      document.addEventListener("click", closeAllPageSelects);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeAllPageSelects();
+      });
+    }
+  }
+
+  initPageSelects();
+  document.addEventListener("astro:page-load", initPageSelects);
 </script>
