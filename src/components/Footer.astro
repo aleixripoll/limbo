@@ -22,12 +22,12 @@ import social from "@config/social.json";
         ))}
       </ul>
     )}
-    {/* social icons */}
-    <Social source={social} className="social-icons mb-4" />
-    {/* copyright */}
-    <p>
-      © {new Date().getFullYear()}{" "}
-      {config.site.logo_text || config.site.title}
-    </p>
+    <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+      <p>
+        © {new Date().getFullYear()}{" "}
+        {config.site.logo_text || config.site.title}
+      </p>
+      <Social source={social} className="social-icons flex items-center gap-1 space-x-0" />
+    </div>
   </div>
 </footer>
