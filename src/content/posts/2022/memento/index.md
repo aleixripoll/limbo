@@ -10,4 +10,4 @@ draft: false
 date: 2022-05-25T08:06
 ---
 
-I was wrong about Sammy. When I looked into his eyes, I thought I saw recognition. Now I know. You fake it. If you think you're supposed to recognize somebody, you just pretend to. You bluff it to get a pat on the head from the doctors. You bluff it to seem less of a freak.
+I have to believe in a world outside my own mind. I have to believe that my actions still have meaning, even if I can't remember them. I have to believe that when my eyes are closed, the world's still there. Do I believe the world's still there? Is it still out there?... Yeah. We all need mirrors to remind ourselves who we are. I'm no different.

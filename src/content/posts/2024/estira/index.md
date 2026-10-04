@@ -3,7 +3,7 @@ title: "Estiraments sí o no?"
 description: "Terraplanistes a mi."
 authors: ["Dr. Fenilalanino"]
 image: ./estira.webp
-categories: ["literatura", "dibuixos"]
+categories: ["apunts", "dibuixos"]
 tags: ["esport", "fisioteràpia"]
 draft: false
 date: 2024-06-17T18:00

@@ -1,4 +1,5 @@
 import mdx from "@astrojs/mdx";
+import { unified } from "@astrojs/markdown-remark";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
@@ -11,6 +12,7 @@ export default defineConfig({
   site: config.site.base_url,
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: "ignore",
+  compressHTML: true,
   i18n: {
     defaultLocale: "ca",
     locales: ["ca", "es", "en"],
@@ -21,7 +23,9 @@ export default defineConfig({
     mdx(),
   ],
   markdown: {
-    remarkPlugins: [remarkModifiedTime, [remarkToc, { heading: "Taula de continguts", maxDepth: 4 }]],
+    processor: unified({
+      remarkPlugins: [remarkModifiedTime, [remarkToc, { heading: "Taula de continguts", maxDepth: 4 }]],
+    }),
     shikiConfig: {
       theme: "one-dark-pro",
       wrap: true,
