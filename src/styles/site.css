@@ -376,7 +376,7 @@
     max-height: 320px;
   }
   .masonry-grid--compact .masonry-image-container .masonry-image {
-    max-height: 200px;
+    max-height: 160px;
   }
   .masonry-grid--gallery .masonry-image-container .masonry-image {
     max-height: 100vh;

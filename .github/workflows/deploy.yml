@@ -19,12 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Install, build, and upload your site
         uses: withastro/action@v6
         with:
-          # Astro 6 requires Node >=22.12.0; matches .nvmrc
-          node-version: 22.12.0
+          node-version: "24"
           # path: . # optional: Astro project root if not repo root
           # package-manager: pnpm@latest # optional: override lockfile detection
 
@@ -37,4 +36,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
