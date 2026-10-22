@@ -13,6 +13,7 @@ date: 2024-02-27T07:00
 ## Taula de continguts
 
 # Blat *(wheat, trigo)*
+![Blat](blat.png "Blat")
 
 És el cereal panificable més popular i utilitzat a tot el món pel seu alt contingut de gluten (gliadina i glutenina), que aporta una gran elasticitat i esponjositat a les masses. Els cereals antics com l'espelta o el kamut són varietats botàniques d'aquest mateix gènere (*Triticum*).
 
@@ -24,6 +25,7 @@ Aporta principalment:
 - **Minerals:** Aporta calci, ferro, fòsfor, magnesi, zinc i seleni.
 
 # Sègol *(rye, centeno)*
+![Sègol](segol.png "Sègol")
 
 És una espècie botànica totalment independent del blat. 
 
@@ -35,7 +37,8 @@ Comparat amb el blat, destaca per:
 - **Vitamines:** Duplica la vitamina E (antioxidant) del blat i el supera notablement en vitamina K (coagulació i ossos). També aporta més vitamina B2, B5 i B9 (àcid fòlic).
 - **Minerals:** Té una major concentració de ferro, potassi i magnesi que el blat.
 
-# Espelta *(spelt, espelta)*
+# Espelta *(spelt)*
+![Espelta](espelta.png "Espelta")
 
 És una varietat antiga de blat, considerada el seu avantpassat directe, per la qual cosa sí que conté gluten.
 
@@ -45,7 +48,8 @@ Comparada amb el blat comú, destaca per:
 - **Proteïna de major qualitat:** Aporta un perfil d'aminoàcids superior al del blat, incloent-hi 8 dels 9 aminoàcids essencials (una proteïna gairebé completa).
 - **Nutrients totals:** Té una concentració lleugerament superior de fibra, vitamines i minerals que el blat comú.
 
-# Kamut *(khorasan wheat, kamut)*
+# Kamut *(khorasan wheat)*
+![Kamut](kamut.png "Kamut")
 
 És el nom comercial d'una varietat antiga de blat dur (el blat Khorasan) i conté gluten.
 
@@ -56,6 +60,7 @@ Comparat amb el blat comú, destaca per:
 - **Sostenibilitat:** Com que la marca registrada s'importa i es produeix principalment a Amèrica del Nord sota criteris estrictes, és un producte més car i amb una petjada de carboni superior a la del blat local.
 
 # Fajol *(buckwheat, trigo sarraceno)*
+![Fajol](fajol.png "Fajol")
 
 Malgrat el seu nom en castellà ("trigo sarraceno"), no és una varietat de blat ni tan sols un cereal; és un **pseudocereal** de la família del ruibarbre.
 
@@ -67,6 +72,7 @@ Comparat amb el blat, destaca per:
 - **Preu:** En no ser un cultiu massiu com el blat, el seu cost al mercat és força més elevat.
 
 # Civada *(oats, avena)*
+![Civada](civada.png "Civada")
 
 És un cereal d'una línia botànica diferent del blat. Tot i que de manera natural no conté gluten, sovint pateix contaminació creuada als molins on es processa blat.
 
@@ -77,6 +83,7 @@ Comparada amb el blat, destaca per:
 - **Preu:** Molt econòmica en format de flocs, tot i que la farina certificada "sense gluten" és més cara que la de blat.
 
 # Ordi *(barley, cebada)*
+![Ordi](ordi.png "Ordi")
 
 És un dels cereals cultivats més antics, de la mateixa família que el blat però d'un gènere diferent. Conté gluten, però en una quantitat molt menor.
 
@@ -88,7 +95,7 @@ Comparat amb el blat, destaca per:
 
 ---
 
-# RESUM
+# Taula resum
 
 | Cereal / Pseudocereal | Té Gluten? | Tipus de Pa | Preu Estimat (Farina integral per kg) | Disponibilitat |
 | :--- | :--- | :--- | :--- | :--- |
@@ -115,9 +122,3 @@ Comparat amb el blat, destaca per:
 - [National Center for Biotechnology Information - The contribution of wheat to human diet and health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4998136/)
 
 - https://nutritionsource.hsph.harvard.edu/what-should-you-eat/whole-grains/
-
-- https://tahonajardines.com/que-es-pan-de-espelta-y-beneficios/
-
-- https://www.naturarla.es/el-pan-negro-o-pan-de-centeno/
-
-- https://solnatural.bio/recipe/diferencias-entre-la-espelta-y-el-trigo
