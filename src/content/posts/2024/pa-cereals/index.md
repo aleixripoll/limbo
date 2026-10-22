@@ -1,5 +1,5 @@
 ---
-title: "Els cereals del pa"
+title: "Pa i cereals"
 description: "Blat contra tots."
 authors: ["Dra. Valina"]
 image: ./pa_suspects.png
