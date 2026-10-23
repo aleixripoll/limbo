@@ -1,6 +1,6 @@
 ---
 title: "The Wire"
-description: "Sèrie d'HBO, dirigida por David Simon."
+description: "Sèrie d'HBO, dirigida per David Simon."
 authors: [ "Dr. Fenilalanino" ]
 image: ./the-wire-ka-1920.webp
 image_attribution:
