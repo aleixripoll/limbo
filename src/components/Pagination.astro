@@ -1,4 +1,6 @@
 ---
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi/index.js";
+
 interface Props {
   /** e.g. `authors` for `/authors/page/2`; omit for home post listing */
   section?: string;
@@ -27,8 +29,8 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
   totalPages > 1 && (
     <nav class="pagination" aria-label="Paginació">
       {currentPage > 1 && (
-        <a href={hrefForPage(currentPage - 1)} class="pagination-link pagination-prev">
-          ← Anterior
+        <a href={hrefForPage(currentPage - 1)} class="pagination-link pagination-prev inline-flex h-10 w-10 items-center justify-center" aria-label="Anterior" title="Anterior">
+          <BiLeftArrowAlt className="h-6 w-6" aria-hidden="true" />
         </a>
       )}
 
@@ -78,8 +80,8 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
       </div>
 
       {currentPage < totalPages && (
-        <a href={hrefForPage(currentPage + 1)} class="pagination-link pagination-next">
-          Següent →
+        <a href={hrefForPage(currentPage + 1)} class="pagination-link pagination-next inline-flex h-10 w-10 items-center justify-center" aria-label="Següent" title="Següent">
+          <BiRightArrowAlt className="h-6 w-6" aria-hidden="true" />
         </a>
       )}
     </nav>

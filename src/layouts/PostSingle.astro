@@ -6,7 +6,7 @@ import { render } from "astro:content";
 import dateFormat from "@lib/utils/dateFormat";
 import { humanize, markdownify, slugify } from "@lib/utils/textConverter";
 import CategoryGridIcon from "@components/CategoryGridIcon";
-import { BiSolidChevronUpCircle } from "react-icons/bi/index.js";
+import { BiCalendar, BiPlus, BiSolidChevronUpCircle, BiX } from "react-icons/bi/index.js";
 import Disqus from "@components/Disqus";
 //const allAuthors = await getSinglePage("authors");
 const { post } = Astro.props;
@@ -15,15 +15,26 @@ const { title, description, categories, image, image_attribution, date, tags } =
 
 const lastModifiedIso = remarkPluginFrontmatter.lastModified as string | undefined;
 const isDrawingsPost = categories.some((category: string) => slugify(category) === "dibuixos");
+const isPortraitCover = image && image.height > image.width;
 ---
 
-<section class="section">
+<section class="section pt-16 lg:pt-18">
   <div class="layout-container max-w-[800px]">
     <article class="row justify-center -mx-4">
+      <header class="col-12 md:col-10 post-header">
+        <div class:list={["post-heading-layout", { "post-heading-layout--portrait": isPortraitCover }]}>
       {(image || image_attribution) && (
-        <div class={`col-12 md:col-10 mb-6 px-0 sm:px-2 w-auto ${isDrawingsPost ? "flex justify-center" : ""}`}>
+        <div class={`post-heading-cover mb-6 ${isDrawingsPost ? "flex justify-center" : ""}`}>
           {
             image && (
+              <button
+                type="button"
+                class="cover-zoom-trigger mx-auto block max-w-full border-0 bg-transparent p-0 focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-4"
+                aria-label={`Ampliar: ${title}`}
+                aria-haspopup="dialog"
+                aria-controls="cover-zoom"
+                title="Ampliar imatge"
+              >
               <Image
                 src={image}
                 widths={[320, 480, 640, 828, 1080]}
@@ -40,6 +51,10 @@ const isDrawingsPost = categories.some((category: string) => slugify(category) =
                   maxHeight: `min(50vh, ${image.height}px)`,
                 }}
               />
+              <span class="cover-zoom-indicator" aria-hidden="true">
+                <BiPlus className="h-6 w-6" />
+              </span>
+              </button>
             )
           }
           {image_attribution && (
@@ -50,8 +65,8 @@ const isDrawingsPost = categories.some((category: string) => slugify(category) =
         </div>
       )}
 
-      <div class="text-center md:col-10">
-        <h1 set:html={markdownify(title)} class="h2 mt-0 mb-1 font-medium" />
+      <div class="post-heading-text text-center">
+        <h1 set:html={markdownify(title)} class="h2 mt-0 mb-1 font-medium dark:text-gray-300" />
         <p class="pt-1 pb-3 text-2xl font-light leading-relaxed">{description}</p>
         <ul class="pt-1 flex flex-wrap items-center justify-center text-base font-light text-gray-500 dark:text-gray-400">
           {/*<li class="mx-3">
@@ -83,6 +98,7 @@ const isDrawingsPost = categories.some((category: string) => slugify(category) =
             }
           </li>*/}
           <li class="pb-2 mx-2 flex flex-wrap items-center">
+            <BiCalendar className="mr-2 h-[18px] w-[18px] shrink-0 text-current" aria-hidden="true" />
             {date ? dateFormat(date) : lastModifiedIso ? dateFormat(lastModifiedIso) : ""}
           </li>
           <li class="group pb-2 mx-2 flex flex-wrap items-center">
@@ -105,41 +121,56 @@ const isDrawingsPost = categories.some((category: string) => slugify(category) =
             </>
           </li>
         </ul>
+        {tags.length > 0 && (
+          <ul class="mt-4 mb-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+            {tags.map((tag: string) => (
+              <li class="flex items-center">
+                <a
+                  href={`${import.meta.env.BASE_URL}tags/${slugify(tag)}`}
+                  class="text-sm italic dark:text-gray-400 hover:text-primary"
+                >
+                  <span class="mr-0.5">#</span>{humanize(tag, { capitalizeFirst: false })}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
+        </div>
+      </header>
 
       <div class="md:col-10">
         <div class={`content mb-16 text-left ${isDrawingsPost ? "content--drawings" : ""}`}>
           <Content />
         </div>
-        <div class="flex flex-wrap items-center justify-between">
-          <div class="flex flex-wrap items-center mb-4 mr-4">
-            <ul class="flex flex-wrap items-center gap-x-3 gap-y-2">
-              {
-                tags.map((tag: string) => (
-                  <li class="flex items-center">
-                    <a
-                      href={`${import.meta.env.BASE_URL}tags/${slugify(tag)}`}
-                      class="text-sm italic dark:text-gray-400 hover:text-primary"
-                    >
-                      <span class="mr-0.5">#</span>{humanize(tag, { capitalizeFirst: false })}
-                    </a>
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
           {/* <Share
             className="social-share mb-4"
             title={title}
             description={description}
             slug={post.id}
           />*/}
-        </div>
       </div>
     </article>
     <Disqus className="mt-20" client:load />
   </div>
 </section>
+
+{image && (
+  <dialog id="cover-zoom" class="cover-zoom" aria-label={title}>
+    <button type="button" class="cover-zoom-close" aria-label="Tancar" title="Tancar" autofocus>
+      <BiX className="h-7 w-7" />
+    </button>
+    <Image
+      src={image}
+      widths={[640, 1080, 1600, 2400]}
+      sizes="100vw"
+      quality={90}
+      alt={title}
+      class="cover-zoom-image"
+      loading="lazy"
+    />
+  </dialog>
+)}
 
 <style is:global>
   @media (max-width: 640px) {
@@ -232,9 +263,56 @@ const isDrawingsPost = categories.some((category: string) => slugify(category) =
       scrollFunction();
     }
     
+    function initCoverZoom() {
+      const trigger = document.querySelector(".cover-zoom-trigger");
+      const dialog = document.querySelector("#cover-zoom");
+      if (!trigger || !dialog || dialog.dataset.bound) return;
+      dialog.dataset.bound = "true";
+      const zoomScreens = window.matchMedia("(min-width: 768px)");
+      function syncZoomAvailability() {
+        trigger.disabled = !zoomScreens.matches;
+        trigger.title = zoomScreens.matches ? "Ampliar imatge" : "";
+        if (!zoomScreens.matches) dialog.close();
+      }
+      syncZoomAvailability();
+      zoomScreens.addEventListener("change", syncZoomAvailability);
+      async function closeCoverZoom() {
+        if (!dialog.open || dialog.dataset.closing) return;
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          dialog.dataset.closing = "true";
+          const animations = dialog.querySelector(".cover-zoom-image").getAnimations();
+          await Promise.allSettled(animations.map((animation) => animation.finished));
+        }
+        dialog.close();
+        delete dialog.dataset.closing;
+      }
+      trigger.addEventListener("click", () => {
+        if (zoomScreens.matches) dialog.showModal();
+      });
+      dialog.querySelector(".cover-zoom-close").addEventListener("click", closeCoverZoom);
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) closeCoverZoom();
+      });
+      dialog.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          closeCoverZoom();
+        }
+      });
+      dialog.addEventListener("cancel", (event) => {
+        event.preventDefault();
+        closeCoverZoom();
+      });
+      document.addEventListener("astro:before-swap", () => {
+        zoomScreens.removeEventListener("change", syncZoomAvailability);
+        dialog.close();
+      }, { once: true });
+    }
+
     // Initialize all functions
     addHeadingLinks();
     initScrollToTop();
+    initCoverZoom();
   }
   
   // Wait for DOM to be ready
