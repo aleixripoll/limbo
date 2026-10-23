@@ -1,7 +1,7 @@
 ---
 import Logo from "@components/Logo.astro";
 import menu from "@config/menu.json";
-import { IoSearch } from "react-icons/io5/index.js";
+import { IoSearchOutline } from "react-icons/io5/index.js";
 import { BiUser, BiCategoryAlt, BiPurchaseTag } from "react-icons/bi/index.js";
 import ThemeToggle from "./ThemeToggle.astro";
 import { getTaxonomy } from "@lib/taxonomyParser.astro";
@@ -57,7 +57,7 @@ function isActivePath(rel: string): boolean {
 ---
 
 <header
-  class="header sticky top-0 z-40 bg-gray-100 dark:bg-[#1b2432] pt-1"
+  class="header relative z-40 mb-4 bg-gray-50 dark:bg-[#1d2735] pt-1"
 >
   <nav
     class="navbar layout-container layout-container--header border-0 pb-1 dark:bg-transparent"
@@ -211,7 +211,7 @@ function isActivePath(rel: string): boolean {
         title="Cercar"
         aria-label="Cercar"
       >
-        <IoSearch />
+        <IoSearchOutline />
       </a>
     </div>
   </nav>

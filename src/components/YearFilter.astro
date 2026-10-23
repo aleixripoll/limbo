@@ -1,4 +1,6 @@
 ---
+import { BiCalendar } from "react-icons/bi/index.js";
+
 interface Props {
   baseUrl: string;
   years: number[];
@@ -12,7 +14,9 @@ interface Props {
 const { baseUrl, years, currentYear, allHref, disabled = false } = Astro.props;
 ---
 <div class:list={["year-filter mb-4 flex flex-wrap items-center gap-2", disabled && "opacity-50"]}>
-  <span class="text-sm text-(--color-muted) mr-1">Any:</span>
+  <span class="inline-flex shrink-0 items-center text-(--color-muted) mr-1" title="Any" aria-hidden="true">
+    <BiCalendar className="h-[18px] w-[18px]" />
+  </span>
   <div class="filter-select-wrap">
     <select
       class:list={["filter-select", disabled && "cursor-not-allowed"]}

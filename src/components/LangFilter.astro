@@ -1,4 +1,6 @@
 ---
+import { BiGlobe } from "react-icons/bi/index.js";
+
 interface Props {
   baseUrl: string;
   langs: string[];
@@ -18,7 +20,9 @@ const LANG_LABELS: Record<string, string> = {
 };
 ---
 <div class:list={["lang-filter mb-4 flex flex-wrap items-center gap-2", disabled && "opacity-50"]}>
-  <span class="text-sm text-(--color-muted) mr-1">Idioma:</span>
+  <span class="inline-flex shrink-0 items-center text-(--color-muted) mr-1" title="Idioma" aria-hidden="true">
+    <BiGlobe className="h-[18px] w-[18px]" />
+  </span>
   <div class="filter-select-wrap">
     <select
       class:list={["filter-select", disabled && "cursor-not-allowed"]}

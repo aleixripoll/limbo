@@ -1,8 +1,8 @@
 ---
 ---
 
-<button id="themeToggle" aria-label="theme-toggle">
-  <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<button id="themeToggle" type="button" aria-label="Activa el mode fosc" title="Activa el mode fosc">
+  <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
     <path
       class="sun"
       fill-rule="evenodd"
@@ -22,32 +22,32 @@
     background: none;
   }
   .sun {
-    fill: rgb(5 16 21);
+    fill: transparent;
     transition: transform 1.0s;
     transform-origin: center;
   }
   .moon {
-    fill: transparent;
+    fill: rgb(5 16 21);
     transition: transform 1.0s;
     transform-origin: center;
   }
   :global(.dark) .sun {
-    fill: transparent;
-  }
-  :global(.dark) .moon {
     fill: rgb(129, 138, 157);
   }
+  :global(.dark) .moon {
+    fill: transparent;
+  }
   @media only screen and (min-width: 768px) {
-    #themeToggle:hover .sun {
-      fill: orangered;
-      transform: rotate(90deg);
-    }
-    :global(.dark) #themeToggle:hover .sun {
-      fill: transparent;
-    }
-    :global(.dark) #themeToggle:hover .moon {
+    #themeToggle:hover .moon {
       fill: rgb(91, 179, 216);
       transform: rotate(120deg);
+    }
+    :global(.dark) #themeToggle:hover .moon {
+      fill: transparent;
+    }
+    :global(.dark) #themeToggle:hover .sun {
+      fill: orangered;
+      transform: rotate(90deg);
     }
   }
 </style>
@@ -76,15 +76,14 @@
     if (typeof localStorage !== "undefined") {
       localStorage.setItem("theme", theme);
     }
+    const button = document.getElementById("themeToggle");
+    const label = theme === "dark" ? "Activa el mode clar" : "Activa el mode fosc";
+    button?.setAttribute("aria-label", label);
+    button?.setAttribute("title", label);
   }
 
   function onThemeToggle() {
-    const root = document.documentElement;
-    root.classList.toggle("dark");
-    localStorage.setItem(
-      "theme",
-      root.classList.contains("dark") ? "dark" : "light"
-    );
+    applyResolvedTheme(document.documentElement.classList.contains("dark") ? "light" : "dark");
   }
 
   document.addEventListener("astro:page-load", () => {
