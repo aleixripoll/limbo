@@ -92,7 +92,7 @@
 }
 @layer components {
   .section {
-    @apply pt-8 pb-10 lg:pt-10 lg:pb-20;
+    @apply pt-4 pb-10 md:pt-8 lg:pt-10 lg:pb-20;
   }
   footer.section {
     @apply py-10 lg:py-20;
