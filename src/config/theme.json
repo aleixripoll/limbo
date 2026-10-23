@@ -19,9 +19,9 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "",
+      "primary": "Source Sans 3:wght@400;500;600;700",
       "primary_type": "sans-serif",
-      "secondary": "",
+      "secondary": "Source Sans 3:wght@400;500;600;700",
       "secondary_type": "sans-serif"
     },
     "font_size": {

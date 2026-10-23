@@ -74,7 +74,7 @@ export default {
       },
       fontFamily: {
         primary: fontPrimary
-          ? [fontPrimary, fontPrimaryType || "sans-serif"]
+          ? [`"${fontPrimary}"`, fontPrimaryType || "sans-serif"]
           : [
               "system-ui",
               "-apple-system",
@@ -83,7 +83,7 @@ export default {
               "sans-serif",
             ],
         secondary: fontSecondary
-          ? [fontSecondary, fontSecondaryType || "sans-serif"]
+          ? [`"${fontSecondary}"`, fontSecondaryType || "sans-serif"]
           : [
               "system-ui",
               "-apple-system",

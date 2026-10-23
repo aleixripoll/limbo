@@ -180,7 +180,7 @@
   .content {
     /* Wrapper: light theme uses `colors.dark` (text_color.dark); dark theme uses `colors.on-dark` (text_color.on_dark). Paragraphs still follow --tw-prose-* from typography. */
     @apply font-source-serif leading-[1.75] text-dark dark:text-on-dark;
-    @apply prose dark:prose-invert max-w-none prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-headings:font-semibold dark:prose-headings:text-white prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg prose-h1:pt-8 prose-img:mt-2 prose-blockquote:px-5 prose-blockquote:py-0.5 prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-white dark:prose-a:text-on-dark prose-a:font-semibold prose-a:hover:text-primary text-[1.0625rem];
+    @apply prose dark:prose-invert max-w-none prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-headings:font-semibold dark:prose-headings:text-white prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg prose-h1:pt-8 prose-img:mt-2 prose-blockquote:px-5 prose-blockquote:py-0.5 prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-white dark:prose-a:text-on-dark prose-a:font-semibold prose-a:hover:text-primary text-[1.125rem];
   }
   .content img {
     @apply mb-6 h-auto w-auto max-w-full rounded;
@@ -331,13 +331,13 @@
     @apply break-inside-avoid;
   }
   .masonry-card {
-    @apply block rounded-2xl overflow-hidden relative border-0 bg-transparent ring-1 ring-black/5 dark:ring-white/10 transition-[transform,box-shadow,background-color] duration-200 ease-out;
+    @apply block rounded-lg overflow-hidden relative border-0 bg-transparent ring-1 ring-black/5 dark:ring-white/10 transition-[transform,box-shadow,background-color] duration-200 ease-out;
     -webkit-tap-highlight-color: transparent;
     outline: none;
   }
   .similar-post-card,
   .search-result-card {
-    @apply block rounded-2xl overflow-hidden relative border-0 bg-transparent ring-1 ring-black/5 dark:ring-white/10 transition-[transform,box-shadow,background-color] duration-200 ease-out;
+    @apply block rounded-lg overflow-hidden relative border-0 bg-transparent ring-1 ring-black/5 dark:ring-white/10 transition-[transform,box-shadow,background-color] duration-200 ease-out;
     -webkit-tap-highlight-color: transparent;
     outline: none;
   }
@@ -460,6 +460,15 @@
   .similar-post-excerpt,
   .search-result-excerpt {
     @apply line-clamp-2 leading-relaxed text-gray-500 dark:text-gray-400 text-sm;
+  }
+  .masonry-title {
+    @apply text-xl;
+  }
+  .masonry-excerpt {
+    @apply text-base;
+  }
+  .masonry-category {
+    @apply text-sm;
   }
   @media (hover: hover) {
     .masonry-card:hover,

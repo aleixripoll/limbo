@@ -11,9 +11,11 @@ import { ClientRouter } from 'astro:transitions';
 // Google Fonts: optional primary/secondary from theme; Source Serif 4 for article body
 const rawPf = theme.fonts.font_family.primary?.trim();
 const rawSf = theme.fonts.font_family.secondary?.trim();
-const googleFontParams = [rawPf, rawSf]
-  .filter(Boolean)
-  .map((name) => `family=${encodeURIComponent(name).replace(/%20/g, "+")}`)
+const googleFontParams = [...new Set([rawPf, rawSf].filter(Boolean))]
+  .map((font) => {
+    const [name, axes] = font.split(":");
+    return `family=${encodeURIComponent(name).replace(/%20/g, "+")}${axes ? `:${axes}` : ""}`;
+  })
   .join("&");
 
 // types for frontmatters
