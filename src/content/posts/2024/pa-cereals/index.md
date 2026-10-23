@@ -10,7 +10,7 @@ draft: false
 date: 2024-02-27T07:00
 ---
 
-## Taula de continguts
+# Taula de continguts
 
 # Blat *(wheat, trigo)*
 ![Blat](blat.png "Blat")

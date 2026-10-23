@@ -214,7 +214,7 @@
   }
   .content #taula-de-continguts + ul a,
   .content #table-of-contents + ul a {
-    @apply font-normal text-gray-600 no-underline transition-colors dark:text-gray-400;
+    @apply font-normal text-primary underline underline-offset-4 transition-colors dark:text-primary;
   }
   .content #taula-de-continguts + ul a:hover,
   .content #table-of-contents + ul a:hover {
