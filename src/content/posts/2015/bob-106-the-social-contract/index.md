@@ -4,6 +4,6 @@ authors: ["Dra. Valina", "Natilla"]
 categories: [ "Dibuixos" ]
 tags: []
 lang: en
-image: ./bob6_socialcontract.webp
+image: ./bob6_social_contract.webp
 date: 2015-08-24T13:06
 ---
