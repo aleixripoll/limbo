@@ -47,8 +47,8 @@ const isPortraitCover = image && image.height > image.width;
                     : "post-cover-image sm:rounded-lg h-auto w-auto max-w-full object-scale-down block mx-auto"
                 }
                 style={isDrawingsPost ? undefined : {
-                  maxWidth: `min(100%, ${image.width}px)`,
-                  maxHeight: `min(50vh, ${image.height}px)`,
+                  "--post-cover-width": `${image.width}px`,
+                  "--post-cover-height": `${image.height}px`,
                 }}
               />
               <span class="cover-zoom-indicator" aria-hidden="true">
@@ -66,8 +66,8 @@ const isPortraitCover = image && image.height > image.width;
       )}
 
       <div class="post-heading-text text-center">
-        <h1 set:html={markdownify(title)} class="h2 mt-0 mb-1 font-medium dark:text-gray-300" />
-        <p class="pt-1 pb-3 text-2xl font-light leading-relaxed">{description}</p>
+        <h1 set:html={markdownify(title)} class="text-[1.625rem] md:text-[2rem] mt-0 mb-1 font-medium dark:text-gray-300" />
+        <p class="pt-1 pb-3 text-[22px] md:text-2xl font-light leading-relaxed">{description}</p>
         <ul class="pt-1 flex flex-wrap items-center justify-center text-base font-light text-gray-500 dark:text-gray-400">
           {/*<li class="mx-3">
             {
@@ -171,14 +171,6 @@ const isPortraitCover = image && image.height > image.width;
     />
   </dialog>
 )}
-
-<style is:global>
-  @media (max-width: 640px) {
-    .post-cover-image:not(.post-cover-image--drawings) {
-      max-height: 40vh !important;
-    }
-  }
-</style>
 
 <!-- similar posts -->
 <!--{

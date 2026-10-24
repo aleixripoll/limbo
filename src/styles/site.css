@@ -179,7 +179,7 @@
   .content {
     /* Wrapper: light theme uses `colors.dark` (text_color.dark); dark theme uses `colors.on-dark` (text_color.on_dark). Paragraphs still follow --tw-prose-* from typography. */
     @apply font-source-serif leading-[1.75] text-dark dark:text-on-dark;
-    @apply prose dark:prose-invert max-w-none prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-headings:font-semibold dark:prose-headings:text-white prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg prose-h1:pt-8 prose-img:mt-2 prose-blockquote:px-5 prose-blockquote:py-0.5 prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-white dark:prose-a:text-on-dark prose-a:font-semibold prose-a:hover:text-primary text-[1.125rem];
+    @apply prose dark:prose-invert max-w-none prose-blockquote:text-gray-500 dark:prose-blockquote:text-gray-400 prose-headings:font-semibold dark:prose-headings:text-white prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg prose-h1:pt-8 prose-img:mt-2 prose-blockquote:px-5 prose-blockquote:py-0.5 prose-blockquote:italic prose-code:before:content-none prose-code:after:content-none dark:prose-strong:text-white dark:prose-a:text-on-dark prose-a:font-semibold prose-a:hover:text-primary text-[1.0625rem] md:text-[1.125rem];
   }
   .content img {
     @apply mb-6 h-auto w-auto max-w-full rounded;
@@ -342,6 +342,10 @@
   .post-heading-text {
     min-width: 0;
   }
+  .post-cover-image:not(.post-cover-image--drawings) {
+    max-width: min(100%, var(--post-cover-width));
+    max-height: min(50vh, var(--post-cover-height));
+  }
   @container (min-width: 36rem) {
     .post-heading-layout--portrait {
       display: grid;
@@ -358,6 +362,26 @@
       max-width: 100%;
       max-height: 50vh;
       object-fit: contain;
+    }
+  }
+  @media (width < 768px) {
+    .post-heading-layout--portrait {
+      display: block;
+    }
+    .post-heading-cover {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+    }
+    .post-heading-cover .cover-zoom-trigger {
+      width: 100%;
+      max-width: none;
+    }
+    .post-heading-cover .post-cover-image {
+      width: 100%;
+      height: auto;
+      max-width: none;
+      max-height: none;
+      border-radius: 0;
     }
   }
   .content--drawings img,
@@ -552,7 +576,7 @@
   }
   @media (width < 768px) {
     .masonry-grid--compact .masonry-image-container .masonry-image {
-      max-height: min(240px, 35svh);
+      max-height: min(180px, 28svh);
     }
   }
   .masonry-grid--gallery .masonry-image-container .masonry-image {
