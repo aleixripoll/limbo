@@ -35,11 +35,11 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
       )}
 
       <div class="pagination-jump">
-        <span class="pagination-jump-label">Pàgina</span>
         <div class="pagination-page-select" data-page-select>
           <button
             type="button"
             class="pagination-page-trigger"
+            aria-label={`Pàgina ${currentPage} de ${totalPages}`}
             aria-haspopup="listbox"
             aria-expanded="false"
             data-page-trigger
@@ -76,7 +76,6 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
             ))}
           </ul>
         </div>
-        <span class="pagination-jump-of">de {totalPages}</span>
       </div>
 
       {currentPage < totalPages && (
