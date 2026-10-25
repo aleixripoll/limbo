@@ -2,7 +2,7 @@
 title: "Mi año de descanso y relajación"
 description: "Ottessa Moshfegh"
 authors: ["Dr. Fenilalanino"]
-image: ./cover.jpg
+image: ./cover_table_zoom.jpg
 categories: ["literatura"]
 tags: []
 lang: es

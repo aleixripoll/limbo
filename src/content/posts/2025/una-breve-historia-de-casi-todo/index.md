@@ -2,7 +2,7 @@
 title: "Una breve historia de casi todo"
 description: "Bill Bryson"
 authors: []
-image: ./cover.png
+image: ./cover.jpg
 categories: ["literatura"]
 tags: ["ciència"]
 lang: es
