@@ -2,7 +2,7 @@
 title: "Machine Man"
 description: "Max Barry"
 authors: ["Dr. Fenilalanino"]
-image: ./cover.jpeg
+image: ./cover.jpg
 categories: ["literatura"]
 tags: []
 lang: en

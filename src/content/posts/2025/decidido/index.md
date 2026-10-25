@@ -2,11 +2,7 @@
 title: "Decidido"
 description: "Robert Sapolsky"
 authors: ["Dr. Fenilalanino"]
-image: ./artificial-intelligence-7768523_1280.jpg
-image_attribution:
-    author: DeltaWorks
-    site: Pixabay
-    url: https://pixabay.com/es/illustrations/inteligencia-artificial-cerebro-7768523/
+image: ./cover.jpg
 categories: ["literatura"]
 tags: ["neurociència"]
 lang: es

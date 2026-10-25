@@ -1,8 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import config from "@config/config.json";
-import { humanize } from "@lib/utils/textConverter";
-import CategoryGridIcon from "@components/CategoryGridIcon";
 
 const { summary_length } = config.settings;
 
@@ -82,17 +80,6 @@ const { className, posts, fluid, variant = "default" } = Astro.props;
 
           {variant === "default" && (
             <div class="masonry-content">
-              {post.data.categories && (
-                <div class="masonry-categories">
-                  <CategoryGridIcon className="masonry-icon" />
-                  {post.data.categories.map((category: any, i: number) => (
-                    <span class="masonry-category">
-                      {humanize(category)}{i !== post.data.categories.length - 1 && ","}
-                    </span>
-                  ))}
-                </div>
-              )}
-
               <h3 class="masonry-title">{post.data.title}</h3>
 
               {

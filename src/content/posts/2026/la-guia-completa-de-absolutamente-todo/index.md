@@ -2,7 +2,7 @@
 title: "La guía completa de absolutamente todo"
 description: "Adam Rutherford, Hannah Fry"
 authors: ["Dra. Valina"]
-image: ./cover.jpg
+image: ./cover_table.jpg
 categories: ["literatura"]
 tags: []
 lang: es
