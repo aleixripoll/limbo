@@ -24,8 +24,6 @@ jobs:
         uses: withastro/action@v6
         with:
           node-version: "24"
-          cache: "false"
-          build-cmd: npm run build -- --force
           # path: . # optional: Astro project root if not repo root
           # package-manager: pnpm@latest # optional: override lockfile detection
 
