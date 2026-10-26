@@ -3,7 +3,7 @@ title: "Pensar rápido, pensar despacio"
 description: "Daniel Kahneman"
 authors: [ "Dr. Fenilalanino" ]
 image: ./cover.jpg
-categories: [ "literatura", "dibuixos" ]
+categories: [ "literatura" ]
 tags: ["psicologia", "neurociència"]
 draft: false
 date: 2024-04-14T15:00

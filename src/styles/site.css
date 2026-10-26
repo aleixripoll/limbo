@@ -684,7 +684,7 @@
     @apply text-[1.1875rem] font-semibold;
   }
   .masonry-excerpt {
-    @apply text-base;
+    @apply text-lg;
   }
   .masonry-category {
     @apply text-sm;

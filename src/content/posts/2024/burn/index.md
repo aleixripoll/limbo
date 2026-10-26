@@ -1,10 +1,9 @@
 ---
 title: "Burn"
-slug: burn-herman-pontzer
 description: "Herman Pontzer"
 authors: [ "Dr. Fenilalanino" ]
 image: "./cover.jpg"
-categories: [ "literatura", "dibuixos" ]
+categories: [ "literatura" ]
 tags: ["nutrició", "metabolisme"]
 lang: en
 draft: false

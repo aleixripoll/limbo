@@ -7,7 +7,7 @@
     "node": ">=24.0.0"
   },
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --force",
     "sync": "astro sync",
     "build": "astro check && astro build",
     "format": "prettier -w ."
