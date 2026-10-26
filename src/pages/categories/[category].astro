@@ -47,7 +47,7 @@ const isGallery = category === "dibuixos";
           {title}
         </h1>
       </div>
-      <Posts posts={sortedPosts} fluid={false} variant={isGallery ? "gallery" : "default"} />
+      <Posts posts={sortedPosts} fluid={false} variant={isGallery ? "gallery" : "default"} className={isGallery ? undefined : "post-grid--rows"} />
     </div>
   </div>
 </Base>
