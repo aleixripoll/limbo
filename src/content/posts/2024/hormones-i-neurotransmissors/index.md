@@ -2,7 +2,7 @@
 title: "Hormones vs. Neurotransmissors"
 description: "S'assemblen però no."
 authors: ["Dra. Valina"]
-image: ./hormona_vs_neurona_Gemini_color.png
+image: ./cover.jpg
 categories: ["apunts", "dibuixos"]
 tags: ["neurociència"]
 lang: ca

@@ -2,7 +2,7 @@
 title: "Macronutrients 101"
 description: "El coneixement ocupa lloc, però poc."
 authors: [ "Dr. Fenilalanino" ]
-image: "./cover.png"
+image: "./cover.jpg"
 image_attribution:
     author: 爪丨丂ㄒ乇尺_卩丨ㄒㄒ丨几Ꮆ乇尺
     site: Pixabay

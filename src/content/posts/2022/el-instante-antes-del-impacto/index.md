@@ -2,7 +2,7 @@
 title: "El instante antes del impacto"
 description: "Glòria de Castro"
 authors: [ "Dra. Valina" ]
-image: ./cover.webp
+image: ./cover.jpg
 categories: [ "literatura", "dibuixos" ]
 tags: [ "humor", "societat" ]
 draft: false
